@@ -1,38 +1,19 @@
-import { globalIgnores } from 'eslint/config'
-import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
-import pluginVue from 'eslint-plugin-vue'
-import pluginPlaywright from 'eslint-plugin-playwright'
-import pluginVitest from '@vitest/eslint-plugin'
-import pluginOxlint from 'eslint-plugin-oxlint'
-import skipFormatting from 'eslint-config-prettier/flat'
-
-// To allow more languages other than `ts` in `.vue` files, uncomment the following lines:
-// import { configureVueProject } from '@vue/eslint-config-typescript'
-// configureVueProject({ scriptLangs: ['ts', 'tsx'] })
-// More info at https://github.com/vuejs/eslint-config-typescript/#advanced-setup
+import type { EcmaVersion, SourceType } from '@typescript-eslint/types';
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript';
+import skipFormatting from '@vue/eslint-config-prettier/skip-formatting';
+import { globalIgnores } from 'eslint/config';
+import pluginJsonc from 'eslint-plugin-jsonc';
+import pluginVue from 'eslint-plugin-vue';
+import pluginOxlint from 'eslint-plugin-oxlint';
+import { tCoffeEslint, overrridEslint } from 'smpoo_lint';
 
 export default defineConfigWithVueTs(
-  {
-    name: 'app/files-to-lint',
-    files: ['**/*.{vue,ts,mts,tsx}'],
-  },
-
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
-
-  ...pluginVue.configs['flat/essential'],
+  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**', 'tsconfig.*json', 'tsconfig.*', '**/*.d.ts', '**/*', '!src/**', '!test/**']),
+  pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
-
-  {
-    ...pluginPlaywright.configs['flat/recommended'],
-    files: ['e2e/**/*.{test,spec}.{js,ts,jsx,tsx}'],
-  },
-
-  {
-    ...pluginVitest.configs.recommended,
-    files: ['src/**/__tests__/*'],
-  },
-
-  ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
-
+  ...pluginOxlint.configs['flat/recommended'],
+  ...pluginJsonc.configs['flat/recommended-with-jsonc'],
   skipFormatting,
-)
+  ...tCoffeEslint<EcmaVersion, SourceType>('fEnd'),
+  ...overrridEslint
+);
