@@ -1,0 +1,57 @@
+/* #region 滚动条样式覆盖*/
+/* 设置滚动条的滑轨 */
+::scrollbar {
+  height: var(--scrollbar-w);
+  width: var(--scrollbar-w);
+  margin: 0;
+  padding: 0;
+  background-color: var(--scrollbar-color);
+}
+
+::scrollbar:hover {
+  will-change: transform, opacity;
+  background-color: var(--scrollbar-color-hover);
+}
+
+::-webkit-scrollbar {
+  height: var(--scrollbar-w);
+  width: var(--scrollbar-w);
+  margin: 0;
+  padding: 0;
+  background-color: var(--scrollbar-color);
+}
+
+::-webkit-scrollbar:hover {
+  will-change: transform, opacity;
+  background-color: var(--scrollbar-color-hover);
+  animation: 2s opacity2 0s infinite;
+  -webkit-animation: 2s opacity2 0s infinite;
+  -moz-animation: 2s opacity2 0s infinite;
+}
+
+/* 设置滚动条的滑块 */
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  will-change: transform, opacity;
+  background: var(--scrollbar-color-thumb-hover);
+}
+
+/* 滑轨两头的监听按钮颜色 */
+
+::-webkit-scrollbar-button {
+  background-color: var(--scrollbar-color-button);
+  height: var(--scrollbar-w);
+  width: var(--scrollbar-w);
+}
+
+/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+::-webkit-scrollbar-corner {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+}
+/* #endregion */

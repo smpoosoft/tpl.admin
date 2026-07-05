@@ -17,6 +17,8 @@
     "format": "oxfmt src/"
   },
   "dependencies": {
+    "@primeuix/themes": "2.0.3",
+    "primevue": "4.5.5",
     "vue": "^3.5.38",
     "vue-router": "^5.1.0"
   },
@@ -47,6 +49,7 @@
     "skip-formatting": "link:@vue/eslint-config-prettier/skip-formatting",
     "smpoo_lint": "workspace:*",
     "typescript": "~6.0.0",
+    "unocss": "66.7.4",
     "vite": "^8.0.16",
     "vite-plugin-vue-devtools": "^8.1.2",
     "vitest": "^4.1.9",

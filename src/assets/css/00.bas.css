@@ -1,0 +1,46 @@
+:root {
+  /** -------------------------  字体  ------------------------- */
+  /* 无衬线 */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen, Ubuntu, Cantarell,
+    "Helvetica Neue", Arial,
+    "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑",
+    "Noto Sans CJK SC", "WenQuanYi Micro Hei",
+    system-ui,
+    sans-serif;
+
+  /* 衬线 */
+  --font-serif:
+    Georgia,
+    "Songti SC",
+    "STSong",
+    "SimSun",
+    serif;
+
+  /* 等宽 */
+  --font-mono:
+    "SF Mono",
+    Consolas,
+    "Cascadia Code",
+    "JetBrains Mono",
+    "Courier New",
+    monospace;
+
+
+  /** -------------------------  滚动条  ------------------------- */
+  /* #region 滚动条样式变量 */
+  /* 滚动条宽度 */
+  --scrollbar-w: 5px;
+  /* 滚动条颜色 */
+  --scrollbar-color: rgba(0, 0, 0, 0);
+  --scrollbar-color-hover: rgba(110, 110, 110, 0.6);
+  /* 滚动条滑块颜色 */
+  --scrollbar-color-thumb: rgba(80, 80, 80, 0.4);
+  --scrollbar-color-thumb-hover: rgba(80, 80, 80, 0.8);
+  --scrollbar-color-button: #4c5158;
+  /* #endregion */
+}
