@@ -1,0 +1,2699 @@
+- generic [ref=e3]:
+  - generic [ref=e1538]:
+    - generic [ref=e1539]:
+      - generic [ref=e1540]: Next Chapter Begins 🚀
+      - link "Read the full story" [ref=e1541] [cursor=pointer]:
+        - /url: https://primeui.dev/nextchapter
+    - generic [ref=e1543] [cursor=pointer]: 
+  - generic [ref=e5]:
+    - link "PrimeVue logo" [ref=e7] [cursor=pointer]:
+      - /url: /
+      - img [ref=e8]
+    - generic [ref=e9]:
+      - button "Search" [ref=e10]:
+        - generic [ref=e11]: 
+      - button "Toggle Dark Mode" [ref=e12]:
+        - generic [ref=e13]: 
+      - button "App Configurator" [ref=e15]:
+        - generic [ref=e16]: 
+      - button "Open Designer" [ref=e17]:
+        - generic [ref=e18]: 
+      - link "Get PrimeUI" [ref=e19] [cursor=pointer]:
+        - /url: https://primeui.store
+        - generic [ref=e20]: Get PrimeUI Get PrimeUI
+      - button "Menu" [ref=e21]:
+        - generic [ref=e22]: 
+  - generic [ref=e23]:
+    - complementary [ref=e24]:
+      - navigation [ref=e25]:
+        - list [ref=e26]:
+          - listitem [ref=e27]:
+            - link " Guides" [ref=e28] [cursor=pointer]:
+              - /url: /installation/
+              - generic [ref=e30]: 
+              - generic [ref=e31]: Guides
+          - listitem [ref=e32]:
+            - link " Components" [ref=e33] [cursor=pointer]:
+              - /url: /autocomplete/
+              - generic [ref=e35]: 
+              - generic [ref=e36]: Components
+          - listitem [ref=e37]:
+            - button " Add-Ons" [ref=e38] [cursor=pointer]:
+              - generic [ref=e40]: 
+              - generic [ref=e41]: Add-Ons
+          - listitem [ref=e42]:
+            - button " Resources" [ref=e43] [cursor=pointer]:
+              - generic [ref=e45]: 
+              - generic [ref=e46]: Resources
+        - list [ref=e48]:
+          - listitem [ref=e49]:
+            - generic [ref=e50]: PRO Suite
+            - list [ref=e52]:
+              - listitem [ref=e53]:
+                - link "Charts " [ref=e54] [cursor=pointer]:
+                  - /url: https://vue.primeuipro.dev/charts
+                  - generic [ref=e55]: Charts
+                  - generic [ref=e56]: 
+              - listitem [ref=e57]:
+                - link "Scheduler " [ref=e58] [cursor=pointer]:
+                  - /url: https://vue.primeuipro.dev/scheduler
+                  - generic [ref=e59]: Scheduler
+                  - generic [ref=e60]: 
+              - listitem [ref=e61]:
+                - link "Text Editor " [ref=e62] [cursor=pointer]:
+                  - /url: https://vue.primeuipro.dev/texteditor
+                  - generic [ref=e63]: Text Editor
+                  - generic [ref=e64]: 
+              - listitem [ref=e65]:
+                - link "Task Board " [ref=e66] [cursor=pointer]:
+                  - /url: https://vue.primeuipro.dev/taskboard
+                  - generic [ref=e67]: Task Board
+                  - generic [ref=e68]: 
+          - listitem [ref=e69]:
+            - generic [ref=e70]: Form
+            - list [ref=e72]:
+              - listitem [ref=e73]:
+                - link "AutoComplete" [ref=e74] [cursor=pointer]:
+                  - /url: /autocomplete/
+                  - generic [ref=e75]: AutoComplete
+              - listitem [ref=e76]:
+                - link "CascadeSelect" [ref=e77] [cursor=pointer]:
+                  - /url: /cascadeselect/
+                  - generic [ref=e78]: CascadeSelect
+              - listitem [ref=e79]:
+                - link "Checkbox" [ref=e80] [cursor=pointer]:
+                  - /url: /checkbox/
+                  - generic [ref=e81]: Checkbox
+              - listitem [ref=e82]:
+                - link "DatePicker" [ref=e83] [cursor=pointer]:
+                  - /url: /datepicker/
+                  - generic [ref=e84]: DatePicker
+              - listitem [ref=e85]:
+                - link "FloatLabel" [ref=e86] [cursor=pointer]:
+                  - /url: /floatlabel/
+                  - generic [ref=e87]: FloatLabel
+              - listitem [ref=e88]:
+                - link "IconField" [ref=e89] [cursor=pointer]:
+                  - /url: /iconfield/
+                  - generic [ref=e90]: IconField
+              - listitem [ref=e91]:
+                - link "IftaLabel" [ref=e92] [cursor=pointer]:
+                  - /url: /iftalabel/
+                  - generic [ref=e93]: IftaLabel
+              - listitem [ref=e94]:
+                - link "InputColor" [ref=e95] [cursor=pointer]:
+                  - /url: /inputcolor/
+                  - generic [ref=e96]: InputColor
+              - listitem [ref=e97]:
+                - link "InputGroup" [ref=e98] [cursor=pointer]:
+                  - /url: /inputgroup/
+                  - generic [ref=e99]: InputGroup
+              - listitem [ref=e100]:
+                - link "InputNumber" [ref=e101] [cursor=pointer]:
+                  - /url: /inputnumber/
+                  - generic [ref=e102]: InputNumber
+              - listitem [ref=e103]:
+                - link "InputOtp" [ref=e104] [cursor=pointer]:
+                  - /url: /inputotp/
+                  - generic [ref=e105]: InputOtp
+              - listitem [ref=e106]:
+                - link "InputPassword" [ref=e107] [cursor=pointer]:
+                  - /url: /inputpassword/
+                  - generic [ref=e108]: InputPassword
+              - listitem [ref=e109]:
+                - link "InputTags" [ref=e110] [cursor=pointer]:
+                  - /url: /inputtags/
+                  - generic [ref=e111]: InputTags
+              - listitem [ref=e112]:
+                - link "InputText" [ref=e113] [cursor=pointer]:
+                  - /url: /inputtext/
+                  - generic [ref=e114]: InputText
+              - listitem [ref=e115]:
+                - link "KeyFilter" [ref=e116] [cursor=pointer]:
+                  - /url: /keyfilter/
+                  - generic [ref=e117]: KeyFilter
+              - listitem [ref=e118]:
+                - link "Knob" [ref=e119] [cursor=pointer]:
+                  - /url: /knob/
+                  - generic [ref=e120]: Knob
+              - listitem [ref=e121]:
+                - link "Label" [ref=e122] [cursor=pointer]:
+                  - /url: /label/
+                  - generic [ref=e123]: Label
+              - listitem [ref=e124]:
+                - link "Listbox" [ref=e125] [cursor=pointer]:
+                  - /url: /listbox/
+                  - generic [ref=e126]: Listbox
+              - listitem [ref=e127]:
+                - link "Mask" [ref=e128] [cursor=pointer]:
+                  - /url: /mask/
+                  - generic [ref=e129]: Mask
+              - listitem [ref=e130]:
+                - link "RadioButton" [ref=e131] [cursor=pointer]:
+                  - /url: /radiobutton/
+                  - generic [ref=e132]: RadioButton
+              - listitem [ref=e133]:
+                - link "Rating" [ref=e134] [cursor=pointer]:
+                  - /url: /rating/
+                  - generic [ref=e135]: Rating
+              - listitem [ref=e136]:
+                - link "Select" [ref=e137] [cursor=pointer]:
+                  - /url: /select/
+                  - generic [ref=e138]: Select
+              - listitem [ref=e139]:
+                - link "SelectButton" [ref=e140] [cursor=pointer]:
+                  - /url: /selectbutton/
+                  - generic [ref=e141]: SelectButton
+              - listitem [ref=e142]:
+                - link "Slider" [ref=e143] [cursor=pointer]:
+                  - /url: /slider/
+                  - generic [ref=e144]: Slider
+              - listitem [ref=e145]:
+                - link "Textarea" [ref=e146] [cursor=pointer]:
+                  - /url: /textarea/
+                  - generic [ref=e147]: Textarea
+              - listitem [ref=e148]:
+                - link "ToggleButton" [ref=e149] [cursor=pointer]:
+                  - /url: /togglebutton/
+                  - generic [ref=e150]: ToggleButton
+              - listitem [ref=e151]:
+                - link "ToggleSwitch" [ref=e152] [cursor=pointer]:
+                  - /url: /toggleswitch/
+                  - generic [ref=e153]: ToggleSwitch
+              - listitem [ref=e154]:
+                - link "TreeSelect" [ref=e155] [cursor=pointer]:
+                  - /url: /treeselect/
+                  - generic [ref=e156]: TreeSelect
+          - listitem [ref=e157]:
+            - generic [ref=e158]: Button
+            - list [ref=e160]:
+              - listitem [ref=e161]:
+                - link "Button" [ref=e162] [cursor=pointer]:
+                  - /url: /button/
+                  - generic [ref=e163]: Button
+              - listitem [ref=e164]:
+                - link "SpeedDial" [ref=e165] [cursor=pointer]:
+                  - /url: /speeddial/
+                  - generic [ref=e166]: SpeedDial
+              - listitem [ref=e167]:
+                - link "SplitButton" [ref=e168] [cursor=pointer]:
+                  - /url: /splitbutton/
+                  - generic [ref=e169]: SplitButton
+          - listitem [ref=e170]:
+            - generic [ref=e171]: Data
+            - list [ref=e173]:
+              - listitem [ref=e174]:
+                - link "DataTable" [ref=e175] [cursor=pointer]:
+                  - /url: /datatable/
+                  - generic [ref=e176]: DataTable
+              - listitem [ref=e177]:
+                - link "DataView" [ref=e178] [cursor=pointer]:
+                  - /url: /dataview/
+                  - generic [ref=e179]: DataView
+              - listitem [ref=e180]:
+                - link "OrderList" [ref=e181] [cursor=pointer]:
+                  - /url: /orderlist/
+                  - generic [ref=e182]: OrderList
+              - listitem [ref=e183]:
+                - link "OrgChart" [ref=e184] [cursor=pointer]:
+                  - /url: /organizationchart/
+                  - generic [ref=e185]: OrgChart
+              - listitem [ref=e186]:
+                - link "Paginator" [ref=e187] [cursor=pointer]:
+                  - /url: /paginator/
+                  - generic [ref=e188]: Paginator
+              - listitem [ref=e189]:
+                - link "PickList" [ref=e190] [cursor=pointer]:
+                  - /url: /picklist/
+                  - generic [ref=e191]: PickList
+              - listitem [ref=e192]:
+                - link "Timeline" [ref=e193] [cursor=pointer]:
+                  - /url: /timeline/
+                  - generic [ref=e194]: Timeline
+              - listitem [ref=e195]:
+                - link "Tree" [ref=e196] [cursor=pointer]:
+                  - /url: /tree/
+                  - generic [ref=e197]: Tree
+              - listitem [ref=e198]:
+                - link "TreeTable" [ref=e199] [cursor=pointer]:
+                  - /url: /treetable/
+                  - generic [ref=e200]: TreeTable
+              - listitem [ref=e201]:
+                - link "VirtualScroller" [ref=e202] [cursor=pointer]:
+                  - /url: /virtualscroller/
+                  - generic [ref=e203]: VirtualScroller
+          - listitem [ref=e204]:
+            - generic [ref=e205]: Panel
+            - list [ref=e207]:
+              - listitem [ref=e208]:
+                - link "Accordion" [ref=e209] [cursor=pointer]:
+                  - /url: /accordion/
+                  - generic [ref=e210]: Accordion
+              - listitem [ref=e211]:
+                - link "Card" [ref=e212] [cursor=pointer]:
+                  - /url: /card/
+                  - generic [ref=e213]: Card
+              - listitem [ref=e214]:
+                - link "Deferred" [ref=e215] [cursor=pointer]:
+                  - /url: /deferredcontent/
+                  - generic [ref=e216]: Deferred
+              - listitem [ref=e217]:
+                - link "Divider" [ref=e218] [cursor=pointer]:
+                  - /url: /divider/
+                  - generic [ref=e219]: Divider
+              - listitem [ref=e220]:
+                - link "Fieldset" [ref=e221] [cursor=pointer]:
+                  - /url: /fieldset/
+                  - generic [ref=e222]: Fieldset
+              - listitem [ref=e223]:
+                - link "Panel" [ref=e224] [cursor=pointer]:
+                  - /url: /panel/
+                  - generic [ref=e225]: Panel
+              - listitem [ref=e226]:
+                - link "ScrollArea" [ref=e227] [cursor=pointer]:
+                  - /url: /scrollarea/
+                  - generic [ref=e228]: ScrollArea
+              - listitem [ref=e229]:
+                - link "Splitter" [ref=e230] [cursor=pointer]:
+                  - /url: /splitter/
+                  - generic [ref=e231]: Splitter
+              - listitem [ref=e232]:
+                - link "Stepper" [ref=e233] [cursor=pointer]:
+                  - /url: /stepper/
+                  - generic [ref=e234]: Stepper
+              - listitem [ref=e235]:
+                - link "Tabs" [ref=e236] [cursor=pointer]:
+                  - /url: /tabs/
+                  - generic [ref=e237]: Tabs
+              - listitem [ref=e238]:
+                - link "Toolbar" [ref=e239] [cursor=pointer]:
+                  - /url: /toolbar/
+                  - generic [ref=e240]: Toolbar
+          - listitem [ref=e241]:
+            - generic [ref=e242]: Overlay
+            - list [ref=e244]:
+              - listitem [ref=e245]:
+                - link "ConfirmDialog" [ref=e246] [cursor=pointer]:
+                  - /url: /confirmdialog/
+                  - generic [ref=e247]: ConfirmDialog
+              - listitem [ref=e248]:
+                - link "ConfirmPopup" [ref=e249] [cursor=pointer]:
+                  - /url: /confirmpopup/
+                  - generic [ref=e250]: ConfirmPopup
+              - listitem [ref=e251]:
+                - link "Dialog" [ref=e252] [cursor=pointer]:
+                  - /url: /dialog/
+                  - generic [ref=e253]: Dialog
+              - listitem [ref=e254]:
+                - link "Drawer" [ref=e255] [cursor=pointer]:
+                  - /url: /drawer/
+                  - generic [ref=e256]: Drawer
+              - listitem [ref=e257]:
+                - link "DynamicDialog" [ref=e258] [cursor=pointer]:
+                  - /url: /dynamicdialog/
+                  - generic [ref=e259]: DynamicDialog
+              - listitem [ref=e260]:
+                - link "Popover" [ref=e261] [cursor=pointer]:
+                  - /url: /popover/
+                  - generic [ref=e262]: Popover
+              - listitem [ref=e263]:
+                - link "Tooltip" [ref=e264] [cursor=pointer]:
+                  - /url: /tooltip/
+                  - generic [ref=e265]: Tooltip
+          - listitem [ref=e266]:
+            - generic [ref=e267]: File
+            - list [ref=e269]:
+              - listitem [ref=e270]:
+                - link "Upload" [ref=e271] [cursor=pointer]:
+                  - /url: /fileupload/
+                  - generic [ref=e272]: Upload
+          - listitem [ref=e273]:
+            - generic [ref=e274]: Menu
+            - list [ref=e276]:
+              - listitem [ref=e277]:
+                - link "Breadcrumb" [ref=e278] [cursor=pointer]:
+                  - /url: /breadcrumb/
+                  - generic [ref=e279]: Breadcrumb
+              - listitem [ref=e280]:
+                - link "CommandMenu" [ref=e281] [cursor=pointer]:
+                  - /url: /commandmenu/
+                  - generic [ref=e282]: CommandMenu
+              - listitem [ref=e283]:
+                - link "ContextMenu" [ref=e284] [cursor=pointer]:
+                  - /url: /contextmenu/
+                  - generic [ref=e285]: ContextMenu
+              - listitem [ref=e286]:
+                - link "Dock" [ref=e287] [cursor=pointer]:
+                  - /url: /dock/
+                  - generic [ref=e288]: Dock
+              - listitem [ref=e289]:
+                - link "MegaMenu" [ref=e290] [cursor=pointer]:
+                  - /url: /megamenu/
+                  - generic [ref=e291]: MegaMenu
+              - listitem [ref=e292]:
+                - link "Menu" [ref=e293] [cursor=pointer]:
+                  - /url: /menu/
+                  - generic [ref=e294]: Menu
+              - listitem [ref=e295]:
+                - link "Menubar" [ref=e296] [cursor=pointer]:
+                  - /url: /menubar/
+                  - generic [ref=e297]: Menubar
+              - listitem [ref=e298]:
+                - link "Sidebar" [ref=e299] [cursor=pointer]:
+                  - /url: /sidebar/
+                  - generic [ref=e300]: Sidebar
+              - listitem [ref=e301]:
+                - link "TieredMenu" [ref=e302] [cursor=pointer]:
+                  - /url: /tieredmenu/
+                  - generic [ref=e303]: TieredMenu
+          - listitem [ref=e304]:
+            - generic [ref=e305]: Messages
+            - list [ref=e307]:
+              - listitem [ref=e308]:
+                - link "Message" [ref=e309] [cursor=pointer]:
+                  - /url: /message/
+                  - generic [ref=e310]: Message
+              - listitem [ref=e311]:
+                - link "Toast" [ref=e312] [cursor=pointer]:
+                  - /url: /toast/
+                  - generic [ref=e313]: Toast
+          - listitem [ref=e314]:
+            - generic [ref=e315]: Media
+            - list [ref=e317]:
+              - listitem [ref=e318]:
+                - link "Carousel" [ref=e319] [cursor=pointer]:
+                  - /url: /carousel/
+                  - generic [ref=e320]: Carousel
+              - listitem [ref=e321]:
+                - link "Compare" [ref=e322] [cursor=pointer]:
+                  - /url: /compare/
+                  - generic [ref=e323]: Compare
+              - listitem [ref=e324]:
+                - link "Gallery" [ref=e325] [cursor=pointer]:
+                  - /url: /gallery/
+                  - generic [ref=e326]: Gallery
+          - listitem [ref=e327]:
+            - generic [ref=e328]: Misc
+            - list [ref=e330]:
+              - listitem [ref=e331]:
+                - link "AnimateOnScroll" [ref=e332] [cursor=pointer]:
+                  - /url: /animateonscroll/
+                  - generic [ref=e333]: AnimateOnScroll
+              - listitem [ref=e334]:
+                - link "Avatar" [ref=e335] [cursor=pointer]:
+                  - /url: /avatar/
+                  - generic [ref=e336]: Avatar
+              - listitem [ref=e337]:
+                - link "Badge" [ref=e338] [cursor=pointer]:
+                  - /url: /badge/
+                  - generic [ref=e339]: Badge
+              - listitem [ref=e340]:
+                - link "BlockUI" [ref=e341] [cursor=pointer]:
+                  - /url: /blockui/
+                  - generic [ref=e342]: BlockUI
+              - listitem [ref=e343]:
+                - link "Chip" [ref=e344] [cursor=pointer]:
+                  - /url: /chip/
+                  - generic [ref=e345]: Chip
+              - listitem [ref=e346]:
+                - link "Fluid" [ref=e347] [cursor=pointer]:
+                  - /url: /fluid/
+                  - generic [ref=e348]: Fluid
+              - listitem [ref=e349]:
+                - link "FocusTrap" [ref=e350] [cursor=pointer]:
+                  - /url: /focustrap/
+                  - generic [ref=e351]: FocusTrap
+              - listitem [ref=e352]:
+                - link "Inplace" [ref=e353] [cursor=pointer]:
+                  - /url: /inplace/
+                  - generic [ref=e354]: Inplace
+              - listitem [ref=e355]:
+                - link "MeterGroup" [ref=e356] [cursor=pointer]:
+                  - /url: /metergroup/
+                  - generic [ref=e357]: MeterGroup
+              - listitem [ref=e358]:
+                - link "ProgressBar" [ref=e359] [cursor=pointer]:
+                  - /url: /progressbar/
+                  - generic [ref=e360]: ProgressBar
+              - listitem [ref=e361]:
+                - link "ProgressSpinner" [ref=e362] [cursor=pointer]:
+                  - /url: /progressspinner/
+                  - generic [ref=e363]: ProgressSpinner
+              - listitem [ref=e364]:
+                - link "Ripple" [ref=e365] [cursor=pointer]:
+                  - /url: /ripple/
+                  - generic [ref=e366]: Ripple
+              - listitem [ref=e367]:
+                - link "ScrollTop" [ref=e368] [cursor=pointer]:
+                  - /url: /scrolltop/
+                  - generic [ref=e369]: ScrollTop
+              - listitem [ref=e370]:
+                - link "Skeleton" [ref=e371] [cursor=pointer]:
+                  - /url: /skeleton/
+                  - generic [ref=e372]: Skeleton
+              - listitem [ref=e373]:
+                - link "StyleClass" [ref=e374] [cursor=pointer]:
+                  - /url: /styleclass/
+                  - generic [ref=e375]: StyleClass
+              - listitem [ref=e376]:
+                - link "Tag" [ref=e377] [cursor=pointer]:
+                  - /url: /tag/
+                  - generic [ref=e378]: Tag
+              - listitem [ref=e379]:
+                - link "Terminal" [ref=e380] [cursor=pointer]:
+                  - /url: /terminal/
+                  - generic [ref=e381]: Terminal
+    - generic [ref=e384]:
+      - generic [ref=e386]:
+        - generic [ref=e388]:
+          - generic [ref=e389]:
+            - link "Components" [ref=e390] [cursor=pointer]:
+              - /url: /components
+            - img [ref=e391]
+            - generic [ref=e393]: Menu
+          - heading "Sidebar" [level=1] [ref=e394]
+          - paragraph [ref=e395]: Sidebar is a compound navigation panel with collapsible icon mode, offcanvas mode, variants and optional overlay.
+        - generic [ref=e398]:
+          - generic [ref=e401]:
+            - generic [ref=e404]:
+              - list [ref=e406]:
+                - listitem [ref=e407]:
+                  - button "A Acme Inc" [ref=e408] [cursor=pointer]:
+                    - generic [ref=e409]: A
+                    - generic [ref=e410]: Acme Inc
+              - generic [ref=e411]:
+                - generic [ref=e412]:
+                  - generic [ref=e413]: Navigation
+                  - list [ref=e415]:
+                    - listitem [ref=e416]:
+                      - button "Home" [ref=e417] [cursor=pointer]:
+                        - img [ref=e418]
+                        - generic [ref=e420]: Home
+                      - button [ref=e421] [cursor=pointer]:
+                        - img [ref=e422]
+                    - listitem [ref=e424]:
+                      - button "Inbox" [ref=e425] [cursor=pointer]:
+                        - img [ref=e426]
+                        - generic [ref=e428]: Inbox
+                      - generic: "12"
+                    - listitem [ref=e429]:
+                      - button "Search" [ref=e430] [cursor=pointer]:
+                        - img [ref=e431]
+                        - generic [ref=e433]: Search
+                      - button [ref=e434] [cursor=pointer]:
+                        - img [ref=e435]
+                    - listitem [ref=e437]:
+                      - button "Notifications" [ref=e438] [cursor=pointer]:
+                        - img [ref=e439]
+                        - generic [ref=e441]: Notifications
+                      - generic: "3"
+                - generic [ref=e442]:
+                  - generic [ref=e443]: Projects
+                  - button [ref=e444] [cursor=pointer]:
+                    - img [ref=e445]
+                  - list [ref=e448]:
+                    - listitem [ref=e449]:
+                      - button "Analytics" [expanded] [ref=e450] [cursor=pointer]:
+                        - img [ref=e451]
+                        - generic [ref=e453]: Analytics
+                        - img [ref=e454]
+                      - list [ref=e456]:
+                        - listitem [ref=e457]:
+                          - button "Overview" [ref=e458] [cursor=pointer]:
+                            - generic [ref=e459]: Overview
+                        - listitem [ref=e460]:
+                          - button "Reports" [ref=e461] [cursor=pointer]:
+                            - generic [ref=e462]: Reports
+                        - listitem [ref=e463]:
+                          - button "Real-time" [ref=e464] [cursor=pointer]:
+                            - generic [ref=e465]: Real-time
+                    - listitem [ref=e466]:
+                      - button "Team" [ref=e467] [cursor=pointer]:
+                        - img [ref=e468]
+                        - generic [ref=e470]: Team
+                      - button [ref=e471] [cursor=pointer]:
+                        - img [ref=e472]
+                    - listitem [ref=e474]:
+                      - button "Calendar" [ref=e475] [cursor=pointer]:
+                        - img [ref=e476]
+                        - generic [ref=e478]: Calendar
+                      - button [ref=e479] [cursor=pointer]:
+                        - img [ref=e480]
+                    - listitem [ref=e482]:
+                      - button "Documents" [ref=e483] [cursor=pointer]:
+                        - img [ref=e484]
+                        - generic [ref=e486]: Documents
+                        - img [ref=e487]
+                - generic [ref=e499]:
+                  - generic [ref=e500]: Billing
+                  - list [ref=e502]:
+                    - listitem [ref=e503]:
+                      - button "Payments" [ref=e504] [cursor=pointer]:
+                        - img [ref=e505]
+                        - generic [ref=e507]: Payments
+                      - button [ref=e508] [cursor=pointer]:
+                        - img [ref=e509]
+                    - listitem [ref=e511]:
+                      - button "Orders" [ref=e512] [cursor=pointer]:
+                        - img [ref=e513]
+                        - generic [ref=e515]: Orders
+                      - button [ref=e516] [cursor=pointer]:
+                        - img [ref=e517]
+                    - listitem [ref=e519]:
+                      - button "Subscriptions" [ref=e520] [cursor=pointer]:
+                        - img [ref=e521]
+                        - generic [ref=e523]: Subscriptions
+                      - button [ref=e524] [cursor=pointer]:
+                        - img [ref=e525]
+              - list [ref=e528]:
+                - listitem [ref=e529]:
+                  - button "JD John Doe" [ref=e530] [cursor=pointer]:
+                    - generic [ref=e532]: JD
+                    - generic [ref=e533]: John Doe
+              - button "Toggle Sidebar" [ref=e534]
+            - main [ref=e535]:
+              - button [ref=e537] [cursor=pointer]:
+                - img [ref=e538]
+          - generic [ref=e543]:
+            - generic [ref=e544]: PREVIEW
+            - generic [ref=e545]:
+              - button [ref=e546] [cursor=pointer]:
+                - img [ref=e547]
+              - button [ref=e549] [cursor=pointer]:
+                - img [ref=e550]
+              - button [ref=e552] [cursor=pointer]:
+                - img [ref=e553]
+        - generic [ref=e555]:
+          - heading "Usage" [level=2] [ref=e556]
+          - code [ref=e1547]:
+            - generic [ref=e1548]: import Sidebar from 'primevue/sidebar';
+            - generic [ref=e1549]: import SidebarBackdrop from 'primevue/sidebarbackdrop';
+            - generic [ref=e1550]: import SidebarAside from 'primevue/sidebaraside';
+            - generic [ref=e1551]: import SidebarContent from 'primevue/sidebarcontent';
+            - generic [ref=e1552]: import SidebarFooter from 'primevue/sidebarfooter';
+            - generic [ref=e1553]: import SidebarGroup from 'primevue/sidebargroup';
+            - generic [ref=e1554]: import SidebarGroupAction from 'primevue/sidebargroupaction';
+            - generic [ref=e1555]: import SidebarGroupContent from 'primevue/sidebargroupcontent';
+            - generic [ref=e1556]: import SidebarGroupLabel from 'primevue/sidebargrouplabel';
+            - generic [ref=e1557]: import SidebarHeader from 'primevue/sidebarheader';
+            - generic [ref=e1558]: import SidebarMain from 'primevue/sidebarmain';
+            - generic [ref=e1559]: import SidebarLayout from 'primevue/sidebarlayout';
+            - generic [ref=e1560]: import SidebarMenu from 'primevue/sidebarmenu';
+            - generic [ref=e1561]: import SidebarMenuAction from 'primevue/sidebarmenuaction';
+            - generic [ref=e1562]: import SidebarMenuBadge from 'primevue/sidebarmenubadge';
+            - generic [ref=e1563]: import SidebarMenuButton from 'primevue/sidebarmenubutton';
+            - generic [ref=e1564]: import SidebarMenuItem from 'primevue/sidebarmenuitem';
+            - generic [ref=e1565]: import SidebarMenuSub from 'primevue/sidebarmenusub';
+            - generic [ref=e1566]: import SidebarMenuSubButton from 'primevue/sidebarmenusubbutton';
+            - generic [ref=e1567]: import SidebarMenuSubItem from 'primevue/sidebarmenusubitem';
+            - generic [ref=e1568]: import SidebarPanel from 'primevue/sidebarpanel';
+            - generic [ref=e1569]: import SidebarRail from 'primevue/sidebarrail';
+            - generic [ref=e1570]: import SidebarSpacer from 'primevue/sidebarspacer';
+            - generic [ref=e1571]: import SidebarTrigger from 'primevue/sidebartrigger';
+          - code [ref=e1575]:
+            - generic [ref=e1576]: <template>
+            - generic [ref=e1577]: <SidebarLayout>
+            - generic [ref=e1578]: <Sidebar>
+            - generic [ref=e1579]: <SidebarSpacer />
+            - generic [ref=e1580]: <SidebarAside>
+            - generic [ref=e1581]: <SidebarPanel>
+            - generic [ref=e1582]: <SidebarHeader>...</SidebarHeader>
+            - generic [ref=e1583]: <SidebarContent>...</SidebarContent>
+            - generic [ref=e1584]: <SidebarFooter>...</SidebarFooter>
+            - generic [ref=e1585]: </SidebarPanel>
+            - generic [ref=e1586]: </SidebarAside>
+            - generic [ref=e1587]: </Sidebar>
+            - generic [ref=e1588]: <SidebarMain>
+            - generic [ref=e1589]: <SidebarTrigger></SidebarTrigger>
+            - generic [ref=e1590]: </SidebarMain>
+            - generic [ref=e1591]: </SidebarLayout>
+            - generic [ref=e1592]: </template>
+        - generic [ref=e557]:
+          - heading "Examples" [level=2] [ref=e559]
+          - heading "Variants" [level=3] [ref=e560]
+          - paragraph [ref=e562]:
+            - text: Interactive playground for every sidebar
+            - code [ref=e563]: variant
+            - text: ","
+            - code [ref=e564]: collapsible
+            - text: mode,
+            - code [ref=e565]: side
+            - text: ","
+            - code [ref=e566]: overlay
+            - text: ", open-on-hover and backdrop."
+          - generic [ref=e567]:
+            - generic [ref=e568]:
+              - generic [ref=e570]:
+                - generic [ref=e571]:
+                  - generic [ref=e572] [cursor=pointer]:
+                    - combobox "Sidebar" [ref=e573]
+                    - img [ref=e575]
+                  - generic [ref=e577] [cursor=pointer]:
+                    - combobox "Icon" [ref=e578]
+                    - img [ref=e580]
+                  - group [ref=e582]:
+                    - button "Left" [pressed] [ref=e583] [cursor=pointer]:
+                      - generic [ref=e585]: Left
+                    - button "Right" [ref=e586] [cursor=pointer]:
+                      - generic [ref=e588]: Right
+                  - generic [ref=e589]:
+                    - checkbox "Overlay" [ref=e591] [cursor=pointer]
+                    - generic [ref=e593] [cursor=pointer]: Overlay
+                  - generic [ref=e594]:
+                    - checkbox "Open on Hover" [ref=e596] [cursor=pointer]
+                    - generic [ref=e598] [cursor=pointer]: Open on Hover
+                  - generic [ref=e599]:
+                    - checkbox "Backdrop" [ref=e601] [cursor=pointer]
+                    - generic [ref=e603] [cursor=pointer]: Backdrop
+                - generic [ref=e605]:
+                  - generic [ref=e608]:
+                    - list [ref=e610]:
+                      - listitem [ref=e611]:
+                        - button "A Acme Inc" [ref=e612] [cursor=pointer]:
+                          - generic [ref=e613]: A
+                          - generic [ref=e614]: Acme Inc
+                    - generic [ref=e615]:
+                      - generic [ref=e616]:
+                        - generic [ref=e617]: Navigation
+                        - list [ref=e619]:
+                          - listitem [ref=e620]:
+                            - button "Home" [ref=e621] [cursor=pointer]:
+                              - img [ref=e622]
+                              - generic [ref=e624]: Home
+                            - button [ref=e625] [cursor=pointer]:
+                              - img [ref=e626]
+                          - listitem [ref=e628]:
+                            - button "Inbox" [ref=e629] [cursor=pointer]:
+                              - img [ref=e630]
+                              - generic [ref=e632]: Inbox
+                            - generic: "12"
+                          - listitem [ref=e633]:
+                            - button "Search" [ref=e634] [cursor=pointer]:
+                              - img [ref=e635]
+                              - generic [ref=e637]: Search
+                            - button [ref=e638] [cursor=pointer]:
+                              - img [ref=e639]
+                          - listitem [ref=e641]:
+                            - button "Notifications" [ref=e642] [cursor=pointer]:
+                              - img [ref=e643]
+                              - generic [ref=e645]: Notifications
+                            - generic: "3"
+                      - generic [ref=e646]:
+                        - generic [ref=e647]: Projects
+                        - list [ref=e649]:
+                          - listitem [ref=e650]:
+                            - button "Analytics" [expanded] [ref=e651] [cursor=pointer]:
+                              - img [ref=e652]
+                              - generic [ref=e654]: Analytics
+                              - img [ref=e655]
+                            - list [ref=e657]:
+                              - listitem [ref=e658]:
+                                - button "Overview" [ref=e659] [cursor=pointer]:
+                                  - generic [ref=e660]: Overview
+                              - listitem [ref=e661]:
+                                - button "Reports" [ref=e662] [cursor=pointer]:
+                                  - generic [ref=e663]: Reports
+                              - listitem [ref=e664]:
+                                - button "Real-time" [ref=e665] [cursor=pointer]:
+                                  - generic [ref=e666]: Real-time
+                          - listitem [ref=e667]:
+                            - button "Team" [ref=e668] [cursor=pointer]:
+                              - img [ref=e669]
+                              - generic [ref=e671]: Team
+                            - button [ref=e672] [cursor=pointer]:
+                              - img [ref=e673]
+                          - listitem [ref=e675]:
+                            - button "Calendar" [ref=e676] [cursor=pointer]:
+                              - img [ref=e677]
+                              - generic [ref=e679]: Calendar
+                            - button [ref=e680] [cursor=pointer]:
+                              - img [ref=e681]
+                          - listitem [ref=e683]:
+                            - button "Documents" [ref=e684] [cursor=pointer]:
+                              - img [ref=e685]
+                              - generic [ref=e687]: Documents
+                              - img [ref=e688]
+                      - generic [ref=e700]:
+                        - generic [ref=e701]: Billing
+                        - list [ref=e703]:
+                          - listitem [ref=e704]:
+                            - button "Payments" [ref=e705] [cursor=pointer]:
+                              - img [ref=e706]
+                              - generic [ref=e708]: Payments
+                            - button [ref=e709] [cursor=pointer]:
+                              - img [ref=e710]
+                          - listitem [ref=e712]:
+                            - button "Orders" [ref=e713] [cursor=pointer]:
+                              - img [ref=e714]
+                              - generic [ref=e716]: Orders
+                            - button [ref=e717] [cursor=pointer]:
+                              - img [ref=e718]
+                          - listitem [ref=e720]:
+                            - button "Subscriptions" [ref=e721] [cursor=pointer]:
+                              - img [ref=e722]
+                              - generic [ref=e724]: Subscriptions
+                            - button [ref=e725] [cursor=pointer]:
+                              - img [ref=e726]
+                    - list [ref=e729]:
+                      - listitem [ref=e730]:
+                        - button "JD John Doe" [ref=e731] [cursor=pointer]:
+                          - generic [ref=e733]: JD
+                          - generic [ref=e734]: John Doe
+                    - button "Toggle Sidebar" [ref=e735]
+                  - main [ref=e736]:
+                    - button [ref=e738] [cursor=pointer]:
+                      - img [ref=e739]
+              - generic [ref=e744]:
+                - generic [ref=e745]: sidebar-variants-demo
+                - generic [ref=e746]:
+                  - button [ref=e747] [cursor=pointer]:
+                    - img [ref=e748]
+                  - button [ref=e750] [cursor=pointer]:
+                    - img [ref=e751]
+                  - button [ref=e753] [cursor=pointer]:
+                    - img [ref=e754]
+            - code [ref=e1598]:
+              - generic [ref=e1599]: <template>
+              - generic [ref=e1600]: <div>
+              - generic [ref=e1601]: <div class="flex flex-wrap items-center gap-4 mb-4">
+              - generic [ref=e1602]: <Select v-model="variant" :options="variantOptions" optionLabel="label" optionValue="value" placeholder="Variant" class="w-40" />
+              - generic [ref=e1603]: <Select v-model="collapsible" :options="collapsibleOptions" optionLabel="label" optionValue="value" placeholder="Collapsible" class="w-40" />
+              - generic [ref=e1604]: <SelectButton v-model="side" :options="sideOptions" optionLabel="label" optionValue="value" :allowEmpty="false" />
+              - generic [ref=e1605]: <div class="flex items-center gap-2">
+              - generic [ref=e1606]: <Checkbox v-model="overlay" inputId="overlay-cb" :binary="true" />
+              - generic [ref=e1607]: <Label for="overlay-cb" class="text-sm! font-medium cursor-pointer">Overlay</Label>
+              - generic [ref=e1608]: </div>
+              - generic [ref=e1609]: <div class="flex items-center gap-2">
+              - generic [ref=e1610]: <Checkbox v-model="openOnHover" inputId="hover-cb" :binary="true" />
+              - generic [ref=e1611]: <Label for="hover-cb" class="text-sm! font-medium cursor-pointer">Open on Hover</Label>
+              - generic [ref=e1612]: </div>
+              - generic [ref=e1613]: <div class="flex items-center gap-2">
+              - generic [ref=e1614]: <Checkbox v-model="backdrop" inputId="backdrop-cb" :binary="true" />
+              - generic [ref=e1615]: <Label for="backdrop-cb" class="text-sm! font-medium cursor-pointer">Backdrop</Label>
+              - generic [ref=e1616]: </div>
+              - generic [ref=e1617]: </div>
+              - generic [ref=e1618]: <div class="border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
+              - generic [ref=e1619]: <SidebarLayout class="min-h-192! relative!">
+              - generic [ref=e1620]: <SidebarBackdrop v-if="(backdrop || isMobile) && open" class="absolute!" />
+              - generic [ref=e1621]: <SidebarMain v-if="side === 'right'">
+              - generic [ref=e1622]: <header class="flex h-12 items-center gap-2 border-b border-surface-200 dark:border-surface-700 px-4">
+              - generic [ref=e1623]: <SidebarTrigger severity="secondary" target="variants-demo" :text="true" size="small">
+              - generic [ref=e1624]: <SidebarIcon />
+              - generic [ref=e1625]: </SidebarTrigger>
+              - generic [ref=e1626]: </header>
+              - generic [ref=e1627]: <div class="flex-1 p-4 flex flex-col gap-4">
+              - generic [ref=e1628]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 h-48"></div>
+              - generic [ref=e1629]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 flex-1"></div>
+              - generic [ref=e1630]: </div>
+              - generic [ref=e1631]: </SidebarMain>
+              - generic [ref=e1632]: "<Sidebar id=\"variants-demo\" :variant=\"variant\" :collapsible=\"isMobile ? 'offcanvas' : collapsible\" :side=\"side\" :overlay=\"isMobile || overlay\" :openOnHover=\"openOnHover\" v-model:open=\"open\">"
+              - generic [ref=e1633]: <SidebarSpacer />
+              - generic [ref=e1634]: <SidebarAside>
+              - generic [ref=e1635]: <SidebarPanel>
+              - generic [ref=e1636]: <SidebarHeader>
+              - generic [ref=e1637]: <SidebarMenu>
+              - generic [ref=e1638]: <SidebarMenuItem>
+              - generic [ref=e1639]: <SidebarMenuButton class="px-1!">
+              - generic [ref=e1640]: <div class="flex size-6 shrink-0 items-center justify-center rounded-md bg-linear-to-br from-violet-500 to-indigo-600 text-white text-xs font-bold leading-none">A</div>
+              - generic [ref=e1641]: <span class="font-semibold text-sm">Acme Inc</span>
+              - generic [ref=e1642]: </SidebarMenuButton>
+              - generic [ref=e1643]: </SidebarMenuItem>
+              - generic [ref=e1644]: </SidebarMenu>
+              - generic [ref=e1645]: </SidebarHeader>
+              - generic [ref=e1646]: <SidebarContent>
+              - generic [ref=e1647]: <SidebarGroup v-for="group in navGroups" :key="group.label">
+              - generic [ref=e1648]: "<SidebarGroupLabel>{{ group.label }}</SidebarGroupLabel>"
+              - generic [ref=e1649]: <SidebarGroupContent>
+              - generic [ref=e1650]: <SidebarMenu>
+              - generic [ref=e1651]: "<SidebarMenuItem v-for=\"item in group.items\" :key=\"item.label\" :collapsible=\"!!item.subItems\" :defaultOpen=\"item.subItems ? item.subItems.some((s) => s.isActive) : undefined\">"
+              - generic [ref=e1652]: <SidebarMenuButton :isActive="item.isActive">
+              - generic [ref=e1653]: <component :is="item.icon" />
+              - generic [ref=e1654]: "<span>{{ item.label }}</span>"
+              - generic [ref=e1655]: <ChevronDown v-if="item.subItems" class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e1656]: </SidebarMenuButton>
+              - generic [ref=e1657]: "<SidebarMenuBadge v-if=\"item.badge\">{{ item.badge }}</SidebarMenuBadge>"
+              - generic [ref=e1658]: <SidebarMenuSub v-if="item.subItems">
+              - generic [ref=e1659]: <SidebarMenuSubItem v-for="sub in item.subItems" :key="sub.label">
+              - generic [ref=e1660]: <SidebarMenuSubButton :isActive="sub.isActive">
+              - generic [ref=e1661]: "<span>{{ sub.label }}</span>"
+              - generic [ref=e1662]: </SidebarMenuSubButton>
+              - generic [ref=e1663]: </SidebarMenuSubItem>
+              - generic [ref=e1664]: </SidebarMenuSub>
+              - generic [ref=e1665]: <SidebarMenuAction v-else-if="!item.badge" :showOnHover="true">
+              - generic [ref=e1666]: <EllipsisV />
+              - generic [ref=e1667]: </SidebarMenuAction>
+              - generic [ref=e1668]: </SidebarMenuItem>
+              - generic [ref=e1669]: </SidebarMenu>
+              - generic [ref=e1670]: </SidebarGroupContent>
+              - generic [ref=e1671]: </SidebarGroup>
+              - generic [ref=e1672]: </SidebarContent>
+              - generic [ref=e1673]: <SidebarFooter>
+              - generic [ref=e1674]: <SidebarMenu>
+              - generic [ref=e1675]: <SidebarMenuItem>
+              - generic [ref=e1676]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e1677]: <Avatar label="JD" shape="circle" class="size-6 shrink-0 text-xs" />
+              - generic [ref=e1678]: <span>John Doe</span>
+              - generic [ref=e1679]: </SidebarMenuButton>
+              - generic [ref=e1680]: </SidebarMenuItem>
+              - generic [ref=e1681]: </SidebarMenu>
+              - generic [ref=e1682]: </SidebarFooter>
+              - generic [ref=e1683]: <SidebarRail />
+              - generic [ref=e1684]: </SidebarPanel>
+              - generic [ref=e1685]: </SidebarAside>
+              - generic [ref=e1686]: </Sidebar>
+              - generic [ref=e1687]: <SidebarMain v-if="side === 'left'">
+              - generic [ref=e1688]: <header class="flex h-12 items-center gap-2 border-b border-surface-200 dark:border-surface-700 px-4">
+              - generic [ref=e1689]: <SidebarTrigger severity="secondary" target="variants-demo" :text="true" size="small">
+              - generic [ref=e1690]: <SidebarIcon />
+              - generic [ref=e1691]: </SidebarTrigger>
+              - generic [ref=e1692]: </header>
+              - generic [ref=e1693]: <div class="flex-1 p-4 flex flex-col gap-4">
+              - generic [ref=e1694]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 h-48"></div>
+              - generic [ref=e1695]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 flex-1"></div>
+              - generic [ref=e1696]: </div>
+              - generic [ref=e1697]: </SidebarMain>
+              - generic [ref=e1698]: </SidebarLayout>
+              - generic [ref=e1699]: </div>
+              - generic [ref=e1700]: </div>
+              - generic [ref=e1701]: </template>
+              - generic [ref=e1703]: <script setup>
+              - generic [ref=e1704]: "import { onBeforeUnmount, onMounted, ref } from 'vue';"
+              - generic [ref=e1705]: import Bell from '@primeicons/vue/bell';
+              - generic [ref=e1706]: import CalendarIcon from '@primeicons/vue/calendar';
+              - generic [ref=e1707]: import ChartBar from '@primeicons/vue/chart-bar';
+              - generic [ref=e1708]: import ChevronDown from '@primeicons/vue/chevron-down';
+              - generic [ref=e1709]: import CreditCard from '@primeicons/vue/credit-card';
+              - generic [ref=e1710]: import EllipsisV from '@primeicons/vue/ellipsis-v';
+              - generic [ref=e1711]: import Folder from '@primeicons/vue/folder';
+              - generic [ref=e1712]: import Home from '@primeicons/vue/home';
+              - generic [ref=e1713]: import Inbox from '@primeicons/vue/inbox';
+              - generic [ref=e1714]: import Search from '@primeicons/vue/search';
+              - generic [ref=e1715]: import ShoppingCart from '@primeicons/vue/shopping-cart';
+              - generic [ref=e1716]: import SidebarIcon from '@primeicons/vue/sidebar';
+              - generic [ref=e1717]: import Star from '@primeicons/vue/star';
+              - generic [ref=e1718]: import Users from '@primeicons/vue/users';
+              - generic [ref=e1720]: const isMobile = ref(false);
+              - generic [ref=e1721]: const open = ref(true);
+              - generic [ref=e1722]: const variant = ref('sidebar');
+              - generic [ref=e1723]: const collapsible = ref('icon');
+              - generic [ref=e1724]: const side = ref('left');
+              - generic [ref=e1725]: const overlay = ref(false);
+              - generic [ref=e1726]: const openOnHover = ref(false);
+              - generic [ref=e1727]: const backdrop = ref(false);
+              - generic [ref=e1728]: let mql = null;
+              - generic [ref=e1729]: let onMqlChange = null;
+              - generic [ref=e1731]: "onMounted(() => {"
+              - generic [ref=e1732]: if (typeof window === 'undefined') return;
+              - generic [ref=e1734]: "mql = window.matchMedia('(max-width: 1023px)');"
+              - generic [ref=e1735]: isMobile.value = mql.matches;
+              - generic [ref=e1736]: open.value = !isMobile.value;
+              - generic [ref=e1737]: "onMqlChange = (event) => {"
+              - generic [ref=e1738]: isMobile.value = event.matches;
+              - generic [ref=e1739]: open.value = !event.matches;
+              - generic [ref=e1740]: "};"
+              - generic [ref=e1741]: mql.addEventListener('change', onMqlChange);
+              - generic [ref=e1742]: "});"
+              - generic [ref=e1744]: "onBeforeUnmount(() => {"
+              - generic [ref=e1745]: "if (mql && onMqlChange) {"
+              - generic [ref=e1746]: mql.removeEventListener('change', onMqlChange);
+              - generic [ref=e1747]: "}"
+              - generic [ref=e1748]: "});"
+              - generic [ref=e1750]: const variantOptions = [
+              - generic [ref=e1751]: "{ label: 'Sidebar', value: 'sidebar' },"
+              - generic [ref=e1752]: "{ label: 'Floating', value: 'floating' },"
+              - generic [ref=e1753]: "{ label: 'Inset', value: 'inset' }"
+              - generic [ref=e1754]: "];"
+              - generic [ref=e1755]: const collapsibleOptions = [
+              - generic [ref=e1756]: "{ label: 'Icon', value: 'icon' },"
+              - generic [ref=e1757]: "{ label: 'Offcanvas', value: 'offcanvas' },"
+              - generic [ref=e1758]: "{ label: 'None', value: 'none' }"
+              - generic [ref=e1759]: "];"
+              - generic [ref=e1760]: const sideOptions = [
+              - generic [ref=e1761]: "{ label: 'Left', value: 'left' },"
+              - generic [ref=e1762]: "{ label: 'Right', value: 'right' }"
+              - generic [ref=e1763]: "];"
+              - generic [ref=e1764]: const navGroups = [
+              - generic [ref=e1765]: "{"
+              - generic [ref=e1766]: "label: 'Navigation',"
+              - generic [ref=e1767]: "items: ["
+              - generic [ref=e1768]: "{ icon: Home, label: 'Home', isActive: true },"
+              - generic [ref=e1769]: "{ icon: Inbox, label: 'Inbox', badge: '12' },"
+              - generic [ref=e1770]: "{ icon: Search, label: 'Search' },"
+              - generic [ref=e1771]: "{ icon: Bell, label: 'Notifications', badge: '3' }"
+              - generic [ref=e1772]: "]"
+              - generic [ref=e1773]: "},"
+              - generic [ref=e1774]: "{"
+              - generic [ref=e1775]: "label: 'Projects',"
+              - generic [ref=e1776]: "items: ["
+              - generic [ref=e1777]: "{ icon: ChartBar, label: 'Analytics', subItems: [{ label: 'Overview', isActive: true }, { label: 'Reports' }, { label: 'Real-time' }] },"
+              - generic [ref=e1778]: "{ icon: Users, label: 'Team' },"
+              - generic [ref=e1779]: "{ icon: CalendarIcon, label: 'Calendar' },"
+              - generic [ref=e1780]: "{ icon: Folder, label: 'Documents', subItems: [{ label: 'Shared' }, { label: 'Private' }, { label: 'Archived' }] }"
+              - generic [ref=e1781]: "]"
+              - generic [ref=e1782]: "},"
+              - generic [ref=e1783]: "{"
+              - generic [ref=e1784]: "label: 'Billing',"
+              - generic [ref=e1785]: "items: ["
+              - generic [ref=e1786]: "{ icon: CreditCard, label: 'Payments' },"
+              - generic [ref=e1787]: "{ icon: ShoppingCart, label: 'Orders' },"
+              - generic [ref=e1788]: "{ icon: Star, label: 'Subscriptions' }"
+              - generic [ref=e1789]: "]"
+              - generic [ref=e1790]: "}"
+              - generic [ref=e1791]: "];"
+              - generic [ref=e1792]: </script>
+          - heading "With Menu" [level=3] [ref=e756]
+          - paragraph [ref=e758]: Full application chrome with a workspace switcher in the header, grouped navigation and a user menu in the footer using the Menu component. Collapses to icon mode.
+          - generic [ref=e759]:
+            - generic [ref=e760]:
+              - generic [ref=e763]:
+                - generic [ref=e766]:
+                  - list [ref=e768]:
+                    - listitem [ref=e769]:
+                      - button "A Acme Inc" [ref=e770] [cursor=pointer]:
+                        - generic [ref=e771]: A
+                        - generic [ref=e772]: Acme Inc
+                        - img [ref=e773]
+                  - generic [ref=e776]:
+                    - generic [ref=e777]: Navigation
+                    - list [ref=e779]:
+                      - listitem [ref=e780]:
+                        - button "Home" [ref=e781] [cursor=pointer]:
+                          - img [ref=e782]
+                          - generic [ref=e784]: Home
+                      - listitem [ref=e785]:
+                        - button "Inbox" [ref=e786] [cursor=pointer]:
+                          - img [ref=e787]
+                          - generic [ref=e789]: Inbox
+                      - listitem [ref=e790]:
+                        - button "Search" [ref=e791] [cursor=pointer]:
+                          - img [ref=e792]
+                          - generic [ref=e794]: Search
+                      - listitem [ref=e795]:
+                        - button "Team" [ref=e796] [cursor=pointer]:
+                          - img [ref=e797]
+                          - generic [ref=e799]: Team
+                      - listitem [ref=e800]:
+                        - button "Notifications" [ref=e801] [cursor=pointer]:
+                          - img [ref=e802]
+                          - generic [ref=e804]: Notifications
+                  - list [ref=e806]:
+                    - listitem [ref=e807]:
+                      - button "JD John Doe" [ref=e808] [cursor=pointer]:
+                        - generic [ref=e810]: JD
+                        - generic [ref=e811]: John Doe
+                        - img [ref=e812]
+                  - button "Toggle Sidebar" [ref=e814]
+                - main [ref=e815]:
+                  - button [ref=e817] [cursor=pointer]:
+                    - img [ref=e818]
+              - generic [ref=e823]:
+                - generic [ref=e824]: sidebar-menu-demo
+                - generic [ref=e825]:
+                  - button [ref=e826] [cursor=pointer]:
+                    - img [ref=e827]
+                  - button [ref=e829] [cursor=pointer]:
+                    - img [ref=e830]
+                  - button [ref=e832] [cursor=pointer]:
+                    - img [ref=e833]
+            - code [ref=e1802]:
+              - generic [ref=e1803]: <template>
+              - generic [ref=e1804]: <div class="border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
+              - generic [ref=e1805]: <SidebarLayout class="min-h-192! relative!">
+              - generic [ref=e1806]: <SidebarBackdrop v-if="isMobile && open" class="absolute!" />
+              - generic [ref=e1807]: "<Sidebar id=\"menu-demo\" :collapsible=\"isMobile ? 'offcanvas' : 'icon'\" :overlay=\"isMobile\" v-model:open=\"open\">"
+              - generic [ref=e1808]: <SidebarSpacer />
+              - generic [ref=e1809]: <SidebarAside>
+              - generic [ref=e1810]: <SidebarPanel>
+              - generic [ref=e1811]: <SidebarHeader>
+              - generic [ref=e1812]: <SidebarMenu>
+              - generic [ref=e1813]: <SidebarMenuItem>
+              - generic [ref=e1814]: <SidebarMenuButton class="p-1!" @click="(e) => $refs.companyMenu.toggle(e)" aria-haspopup="true" aria-controls="company_menu">
+              - generic [ref=e1815]: "<div :class=\"`flex size-6 shrink-0 items-center justify-center rounded-md bg-linear-to-br ${activeCompany.color} text-white text-xs font-bold leading-none`\">"
+              - generic [ref=e1816]: "{{ activeCompany.logo }}"
+              - generic [ref=e1817]: </div>
+              - generic [ref=e1818]: "<span class=\"font-semibold text-sm\">{{ activeCompany.name }}</span>"
+              - generic [ref=e1819]: <ChevronDown class="ml-auto" />
+              - generic [ref=e1820]: </SidebarMenuButton>
+              - generic [ref=e1821]: <Menu ref="companyMenu" id="company_menu" :model="companyMenuItems" :popup="true">
+              - generic [ref=e1822]: "<template #start>"
+              - generic [ref=e1823]: <div class="px-3 py-1 text-sm font-medium text-muted-color">Companies</div>
+              - generic [ref=e1824]: </template>
+              - generic [ref=e1825]: "<template #item=\"{ item }\">"
+              - generic [ref=e1826]: <div class="flex items-center gap-2 p-2">
+              - generic [ref=e1827]: "<div v-if=\"item.logo\" :class=\"`flex size-5 shrink-0 items-center justify-center rounded-sm bg-linear-to-br ${item.color} text-white text-[0.625rem] font-bold leading-none`\">"
+              - generic [ref=e1828]: "{{ item.logo }}"
+              - generic [ref=e1829]: </div>
+              - generic [ref=e1830]: "<span class=\"text-sm\">{{ item.label }}</span>"
+              - generic [ref=e1831]: <Check v-if="item.active" class="ml-auto" />
+              - generic [ref=e1832]: </div>
+              - generic [ref=e1833]: </template>
+              - generic [ref=e1834]: "<template #end>"
+              - generic [ref=e1835]: <div class="flex items-center gap-2 p-2 px-3">
+              - generic [ref=e1836]: <Plus />
+              - generic [ref=e1837]: <div class="text-sm font-medium text-muted-color">Add company</div>
+              - generic [ref=e1838]: </div>
+              - generic [ref=e1839]: </template>
+              - generic [ref=e1840]: </Menu>
+              - generic [ref=e1841]: </SidebarMenuItem>
+              - generic [ref=e1842]: </SidebarMenu>
+              - generic [ref=e1843]: </SidebarHeader>
+              - generic [ref=e1845]: <SidebarContent>
+              - generic [ref=e1846]: <SidebarGroup>
+              - generic [ref=e1847]: <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+              - generic [ref=e1848]: <SidebarGroupContent>
+              - generic [ref=e1849]: <SidebarMenu>
+              - generic [ref=e1850]: <SidebarMenuItem>
+              - generic [ref=e1851]: <SidebarMenuButton :isActive="true">
+              - generic [ref=e1852]: <Home />
+              - generic [ref=e1853]: <span>Home</span>
+              - generic [ref=e1854]: </SidebarMenuButton>
+              - generic [ref=e1855]: </SidebarMenuItem>
+              - generic [ref=e1856]: <SidebarMenuItem>
+              - generic [ref=e1857]: <SidebarMenuButton>
+              - generic [ref=e1858]: <Inbox />
+              - generic [ref=e1859]: <span>Inbox</span>
+              - generic [ref=e1860]: </SidebarMenuButton>
+              - generic [ref=e1861]: </SidebarMenuItem>
+              - generic [ref=e1862]: <SidebarMenuItem>
+              - generic [ref=e1863]: <SidebarMenuButton>
+              - generic [ref=e1864]: <Search />
+              - generic [ref=e1865]: <span>Search</span>
+              - generic [ref=e1866]: </SidebarMenuButton>
+              - generic [ref=e1867]: </SidebarMenuItem>
+              - generic [ref=e1868]: <SidebarMenuItem>
+              - generic [ref=e1869]: <SidebarMenuButton>
+              - generic [ref=e1870]: <Users />
+              - generic [ref=e1871]: <span>Team</span>
+              - generic [ref=e1872]: </SidebarMenuButton>
+              - generic [ref=e1873]: </SidebarMenuItem>
+              - generic [ref=e1874]: <SidebarMenuItem>
+              - generic [ref=e1875]: <SidebarMenuButton>
+              - generic [ref=e1876]: <Bell />
+              - generic [ref=e1877]: <span>Notifications</span>
+              - generic [ref=e1878]: </SidebarMenuButton>
+              - generic [ref=e1879]: </SidebarMenuItem>
+              - generic [ref=e1880]: </SidebarMenu>
+              - generic [ref=e1881]: </SidebarGroupContent>
+              - generic [ref=e1882]: </SidebarGroup>
+              - generic [ref=e1883]: </SidebarContent>
+              - generic [ref=e1885]: <SidebarFooter>
+              - generic [ref=e1886]: <SidebarMenu>
+              - generic [ref=e1887]: <SidebarMenuItem>
+              - generic [ref=e1888]: <SidebarMenuButton class="p-1!" @click="(e) => $refs.userMenu.toggle(e)" aria-haspopup="true" aria-controls="user_menu">
+              - generic [ref=e1889]: <Avatar label="JD" shape="circle" class="size-6 shrink-0 text-xs" />
+              - generic [ref=e1890]: <span>John Doe</span>
+              - generic [ref=e1891]: <ChevronDown class="ml-auto" />
+              - generic [ref=e1892]: </SidebarMenuButton>
+              - generic [ref=e1893]: <Menu ref="userMenu" id="user_menu" :model="userMenuItems" :popup="true">
+              - generic [ref=e1894]: "<template #start>"
+              - generic [ref=e1895]: <div class="px-3 py-1 text-xs font-medium text-muted-color">john@acme.com</div>
+              - generic [ref=e1896]: </template>
+              - generic [ref=e1897]: </Menu>
+              - generic [ref=e1898]: </SidebarMenuItem>
+              - generic [ref=e1899]: </SidebarMenu>
+              - generic [ref=e1900]: </SidebarFooter>
+              - generic [ref=e1901]: <SidebarRail />
+              - generic [ref=e1902]: </SidebarPanel>
+              - generic [ref=e1903]: </SidebarAside>
+              - generic [ref=e1904]: </Sidebar>
+              - generic [ref=e1906]: <SidebarMain>
+              - generic [ref=e1907]: <header class="flex h-12 items-center gap-2 border-b border-surface-200 dark:border-surface-700 px-4">
+              - generic [ref=e1908]: <SidebarTrigger severity="secondary" target="menu-demo" :text="true" size="small">
+              - generic [ref=e1909]: <SidebarIcon />
+              - generic [ref=e1910]: </SidebarTrigger>
+              - generic [ref=e1911]: </header>
+              - generic [ref=e1912]: <div class="flex-1 p-4 flex flex-col gap-4">
+              - generic [ref=e1913]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 h-48"></div>
+              - generic [ref=e1914]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 flex-1"></div>
+              - generic [ref=e1915]: </div>
+              - generic [ref=e1916]: </SidebarMain>
+              - generic [ref=e1917]: </SidebarLayout>
+              - generic [ref=e1918]: </div>
+              - generic [ref=e1919]: </template>
+              - generic [ref=e1921]: <script setup>
+              - generic [ref=e1922]: "import { computed, onBeforeUnmount, onMounted, ref } from 'vue';"
+              - generic [ref=e1923]: import Bell from '@primeicons/vue/bell';
+              - generic [ref=e1924]: import Check from '@primeicons/vue/check';
+              - generic [ref=e1925]: import ChevronDown from '@primeicons/vue/chevron-down';
+              - generic [ref=e1926]: import Cog from '@primeicons/vue/cog';
+              - generic [ref=e1927]: import Home from '@primeicons/vue/home';
+              - generic [ref=e1928]: import Inbox from '@primeicons/vue/inbox';
+              - generic [ref=e1929]: import Plus from '@primeicons/vue/plus';
+              - generic [ref=e1930]: import Search from '@primeicons/vue/search';
+              - generic [ref=e1931]: import SidebarIcon from '@primeicons/vue/sidebar';
+              - generic [ref=e1932]: import SignOut from '@primeicons/vue/sign-out';
+              - generic [ref=e1933]: import Users from '@primeicons/vue/users';
+              - generic [ref=e1935]: const isMobile = ref(false);
+              - generic [ref=e1936]: const open = ref(true);
+              - generic [ref=e1937]: let mql = null;
+              - generic [ref=e1938]: let onMqlChange = null;
+              - generic [ref=e1940]: "onMounted(() => {"
+              - generic [ref=e1941]: if (typeof window === 'undefined') return;
+              - generic [ref=e1943]: "mql = window.matchMedia('(max-width: 1023px)');"
+              - generic [ref=e1944]: isMobile.value = mql.matches;
+              - generic [ref=e1945]: open.value = !isMobile.value;
+              - generic [ref=e1946]: "onMqlChange = (event) => {"
+              - generic [ref=e1947]: isMobile.value = event.matches;
+              - generic [ref=e1948]: open.value = !event.matches;
+              - generic [ref=e1949]: "};"
+              - generic [ref=e1950]: mql.addEventListener('change', onMqlChange);
+              - generic [ref=e1951]: "});"
+              - generic [ref=e1953]: "onBeforeUnmount(() => {"
+              - generic [ref=e1954]: "if (mql && onMqlChange) {"
+              - generic [ref=e1955]: mql.removeEventListener('change', onMqlChange);
+              - generic [ref=e1956]: "}"
+              - generic [ref=e1957]: "});"
+              - generic [ref=e1959]: const companies = [
+              - generic [ref=e1960]: "{ name: 'Acme Inc', logo: 'A', color: 'from-violet-500 to-indigo-600' },"
+              - generic [ref=e1961]: "{ name: 'Globex Corp', logo: 'G', color: 'from-emerald-500 to-teal-600' },"
+              - generic [ref=e1962]: "{ name: 'Initech', logo: 'I', color: 'from-orange-500 to-red-600' }"
+              - generic [ref=e1963]: "];"
+              - generic [ref=e1964]: "const activeCompany = ref({ name: 'Acme Inc', logo: 'A', color: 'from-violet-500 to-indigo-600' });"
+              - generic [ref=e1965]: "const userMenuItems = [{ label: 'Settings', icon: Cog }, { label: 'Notifications', icon: Bell }, { separator: true }, { label: 'Sign out', icon: SignOut }];"
+              - generic [ref=e1966]: const companyMenuItems = computed(() => [
+              - generic [ref=e1967]: "...companies.map((c) => ({"
+              - generic [ref=e1968]: "label: c.name,"
+              - generic [ref=e1969]: "logo: c.logo,"
+              - generic [ref=e1970]: "color: c.color,"
+              - generic [ref=e1971]: "active: activeCompany.value.name === c.name,"
+              - generic [ref=e1972]: "command: () => {"
+              - generic [ref=e1973]: activeCompany.value = c;
+              - generic [ref=e1974]: "}"
+              - generic [ref=e1975]: "})),"
+              - generic [ref=e1976]: "{ separator: true }"
+              - generic [ref=e1977]: "]);"
+              - generic [ref=e1978]: </script>
+          - heading "Responsive" [level=3] [ref=e835]
+          - paragraph [ref=e837]:
+            - text: Below 1024px the sidebar turns into an offcanvas overlay with a backdrop. Above that it stays in icon mode pushing the inset. Use a
+            - code [ref=e838]: matchMedia
+            - text: reactive flag to switch between the two layouts.
+          - generic [ref=e839]:
+            - generic [ref=e840]:
+              - generic [ref=e843]:
+                - generic [ref=e846]:
+                  - list [ref=e848]:
+                    - listitem [ref=e849]:
+                      - button "A Acme Inc" [ref=e850] [cursor=pointer]:
+                        - generic [ref=e851]: A
+                        - generic [ref=e852]: Acme Inc
+                  - generic [ref=e854]:
+                    - generic [ref=e855]: Menu
+                    - list [ref=e857]:
+                      - listitem [ref=e858]:
+                        - button "Home" [ref=e859] [cursor=pointer]:
+                          - img [ref=e860]
+                          - generic [ref=e862]: Home
+                      - listitem [ref=e863]:
+                        - button "Inbox" [ref=e864] [cursor=pointer]:
+                          - img [ref=e865]
+                          - generic [ref=e867]: Inbox
+                        - generic: "3"
+                      - listitem [ref=e868]:
+                        - button "Search" [ref=e869] [cursor=pointer]:
+                          - img [ref=e870]
+                          - generic [ref=e872]: Search
+                      - listitem [ref=e873]:
+                        - button "Team" [ref=e874] [cursor=pointer]:
+                          - img [ref=e875]
+                          - generic [ref=e877]: Team
+                      - listitem [ref=e878]:
+                        - button "Notifications" [ref=e879] [cursor=pointer]:
+                          - img [ref=e880]
+                          - generic [ref=e882]: Notifications
+                      - listitem [ref=e883]:
+                        - button "Settings" [ref=e884] [cursor=pointer]:
+                          - img [ref=e885]
+                          - generic [ref=e887]: Settings
+                  - list [ref=e889]:
+                    - listitem [ref=e890]:
+                      - button "JD John Doe" [ref=e891] [cursor=pointer]:
+                        - generic [ref=e893]: JD
+                        - generic [ref=e894]: John Doe
+                - main [ref=e895]:
+                  - generic [ref=e896]:
+                    - button [ref=e897] [cursor=pointer]:
+                      - img [ref=e898]
+                    - generic [ref=e900]: Dashboard
+                    - generic [ref=e901]: Mobile
+              - generic [ref=e905]:
+                - generic [ref=e906]: sidebar-responsive-demo
+                - generic [ref=e907]:
+                  - button [ref=e908] [cursor=pointer]:
+                    - img [ref=e909]
+                  - button [ref=e911] [cursor=pointer]:
+                    - img [ref=e912]
+                  - button [ref=e914] [cursor=pointer]:
+                    - img [ref=e915]
+            - code [ref=e1988]:
+              - generic [ref=e1989]: <template>
+              - generic [ref=e1990]: <div class="border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
+              - generic [ref=e1991]: <SidebarLayout class="min-h-192! relative!">
+              - generic [ref=e1992]: <SidebarBackdrop v-if="isMobile && open" class="absolute!" />
+              - generic [ref=e1993]: "<Sidebar id=\"mobile-nav\" :collapsible=\"isMobile ? 'offcanvas' : 'icon'\" :overlay=\"isMobile\" v-model:open=\"open\" width=\"14rem\">"
+              - generic [ref=e1994]: <SidebarSpacer />
+              - generic [ref=e1995]: <SidebarAside>
+              - generic [ref=e1996]: <SidebarPanel>
+              - generic [ref=e1997]: <SidebarHeader>
+              - generic [ref=e1998]: <SidebarMenu>
+              - generic [ref=e1999]: <SidebarMenuItem>
+              - generic [ref=e2000]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e2001]: <div class="flex size-6 shrink-0 items-center justify-center rounded-md bg-linear-to-br from-violet-500 to-indigo-600 text-white text-xs font-bold leading-none">A</div>
+              - generic [ref=e2002]: <span class="font-semibold text-sm">Acme Inc</span>
+              - generic [ref=e2003]: </SidebarMenuButton>
+              - generic [ref=e2004]: </SidebarMenuItem>
+              - generic [ref=e2005]: </SidebarMenu>
+              - generic [ref=e2006]: </SidebarHeader>
+              - generic [ref=e2008]: <SidebarContent>
+              - generic [ref=e2009]: <SidebarGroup>
+              - generic [ref=e2010]: <SidebarGroupLabel>Menu</SidebarGroupLabel>
+              - generic [ref=e2011]: <SidebarGroupContent>
+              - generic [ref=e2012]: <SidebarMenu>
+              - generic [ref=e2013]: <SidebarMenuItem>
+              - generic [ref=e2014]: <SidebarMenuButton :isActive="true">
+              - generic [ref=e2015]: <Home />
+              - generic [ref=e2016]: <span>Home</span>
+              - generic [ref=e2017]: </SidebarMenuButton>
+              - generic [ref=e2018]: </SidebarMenuItem>
+              - generic [ref=e2019]: <SidebarMenuItem>
+              - generic [ref=e2020]: <SidebarMenuButton>
+              - generic [ref=e2021]: <Inbox />
+              - generic [ref=e2022]: <span>Inbox</span>
+              - generic [ref=e2023]: </SidebarMenuButton>
+              - generic [ref=e2024]: <SidebarMenuBadge>3</SidebarMenuBadge>
+              - generic [ref=e2025]: </SidebarMenuItem>
+              - generic [ref=e2026]: <SidebarMenuItem>
+              - generic [ref=e2027]: <SidebarMenuButton>
+              - generic [ref=e2028]: <Search />
+              - generic [ref=e2029]: <span>Search</span>
+              - generic [ref=e2030]: </SidebarMenuButton>
+              - generic [ref=e2031]: </SidebarMenuItem>
+              - generic [ref=e2032]: <SidebarMenuItem>
+              - generic [ref=e2033]: <SidebarMenuButton>
+              - generic [ref=e2034]: <Users />
+              - generic [ref=e2035]: <span>Team</span>
+              - generic [ref=e2036]: </SidebarMenuButton>
+              - generic [ref=e2037]: </SidebarMenuItem>
+              - generic [ref=e2038]: <SidebarMenuItem>
+              - generic [ref=e2039]: <SidebarMenuButton>
+              - generic [ref=e2040]: <Bell />
+              - generic [ref=e2041]: <span>Notifications</span>
+              - generic [ref=e2042]: </SidebarMenuButton>
+              - generic [ref=e2043]: </SidebarMenuItem>
+              - generic [ref=e2044]: <SidebarMenuItem>
+              - generic [ref=e2045]: <SidebarMenuButton>
+              - generic [ref=e2046]: <Cog />
+              - generic [ref=e2047]: <span>Settings</span>
+              - generic [ref=e2048]: </SidebarMenuButton>
+              - generic [ref=e2049]: </SidebarMenuItem>
+              - generic [ref=e2050]: </SidebarMenu>
+              - generic [ref=e2051]: </SidebarGroupContent>
+              - generic [ref=e2052]: </SidebarGroup>
+              - generic [ref=e2053]: </SidebarContent>
+              - generic [ref=e2055]: <SidebarFooter>
+              - generic [ref=e2056]: <SidebarMenu>
+              - generic [ref=e2057]: <SidebarMenuItem>
+              - generic [ref=e2058]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e2059]: <Avatar label="JD" shape="circle" class="size-6 shrink-0 text-xs" />
+              - generic [ref=e2060]: <span>John Doe</span>
+              - generic [ref=e2061]: </SidebarMenuButton>
+              - generic [ref=e2062]: </SidebarMenuItem>
+              - generic [ref=e2063]: </SidebarMenu>
+              - generic [ref=e2064]: </SidebarFooter>
+              - generic [ref=e2065]: </SidebarPanel>
+              - generic [ref=e2066]: </SidebarAside>
+              - generic [ref=e2067]: </Sidebar>
+              - generic [ref=e2069]: <SidebarMain>
+              - generic [ref=e2070]: <header class="flex h-12 items-center gap-2 border-b border-surface-200 dark:border-surface-700 px-4">
+              - generic [ref=e2071]: <SidebarTrigger severity="secondary" target="mobile-nav" :text="true" size="small">
+              - generic [ref=e2072]: <SidebarIcon />
+              - generic [ref=e2073]: </SidebarTrigger>
+              - generic [ref=e2074]: <span class="text-sm font-medium">Dashboard</span>
+              - generic [ref=e2075]: "<span class=\"ml-auto text-xs text-muted-color rounded-md bg-surface-100 dark:bg-surface-800 px-2 py-1\">{{ isMobile ? 'Mobile' : 'Desktop' }}</span>"
+              - generic [ref=e2076]: </header>
+              - generic [ref=e2077]: <div class="flex-1 p-4 flex flex-col gap-4">
+              - generic [ref=e2078]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 h-48"></div>
+              - generic [ref=e2079]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 flex-1"></div>
+              - generic [ref=e2080]: </div>
+              - generic [ref=e2081]: </SidebarMain>
+              - generic [ref=e2082]: </SidebarLayout>
+              - generic [ref=e2083]: </div>
+              - generic [ref=e2084]: </template>
+              - generic [ref=e2086]: <script setup>
+              - generic [ref=e2087]: "import { onBeforeUnmount, onMounted, ref } from 'vue';"
+              - generic [ref=e2088]: import Bell from '@primeicons/vue/bell';
+              - generic [ref=e2089]: import Cog from '@primeicons/vue/cog';
+              - generic [ref=e2090]: import Home from '@primeicons/vue/home';
+              - generic [ref=e2091]: import Inbox from '@primeicons/vue/inbox';
+              - generic [ref=e2092]: import Search from '@primeicons/vue/search';
+              - generic [ref=e2093]: import SidebarIcon from '@primeicons/vue/sidebar';
+              - generic [ref=e2094]: import Users from '@primeicons/vue/users';
+              - generic [ref=e2096]: const isMobile = ref(false);
+              - generic [ref=e2097]: const open = ref(true);
+              - generic [ref=e2098]: let mql = null;
+              - generic [ref=e2099]: let onMqlChange = null;
+              - generic [ref=e2101]: "onMounted(() => {"
+              - generic [ref=e2102]: if (typeof window === 'undefined') return;
+              - generic [ref=e2104]: "mql = window.matchMedia('(max-width: 1023px)');"
+              - generic [ref=e2105]: isMobile.value = mql.matches;
+              - generic [ref=e2106]: open.value = !isMobile.value;
+              - generic [ref=e2107]: "onMqlChange = (event) => {"
+              - generic [ref=e2108]: isMobile.value = event.matches;
+              - generic [ref=e2109]: open.value = !event.matches;
+              - generic [ref=e2110]: "};"
+              - generic [ref=e2111]: mql.addEventListener('change', onMqlChange);
+              - generic [ref=e2112]: "});"
+              - generic [ref=e2114]: "onBeforeUnmount(() => {"
+              - generic [ref=e2115]: "if (mql && onMqlChange) {"
+              - generic [ref=e2116]: mql.removeEventListener('change', onMqlChange);
+              - generic [ref=e2117]: "}"
+              - generic [ref=e2118]: "});"
+              - generic [ref=e2119]: </script>
+          - heading "Dual Sidebar" [level=3] [ref=e917]
+          - paragraph [ref=e919]:
+            - text: "Two sidebars on opposite sides of the layout: a primary navigation on the left (icon-collapsible) and a secondary AI chat panel on the right (offcanvas). Each"
+            - code [ref=e920]: SidebarTrigger
+            - text: targets its sidebar by id.
+          - generic [ref=e921]:
+            - generic [ref=e922]:
+              - generic [ref=e925]:
+                - generic [ref=e928]:
+                  - list [ref=e930]:
+                    - listitem [ref=e931]:
+                      - button "A Acme Inc" [ref=e932] [cursor=pointer]:
+                        - generic [ref=e933]: A
+                        - generic [ref=e934]: Acme Inc
+                  - generic [ref=e935]:
+                    - generic [ref=e936]:
+                      - generic [ref=e937]: Navigation
+                      - list [ref=e939]:
+                        - listitem [ref=e940]:
+                          - button "Home" [ref=e941] [cursor=pointer]:
+                            - img [ref=e942]
+                            - generic [ref=e944]: Home
+                        - listitem [ref=e945]:
+                          - button "Inbox" [ref=e946] [cursor=pointer]:
+                            - img [ref=e947]
+                            - generic [ref=e949]: Inbox
+                          - generic: "5"
+                        - listitem [ref=e950]:
+                          - button "Search" [ref=e951] [cursor=pointer]:
+                            - img [ref=e952]
+                            - generic [ref=e954]: Search
+                        - listitem [ref=e955]:
+                          - button "Notifications" [ref=e956] [cursor=pointer]:
+                            - img [ref=e957]
+                            - generic [ref=e959]: Notifications
+                    - generic [ref=e960]:
+                      - generic [ref=e961]: Projects
+                      - list [ref=e963]:
+                        - listitem [ref=e964]:
+                          - button "Analytics" [expanded] [ref=e965] [cursor=pointer]:
+                            - img [ref=e966]
+                            - generic [ref=e968]: Analytics
+                            - img [ref=e969]
+                          - list [ref=e971]:
+                            - listitem [ref=e972]:
+                              - button "Overview" [ref=e973] [cursor=pointer]
+                            - listitem [ref=e974]:
+                              - button "Reports" [ref=e975] [cursor=pointer]
+                        - listitem [ref=e976]:
+                          - button "Team" [ref=e977] [cursor=pointer]:
+                            - img [ref=e978]
+                            - generic [ref=e980]: Team
+                        - listitem [ref=e981]:
+                          - button "Calendar" [ref=e982] [cursor=pointer]:
+                            - img [ref=e983]
+                            - generic [ref=e985]: Calendar
+                  - list [ref=e987]:
+                    - listitem [ref=e988]:
+                      - button "Settings" [ref=e989] [cursor=pointer]:
+                        - img [ref=e990]
+                        - generic [ref=e992]: Settings
+                - main [ref=e993]:
+                  - generic [ref=e994]:
+                    - button [ref=e995] [cursor=pointer]:
+                      - img [ref=e996]
+                    - generic [ref=e998]: Dashboard
+                    - button [ref=e999] [cursor=pointer]:
+                      - img [ref=e1000]
+                - generic [ref=e1006]:
+                  - generic [ref=e1009]: Weekly metrics overview
+                  - generic [ref=e1011]:
+                    - generic [ref=e1012]: Show me this week's metrics
+                    - generic [ref=e1013]:
+                      - paragraph [ref=e1014]: "Here are your key metrics for this week:"
+                      - list [ref=e1015]:
+                        - listitem [ref=e1016]:
+                          - generic [ref=e1017]: Page views
+                          - generic [ref=e1018]: 12,482
+                        - listitem [ref=e1019]:
+                          - generic [ref=e1020]: New users
+                          - generic [ref=e1021]: "342"
+                        - listitem [ref=e1022]:
+                          - generic [ref=e1023]: Bounce rate
+                          - generic [ref=e1024]: 34%
+                  - textbox "Reply to Claude..." [ref=e1027]
+              - generic [ref=e1028]:
+                - generic [ref=e1029]: sidebar-dual-demo
+                - generic [ref=e1030]:
+                  - button [ref=e1031] [cursor=pointer]:
+                    - img [ref=e1032]
+                  - button [ref=e1034] [cursor=pointer]:
+                    - img [ref=e1035]
+                  - button [ref=e1037] [cursor=pointer]:
+                    - img [ref=e1038]
+            - code [ref=e2129]:
+              - generic [ref=e2130]: <template>
+              - generic [ref=e2131]: <div class="border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
+              - generic [ref=e2132]: <SidebarLayout class="min-h-192! relative!">
+              - generic [ref=e2133]: <SidebarBackdrop v-if="isMobile && (navOpen || open)" class="absolute!" />
+              - generic [ref=e2134]: <!-- Left sidebar - icon collapsible -->
+              - generic [ref=e2135]: "<Sidebar id=\"nav\" side=\"left\" :collapsible=\"isMobile ? 'offcanvas' : 'icon'\" :overlay=\"isMobile\" v-model:open=\"navOpen\" width=\"14rem\">"
+              - generic [ref=e2136]: <SidebarSpacer />
+              - generic [ref=e2137]: <SidebarAside>
+              - generic [ref=e2138]: <SidebarPanel>
+              - generic [ref=e2139]: <SidebarHeader>
+              - generic [ref=e2140]: <SidebarMenu>
+              - generic [ref=e2141]: <SidebarMenuItem>
+              - generic [ref=e2142]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e2143]: <div class="flex size-6 shrink-0 items-center justify-center rounded-md bg-linear-to-br from-violet-500 to-indigo-600 text-white text-xs font-bold leading-none">A</div>
+              - generic [ref=e2144]: <span class="font-semibold text-sm">Acme Inc</span>
+              - generic [ref=e2145]: </SidebarMenuButton>
+              - generic [ref=e2146]: </SidebarMenuItem>
+              - generic [ref=e2147]: </SidebarMenu>
+              - generic [ref=e2148]: </SidebarHeader>
+              - generic [ref=e2150]: <SidebarContent>
+              - generic [ref=e2151]: <SidebarGroup>
+              - generic [ref=e2152]: <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+              - generic [ref=e2153]: <SidebarGroupContent>
+              - generic [ref=e2154]: <SidebarMenu>
+              - generic [ref=e2155]: <SidebarMenuItem>
+              - generic [ref=e2156]: <SidebarMenuButton :isActive="true">
+              - generic [ref=e2157]: <Home />
+              - generic [ref=e2158]: <span>Home</span>
+              - generic [ref=e2159]: </SidebarMenuButton>
+              - generic [ref=e2160]: </SidebarMenuItem>
+              - generic [ref=e2161]: <SidebarMenuItem>
+              - generic [ref=e2162]: <SidebarMenuButton>
+              - generic [ref=e2163]: <Inbox />
+              - generic [ref=e2164]: <span>Inbox</span>
+              - generic [ref=e2165]: </SidebarMenuButton>
+              - generic [ref=e2166]: <SidebarMenuBadge>5</SidebarMenuBadge>
+              - generic [ref=e2167]: </SidebarMenuItem>
+              - generic [ref=e2168]: <SidebarMenuItem>
+              - generic [ref=e2169]: <SidebarMenuButton>
+              - generic [ref=e2170]: <Search />
+              - generic [ref=e2171]: <span>Search</span>
+              - generic [ref=e2172]: </SidebarMenuButton>
+              - generic [ref=e2173]: </SidebarMenuItem>
+              - generic [ref=e2174]: <SidebarMenuItem>
+              - generic [ref=e2175]: <SidebarMenuButton>
+              - generic [ref=e2176]: <Bell />
+              - generic [ref=e2177]: <span>Notifications</span>
+              - generic [ref=e2178]: </SidebarMenuButton>
+              - generic [ref=e2179]: </SidebarMenuItem>
+              - generic [ref=e2180]: </SidebarMenu>
+              - generic [ref=e2181]: </SidebarGroupContent>
+              - generic [ref=e2182]: </SidebarGroup>
+              - generic [ref=e2184]: <SidebarGroup>
+              - generic [ref=e2185]: <SidebarGroupLabel>Projects</SidebarGroupLabel>
+              - generic [ref=e2186]: <SidebarGroupContent>
+              - generic [ref=e2187]: <SidebarMenu>
+              - generic [ref=e2188]: <SidebarMenuItem :collapsible="true" :defaultOpen="true">
+              - generic [ref=e2189]: <SidebarMenuButton>
+              - generic [ref=e2190]: <ChartBar />
+              - generic [ref=e2191]: <span>Analytics</span>
+              - generic [ref=e2192]: <ChevronDown class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e2193]: </SidebarMenuButton>
+              - generic [ref=e2194]: <SidebarMenuSub>
+              - generic [ref=e2195]: <SidebarMenuSubItem>
+              - generic [ref=e2196]: <SidebarMenuSubButton :isActive="true">Overview</SidebarMenuSubButton>
+              - generic [ref=e2197]: </SidebarMenuSubItem>
+              - generic [ref=e2198]: <SidebarMenuSubItem>
+              - generic [ref=e2199]: <SidebarMenuSubButton>Reports</SidebarMenuSubButton>
+              - generic [ref=e2200]: </SidebarMenuSubItem>
+              - generic [ref=e2201]: </SidebarMenuSub>
+              - generic [ref=e2202]: </SidebarMenuItem>
+              - generic [ref=e2203]: <SidebarMenuItem>
+              - generic [ref=e2204]: <SidebarMenuButton>
+              - generic [ref=e2205]: <Users />
+              - generic [ref=e2206]: <span>Team</span>
+              - generic [ref=e2207]: </SidebarMenuButton>
+              - generic [ref=e2208]: </SidebarMenuItem>
+              - generic [ref=e2209]: <SidebarMenuItem>
+              - generic [ref=e2210]: <SidebarMenuButton>
+              - generic [ref=e2211]: <CalendarIcon />
+              - generic [ref=e2212]: <span>Calendar</span>
+              - generic [ref=e2213]: </SidebarMenuButton>
+              - generic [ref=e2214]: </SidebarMenuItem>
+              - generic [ref=e2215]: </SidebarMenu>
+              - generic [ref=e2216]: </SidebarGroupContent>
+              - generic [ref=e2217]: </SidebarGroup>
+              - generic [ref=e2218]: </SidebarContent>
+              - generic [ref=e2220]: <SidebarFooter>
+              - generic [ref=e2221]: <SidebarMenu>
+              - generic [ref=e2222]: <SidebarMenuItem>
+              - generic [ref=e2223]: <SidebarMenuButton>
+              - generic [ref=e2224]: <Cog />
+              - generic [ref=e2225]: <span>Settings</span>
+              - generic [ref=e2226]: </SidebarMenuButton>
+              - generic [ref=e2227]: </SidebarMenuItem>
+              - generic [ref=e2228]: </SidebarMenu>
+              - generic [ref=e2229]: </SidebarFooter>
+              - generic [ref=e2230]: </SidebarPanel>
+              - generic [ref=e2231]: </SidebarAside>
+              - generic [ref=e2232]: </Sidebar>
+              - generic [ref=e2234]: <!-- Main content -->
+              - generic [ref=e2235]: <SidebarMain>
+              - generic [ref=e2236]: <header class="flex h-12 items-center gap-2 border-b border-surface-200 dark:border-surface-700 px-4">
+              - generic [ref=e2237]: <SidebarTrigger target="nav" severity="secondary" :text="true" size="small">
+              - generic [ref=e2238]: <SidebarIcon />
+              - generic [ref=e2239]: </SidebarTrigger>
+              - generic [ref=e2240]: <span class="text-sm font-medium flex-1">Dashboard</span>
+              - generic [ref=e2241]: <SidebarTrigger target="ai" severity="secondary" :text="true" size="small">
+              - generic [ref=e2242]: <Comment />
+              - generic [ref=e2243]: </SidebarTrigger>
+              - generic [ref=e2244]: </header>
+              - generic [ref=e2245]: <div class="flex-1 p-4 flex flex-col gap-4">
+              - generic [ref=e2246]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 h-48"></div>
+              - generic [ref=e2247]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 flex-1"></div>
+              - generic [ref=e2248]: </div>
+              - generic [ref=e2249]: </SidebarMain>
+              - generic [ref=e2251]: <!-- Right sidebar - Claude-style chat, offcanvas -->
+              - generic [ref=e2252]: <Sidebar id="ai" side="right" collapsible="offcanvas" overlay v-model:open="open" width="18rem">
+              - generic [ref=e2253]: <SidebarSpacer />
+              - generic [ref=e2254]: <SidebarAside>
+              - generic [ref=e2255]: <SidebarPanel>
+              - generic [ref=e2256]: <SidebarHeader>
+              - generic [ref=e2257]: <div class="flex items-center gap-2 px-1">
+              - generic [ref=e2258]: <span class="font-semibold text-sm text-surface-500">Weekly metrics overview</span>
+              - generic [ref=e2259]: </div>
+              - generic [ref=e2260]: </SidebarHeader>
+              - generic [ref=e2262]: <SidebarContent>
+              - generic [ref=e2263]: <div class="flex flex-col gap-4 px-3 py-2">
+              - generic [ref=e2264]: <div class="rounded-xl bg-surface-100 dark:bg-surface-800 px-3 py-2.5 text-sm">Show me this week&apos;s metrics</div>
+              - generic [ref=e2266]: <div class="text-sm leading-relaxed">
+              - generic [ref=e2267]: <p>Here are your key metrics for this week:</p>
+              - generic [ref=e2268]: <ul class="mt-2 space-y-1.5 text-muted-color">
+              - generic [ref=e2269]: <li class="flex justify-between">
+              - generic [ref=e2270]: <span>Page views</span>
+              - generic [ref=e2271]: <span class="font-medium text-color">12,482</span>
+              - generic [ref=e2272]: </li>
+              - generic [ref=e2273]: <li class="flex justify-between">
+              - generic [ref=e2274]: <span>New users</span>
+              - generic [ref=e2275]: <span class="font-medium text-color">342</span>
+              - generic [ref=e2276]: </li>
+              - generic [ref=e2277]: <li class="flex justify-between">
+              - generic [ref=e2278]: <span>Bounce rate</span>
+              - generic [ref=e2279]: <span class="font-medium text-color">34%</span>
+              - generic [ref=e2280]: </li>
+              - generic [ref=e2281]: </ul>
+              - generic [ref=e2282]: </div>
+              - generic [ref=e2283]: </div>
+              - generic [ref=e2284]: </SidebarContent>
+              - generic [ref=e2286]: <SidebarFooter>
+              - generic [ref=e2287]: <div class="mx-1 rounded-xl border border-surface-200 dark:border-surface-700 px-3 py-2.5">
+              - generic [ref=e2288]: <input type="text" placeholder="Reply to Claude..." class="w-full bg-transparent border-none outline-none text-sm" />
+              - generic [ref=e2289]: </div>
+              - generic [ref=e2290]: </SidebarFooter>
+              - generic [ref=e2291]: </SidebarPanel>
+              - generic [ref=e2292]: </SidebarAside>
+              - generic [ref=e2293]: </Sidebar>
+              - generic [ref=e2294]: </SidebarLayout>
+              - generic [ref=e2295]: </div>
+              - generic [ref=e2296]: </template>
+              - generic [ref=e2298]: <script setup>
+              - generic [ref=e2299]: "import { onBeforeUnmount, onMounted, ref } from 'vue';"
+              - generic [ref=e2300]: import Bell from '@primeicons/vue/bell';
+              - generic [ref=e2301]: import CalendarIcon from '@primeicons/vue/calendar';
+              - generic [ref=e2302]: import ChartBar from '@primeicons/vue/chart-bar';
+              - generic [ref=e2303]: import ChevronDown from '@primeicons/vue/chevron-down';
+              - generic [ref=e2304]: import Cog from '@primeicons/vue/cog';
+              - generic [ref=e2305]: import Comment from '@primeicons/vue/comment';
+              - generic [ref=e2306]: import Home from '@primeicons/vue/home';
+              - generic [ref=e2307]: import Inbox from '@primeicons/vue/inbox';
+              - generic [ref=e2308]: import Search from '@primeicons/vue/search';
+              - generic [ref=e2309]: import SidebarIcon from '@primeicons/vue/sidebar';
+              - generic [ref=e2310]: import Users from '@primeicons/vue/users';
+              - generic [ref=e2312]: const isMobile = ref(false);
+              - generic [ref=e2313]: const navOpen = ref(true);
+              - generic [ref=e2314]: const open = ref(false);
+              - generic [ref=e2315]: let mql = null;
+              - generic [ref=e2316]: let onMqlChange = null;
+              - generic [ref=e2318]: "onMounted(() => {"
+              - generic [ref=e2319]: if (typeof window === 'undefined') return;
+              - generic [ref=e2321]: "mql = window.matchMedia('(max-width: 1023px)');"
+              - generic [ref=e2322]: isMobile.value = mql.matches;
+              - generic [ref=e2323]: navOpen.value = !isMobile.value;
+              - generic [ref=e2324]: "onMqlChange = (event) => {"
+              - generic [ref=e2325]: isMobile.value = event.matches;
+              - generic [ref=e2326]: navOpen.value = !event.matches;
+              - generic [ref=e2327]: "};"
+              - generic [ref=e2328]: mql.addEventListener('change', onMqlChange);
+              - generic [ref=e2329]: "});"
+              - generic [ref=e2331]: "onBeforeUnmount(() => {"
+              - generic [ref=e2332]: "if (mql && onMqlChange) {"
+              - generic [ref=e2333]: mql.removeEventListener('change', onMqlChange);
+              - generic [ref=e2334]: "}"
+              - generic [ref=e2335]: "});"
+              - generic [ref=e2336]: </script>
+          - heading "Multi Sidebar" [level=3] [ref=e1040]
+          - paragraph [ref=e1042]:
+            - text: Two stacked sidebars within a single
+            - code [ref=e1043]: SidebarLayout
+            - text: ": a hover-to-open icon bar (icon mode + overlay) and a secondary panel that stays open on desktop and collapses to an offcanvas overlay on smaller screens. IDE-like layout."
+          - generic [ref=e1044]:
+            - generic [ref=e1045]:
+              - generic [ref=e1048]:
+                - generic [ref=e1051]:
+                  - list [ref=e1053]:
+                    - listitem [ref=e1054]:
+                      - button "A Acme Inc" [ref=e1055] [cursor=pointer]:
+                        - generic [ref=e1056]: A
+                        - generic [ref=e2341]: Acme Inc
+                  - list [ref=e1060]:
+                    - listitem [ref=e1061]:
+                      - button "Home" [ref=e1062] [cursor=pointer]:
+                        - img [ref=e1063]
+                        - generic [ref=e2342]: Home
+                    - listitem [ref=e1065]:
+                      - button "Database" [ref=e1066] [cursor=pointer]:
+                        - img [ref=e1067]
+                        - generic [ref=e2343]: Database
+                    - listitem [ref=e1069]:
+                      - button "Authentication" [ref=e1070] [cursor=pointer]:
+                        - img [ref=e1071]
+                        - generic [ref=e2344]: Authentication
+                    - listitem [ref=e1073]:
+                      - button "Edge Functions" [ref=e1074] [cursor=pointer]:
+                        - img [ref=e1075]
+                        - generic [ref=e2345]: Edge Functions
+                    - listitem [ref=e1077]:
+                      - button "Storage" [ref=e1078] [cursor=pointer]:
+                        - img [ref=e1079]
+                        - generic [ref=e2346]: Storage
+                    - listitem [ref=e1081]:
+                      - button "SQL Editor" [ref=e1082] [cursor=pointer]:
+                        - img [ref=e1083]
+                        - generic [ref=e2347]: SQL Editor
+                  - list [ref=e1086]:
+                    - listitem [ref=e1087]:
+                      - button "Settings" [ref=e1088] [cursor=pointer]:
+                        - img [ref=e1089]
+                        - generic [ref=e2348]: Settings
+                - generic [ref=e1093]:
+                  - generic [ref=e1095]: Settings
+                  - generic [ref=e1096]:
+                    - generic [ref=e1097]:
+                      - generic [ref=e1098]: Configuration
+                      - list [ref=e1100]:
+                        - listitem [ref=e1101]:
+                          - button "General" [ref=e1102] [cursor=pointer]:
+                            - generic [ref=e1103]: General
+                        - listitem [ref=e1104]:
+                          - button "Compute and Disk" [ref=e1105] [cursor=pointer]:
+                            - generic [ref=e1106]: Compute and Disk
+                        - listitem [ref=e1107]:
+                          - button "Infrastructure" [ref=e1108] [cursor=pointer]:
+                            - generic [ref=e1109]: Infrastructure
+                        - listitem [ref=e1110]:
+                          - button "Integrations" [ref=e1111] [cursor=pointer]:
+                            - generic [ref=e1112]: Integrations
+                        - listitem [ref=e1113]:
+                          - button "API Keys" [ref=e1114] [cursor=pointer]:
+                            - generic [ref=e1115]: API Keys
+                        - listitem [ref=e1116]:
+                          - button "JWT Keys" [ref=e1117] [cursor=pointer]:
+                            - generic [ref=e1118]: JWT Keys
+                        - listitem [ref=e1119]:
+                          - button "Log Drains" [ref=e1120] [cursor=pointer]:
+                            - generic [ref=e1121]: Log Drains
+                        - listitem [ref=e1122]:
+                          - button "Add-ons" [ref=e1123] [cursor=pointer]:
+                            - generic [ref=e1124]: Add-ons
+                    - generic [ref=e1125]:
+                      - generic [ref=e1126]: Integrations
+                      - list [ref=e1128]:
+                        - listitem [ref=e1129]:
+                          - button "Data API" [ref=e1130] [cursor=pointer]:
+                            - generic [ref=e1131]: Data API
+                            - img [ref=e1132]
+                        - listitem [ref=e1134]:
+                          - button "Vault BETA" [ref=e1135] [cursor=pointer]:
+                            - generic [ref=e1136]: Vault
+                            - generic: BETA
+                    - generic [ref=e1137]:
+                      - generic [ref=e1138]: Billing
+                      - list [ref=e1140]:
+                        - listitem [ref=e1141]:
+                          - button "Subscription" [ref=e1142] [cursor=pointer]:
+                            - generic [ref=e1143]: Subscription
+                            - img [ref=e1144]
+                        - listitem [ref=e1146]:
+                          - button "Usage" [ref=e1147] [cursor=pointer]:
+                            - generic [ref=e1148]: Usage
+                            - img [ref=e1149]
+                - main [ref=e1151]:
+                  - generic [ref=e1152]:
+                    - button [ref=e2349] [cursor=pointer]:
+                      - img [ref=e2350]
+                    - button [ref=e2352] [cursor=pointer]:
+                      - img [ref=e2353]
+                    - generic [ref=e1153]: Table Editor
+                    - generic [ref=e1154]: / users
+              - generic [ref=e1158]:
+                - generic [ref=e1159]: sidebar-multi-demo
+                - generic [ref=e1160]:
+                  - button [ref=e1161] [cursor=pointer]:
+                    - img [ref=e1162]
+                  - button [ref=e1164] [cursor=pointer]:
+                    - img [ref=e1165]
+                  - button [ref=e1167] [cursor=pointer]:
+                    - img [ref=e1168]
+            - code [ref=e2360]:
+              - generic [ref=e2361]: <template>
+              - generic [ref=e2362]: <div class="border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
+              - generic [ref=e2363]: <SidebarLayout class="min-h-192! relative!">
+              - generic [ref=e2364]: <SidebarBackdrop v-if="isMobile && (open || secondaryOpen)" class="absolute!" />
+              - generic [ref=e2365]: <!-- Icon bar - always collapsed, opens on hover as overlay -->
+              - generic [ref=e2366]: "<Sidebar id=\"iconbar\" side=\"left\" :collapsible=\"isMobile ? 'offcanvas' : 'icon'\" :overlay=\"true\" :openOnHover=\"!isMobile\" width=\"12rem\" v-model:open=\"open\">"
+              - generic [ref=e2367]: <SidebarSpacer />
+              - generic [ref=e2368]: <SidebarAside>
+              - generic [ref=e2369]: <SidebarPanel>
+              - generic [ref=e2370]: <SidebarHeader>
+              - generic [ref=e2371]: <SidebarMenu>
+              - generic [ref=e2372]: <SidebarMenuItem>
+              - generic [ref=e2373]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e2374]: <div class="flex size-6 shrink-0 items-center justify-center rounded-md bg-emerald-600 text-white text-xs font-bold leading-none">A</div>
+              - generic [ref=e2375]: <span class="font-semibold text-sm">Acme Inc</span>
+              - generic [ref=e2376]: </SidebarMenuButton>
+              - generic [ref=e2377]: </SidebarMenuItem>
+              - generic [ref=e2378]: </SidebarMenu>
+              - generic [ref=e2379]: </SidebarHeader>
+              - generic [ref=e2381]: <SidebarContent>
+              - generic [ref=e2382]: <SidebarGroup>
+              - generic [ref=e2383]: <SidebarGroupContent>
+              - generic [ref=e2384]: <SidebarMenu>
+              - generic [ref=e2385]: <SidebarMenuItem>
+              - generic [ref=e2386]: <SidebarMenuButton :isActive="true">
+              - generic [ref=e2387]: <Home />
+              - generic [ref=e2388]: <span>Home</span>
+              - generic [ref=e2389]: </SidebarMenuButton>
+              - generic [ref=e2390]: </SidebarMenuItem>
+              - generic [ref=e2391]: <SidebarMenuItem>
+              - generic [ref=e2392]: <SidebarMenuButton>
+              - generic [ref=e2393]: <Database />
+              - generic [ref=e2394]: <span>Database</span>
+              - generic [ref=e2395]: </SidebarMenuButton>
+              - generic [ref=e2396]: </SidebarMenuItem>
+              - generic [ref=e2397]: <SidebarMenuItem>
+              - generic [ref=e2398]: <SidebarMenuButton>
+              - generic [ref=e2399]: <Key />
+              - generic [ref=e2400]: <span>Authentication</span>
+              - generic [ref=e2401]: </SidebarMenuButton>
+              - generic [ref=e2402]: </SidebarMenuItem>
+              - generic [ref=e2403]: <SidebarMenuItem>
+              - generic [ref=e2404]: <SidebarMenuButton>
+              - generic [ref=e2405]: <Server />
+              - generic [ref=e2406]: <span>Edge Functions</span>
+              - generic [ref=e2407]: </SidebarMenuButton>
+              - generic [ref=e2408]: </SidebarMenuItem>
+              - generic [ref=e2409]: <SidebarMenuItem>
+              - generic [ref=e2410]: <SidebarMenuButton>
+              - generic [ref=e2411]: <Globe />
+              - generic [ref=e2412]: <span>Storage</span>
+              - generic [ref=e2413]: </SidebarMenuButton>
+              - generic [ref=e2414]: </SidebarMenuItem>
+              - generic [ref=e2415]: <SidebarMenuItem>
+              - generic [ref=e2416]: <SidebarMenuButton>
+              - generic [ref=e2417]: <Code />
+              - generic [ref=e2418]: <span>SQL Editor</span>
+              - generic [ref=e2419]: </SidebarMenuButton>
+              - generic [ref=e2420]: </SidebarMenuItem>
+              - generic [ref=e2421]: </SidebarMenu>
+              - generic [ref=e2422]: </SidebarGroupContent>
+              - generic [ref=e2423]: </SidebarGroup>
+              - generic [ref=e2424]: </SidebarContent>
+              - generic [ref=e2426]: <SidebarFooter>
+              - generic [ref=e2427]: <SidebarMenu>
+              - generic [ref=e2428]: <SidebarMenuItem>
+              - generic [ref=e2429]: <SidebarMenuButton>
+              - generic [ref=e2430]: <Cog />
+              - generic [ref=e2431]: <span>Settings</span>
+              - generic [ref=e2432]: </SidebarMenuButton>
+              - generic [ref=e2433]: </SidebarMenuItem>
+              - generic [ref=e2434]: </SidebarMenu>
+              - generic [ref=e2435]: </SidebarFooter>
+              - generic [ref=e2436]: </SidebarPanel>
+              - generic [ref=e2437]: </SidebarAside>
+              - generic [ref=e2438]: </Sidebar>
+              - generic [ref=e2440]: <!-- Secondary sidebar - always open on desktop, offcanvas on mobile -->
+              - generic [ref=e2441]: "<Sidebar id=\"secondary\" side=\"left\" width=\"14rem\" :collapsible=\"isMobile ? 'offcanvas' : 'none'\" :overlay=\"isMobile\" v-model:open=\"secondaryOpen\">"
+              - generic [ref=e2442]: <SidebarSpacer />
+              - generic [ref=e2443]: <SidebarAside>
+              - generic [ref=e2444]: <SidebarPanel>
+              - generic [ref=e2445]: <SidebarHeader>
+              - generic [ref=e2446]: <div class="px-1">
+              - generic [ref=e2447]: <span class="font-semibold text-sm">Settings</span>
+              - generic [ref=e2448]: </div>
+              - generic [ref=e2449]: </SidebarHeader>
+              - generic [ref=e2451]: <SidebarContent>
+              - generic [ref=e2452]: <SidebarGroup>
+              - generic [ref=e2453]: <SidebarGroupLabel>Configuration</SidebarGroupLabel>
+              - generic [ref=e2454]: <SidebarGroupContent>
+              - generic [ref=e2455]: <SidebarMenu>
+              - generic [ref=e2456]: <SidebarMenuItem>
+              - generic [ref=e2457]: <SidebarMenuButton :isActive="true"><span>General</span></SidebarMenuButton>
+              - generic [ref=e2458]: </SidebarMenuItem>
+              - generic [ref=e2459]: <SidebarMenuItem>
+              - generic [ref=e2460]: <SidebarMenuButton><span>Compute and Disk</span></SidebarMenuButton>
+              - generic [ref=e2461]: </SidebarMenuItem>
+              - generic [ref=e2462]: <SidebarMenuItem>
+              - generic [ref=e2463]: <SidebarMenuButton><span>Infrastructure</span></SidebarMenuButton>
+              - generic [ref=e2464]: </SidebarMenuItem>
+              - generic [ref=e2465]: <SidebarMenuItem>
+              - generic [ref=e2466]: <SidebarMenuButton><span>Integrations</span></SidebarMenuButton>
+              - generic [ref=e2467]: </SidebarMenuItem>
+              - generic [ref=e2468]: <SidebarMenuItem>
+              - generic [ref=e2469]: <SidebarMenuButton><span>API Keys</span></SidebarMenuButton>
+              - generic [ref=e2470]: </SidebarMenuItem>
+              - generic [ref=e2471]: <SidebarMenuItem>
+              - generic [ref=e2472]: <SidebarMenuButton><span>JWT Keys</span></SidebarMenuButton>
+              - generic [ref=e2473]: </SidebarMenuItem>
+              - generic [ref=e2474]: <SidebarMenuItem>
+              - generic [ref=e2475]: <SidebarMenuButton><span>Log Drains</span></SidebarMenuButton>
+              - generic [ref=e2476]: </SidebarMenuItem>
+              - generic [ref=e2477]: <SidebarMenuItem>
+              - generic [ref=e2478]: <SidebarMenuButton><span>Add-ons</span></SidebarMenuButton>
+              - generic [ref=e2479]: </SidebarMenuItem>
+              - generic [ref=e2480]: </SidebarMenu>
+              - generic [ref=e2481]: </SidebarGroupContent>
+              - generic [ref=e2482]: </SidebarGroup>
+              - generic [ref=e2484]: <SidebarGroup>
+              - generic [ref=e2485]: <SidebarGroupLabel>Integrations</SidebarGroupLabel>
+              - generic [ref=e2486]: <SidebarGroupContent>
+              - generic [ref=e2487]: <SidebarMenu>
+              - generic [ref=e2488]: <SidebarMenuItem>
+              - generic [ref=e2489]: <SidebarMenuButton>
+              - generic [ref=e2490]: <span>Data API</span>
+              - generic [ref=e2491]: <ExternalLink class="ml-auto" />
+              - generic [ref=e2492]: </SidebarMenuButton>
+              - generic [ref=e2493]: </SidebarMenuItem>
+              - generic [ref=e2494]: <SidebarMenuItem>
+              - generic [ref=e2495]: <SidebarMenuButton>
+              - generic [ref=e2496]: <span>Vault</span>
+              - generic [ref=e2497]: <SidebarMenuBadge>BETA</SidebarMenuBadge>
+              - generic [ref=e2498]: </SidebarMenuButton>
+              - generic [ref=e2499]: </SidebarMenuItem>
+              - generic [ref=e2500]: </SidebarMenu>
+              - generic [ref=e2501]: </SidebarGroupContent>
+              - generic [ref=e2502]: </SidebarGroup>
+              - generic [ref=e2504]: <SidebarGroup>
+              - generic [ref=e2505]: <SidebarGroupLabel>Billing</SidebarGroupLabel>
+              - generic [ref=e2506]: <SidebarGroupContent>
+              - generic [ref=e2507]: <SidebarMenu>
+              - generic [ref=e2508]: <SidebarMenuItem>
+              - generic [ref=e2509]: <SidebarMenuButton>
+              - generic [ref=e2510]: <span>Subscription</span>
+              - generic [ref=e2511]: <ExternalLink class="ml-auto" />
+              - generic [ref=e2512]: </SidebarMenuButton>
+              - generic [ref=e2513]: </SidebarMenuItem>
+              - generic [ref=e2514]: <SidebarMenuItem>
+              - generic [ref=e2515]: <SidebarMenuButton>
+              - generic [ref=e2516]: <span>Usage</span>
+              - generic [ref=e2517]: <ExternalLink class="ml-auto" />
+              - generic [ref=e2518]: </SidebarMenuButton>
+              - generic [ref=e2519]: </SidebarMenuItem>
+              - generic [ref=e2520]: </SidebarMenu>
+              - generic [ref=e2521]: </SidebarGroupContent>
+              - generic [ref=e2522]: </SidebarGroup>
+              - generic [ref=e2523]: </SidebarContent>
+              - generic [ref=e2524]: </SidebarPanel>
+              - generic [ref=e2525]: </SidebarAside>
+              - generic [ref=e2526]: </Sidebar>
+              - generic [ref=e2528]: <!-- Main content -->
+              - generic [ref=e2529]: <SidebarMain>
+              - generic [ref=e2530]: <header class="flex h-12 items-center gap-2 border-b border-surface-200 dark:border-surface-700 px-4">
+              - generic [ref=e2531]: <SidebarTrigger v-if="isMobile" target="iconbar" severity="secondary" :text="true" size="small">
+              - generic [ref=e2532]: <SidebarIcon />
+              - generic [ref=e2533]: </SidebarTrigger>
+              - generic [ref=e2534]: <SidebarTrigger v-if="isMobile" target="secondary" severity="secondary" :text="true" size="small">
+              - generic [ref=e2535]: <Cog />
+              - generic [ref=e2536]: </SidebarTrigger>
+              - generic [ref=e2537]: <span class="text-sm font-medium">Table Editor</span>
+              - generic [ref=e2538]: <span class="text-xs text-muted-color">/ users</span>
+              - generic [ref=e2539]: </header>
+              - generic [ref=e2540]: <div class="flex-1 p-4 flex flex-col gap-4">
+              - generic [ref=e2541]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 h-48"></div>
+              - generic [ref=e2542]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 flex-1"></div>
+              - generic [ref=e2543]: </div>
+              - generic [ref=e2544]: </SidebarMain>
+              - generic [ref=e2545]: </SidebarLayout>
+              - generic [ref=e2546]: </div>
+              - generic [ref=e2547]: </template>
+              - generic [ref=e2549]: <script setup>
+              - generic [ref=e2550]: "import { onBeforeUnmount, onMounted, ref } from 'vue';"
+              - generic [ref=e2551]: import Code from '@primeicons/vue/code';
+              - generic [ref=e2552]: import Cog from '@primeicons/vue/cog';
+              - generic [ref=e2553]: import Database from '@primeicons/vue/database';
+              - generic [ref=e2554]: import ExternalLink from '@primeicons/vue/external-link';
+              - generic [ref=e2555]: import Globe from '@primeicons/vue/globe';
+              - generic [ref=e2556]: import Home from '@primeicons/vue/home';
+              - generic [ref=e2557]: import Key from '@primeicons/vue/key';
+              - generic [ref=e2558]: import Server from '@primeicons/vue/server';
+              - generic [ref=e2559]: import SidebarIcon from '@primeicons/vue/sidebar';
+              - generic [ref=e2561]: const isMobile = ref(false);
+              - generic [ref=e2562]: const open = ref(false);
+              - generic [ref=e2563]: const secondaryOpen = ref(true);
+              - generic [ref=e2564]: let mql = null;
+              - generic [ref=e2565]: let onMqlChange = null;
+              - generic [ref=e2567]: "onMounted(() => {"
+              - generic [ref=e2568]: if (typeof window === 'undefined') return;
+              - generic [ref=e2570]: "mql = window.matchMedia('(max-width: 1023px)');"
+              - generic [ref=e2571]: isMobile.value = mql.matches;
+              - generic [ref=e2572]: secondaryOpen.value = !isMobile.value;
+              - generic [ref=e2573]: "onMqlChange = (event) => {"
+              - generic [ref=e2574]: isMobile.value = event.matches;
+              - generic [ref=e2575]: secondaryOpen.value = !event.matches;
+              - generic [ref=e2576]: "};"
+              - generic [ref=e2577]: mql.addEventListener('change', onMqlChange);
+              - generic [ref=e2578]: "});"
+              - generic [ref=e2580]: "onBeforeUnmount(() => {"
+              - generic [ref=e2581]: "if (mql && onMqlChange) {"
+              - generic [ref=e2582]: mql.removeEventListener('change', onMqlChange);
+              - generic [ref=e2583]: "}"
+              - generic [ref=e2584]: "});"
+              - generic [ref=e2585]: </script>
+          - heading "Nested Menu" [level=3] [ref=e1170]
+          - paragraph [ref=e1172]:
+            - text: Menu items become collapsible to reveal a nested
+            - code [ref=e1173]: SidebarMenuSub
+            - text: with deep trees and active-state tracking.
+          - generic [ref=e1174]:
+            - generic [ref=e1175]:
+              - generic [ref=e1178]:
+                - generic [ref=e1181]:
+                  - list [ref=e1183]:
+                    - listitem [ref=e1184]:
+                      - button "F File Manager" [ref=e1185] [cursor=pointer]:
+                        - generic [ref=e1186]: F
+                        - generic [ref=e1187]: File Manager
+                  - generic [ref=e1188]:
+                    - generic [ref=e1189]:
+                      - generic [ref=e1190]: Files
+                      - list [ref=e1192]:
+                        - listitem [ref=e1193]:
+                          - button "Documents" [expanded] [ref=e1194] [cursor=pointer]:
+                            - img [ref=e1195]
+                            - generic [ref=e1197]: Documents
+                            - img [ref=e1198]
+                          - list [ref=e1200]:
+                            - listitem [ref=e1201]:
+                              - button "Work" [expanded] [ref=e1202] [cursor=pointer]:
+                                - generic [ref=e1203]: Work
+                                - img [ref=e1204]
+                              - list [ref=e1206]:
+                                - listitem [ref=e1207]:
+                                  - button "Projects" [expanded] [ref=e1208] [cursor=pointer]:
+                                    - generic [ref=e1209]: Projects
+                                    - img [ref=e1210]
+                                  - list [ref=e1212]:
+                                    - listitem [ref=e1213]:
+                                      - button "Q1 Report" [ref=e1214] [cursor=pointer]:
+                                        - generic [ref=e1215]: Q1 Report
+                                    - listitem [ref=e1216]:
+                                      - button "Q2 Report" [ref=e1217] [cursor=pointer]:
+                                        - generic [ref=e1218]: Q2 Report
+                                    - listitem [ref=e1219]:
+                                      - button "Roadmap" [ref=e1220] [cursor=pointer]:
+                                        - generic [ref=e1221]: Roadmap
+                                - listitem [ref=e1222]:
+                                  - button "Invoices" [ref=e1223] [cursor=pointer]:
+                                    - generic [ref=e1224]: Invoices
+                                - listitem [ref=e1225]:
+                                  - button "Contracts" [ref=e1226] [cursor=pointer]:
+                                    - generic [ref=e1227]: Contracts
+                            - listitem [ref=e1228]:
+                              - button "Personal" [expanded] [ref=e1229] [cursor=pointer]:
+                                - generic [ref=e1230]: Personal
+                                - img [ref=e1231]
+                              - list [ref=e1233]:
+                                - listitem [ref=e1234]:
+                                  - button "Recipes" [ref=e1235] [cursor=pointer]:
+                                    - generic [ref=e1236]: Recipes
+                                - listitem [ref=e1237]:
+                                  - button "Travel" [ref=e1238] [cursor=pointer]:
+                                    - generic [ref=e1239]: Travel
+                    - generic [ref=e1240]:
+                      - generic [ref=e1241]: Media
+                      - list [ref=e1243]:
+                        - listitem [ref=e1244]:
+                          - button "Photos" [expanded] [ref=e1245] [cursor=pointer]:
+                            - img [ref=e1246]
+                            - generic [ref=e1248]: Photos
+                            - img [ref=e1249]
+                          - list [ref=e1251]:
+                            - listitem [ref=e1252]:
+                              - button "2024" [ref=e1253] [cursor=pointer]:
+                                - generic [ref=e1254]: "2024"
+                            - listitem [ref=e1255]:
+                              - button "2025" [ref=e1256] [cursor=pointer]:
+                                - generic [ref=e1257]: "2025"
+                        - listitem [ref=e1258]:
+                          - button "Videos" [expanded] [ref=e1259] [cursor=pointer]:
+                            - img [ref=e1260]
+                            - generic [ref=e1262]: Videos
+                            - img [ref=e1263]
+                          - list [ref=e1265]:
+                            - listitem [ref=e1266]:
+                              - button "Tutorials" [ref=e1267] [cursor=pointer]:
+                                - generic [ref=e1268]: Tutorials
+                            - listitem [ref=e1269]:
+                              - button "Recordings" [ref=e1270] [cursor=pointer]:
+                                - generic [ref=e1271]: Recordings
+                    - generic [ref=e1272]:
+                      - generic [ref=e1273]: Bookmarks
+                      - list [ref=e1275]:
+                        - listitem [ref=e1276]:
+                          - button "Websites" [expanded] [ref=e1277] [cursor=pointer]:
+                            - img [ref=e1278]
+                            - generic [ref=e1280]: Websites
+                            - img [ref=e1281]
+                          - list [ref=e1283]:
+                            - listitem [ref=e1284]:
+                              - button "Blog" [ref=e1285] [cursor=pointer]:
+                                - generic [ref=e1286]: Blog
+                            - listitem [ref=e1287]:
+                              - button "Portfolio" [ref=e1288] [cursor=pointer]:
+                                - generic [ref=e1289]: Portfolio
+                            - listitem [ref=e1290]:
+                              - button "Documentation" [ref=e1291] [cursor=pointer]:
+                                - generic [ref=e1292]: Documentation
+                  - list [ref=e1294]:
+                    - listitem [ref=e1295]:
+                      - button "JD John Doe" [ref=e1296] [cursor=pointer]:
+                        - generic [ref=e1298]: JD
+                        - generic [ref=e1299]: John Doe
+                  - button "Toggle Sidebar" [ref=e1300]
+                - main [ref=e1301]:
+                  - generic [ref=e1302]:
+                    - button [ref=e1303] [cursor=pointer]:
+                      - img [ref=e1304]
+                    - generic [ref=e1306]: File Manager
+                  - generic [ref=e1307]:
+                    - heading "Q1 Report" [level=1] [ref=e1308]
+                    - paragraph [ref=e1309]: Documents > Work > Projects > Q1 Report
+              - generic [ref=e1310]:
+                - generic [ref=e1311]: sidebar-nested-demo
+                - generic [ref=e1312]:
+                  - button [ref=e1313] [cursor=pointer]:
+                    - img [ref=e1314]
+                  - button [ref=e1316] [cursor=pointer]:
+                    - img [ref=e1317]
+                  - button [ref=e1319] [cursor=pointer]:
+                    - img [ref=e1320]
+            - code [ref=e2595]:
+              - generic [ref=e2596]: <template>
+              - generic [ref=e2597]: <div class="border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
+              - generic [ref=e2598]: <SidebarLayout class="min-h-192! relative!">
+              - generic [ref=e2599]: <SidebarBackdrop v-if="isMobile && open" class="absolute!" />
+              - generic [ref=e2600]: "<Sidebar id=\"nested\" :collapsible=\"isMobile ? 'offcanvas' : 'icon'\" :overlay=\"isMobile\" v-model:open=\"open\">"
+              - generic [ref=e2601]: <SidebarSpacer />
+              - generic [ref=e2602]: <SidebarAside>
+              - generic [ref=e2603]: <SidebarPanel>
+              - generic [ref=e2604]: <SidebarHeader>
+              - generic [ref=e2605]: <SidebarMenu>
+              - generic [ref=e2606]: <SidebarMenuItem>
+              - generic [ref=e2607]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e2608]: <div class="flex size-6 shrink-0 items-center justify-center rounded-md bg-linear-to-br from-emerald-500 to-teal-600 text-white text-xs font-bold leading-none">F</div>
+              - generic [ref=e2609]: <span class="font-semibold text-sm">File Manager</span>
+              - generic [ref=e2610]: </SidebarMenuButton>
+              - generic [ref=e2611]: </SidebarMenuItem>
+              - generic [ref=e2612]: </SidebarMenu>
+              - generic [ref=e2613]: </SidebarHeader>
+              - generic [ref=e2615]: <SidebarContent>
+              - generic [ref=e2616]: <SidebarGroup>
+              - generic [ref=e2617]: <SidebarGroupLabel>Files</SidebarGroupLabel>
+              - generic [ref=e2618]: <SidebarGroupContent>
+              - generic [ref=e2619]: <SidebarMenu>
+              - generic [ref=e2620]: <SidebarMenuItem :collapsible="true" :defaultOpen="true">
+              - generic [ref=e2621]: <SidebarMenuButton>
+              - generic [ref=e2622]: <Folder />
+              - generic [ref=e2623]: <span>Documents</span>
+              - generic [ref=e2624]: <ChevronDown class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e2625]: </SidebarMenuButton>
+              - generic [ref=e2626]: <SidebarMenuSub>
+              - generic [ref=e2627]: <SidebarMenuItem :collapsible="true" :defaultOpen="true">
+              - generic [ref=e2628]: <SidebarMenuButton>
+              - generic [ref=e2629]: <span>Work</span>
+              - generic [ref=e2630]: <ChevronDown class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e2631]: </SidebarMenuButton>
+              - generic [ref=e2632]: <SidebarMenuSub>
+              - generic [ref=e2633]: <SidebarMenuItem :collapsible="true" :defaultOpen="true">
+              - generic [ref=e2634]: <SidebarMenuButton>
+              - generic [ref=e2635]: <span>Projects</span>
+              - generic [ref=e2636]: <ChevronDown class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e2637]: </SidebarMenuButton>
+              - generic [ref=e2638]: <SidebarMenuSub>
+              - generic [ref=e2639]: <SidebarMenuSubItem>
+              - generic [ref=e2640]: <SidebarMenuSubButton :isActive="true">
+              - generic [ref=e2641]: <span>Q1 Report</span>
+              - generic [ref=e2642]: </SidebarMenuSubButton>
+              - generic [ref=e2643]: </SidebarMenuSubItem>
+              - generic [ref=e2644]: <SidebarMenuSubItem>
+              - generic [ref=e2645]: <SidebarMenuSubButton>
+              - generic [ref=e2646]: <span>Q2 Report</span>
+              - generic [ref=e2647]: </SidebarMenuSubButton>
+              - generic [ref=e2648]: </SidebarMenuSubItem>
+              - generic [ref=e2649]: <SidebarMenuSubItem>
+              - generic [ref=e2650]: <SidebarMenuSubButton>
+              - generic [ref=e2651]: <span>Roadmap</span>
+              - generic [ref=e2652]: </SidebarMenuSubButton>
+              - generic [ref=e2653]: </SidebarMenuSubItem>
+              - generic [ref=e2654]: </SidebarMenuSub>
+              - generic [ref=e2655]: </SidebarMenuItem>
+              - generic [ref=e2656]: <SidebarMenuSubItem>
+              - generic [ref=e2657]: <SidebarMenuSubButton>
+              - generic [ref=e2658]: <span>Invoices</span>
+              - generic [ref=e2659]: </SidebarMenuSubButton>
+              - generic [ref=e2660]: </SidebarMenuSubItem>
+              - generic [ref=e2661]: <SidebarMenuSubItem>
+              - generic [ref=e2662]: <SidebarMenuSubButton>
+              - generic [ref=e2663]: <span>Contracts</span>
+              - generic [ref=e2664]: </SidebarMenuSubButton>
+              - generic [ref=e2665]: </SidebarMenuSubItem>
+              - generic [ref=e2666]: </SidebarMenuSub>
+              - generic [ref=e2667]: </SidebarMenuItem>
+              - generic [ref=e2668]: <SidebarMenuItem :collapsible="true">
+              - generic [ref=e2669]: <SidebarMenuButton>
+              - generic [ref=e2670]: <span>Personal</span>
+              - generic [ref=e2671]: <ChevronDown class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e2672]: </SidebarMenuButton>
+              - generic [ref=e2673]: <SidebarMenuSub>
+              - generic [ref=e2674]: <SidebarMenuSubItem>
+              - generic [ref=e2675]: <SidebarMenuSubButton>
+              - generic [ref=e2676]: <span>Recipes</span>
+              - generic [ref=e2677]: </SidebarMenuSubButton>
+              - generic [ref=e2678]: </SidebarMenuSubItem>
+              - generic [ref=e2679]: <SidebarMenuSubItem>
+              - generic [ref=e2680]: <SidebarMenuSubButton>
+              - generic [ref=e2681]: <span>Travel</span>
+              - generic [ref=e2682]: </SidebarMenuSubButton>
+              - generic [ref=e2683]: </SidebarMenuSubItem>
+              - generic [ref=e2684]: </SidebarMenuSub>
+              - generic [ref=e2685]: </SidebarMenuItem>
+              - generic [ref=e2686]: </SidebarMenuSub>
+              - generic [ref=e2687]: </SidebarMenuItem>
+              - generic [ref=e2688]: </SidebarMenu>
+              - generic [ref=e2689]: </SidebarGroupContent>
+              - generic [ref=e2690]: </SidebarGroup>
+              - generic [ref=e2692]: <SidebarGroup>
+              - generic [ref=e2693]: <SidebarGroupLabel>Media</SidebarGroupLabel>
+              - generic [ref=e2694]: <SidebarGroupContent>
+              - generic [ref=e2695]: <SidebarMenu>
+              - generic [ref=e2696]: <SidebarMenuItem :collapsible="true">
+              - generic [ref=e2697]: <SidebarMenuButton>
+              - generic [ref=e2698]: <ImageIcon />
+              - generic [ref=e2699]: <span>Photos</span>
+              - generic [ref=e2700]: <ChevronDown class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e2701]: </SidebarMenuButton>
+              - generic [ref=e2702]: <SidebarMenuSub>
+              - generic [ref=e2703]: <SidebarMenuSubItem>
+              - generic [ref=e2704]: <SidebarMenuSubButton>
+              - generic [ref=e2705]: <span>2024</span>
+              - generic [ref=e2706]: </SidebarMenuSubButton>
+              - generic [ref=e2707]: </SidebarMenuSubItem>
+              - generic [ref=e2708]: <SidebarMenuSubItem>
+              - generic [ref=e2709]: <SidebarMenuSubButton>
+              - generic [ref=e2710]: <span>2025</span>
+              - generic [ref=e2711]: </SidebarMenuSubButton>
+              - generic [ref=e2712]: </SidebarMenuSubItem>
+              - generic [ref=e2713]: </SidebarMenuSub>
+              - generic [ref=e2714]: </SidebarMenuItem>
+              - generic [ref=e2715]: <SidebarMenuItem :collapsible="true">
+              - generic [ref=e2716]: <SidebarMenuButton>
+              - generic [ref=e2717]: <Video />
+              - generic [ref=e2718]: <span>Videos</span>
+              - generic [ref=e2719]: <ChevronDown class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e2720]: </SidebarMenuButton>
+              - generic [ref=e2721]: <SidebarMenuSub>
+              - generic [ref=e2722]: <SidebarMenuSubItem>
+              - generic [ref=e2723]: <SidebarMenuSubButton>
+              - generic [ref=e2724]: <span>Tutorials</span>
+              - generic [ref=e2725]: </SidebarMenuSubButton>
+              - generic [ref=e2726]: </SidebarMenuSubItem>
+              - generic [ref=e2727]: <SidebarMenuSubItem>
+              - generic [ref=e2728]: <SidebarMenuSubButton>
+              - generic [ref=e2729]: <span>Recordings</span>
+              - generic [ref=e2730]: </SidebarMenuSubButton>
+              - generic [ref=e2731]: </SidebarMenuSubItem>
+              - generic [ref=e2732]: </SidebarMenuSub>
+              - generic [ref=e2733]: </SidebarMenuItem>
+              - generic [ref=e2734]: </SidebarMenu>
+              - generic [ref=e2735]: </SidebarGroupContent>
+              - generic [ref=e2736]: </SidebarGroup>
+              - generic [ref=e2738]: <SidebarGroup>
+              - generic [ref=e2739]: <SidebarGroupLabel>Bookmarks</SidebarGroupLabel>
+              - generic [ref=e2740]: <SidebarGroupContent>
+              - generic [ref=e2741]: <SidebarMenu>
+              - generic [ref=e2742]: <SidebarMenuItem :collapsible="true">
+              - generic [ref=e2743]: <SidebarMenuButton>
+              - generic [ref=e2744]: <Globe />
+              - generic [ref=e2745]: <span>Websites</span>
+              - generic [ref=e2746]: <ChevronDown class="ml-auto transition-transform duration-200 [[data-open]>&]:rotate-180" />
+              - generic [ref=e2747]: </SidebarMenuButton>
+              - generic [ref=e2748]: <SidebarMenuSub>
+              - generic [ref=e2749]: <SidebarMenuSubItem>
+              - generic [ref=e2750]: <SidebarMenuSubButton>
+              - generic [ref=e2751]: <span>Blog</span>
+              - generic [ref=e2752]: </SidebarMenuSubButton>
+              - generic [ref=e2753]: </SidebarMenuSubItem>
+              - generic [ref=e2754]: <SidebarMenuSubItem>
+              - generic [ref=e2755]: <SidebarMenuSubButton>
+              - generic [ref=e2756]: <span>Portfolio</span>
+              - generic [ref=e2757]: </SidebarMenuSubButton>
+              - generic [ref=e2758]: </SidebarMenuSubItem>
+              - generic [ref=e2759]: <SidebarMenuSubItem>
+              - generic [ref=e2760]: <SidebarMenuSubButton>
+              - generic [ref=e2761]: <span>Documentation</span>
+              - generic [ref=e2762]: </SidebarMenuSubButton>
+              - generic [ref=e2763]: </SidebarMenuSubItem>
+              - generic [ref=e2764]: </SidebarMenuSub>
+              - generic [ref=e2765]: </SidebarMenuItem>
+              - generic [ref=e2766]: </SidebarMenu>
+              - generic [ref=e2767]: </SidebarGroupContent>
+              - generic [ref=e2768]: </SidebarGroup>
+              - generic [ref=e2769]: </SidebarContent>
+              - generic [ref=e2771]: <SidebarFooter>
+              - generic [ref=e2772]: <SidebarMenu>
+              - generic [ref=e2773]: <SidebarMenuItem>
+              - generic [ref=e2774]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e2775]: <Avatar label="JD" shape="circle" class="size-6 shrink-0 text-xs" />
+              - generic [ref=e2776]: <span>John Doe</span>
+              - generic [ref=e2777]: </SidebarMenuButton>
+              - generic [ref=e2778]: </SidebarMenuItem>
+              - generic [ref=e2779]: </SidebarMenu>
+              - generic [ref=e2780]: </SidebarFooter>
+              - generic [ref=e2781]: <SidebarRail />
+              - generic [ref=e2782]: </SidebarPanel>
+              - generic [ref=e2783]: </SidebarAside>
+              - generic [ref=e2784]: </Sidebar>
+              - generic [ref=e2786]: <SidebarMain>
+              - generic [ref=e2787]: <header class="flex h-12 items-center gap-2 border-b border-surface-200 dark:border-surface-700 px-4">
+              - generic [ref=e2788]: <SidebarTrigger severity="secondary" target="nested" :text="true" size="small">
+              - generic [ref=e2789]: <SidebarIcon />
+              - generic [ref=e2790]: </SidebarTrigger>
+              - generic [ref=e2791]: <span class="text-sm font-medium">File Manager</span>
+              - generic [ref=e2792]: </header>
+              - generic [ref=e2793]: <div class="flex-1 p-6">
+              - generic [ref=e2794]: <h1 class="text-2xl font-bold mb-4">Q1 Report</h1>
+              - generic [ref=e2795]: <p class="text-muted-color">Documents &gt; Work &gt; Projects &gt; Q1 Report</p>
+              - generic [ref=e2796]: </div>
+              - generic [ref=e2797]: </SidebarMain>
+              - generic [ref=e2798]: </SidebarLayout>
+              - generic [ref=e2799]: </div>
+              - generic [ref=e2800]: </template>
+              - generic [ref=e2802]: <script setup>
+              - generic [ref=e2803]: "import { onBeforeUnmount, onMounted, ref } from 'vue';"
+              - generic [ref=e2804]: import ChevronDown from '@primeicons/vue/chevron-down';
+              - generic [ref=e2805]: import Folder from '@primeicons/vue/folder';
+              - generic [ref=e2806]: import Globe from '@primeicons/vue/globe';
+              - generic [ref=e2807]: import ImageIcon from '@primeicons/vue/image';
+              - generic [ref=e2808]: import SidebarIcon from '@primeicons/vue/sidebar';
+              - generic [ref=e2809]: import Video from '@primeicons/vue/video';
+              - generic [ref=e2811]: const isMobile = ref(false);
+              - generic [ref=e2812]: const open = ref(true);
+              - generic [ref=e2813]: let mql = null;
+              - generic [ref=e2814]: let onMqlChange = null;
+              - generic [ref=e2816]: "onMounted(() => {"
+              - generic [ref=e2817]: if (typeof window === 'undefined') return;
+              - generic [ref=e2819]: "mql = window.matchMedia('(max-width: 1023px)');"
+              - generic [ref=e2820]: isMobile.value = mql.matches;
+              - generic [ref=e2821]: open.value = !isMobile.value;
+              - generic [ref=e2822]: "onMqlChange = (event) => {"
+              - generic [ref=e2823]: isMobile.value = event.matches;
+              - generic [ref=e2824]: open.value = !event.matches;
+              - generic [ref=e2825]: "};"
+              - generic [ref=e2826]: mql.addEventListener('change', onMqlChange);
+              - generic [ref=e2827]: "});"
+              - generic [ref=e2829]: "onBeforeUnmount(() => {"
+              - generic [ref=e2830]: "if (mql && onMqlChange) {"
+              - generic [ref=e2831]: mql.removeEventListener('change', onMqlChange);
+              - generic [ref=e2832]: "}"
+              - generic [ref=e2833]: "});"
+              - generic [ref=e2834]: </script>
+          - heading "Chat Application" [level=3] [ref=e1322]
+          - paragraph [ref=e1324]: "Chat history sidebar with grouped conversations (Today, Yesterday, Previous 7 days, Previous 30 days). Each item exposes a hover-only delete action. Pinned shortcuts at the top: Search, New chat, Browse web."
+          - generic [ref=e1325]:
+            - generic [ref=e1326]:
+              - generic [ref=e1329]:
+                - generic [ref=e1332]:
+                  - generic [ref=e1333]:
+                    - list [ref=e1334]:
+                      - listitem [ref=e1335]:
+                        - button "ChatGPT" [ref=e1336] [cursor=pointer]:
+                          - img [ref=e1338]
+                          - generic [ref=e1340]: ChatGPT
+                    - list [ref=e1341]:
+                      - listitem [ref=e1342]:
+                        - button "Search" [ref=e1343] [cursor=pointer]:
+                          - img [ref=e1344]
+                          - generic [ref=e1346]: Search
+                      - listitem [ref=e1347]:
+                        - button "New chat" [ref=e1348] [cursor=pointer]:
+                          - img [ref=e1349]
+                          - generic [ref=e1351]: New chat
+                      - listitem [ref=e1352]:
+                        - button "Browse web" [ref=e1353] [cursor=pointer]:
+                          - img [ref=e1354]
+                          - generic [ref=e1356]: Browse web
+                  - generic [ref=e1357]:
+                    - generic [ref=e1358]:
+                      - generic [ref=e1359]: Today
+                      - list [ref=e1361]:
+                        - listitem [ref=e1362]:
+                          - button "PrimeVue Sidebar component" [ref=e1363] [cursor=pointer]:
+                            - generic [ref=e1364]: PrimeVue Sidebar component
+                          - button [ref=e1365] [cursor=pointer]:
+                            - img [ref=e1366]
+                        - listitem [ref=e1368]:
+                          - button "How to use Vue composables" [ref=e1369] [cursor=pointer]:
+                            - generic [ref=e1370]: How to use Vue composables
+                          - button [ref=e1371] [cursor=pointer]:
+                            - img [ref=e1372]
+                        - listitem [ref=e1374]:
+                          - button "Fix TypeScript generics issue" [ref=e1375] [cursor=pointer]:
+                            - generic [ref=e1376]: Fix TypeScript generics issue
+                          - button [ref=e1377] [cursor=pointer]:
+                            - img [ref=e1378]
+                    - generic [ref=e1380]:
+                      - generic [ref=e1381]: Yesterday
+                      - list [ref=e1383]:
+                        - listitem [ref=e1384]:
+                          - button "Design system architecture" [ref=e1385] [cursor=pointer]:
+                            - generic [ref=e1386]: Design system architecture
+                          - button [ref=e1387] [cursor=pointer]:
+                            - img [ref=e1388]
+                        - listitem [ref=e1390]:
+                          - button "Vue 3 new features overview" [ref=e1391] [cursor=pointer]:
+                            - generic [ref=e1392]: Vue 3 new features overview
+                          - button [ref=e1393] [cursor=pointer]:
+                            - img [ref=e1394]
+                        - listitem [ref=e1396]:
+                          - button "CSS light-dark() function usage" [ref=e1397] [cursor=pointer]:
+                            - generic [ref=e1398]: CSS light-dark() function usage
+                          - button [ref=e1399] [cursor=pointer]:
+                            - img [ref=e1400]
+                    - generic [ref=e1402]:
+                      - generic [ref=e1403]: Previous 7 days
+                      - list [ref=e1405]:
+                        - listitem [ref=e1406]:
+                          - button "Build a dashboard layout" [ref=e1407] [cursor=pointer]:
+                            - generic [ref=e1408]: Build a dashboard layout
+                          - button [ref=e1409] [cursor=pointer]:
+                            - img [ref=e1410]
+                        - listitem [ref=e1412]:
+                          - button "Tailwind v4 migration guide" [ref=e1413] [cursor=pointer]:
+                            - generic [ref=e1414]: Tailwind v4 migration guide
+                          - button [ref=e1415] [cursor=pointer]:
+                            - img [ref=e1416]
+                        - listitem [ref=e1418]:
+                          - button "Node.js API authentication" [ref=e1419] [cursor=pointer]:
+                            - generic [ref=e1420]: Node.js API authentication
+                          - button [ref=e1421] [cursor=pointer]:
+                            - img [ref=e1422]
+                        - listitem [ref=e1424]:
+                          - button "Monorepo setup with pnpm" [ref=e1425] [cursor=pointer]:
+                            - generic [ref=e1426]: Monorepo setup with pnpm
+                          - button [ref=e1427] [cursor=pointer]:
+                            - img [ref=e1428]
+                        - listitem [ref=e1430]:
+                          - button "Deploy Nuxt to Vercel" [ref=e1431] [cursor=pointer]:
+                            - generic [ref=e1432]: Deploy Nuxt to Vercel
+                          - button [ref=e1433] [cursor=pointer]:
+                            - img [ref=e1434]
+                    - generic [ref=e1436]:
+                      - generic [ref=e1437]: Previous 30 days
+                      - list [ref=e1439]:
+                        - listitem [ref=e1440]:
+                          - button "GraphQL schema design" [ref=e1441] [cursor=pointer]:
+                            - generic [ref=e1442]: GraphQL schema design
+                          - button [ref=e1443] [cursor=pointer]:
+                            - img [ref=e1444]
+                        - listitem [ref=e1446]:
+                          - button "WebSocket real-time updates" [ref=e1447] [cursor=pointer]:
+                            - generic [ref=e1448]: WebSocket real-time updates
+                          - button [ref=e1449] [cursor=pointer]:
+                            - img [ref=e1450]
+                        - listitem [ref=e1452]:
+                          - button "PostgreSQL query optimization" [ref=e1453] [cursor=pointer]:
+                            - generic [ref=e1454]: PostgreSQL query optimization
+                          - button [ref=e1455] [cursor=pointer]:
+                            - img [ref=e1456]
+                        - listitem [ref=e1458]:
+                          - button "Docker compose for dev env" [ref=e1459] [cursor=pointer]:
+                            - generic [ref=e1460]: Docker compose for dev env
+                          - button [ref=e1461] [cursor=pointer]:
+                            - img [ref=e1462]
+                  - list [ref=e1465]:
+                    - listitem [ref=e1466]:
+                      - button "JD John Doe" [ref=e1467] [cursor=pointer]:
+                        - generic [ref=e1469]: JD
+                        - generic [ref=e1470]: John Doe
+                - main [ref=e1471]:
+                  - button [ref=e1473] [cursor=pointer]:
+                    - img [ref=e1474]
+              - generic [ref=e1479]:
+                - generic [ref=e1480]: sidebar-chat-demo
+                - generic [ref=e1481]:
+                  - button [ref=e1482] [cursor=pointer]:
+                    - img [ref=e1483]
+                  - button [ref=e1485] [cursor=pointer]:
+                    - img [ref=e1486]
+                  - button [ref=e1488] [cursor=pointer]:
+                    - img [ref=e1489]
+            - code [ref=e2844]:
+              - generic [ref=e2845]: <template>
+              - generic [ref=e2846]: <div class="border border-surface-200 dark:border-surface-700 rounded-lg overflow-hidden">
+              - generic [ref=e2847]: <SidebarLayout class="min-h-192! relative!">
+              - generic [ref=e2848]: <SidebarBackdrop v-if="isMobile && open" class="absolute!" />
+              - generic [ref=e2849]: "<Sidebar id=\"chat-history\" :collapsible=\"isMobile ? 'offcanvas' : 'icon'\" :overlay=\"isMobile\" v-model:open=\"open\" width=\"16rem\">"
+              - generic [ref=e2850]: <SidebarSpacer />
+              - generic [ref=e2851]: <SidebarAside>
+              - generic [ref=e2852]: <SidebarPanel>
+              - generic [ref=e2853]: <SidebarHeader>
+              - generic [ref=e2854]: <SidebarMenu>
+              - generic [ref=e2855]: <SidebarMenuItem>
+              - generic [ref=e2856]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e2857]: <div class="flex size-6 shrink-0 items-center justify-center rounded-full bg-surface-900 dark:bg-surface-0">
+              - generic [ref=e2858]: <Sparkles class="size-3 text-surface-0 dark:text-surface-900" />
+              - generic [ref=e2859]: </div>
+              - generic [ref=e2860]: <span class="font-semibold text-sm">ChatGPT</span>
+              - generic [ref=e2861]: </SidebarMenuButton>
+              - generic [ref=e2862]: </SidebarMenuItem>
+              - generic [ref=e2863]: </SidebarMenu>
+              - generic [ref=e2864]: <SidebarMenu>
+              - generic [ref=e2865]: <SidebarMenuItem>
+              - generic [ref=e2866]: <SidebarMenuButton>
+              - generic [ref=e2867]: <Search />
+              - generic [ref=e2868]: <span>Search</span>
+              - generic [ref=e2869]: </SidebarMenuButton>
+              - generic [ref=e2870]: </SidebarMenuItem>
+              - generic [ref=e2871]: <SidebarMenuItem>
+              - generic [ref=e2872]: <SidebarMenuButton>
+              - generic [ref=e2873]: <PenToSquare />
+              - generic [ref=e2874]: <span>New chat</span>
+              - generic [ref=e2875]: </SidebarMenuButton>
+              - generic [ref=e2876]: </SidebarMenuItem>
+              - generic [ref=e2877]: <SidebarMenuItem>
+              - generic [ref=e2878]: <SidebarMenuButton>
+              - generic [ref=e2879]: <Globe />
+              - generic [ref=e2880]: <span>Browse web</span>
+              - generic [ref=e2881]: </SidebarMenuButton>
+              - generic [ref=e2882]: </SidebarMenuItem>
+              - generic [ref=e2883]: </SidebarMenu>
+              - generic [ref=e2884]: </SidebarHeader>
+              - generic [ref=e2886]: <SidebarContent>
+              - generic [ref=e2887]: <SidebarGroup v-for="group in chatHistory" :key="group.label">
+              - generic [ref=e2888]: "<SidebarGroupLabel>{{ group.label }}</SidebarGroupLabel>"
+              - generic [ref=e2889]: <SidebarGroupContent>
+              - generic [ref=e2890]: <SidebarMenu>
+              - generic [ref=e2891]: <SidebarMenuItem v-for="chat in group.chats" :key="chat.title">
+              - generic [ref=e2892]: <SidebarMenuButton :isActive="!!chat.active">
+              - generic [ref=e2893]: "<span>{{ chat.title }}</span>"
+              - generic [ref=e2894]: </SidebarMenuButton>
+              - generic [ref=e2895]: <SidebarMenuAction :showOnHover="true">
+              - generic [ref=e2896]: <Trash />
+              - generic [ref=e2897]: </SidebarMenuAction>
+              - generic [ref=e2898]: </SidebarMenuItem>
+              - generic [ref=e2899]: </SidebarMenu>
+              - generic [ref=e2900]: </SidebarGroupContent>
+              - generic [ref=e2901]: </SidebarGroup>
+              - generic [ref=e2902]: </SidebarContent>
+              - generic [ref=e2904]: <SidebarFooter>
+              - generic [ref=e2905]: <SidebarMenu>
+              - generic [ref=e2906]: <SidebarMenuItem>
+              - generic [ref=e2907]: <SidebarMenuButton class="p-1!">
+              - generic [ref=e2908]: <Avatar label="JD" shape="circle" class="size-6 shrink-0 text-xs" />
+              - generic [ref=e2909]: <span>John Doe</span>
+              - generic [ref=e2910]: </SidebarMenuButton>
+              - generic [ref=e2911]: </SidebarMenuItem>
+              - generic [ref=e2912]: </SidebarMenu>
+              - generic [ref=e2913]: </SidebarFooter>
+              - generic [ref=e2914]: </SidebarPanel>
+              - generic [ref=e2915]: </SidebarAside>
+              - generic [ref=e2916]: </Sidebar>
+              - generic [ref=e2918]: <SidebarMain>
+              - generic [ref=e2919]: <header class="flex h-12 items-center gap-2 border-b border-surface-200 dark:border-surface-700 px-4">
+              - generic [ref=e2920]: <SidebarTrigger severity="secondary" target="chat-history" :text="true" size="small">
+              - generic [ref=e2921]: <SidebarIcon />
+              - generic [ref=e2922]: </SidebarTrigger>
+              - generic [ref=e2923]: </header>
+              - generic [ref=e2924]: <div class="flex-1 p-4 flex flex-col gap-4">
+              - generic [ref=e2925]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 h-48"></div>
+              - generic [ref=e2926]: <div class="rounded-lg bg-surface-100 dark:bg-surface-800 flex-1"></div>
+              - generic [ref=e2927]: </div>
+              - generic [ref=e2928]: </SidebarMain>
+              - generic [ref=e2929]: </SidebarLayout>
+              - generic [ref=e2930]: </div>
+              - generic [ref=e2931]: </template>
+              - generic [ref=e2933]: <script setup>
+              - generic [ref=e2934]: "import { onBeforeUnmount, onMounted, ref } from 'vue';"
+              - generic [ref=e2935]: import Globe from '@primeicons/vue/globe';
+              - generic [ref=e2936]: import PenToSquare from '@primeicons/vue/pen-to-square';
+              - generic [ref=e2937]: import Search from '@primeicons/vue/search';
+              - generic [ref=e2938]: import SidebarIcon from '@primeicons/vue/sidebar';
+              - generic [ref=e2939]: import Sparkles from '@primeicons/vue/sparkles';
+              - generic [ref=e2940]: import Trash from '@primeicons/vue/trash';
+              - generic [ref=e2942]: const isMobile = ref(false);
+              - generic [ref=e2943]: const open = ref(true);
+              - generic [ref=e2944]: let mql = null;
+              - generic [ref=e2945]: let onMqlChange = null;
+              - generic [ref=e2947]: "onMounted(() => {"
+              - generic [ref=e2948]: if (typeof window === 'undefined') return;
+              - generic [ref=e2950]: "mql = window.matchMedia('(max-width: 1023px)');"
+              - generic [ref=e2951]: isMobile.value = mql.matches;
+              - generic [ref=e2952]: open.value = !isMobile.value;
+              - generic [ref=e2953]: "onMqlChange = (event) => {"
+              - generic [ref=e2954]: isMobile.value = event.matches;
+              - generic [ref=e2955]: open.value = !event.matches;
+              - generic [ref=e2956]: "};"
+              - generic [ref=e2957]: mql.addEventListener('change', onMqlChange);
+              - generic [ref=e2958]: "});"
+              - generic [ref=e2960]: "onBeforeUnmount(() => {"
+              - generic [ref=e2961]: "if (mql && onMqlChange) {"
+              - generic [ref=e2962]: mql.removeEventListener('change', onMqlChange);
+              - generic [ref=e2963]: "}"
+              - generic [ref=e2964]: "});"
+              - generic [ref=e2966]: const chatHistory = [
+              - generic [ref=e2967]: "{"
+              - generic [ref=e2968]: "label: 'Today',"
+              - generic [ref=e2969]: "chats: ["
+              - generic [ref=e2970]: "{"
+              - generic [ref=e2971]: "title: 'PrimeVue Sidebar component',"
+              - generic [ref=e2972]: "active: true"
+              - generic [ref=e2973]: "},"
+              - generic [ref=e2974]: "{ title: 'How to use Vue composables' },"
+              - generic [ref=e2975]: "{ title: 'Fix TypeScript generics issue' }"
+              - generic [ref=e2976]: "]"
+              - generic [ref=e2977]: "},"
+              - generic [ref=e2978]: "{"
+              - generic [ref=e2979]: "label: 'Yesterday',"
+              - generic [ref=e2980]: "chats: [{ title: 'Design system architecture' }, { title: 'Vue 3 new features overview' }, { title: 'CSS light-dark() function usage' }]"
+              - generic [ref=e2981]: "},"
+              - generic [ref=e2982]: "{"
+              - generic [ref=e2983]: "label: 'Previous 7 days',"
+              - generic [ref=e2984]: "chats: [{ title: 'Build a dashboard layout' }, { title: 'Tailwind v4 migration guide' }, { title: 'Node.js API authentication' }, { title: 'Monorepo setup with pnpm' }, { title: 'Deploy Nuxt to Vercel' }]"
+              - generic [ref=e2985]: "},"
+              - generic [ref=e2986]: "{"
+              - generic [ref=e2987]: "label: 'Previous 30 days',"
+              - generic [ref=e2988]: "chats: [{ title: 'GraphQL schema design' }, { title: 'WebSocket real-time updates' }, { title: 'PostgreSQL query optimization' }, { title: 'Docker compose for dev env' }]"
+              - generic [ref=e2989]: "}"
+              - generic [ref=e2990]: "];"
+              - generic [ref=e2991]: </script>
+        - generic [ref=e1491]:
+          - heading "Accessibility" [level=2] [ref=e1492]
+          - generic [ref=e1493]:
+            - heading "Screen Reader" [level=3] [ref=e1494]
+            - paragraph [ref=e1495]: Sidebar is a headless compound component and does not define a specific ARIA role by default. Use semantic elements such as nav or aside with aria-label or aria-labelledby to describe the purpose of the sidebar based on your layout.
+            - paragraph [ref=e1496]: When a sidebar can be collapsed or displayed offcanvas, the trigger should describe the relationship with the sidebar using aria-controls and expose the current state with aria-expanded. In layouts with multiple sidebars, provide the target prop to SidebarTrigger so it toggles the intended sidebar.
+            - paragraph [ref=e1497]: SidebarMenu renders a semantic list structure by default. Menu items are expected to contain interactive elements such as links or buttons. Collapsible SidebarMenuItem components add aria-expanded to their SidebarMenuButton automatically.
+            - code [ref=e2999]:
+              - generic [ref=e3000]: <template>
+              - generic [ref=e3001]: <SidebarLayout>
+              - generic [ref=e3002]: <Sidebar id="main-navigation" v-model:open="open" as="nav" aria-label="Main navigation">
+              - generic [ref=e3003]: <SidebarAside>
+              - generic [ref=e3004]: <SidebarPanel>
+              - generic [ref=e3005]: <SidebarContent>
+              - generic [ref=e3006]: <SidebarMenu>
+              - generic [ref=e3007]: <SidebarMenuItem>
+              - generic [ref=e3008]: <SidebarMenuButton as="a" href="/" :isActive="true">
+              - generic [ref=e3009]: <Home />
+              - generic [ref=e3010]: <span>Home</span>
+              - generic [ref=e3011]: </SidebarMenuButton>
+              - generic [ref=e3012]: </SidebarMenuItem>
+              - generic [ref=e3014]: <SidebarMenuItem :collapsible="true">
+              - generic [ref=e3015]: <SidebarMenuButton>
+              - generic [ref=e3016]: <Folder />
+              - generic [ref=e3017]: <span>Projects</span>
+              - generic [ref=e3018]: </SidebarMenuButton>
+              - generic [ref=e3019]: <SidebarMenuSub>
+              - generic [ref=e3020]: <SidebarMenuSubItem>
+              - generic [ref=e3021]: <SidebarMenuSubButton as="a" href="/projects/alpha">
+              - generic [ref=e3022]: <span>Alpha</span>
+              - generic [ref=e3023]: </SidebarMenuSubButton>
+              - generic [ref=e3024]: </SidebarMenuSubItem>
+              - generic [ref=e3025]: </SidebarMenuSub>
+              - generic [ref=e3026]: </SidebarMenuItem>
+              - generic [ref=e3027]: </SidebarMenu>
+              - generic [ref=e3028]: </SidebarContent>
+              - generic [ref=e3029]: </SidebarPanel>
+              - generic [ref=e3030]: </SidebarAside>
+              - generic [ref=e3031]: </Sidebar>
+              - generic [ref=e3033]: <SidebarMain>
+              - generic [ref=e3034]: <SidebarTrigger target="main-navigation" aria-controls="main-navigation" :aria-expanded="open" aria-label="Toggle navigation">
+              - generic [ref=e3035]: <SidebarIcon />
+              - generic [ref=e3036]: </SidebarTrigger>
+              - generic [ref=e3037]: </SidebarMain>
+              - generic [ref=e3038]: </SidebarLayout>
+              - generic [ref=e3039]: </template>
+            - heading "Trigger Keyboard Support" [level=3] [ref=e1498]
+            - table [ref=e1500]:
+              - rowgroup [ref=e1501]:
+                - row "Key Function" [ref=e1502]:
+                  - columnheader "Key" [ref=e1503]
+                  - columnheader "Function" [ref=e1504]
+              - rowgroup [ref=e1505]:
+                - row "enter Toggles the sidebar." [ref=e1506]:
+                  - cell "enter" [ref=e1507]
+                  - cell "Toggles the sidebar." [ref=e1508]
+                - row "space Toggles the sidebar." [ref=e1509]:
+                  - cell "space" [ref=e1510]
+                  - cell "Toggles the sidebar." [ref=e1511]
+            - heading "Menu Keyboard Support" [level=3] [ref=e1512]
+            - table [ref=e1514]:
+              - rowgroup [ref=e1515]:
+                - row "Key Function" [ref=e1516]:
+                  - columnheader "Key" [ref=e1517]
+                  - columnheader "Function" [ref=e1518]
+              - rowgroup [ref=e1519]:
+                - row "tab Moves focus to the next focusable element in the sidebar or page tab sequence." [ref=e1520]:
+                  - cell "tab" [ref=e1521]
+                  - cell "Moves focus to the next focusable element in the sidebar or page tab sequence." [ref=e1522]
+                - row "shift + tab Moves focus to the previous focusable element in the sidebar or page tab sequence." [ref=e1523]:
+                  - cell "shift + tab" [ref=e1524]
+                  - cell "Moves focus to the previous focusable element in the sidebar or page tab sequence." [ref=e1525]
+                - row "enter Activates the focused link or button. For a collapsible menu item, toggles the submenu." [ref=e1526]:
+                  - cell "enter" [ref=e1527]
+                  - cell "Activates the focused link or button. For a collapsible menu item, toggles the submenu." [ref=e1528]
+                - row "space Activates the focused button. For a collapsible menu item, toggles the submenu." [ref=e1529]:
+                  - cell "space" [ref=e1530]
+                  - cell "Activates the focused button. For a collapsible menu item, toggles the submenu." [ref=e1531]
+      - text:                                                                                                                                                                                                                                                                                                                                                                                                   
+  - generic [ref=e1533]:
+    - generic [ref=e1534]:
+      - text: PrimeVue 5.0.0-rc.1 by
+      - link "PrimeUI" [ref=e1535] [cursor=pointer]:
+        - /url: https://primeui.dev
+    - generic [ref=e1536]: ©2026 PrimeTek

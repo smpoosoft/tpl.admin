@@ -67,6 +67,21 @@ const themePreSet: Preset = {
         }
       }
     }
+  },
+  components: {
+    button: {
+      root: {
+        label: {
+          fontWeight: '300'
+        },
+        borderRadius: '4px'
+      }
+    },
+    panel: {
+      header: {
+        background: '{surface.0}'
+      }
+    }
   }
 };
 

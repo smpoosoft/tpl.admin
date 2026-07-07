@@ -1,0 +1,28 @@
+- generic [active] [ref=f8e7]:
+  - generic [ref=f8e11]:
+    - generic [ref=f8e12]:
+      - button "Mail" [ref=f8e13]:
+        - generic [ref=f8e15] [cursor=pointer]:
+          - generic [ref=f8e16]: 
+          - generic [ref=f8e17]: Mail
+          - generic [ref=f8e18]: "5"
+      - text:    
+    - generic [ref=f8e19]:
+      - button "Reports" [ref=f8e20]:
+        - generic [ref=f8e22] [cursor=pointer]:
+          - generic [ref=f8e23]: 
+          - generic [ref=f8e24]: Reports
+          - generic [ref=f8e25]: ⌘+R
+      - text:  
+    - generic [ref=f8e26]:
+      - button "Profile" [ref=f8e27]:
+        - generic [ref=f8e29] [cursor=pointer]:
+          - generic [ref=f8e30]: 
+          - generic [ref=f8e31]: Profile
+          - generic [ref=f8e32]: ⌘+W
+      - text:  
+  - generic [ref=f8e1]:
+    - generic "Toggle devtools panel" [ref=f8e2] [cursor=pointer]:
+      - img [ref=f8e3]
+    - generic "Toggle Component Inspector" [ref=f8e34] [cursor=pointer]:
+      - img [ref=f8e35]

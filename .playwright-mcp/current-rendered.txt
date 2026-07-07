@@ -1,0 +1,15 @@
+- generic [active] [ref=f5e7]:
+  - generic [ref=f5e11]:
+    - button "Mail" [ref=f5e13]:
+      - generic [ref=f5e15]:
+        - text: Mail
+        - generic [ref=f5e16]: "5"
+    - button "Reports" [ref=f5e18]:
+      - generic [ref=f5e20]: Reports⌘+R
+    - button "Profile" [ref=f5e22]:
+      - generic [ref=f5e24]: Profile⌘+W
+  - generic [ref=f5e1]:
+    - generic "Toggle devtools panel" [ref=f5e2] [cursor=pointer]:
+      - img [ref=f5e3]
+    - generic "Toggle Component Inspector" [ref=f5e26] [cursor=pointer]:
+      - img [ref=f5e27]

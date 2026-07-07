@@ -3,6 +3,8 @@
 // 说明：所有间距类均以 8px 为最小刻度单位（$loopTimes 概念已废弃，改为按需匹配，无需预先声明循环上限）
 // 原子函数命名规则：rules_XXName → preBuild/css/XX.name.css
 import { defineConfig, type Rule } from 'unocss';
+import presetUno from 'unocss/preset-uno';
+
 
 // #region 共享配置
 // 间距基准单位：1 个刻度 = 8px
@@ -285,7 +287,9 @@ const rules_99PreSet = (): Rule[] => [
 
 export default defineConfig({
   // 不引入任何默认预设，避免和自定义命名冲突
-  presets: [],
+  presets: [
+    presetUno({ preflight: false })
+  ],
 
   rules: [
     ...rules_01Layout(),

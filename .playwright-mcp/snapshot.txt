@@ -1,0 +1,71 @@
+- generic [active] [ref=f3e7]:
+  - generic [ref=f3e10]:
+    - generic [ref=f3e13]:
+      - generic [ref=f3e17]:
+        - generic [ref=f3e18]: A
+        - text: Acme Inc
+      - generic [ref=f3e19]:
+        - generic [ref=f3e20]:
+          - text: Navigation
+          - generic [ref=f3e22]:
+            - generic [ref=f3e24]:
+              - img [ref=f3e25]
+              - text: Home
+            - generic [ref=f3e27]:
+              - generic [ref=f3e28]:
+                - img [ref=f3e29]
+                - text: Inbox
+              - text: "12"
+            - generic [ref=f3e32]:
+              - img [ref=f3e33]
+              - text: Search
+            - generic [ref=f3e35]:
+              - generic [ref=f3e36]:
+                - img [ref=f3e37]
+                - text: Notifications
+              - text: "3"
+        - generic [ref=f3e39]:
+          - text: Projects
+          - generic [ref=f3e41]:
+            - generic [ref=f3e42]:
+              - generic [ref=f3e43]:
+                - img [ref=f3e44]
+                - text: Analytics
+              - generic [ref=f3e46]:
+                - generic [ref=f3e48]: Overview
+                - generic [ref=f3e50]: Reports
+                - generic [ref=f3e52]: Real-time
+            - generic [ref=f3e54]:
+              - img [ref=f3e55]
+              - text: Team
+            - generic [ref=f3e58]:
+              - img [ref=f3e59]
+              - text: Calendar
+            - generic [ref=f3e61]:
+              - generic [ref=f3e62]:
+                - img [ref=f3e63]
+                - text: Documents
+              - generic [ref=f3e65]:
+                - generic [ref=f3e67]: Shared
+                - generic [ref=f3e69]: Private
+                - generic [ref=f3e71]: Archived
+        - generic [ref=f3e72]:
+          - text: Billing
+          - generic [ref=f3e74]:
+            - generic [ref=f3e76]:
+              - img [ref=f3e77]
+              - text: Payments
+            - generic [ref=f3e80]:
+              - img [ref=f3e81]
+              - text: Orders
+            - generic [ref=f3e84]:
+              - img [ref=f3e85]
+              - text: Subscriptions
+      - generic [ref=f3e90]: John Doe
+    - generic:
+      - banner
+  - generic [ref=f3e1]:
+    - generic "Toggle devtools panel" [ref=f3e2] [cursor=pointer]:
+      - img [ref=f3e3]
+    - generic "Toggle Component Inspector" [ref=f3e92] [cursor=pointer]:
+      - img [ref=f3e93]

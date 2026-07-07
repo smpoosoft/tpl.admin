@@ -1,0 +1,936 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - link "PrimeVue logo" [ref=e7] [cursor=pointer]:
+      - /url: /
+      - img [ref=e8]
+    - list [ref=e24]:
+      - listitem [ref=e25]:
+        - link "" [ref=e26] [cursor=pointer]:
+          - /url: https://github.com/primefaces/primevue
+          - generic [ref=e27]: 
+      - listitem [ref=e28]:
+        - link "" [ref=e29] [cursor=pointer]:
+          - /url: https://discord.gg/gzKFYnpmCY
+          - generic [ref=e30]: 
+      - listitem [ref=e31]:
+        - link "" [ref=e32] [cursor=pointer]:
+          - /url: https://github.com/orgs/primefaces/discussions
+          - generic [ref=e33]: 
+      - listitem [ref=e34]:
+        - button "" [ref=e35] [cursor=pointer]:
+          - generic [ref=e36]: 
+      - listitem [ref=e37]:
+        - button "" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: 
+      - listitem [ref=e40]:
+        - button "" [ref=e41] [cursor=pointer]:
+          - generic [ref=e44]: 
+      - listitem [ref=e45]:
+        - button "v4 " [ref=e46] [cursor=pointer]:
+          - generic [ref=e47]: v4
+          - generic [ref=e48]: 
+      - listitem [ref=e49]:
+        - button "Menu" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]: 
+  - generic [ref=e52]:
+    - complementary [ref=e53]:
+      - navigation [ref=e54]:
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - button " Getting Started " [ref=e57] [cursor=pointer]:
+              - generic [ref=e59]: 
+              - generic [ref=e60]: Getting Started
+              - generic [ref=e62]: 
+          - listitem [ref=e63]:
+            - button " Installation " [ref=e64] [cursor=pointer]:
+              - generic [ref=e66]: 
+              - generic [ref=e67]: Installation
+              - generic [ref=e69]: 
+          - listitem [ref=e70]:
+            - button " Configuration " [ref=e71] [cursor=pointer]:
+              - generic [ref=e73]: 
+              - generic [ref=e74]: Configuration
+              - generic [ref=e76]: 
+          - listitem [ref=e77]:
+            - button " Theming " [ref=e78] [cursor=pointer]:
+              - generic [ref=e80]: 
+              - generic [ref=e81]: Theming
+              - generic [ref=e83]: 
+          - listitem [ref=e84]:
+            - button " AI Tools NEW " [ref=e85] [cursor=pointer]:
+              - generic [ref=e87]: 
+              - generic [ref=e88]: AI Tools
+              - generic [ref=e89]:
+                - generic [ref=e91]: NEW
+                - generic [ref=e92]: 
+          - listitem [ref=e93]:
+            - button " Components " [ref=e94] [cursor=pointer]:
+              - generic [ref=e96]: 
+              - generic [ref=e97]: Components
+              - generic [ref=e99]: 
+            - list [ref=e101]:
+              - listitem [ref=e102]:
+                - generic [ref=e103]: Form
+                - list [ref=e105]:
+                  - listitem [ref=e106]:
+                    - link "AutoComplete" [ref=e107] [cursor=pointer]:
+                      - /url: /autocomplete/
+                      - generic [ref=e108]: AutoComplete
+                  - listitem [ref=e109]:
+                    - link "CascadeSelect" [ref=e110] [cursor=pointer]:
+                      - /url: /cascadeselect/
+                      - generic [ref=e111]: CascadeSelect
+                  - listitem [ref=e112]:
+                    - link "Checkbox" [ref=e113] [cursor=pointer]:
+                      - /url: /checkbox/
+                      - generic [ref=e114]: Checkbox
+                  - listitem [ref=e115]:
+                    - link "ColorPicker" [ref=e116] [cursor=pointer]:
+                      - /url: /colorpicker/
+                      - generic [ref=e117]: ColorPicker
+                  - listitem [ref=e118]:
+                    - link "DatePicker" [ref=e119] [cursor=pointer]:
+                      - /url: /datepicker/
+                      - generic [ref=e120]: DatePicker
+                  - listitem [ref=e121]:
+                    - link "Editor" [ref=e122] [cursor=pointer]:
+                      - /url: /editor/
+                      - generic [ref=e123]: Editor
+                  - listitem [ref=e124]:
+                    - link "FloatLabel" [ref=e125] [cursor=pointer]:
+                      - /url: /floatlabel/
+                      - generic [ref=e126]: FloatLabel
+                  - listitem [ref=e127]:
+                    - link "IconField" [ref=e128] [cursor=pointer]:
+                      - /url: /iconfield/
+                      - generic [ref=e129]: IconField
+                  - listitem [ref=e130]:
+                    - link "IftaLabel" [ref=e131] [cursor=pointer]:
+                      - /url: /iftalabel/
+                      - generic [ref=e132]: IftaLabel
+                  - listitem [ref=e133]:
+                    - link "InputGroup" [ref=e134] [cursor=pointer]:
+                      - /url: /inputgroup/
+                      - generic [ref=e135]: InputGroup
+                  - listitem [ref=e136]:
+                    - link "InputMask" [ref=e137] [cursor=pointer]:
+                      - /url: /inputmask/
+                      - generic [ref=e138]: InputMask
+                  - listitem [ref=e139]:
+                    - link "InputNumber" [ref=e140] [cursor=pointer]:
+                      - /url: /inputnumber/
+                      - generic [ref=e141]: InputNumber
+                  - listitem [ref=e142]:
+                    - link "InputOtp" [ref=e143] [cursor=pointer]:
+                      - /url: /inputotp/
+                      - generic [ref=e144]: InputOtp
+                  - listitem [ref=e145]:
+                    - link "InputText" [ref=e146] [cursor=pointer]:
+                      - /url: /inputtext/
+                      - generic [ref=e147]: InputText
+                  - listitem [ref=e148]:
+                    - link "KeyFilter" [ref=e149] [cursor=pointer]:
+                      - /url: /keyfilter/
+                      - generic [ref=e150]: KeyFilter
+                  - listitem [ref=e151]:
+                    - link "Knob" [ref=e152] [cursor=pointer]:
+                      - /url: /knob/
+                      - generic [ref=e153]: Knob
+                  - listitem [ref=e154]:
+                    - link "Listbox" [ref=e155] [cursor=pointer]:
+                      - /url: /listbox/
+                      - generic [ref=e156]: Listbox
+                  - listitem [ref=e157]:
+                    - link "MultiSelect" [ref=e158] [cursor=pointer]:
+                      - /url: /multiselect/
+                      - generic [ref=e159]: MultiSelect
+                  - listitem [ref=e160]:
+                    - link "Password" [ref=e161] [cursor=pointer]:
+                      - /url: /password/
+                      - generic [ref=e162]: Password
+                  - listitem [ref=e163]:
+                    - link "RadioButton" [ref=e164] [cursor=pointer]:
+                      - /url: /radiobutton/
+                      - generic [ref=e165]: RadioButton
+                  - listitem [ref=e166]:
+                    - link "Rating" [ref=e167] [cursor=pointer]:
+                      - /url: /rating/
+                      - generic [ref=e168]: Rating
+                  - listitem [ref=e169]:
+                    - link "Select" [ref=e170] [cursor=pointer]:
+                      - /url: /select/
+                      - generic [ref=e171]: Select
+                  - listitem [ref=e172]:
+                    - link "SelectButton" [ref=e173] [cursor=pointer]:
+                      - /url: /selectbutton/
+                      - generic [ref=e174]: SelectButton
+                  - listitem [ref=e175]:
+                    - link "Slider" [ref=e176] [cursor=pointer]:
+                      - /url: /slider/
+                      - generic [ref=e177]: Slider
+                  - listitem [ref=e178]:
+                    - link "Textarea" [ref=e179] [cursor=pointer]:
+                      - /url: /textarea/
+                      - generic [ref=e180]: Textarea
+                  - listitem [ref=e181]:
+                    - link "ToggleButton" [ref=e182] [cursor=pointer]:
+                      - /url: /togglebutton/
+                      - generic [ref=e183]: ToggleButton
+                  - listitem [ref=e184]:
+                    - link "ToggleSwitch" [ref=e185] [cursor=pointer]:
+                      - /url: /toggleswitch/
+                      - generic [ref=e186]: ToggleSwitch
+                  - listitem [ref=e187]:
+                    - link "TreeSelect" [ref=e188] [cursor=pointer]:
+                      - /url: /treeselect/
+                      - generic [ref=e189]: TreeSelect
+              - listitem [ref=e190]:
+                - generic [ref=e191]: Button
+                - list [ref=e193]:
+                  - listitem [ref=e194]:
+                    - link "Button" [ref=e195] [cursor=pointer]:
+                      - /url: /button/
+                      - generic [ref=e196]: Button
+                  - listitem [ref=e197]:
+                    - link "SpeedDial" [ref=e198] [cursor=pointer]:
+                      - /url: /speeddial/
+                      - generic [ref=e199]: SpeedDial
+                  - listitem [ref=e200]:
+                    - link "SplitButton" [ref=e201] [cursor=pointer]:
+                      - /url: /splitbutton/
+                      - generic [ref=e202]: SplitButton
+              - listitem [ref=e203]:
+                - generic [ref=e204]: Data
+                - list [ref=e206]:
+                  - listitem [ref=e207]:
+                    - link "DataTable" [ref=e208] [cursor=pointer]:
+                      - /url: /datatable/
+                      - generic [ref=e209]: DataTable
+                  - listitem [ref=e210]:
+                    - link "DataView" [ref=e211] [cursor=pointer]:
+                      - /url: /dataview/
+                      - generic [ref=e212]: DataView
+                  - listitem [ref=e213]:
+                    - link "OrderList" [ref=e214] [cursor=pointer]:
+                      - /url: /orderlist/
+                      - generic [ref=e215]: OrderList
+                  - listitem [ref=e216]:
+                    - link "OrgChart" [ref=e217] [cursor=pointer]:
+                      - /url: /organizationchart/
+                      - generic [ref=e218]: OrgChart
+                  - listitem [ref=e219]:
+                    - link "Paginator" [ref=e220] [cursor=pointer]:
+                      - /url: /paginator/
+                      - generic [ref=e221]: Paginator
+                  - listitem [ref=e222]:
+                    - link "PickList" [ref=e223] [cursor=pointer]:
+                      - /url: /picklist/
+                      - generic [ref=e224]: PickList
+                  - listitem [ref=e225]:
+                    - link "Timeline" [ref=e226] [cursor=pointer]:
+                      - /url: /timeline/
+                      - generic [ref=e227]: Timeline
+                  - listitem [ref=e228]:
+                    - link "Tree" [ref=e229] [cursor=pointer]:
+                      - /url: /tree/
+                      - generic [ref=e230]: Tree
+                  - listitem [ref=e231]:
+                    - link "TreeTable" [ref=e232] [cursor=pointer]:
+                      - /url: /treetable/
+                      - generic [ref=e233]: TreeTable
+                  - listitem [ref=e234]:
+                    - link "VirtualScroller" [ref=e235] [cursor=pointer]:
+                      - /url: /virtualscroller/
+                      - generic [ref=e236]: VirtualScroller
+              - listitem [ref=e237]:
+                - generic [ref=e238]: Panel
+                - list [ref=e240]:
+                  - listitem [ref=e241]:
+                    - link "Accordion" [ref=e242] [cursor=pointer]:
+                      - /url: /accordion/
+                      - generic [ref=e243]: Accordion
+                  - listitem [ref=e244]:
+                    - link "Card" [ref=e245] [cursor=pointer]:
+                      - /url: /card/
+                      - generic [ref=e246]: Card
+                  - listitem [ref=e247]:
+                    - link "Deferred" [ref=e248] [cursor=pointer]:
+                      - /url: /deferredcontent/
+                      - generic [ref=e249]: Deferred
+                  - listitem [ref=e250]:
+                    - link "Divider" [ref=e251] [cursor=pointer]:
+                      - /url: /divider/
+                      - generic [ref=e252]: Divider
+                  - listitem [ref=e253]:
+                    - link "Fieldset" [ref=e254] [cursor=pointer]:
+                      - /url: /fieldset/
+                      - generic [ref=e255]: Fieldset
+                  - listitem [ref=e256]:
+                    - link "Panel" [ref=e257] [cursor=pointer]:
+                      - /url: /panel/
+                      - generic [ref=e258]: Panel
+                  - listitem [ref=e259]:
+                    - link "ScrollPanel" [ref=e260] [cursor=pointer]:
+                      - /url: /scrollpanel/
+                      - generic [ref=e261]: ScrollPanel
+                  - listitem [ref=e262]:
+                    - link "Splitter" [ref=e263] [cursor=pointer]:
+                      - /url: /splitter/
+                      - generic [ref=e264]: Splitter
+                  - listitem [ref=e265]:
+                    - link "Stepper" [ref=e266] [cursor=pointer]:
+                      - /url: /stepper/
+                      - generic [ref=e267]: Stepper
+                  - listitem [ref=e268]:
+                    - link "Tabs" [ref=e269] [cursor=pointer]:
+                      - /url: /tabs/
+                      - generic [ref=e270]: Tabs
+                  - listitem [ref=e271]:
+                    - link "Toolbar" [ref=e272] [cursor=pointer]:
+                      - /url: /toolbar/
+                      - generic [ref=e273]: Toolbar
+              - listitem [ref=e274]:
+                - generic [ref=e275]: Overlay
+                - list [ref=e277]:
+                  - listitem [ref=e278]:
+                    - link "ConfirmDialog" [ref=e279] [cursor=pointer]:
+                      - /url: /confirmdialog/
+                      - generic [ref=e280]: ConfirmDialog
+                  - listitem [ref=e281]:
+                    - link "ConfirmPopup" [ref=e282] [cursor=pointer]:
+                      - /url: /confirmpopup/
+                      - generic [ref=e283]: ConfirmPopup
+                  - listitem [ref=e284]:
+                    - link "Dialog" [ref=e285] [cursor=pointer]:
+                      - /url: /dialog/
+                      - generic [ref=e286]: Dialog
+                  - listitem [ref=e287]:
+                    - link "Drawer" [ref=e288] [cursor=pointer]:
+                      - /url: /drawer/
+                      - generic [ref=e289]: Drawer
+                  - listitem [ref=e290]:
+                    - link "DynamicDialog" [ref=e291] [cursor=pointer]:
+                      - /url: /dynamicdialog/
+                      - generic [ref=e292]: DynamicDialog
+                  - listitem [ref=e293]:
+                    - link "Popover" [ref=e294] [cursor=pointer]:
+                      - /url: /popover/
+                      - generic [ref=e295]: Popover
+                  - listitem [ref=e296]:
+                    - link "Tooltip" [ref=e297] [cursor=pointer]:
+                      - /url: /tooltip/
+                      - generic [ref=e298]: Tooltip
+              - listitem [ref=e299]:
+                - generic [ref=e300]: File
+                - list [ref=e302]:
+                  - listitem [ref=e303]:
+                    - link "Upload" [ref=e304] [cursor=pointer]:
+                      - /url: /fileupload/
+                      - generic [ref=e305]: Upload
+              - listitem [ref=e306]:
+                - generic [ref=e307]: Menu
+                - list [ref=e309]:
+                  - listitem [ref=e310]:
+                    - link "Breadcrumb" [ref=e311] [cursor=pointer]:
+                      - /url: /breadcrumb/
+                      - generic [ref=e312]: Breadcrumb
+                  - listitem [ref=e313]:
+                    - link "ContextMenu" [ref=e314] [cursor=pointer]:
+                      - /url: /contextmenu/
+                      - generic [ref=e315]: ContextMenu
+                  - listitem [ref=e316]:
+                    - link "Dock" [ref=e317] [cursor=pointer]:
+                      - /url: /dock/
+                      - generic [ref=e318]: Dock
+                  - listitem [ref=e319]:
+                    - link "Menu" [ref=e320] [cursor=pointer]:
+                      - /url: /menu/
+                      - generic [ref=e321]: Menu
+                  - listitem [ref=e322]:
+                    - link "Menubar" [ref=e323] [cursor=pointer]:
+                      - /url: /menubar/
+                      - generic [ref=e324]: Menubar
+                  - listitem [ref=e325]:
+                    - link "MegaMenu" [ref=e326] [cursor=pointer]:
+                      - /url: /megamenu/
+                      - generic [ref=e327]: MegaMenu
+                  - listitem [ref=e328]:
+                    - link "PanelMenu" [ref=e329] [cursor=pointer]:
+                      - /url: /panelmenu/
+                      - generic [ref=e330]: PanelMenu
+                  - listitem [ref=e331]:
+                    - link "TieredMenu" [ref=e332] [cursor=pointer]:
+                      - /url: /tieredmenu/
+                      - generic [ref=e333]: TieredMenu
+              - listitem [ref=e334]:
+                - generic [ref=e335]: Chart
+                - list [ref=e337]:
+                  - listitem [ref=e338]:
+                    - link "Chart.js" [ref=e339] [cursor=pointer]:
+                      - /url: /chart/
+                      - generic [ref=e340]: Chart.js
+              - listitem [ref=e341]:
+                - generic [ref=e342]: Messages
+                - list [ref=e344]:
+                  - listitem [ref=e345]:
+                    - link "Message" [ref=e346] [cursor=pointer]:
+                      - /url: /message/
+                      - generic [ref=e347]: Message
+                  - listitem [ref=e348]:
+                    - link "Toast" [ref=e349] [cursor=pointer]:
+                      - /url: /toast/
+                      - generic [ref=e350]: Toast
+              - listitem [ref=e351]:
+                - generic [ref=e352]: Media
+                - list [ref=e354]:
+                  - listitem [ref=e355]:
+                    - link "Carousel" [ref=e356] [cursor=pointer]:
+                      - /url: /carousel/
+                      - generic [ref=e357]: Carousel
+                  - listitem [ref=e358]:
+                    - link "Galleria" [ref=e359] [cursor=pointer]:
+                      - /url: /galleria/
+                      - generic [ref=e360]: Galleria
+                  - listitem [ref=e361]:
+                    - link "Image" [ref=e362] [cursor=pointer]:
+                      - /url: /image/
+                      - generic [ref=e363]: Image
+                  - listitem [ref=e364]:
+                    - link "ImageCompare" [ref=e365] [cursor=pointer]:
+                      - /url: /imagecompare/
+                      - generic [ref=e366]: ImageCompare
+              - listitem [ref=e367]:
+                - generic [ref=e368]: Misc
+                - list [ref=e370]:
+                  - listitem [ref=e371]:
+                    - link "AnimateOnScroll" [ref=e372] [cursor=pointer]:
+                      - /url: /animateonscroll/
+                      - generic [ref=e373]: AnimateOnScroll
+                  - listitem [ref=e374]:
+                    - link "Avatar" [ref=e375] [cursor=pointer]:
+                      - /url: /avatar/
+                      - generic [ref=e376]: Avatar
+                  - listitem [ref=e377]:
+                    - link "Badge" [ref=e378] [cursor=pointer]:
+                      - /url: /badge/
+                      - generic [ref=e379]: Badge
+                  - listitem [ref=e380]:
+                    - link "BlockUI" [ref=e381] [cursor=pointer]:
+                      - /url: /blockui/
+                      - generic [ref=e382]: BlockUI
+                  - listitem [ref=e383]:
+                    - link "Chip" [ref=e384] [cursor=pointer]:
+                      - /url: /chip/
+                      - generic [ref=e385]: Chip
+                  - listitem [ref=e386]:
+                    - link "FocusTrap" [ref=e387] [cursor=pointer]:
+                      - /url: /focustrap/
+                      - generic [ref=e388]: FocusTrap
+                  - listitem [ref=e389]:
+                    - link "Fluid" [ref=e390] [cursor=pointer]:
+                      - /url: /fluid/
+                      - generic [ref=e391]: Fluid
+                  - listitem [ref=e392]:
+                    - link "Inplace" [ref=e393] [cursor=pointer]:
+                      - /url: /inplace/
+                      - generic [ref=e394]: Inplace
+                  - listitem [ref=e395]:
+                    - link "MeterGroup" [ref=e396] [cursor=pointer]:
+                      - /url: /metergroup/
+                      - generic [ref=e397]: MeterGroup
+                  - listitem [ref=e398]:
+                    - link "ProgressBar" [ref=e399] [cursor=pointer]:
+                      - /url: /progressbar/
+                      - generic [ref=e400]: ProgressBar
+                  - listitem [ref=e401]:
+                    - link "ProgressSpinner" [ref=e402] [cursor=pointer]:
+                      - /url: /progressspinner/
+                      - generic [ref=e403]: ProgressSpinner
+                  - listitem [ref=e404]:
+                    - link "ScrollTop" [ref=e405] [cursor=pointer]:
+                      - /url: /scrolltop/
+                      - generic [ref=e406]: ScrollTop
+                  - listitem [ref=e407]:
+                    - link "Skeleton" [ref=e408] [cursor=pointer]:
+                      - /url: /skeleton/
+                      - generic [ref=e409]: Skeleton
+                  - listitem [ref=e410]:
+                    - link "Ripple" [ref=e411] [cursor=pointer]:
+                      - /url: /ripple/
+                      - generic [ref=e412]: Ripple
+                  - listitem [ref=e413]:
+                    - link "StyleClass" [ref=e414] [cursor=pointer]:
+                      - /url: /styleclass/
+                      - generic [ref=e415]: StyleClass
+                  - listitem [ref=e416]:
+                    - link "Tag" [ref=e417] [cursor=pointer]:
+                      - /url: /tag/
+                      - generic [ref=e418]: Tag
+                  - listitem [ref=e419]:
+                    - link "Terminal" [ref=e420] [cursor=pointer]:
+                      - /url: /terminal/
+                      - generic [ref=e421]: Terminal
+          - listitem [ref=e422]:
+            - button " Guides " [ref=e423] [cursor=pointer]:
+              - generic [ref=e425]: 
+              - generic [ref=e426]: Guides
+              - generic [ref=e428]: 
+          - listitem [ref=e429]:
+            - link " Forms" [ref=e430] [cursor=pointer]:
+              - /url: /forms/
+              - generic [ref=e432]: 
+              - generic [ref=e433]: Forms
+          - listitem [ref=e434]:
+            - button " Icons " [ref=e435] [cursor=pointer]:
+              - generic [ref=e437]: 
+              - generic [ref=e438]: Icons
+              - generic [ref=e440]: 
+          - listitem [ref=e441]:
+            - link " Volt UI" [ref=e442] [cursor=pointer]:
+              - /url: https://volt.primevue.org
+              - generic [ref=e444]: 
+              - generic [ref=e445]: Volt UI
+          - listitem [ref=e446]:
+            - button " Figma UI Kit " [ref=e447] [cursor=pointer]:
+              - generic [ref=e449]: 
+              - generic [ref=e450]: Figma UI Kit
+              - generic [ref=e452]: 
+          - listitem [ref=e453]:
+            - button " Theme Designer " [ref=e454] [cursor=pointer]:
+              - generic [ref=e456]: 
+              - generic [ref=e457]: Theme Designer
+              - generic [ref=e459]: 
+          - listitem [ref=e460]:
+            - link " Templates" [ref=e461] [cursor=pointer]:
+              - /url: /templates/
+              - generic [ref=e463]: 
+              - generic [ref=e464]: Templates
+          - listitem [ref=e465]:
+            - link " PrimeBlocks" [ref=e466] [cursor=pointer]:
+              - /url: https://primeblocks.org
+              - generic [ref=e468]: 
+              - generic [ref=e469]: PrimeBlocks
+          - listitem [ref=e470]:
+            - link " Store NEW" [ref=e471] [cursor=pointer]:
+              - /url: https://primeui.store
+              - generic [ref=e473]: 
+              - generic [ref=e474]: Store
+              - generic [ref=e476]: NEW
+          - listitem [ref=e477]:
+            - button " Support " [ref=e478] [cursor=pointer]:
+              - generic [ref=e480]: 
+              - generic [ref=e481]: Support
+              - generic [ref=e483]: 
+          - listitem [ref=e484]:
+            - button " Discover " [ref=e485] [cursor=pointer]:
+              - generic [ref=e487]: 
+              - generic [ref=e488]: Discover
+              - generic [ref=e490]: 
+    - generic [ref=e492]:
+      - list [ref=e493]:
+        - listitem [ref=e494]:
+          - button "FEATURES" [ref=e495] [cursor=pointer]
+        - listitem [ref=e496]:
+          - button "API" [ref=e497] [cursor=pointer]
+        - listitem [ref=e498]:
+          - button "THEMING" [ref=e499] [cursor=pointer]
+        - listitem [ref=e500]:
+          - button "PASS THROUGH" [ref=e501] [cursor=pointer]
+      - generic [ref=e502]:
+        - generic [ref=e504]:
+          - generic [ref=e506]:
+            - generic [ref=e507]:
+              - heading "PanelMenu" [level=1] [ref=e508]
+              - paragraph [ref=e509]: PanelMenu is a hybrid of accordion-tree components.
+            - generic [ref=e511]:
+              - button "Copy Markdown" [ref=e512] [cursor=pointer]:
+                - generic [ref=e513]: 
+                - generic [ref=e514]: Copy Markdown
+              - button [ref=e515] [cursor=pointer]:
+                - img [ref=e516]
+          - generic [ref=e518]:
+            - heading "Import" [level=2] [ref=e519]
+            - generic [ref=e520]:
+              - text: 
+              - code [ref=e524]: import PanelMenu from 'primevue/panelmenu';
+          - generic [ref=e525]:
+            - heading "Basic" [level=2] [ref=e526]
+            - paragraph [ref=e528]: PanelMenu requires a collection of menuitems as its model.
+            - generic [ref=e530]:
+              - generic [ref=e531]:
+                - button "Files" [ref=e532] [cursor=pointer]:
+                  - generic [ref=e534]:
+                    - img [ref=e535]
+                    - generic [ref=e537]: 
+                    - generic [ref=e538]: Files
+                - text:       
+              - generic [ref=e539]:
+                - button "Cloud" [ref=e540] [cursor=pointer]:
+                  - generic [ref=e542]:
+                    - img [ref=e543]
+                    - generic [ref=e545]: 
+                    - generic [ref=e546]: Cloud
+                - text:   
+              - generic [ref=e547]:
+                - button "Devices" [ref=e548] [cursor=pointer]:
+                  - generic [ref=e550]:
+                    - img [ref=e551]
+                    - generic [ref=e553]: 
+                    - generic [ref=e554]: Devices
+                - text:   
+            - generic [ref=e555]:
+              - text:  
+              - code [ref=e559]:
+                - generic [ref=e560]:
+                  - generic [ref=e561]: <PanelMenu
+                  - text: :model
+                  - generic [ref=e562]: ="items"
+                  - text: />
+          - generic [ref=e563]:
+            - heading "Multiple" [level=2] [ref=e564]
+            - paragraph [ref=e566]: Only one root menuitem at a time can be active by default, enabling multiple property changes this behavior to allow multiple root menuitems.
+            - generic [ref=e568]:
+              - generic [ref=e569]:
+                - button "Files" [ref=e570] [cursor=pointer]:
+                  - generic [ref=e572]:
+                    - img [ref=e573]
+                    - generic [ref=e575]: 
+                    - generic [ref=e576]: Files
+                - text:       
+              - generic [ref=e577]:
+                - button "Cloud" [ref=e578] [cursor=pointer]:
+                  - generic [ref=e580]:
+                    - img [ref=e581]
+                    - generic [ref=e583]: 
+                    - generic [ref=e584]: Cloud
+                - text:   
+              - generic [ref=e585]:
+                - button "Devices" [ref=e586] [cursor=pointer]:
+                  - generic [ref=e588]:
+                    - img [ref=e589]
+                    - generic [ref=e591]: 
+                    - generic [ref=e592]: Devices
+                - text:   
+            - generic [ref=e593]:
+              - text:  
+              - code [ref=e597]:
+                - generic [ref=e598]:
+                  - generic [ref=e599]: <PanelMenu
+                  - text: :model
+                  - generic [ref=e600]: ="items"
+                  - text: multiple />
+          - generic [ref=e601]:
+            - heading "Controlled" [level=2] [ref=e602]
+            - paragraph [ref=e604]: If the menuitem has a key defined, PanelMenu state can be controlled programmatically with the expandedKeys property that defines the keys that are expanded. This property is a Map instance whose key is the key of a node and value is a boolean.
+            - generic [ref=e605]:
+              - button "Toggle All" [ref=e606] [cursor=pointer]:
+                - generic [ref=e607]: Toggle All
+              - generic [ref=e608]:
+                - button "Users" [ref=e610] [cursor=pointer]:
+                  - generic [ref=e612]:
+                    - img [ref=e613]
+                    - generic [ref=e615]: 
+                    - generic [ref=e616]: Users
+                - button "Tasks" [ref=e618] [cursor=pointer]:
+                  - generic [ref=e620]:
+                    - img [ref=e621]
+                    - generic [ref=e623]: 
+                    - generic [ref=e624]: Tasks
+                - button "Calendar" [ref=e626] [cursor=pointer]:
+                  - generic [ref=e628]:
+                    - img [ref=e629]
+                    - generic [ref=e631]: 
+                    - generic [ref=e632]: Calendar
+            - generic [ref=e633]:
+              - text:  
+              - code [ref=e637]:
+                - generic [ref=e638]:
+                  - generic [ref=e639]: <Button
+                  - text: type
+                  - generic [ref=e640]: ="button"
+                  - text: label
+                  - generic [ref=e641]: ="Toggle All"
+                  - text: text @click
+                  - generic [ref=e642]: ="toggleAll"
+                  - text: />
+                - generic [ref=e643]:
+                  - generic [ref=e644]: <PanelMenu
+                  - generic [ref=e645]: v-model:expandedKeys
+                  - generic [ref=e646]: ="expandedKeys"
+                  - text: :model
+                  - generic [ref=e647]: ="items"
+                  - text: />
+          - generic [ref=e648]:
+            - heading "Template" [level=2] [ref=e649]
+            - paragraph [ref=e651]: PanelMenu offers item customization with the item template that receives the menuitem instance from the model as a parameter.
+            - generic [ref=e653]:
+              - generic [ref=e654]:
+                - button "Mail" [ref=e655] [cursor=pointer]:
+                  - generic [ref=e657]:
+                    - generic [ref=e658]: 
+                    - generic [ref=e659]: Mail
+                    - generic [ref=e660]: "5"
+                - text:    
+              - generic [ref=e661]:
+                - button "Reports" [ref=e662] [cursor=pointer]:
+                  - generic [ref=e664]:
+                    - generic [ref=e665]: 
+                    - generic [ref=e666]: Reports
+                    - generic [ref=e667]: ⌘+R
+                - text:  
+              - generic [ref=e668]:
+                - button "Profile" [ref=e669] [cursor=pointer]:
+                  - generic [ref=e671]:
+                    - generic [ref=e672]: 
+                    - generic [ref=e673]: Profile
+                    - generic [ref=e674]: ⌘+W
+                - text:  
+            - generic [ref=e675]:
+              - text:  
+              - code [ref=e679]:
+                - generic [ref=e680]:
+                  - generic [ref=e681]: <PanelMenu
+                  - text: :model
+                  - generic [ref=e682]: ="items"
+                  - text: ">"
+                - generic [ref=e683]:
+                  - generic [ref=e684]: <template
+                  - text: "#item"
+                  - generic [ref=e685]: "=\"{ item }\""
+                  - text: ">"
+                - generic [ref=e686]:
+                  - generic [ref=e687]: <a
+                  - text: v-ripple class
+                  - generic [ref=e688]: ="flex items-center px-4 py-2 cursor-pointer group"
+                  - text: ">"
+                - generic [ref=e689]:
+                  - generic [ref=e690]: <span
+                  - text: :class
+                  - generic [ref=e691]: ="[item.icon, 'text-primary group-hover:text-inherit']"
+                  - text: />
+                - generic [ref=e692]:
+                  - generic [ref=e693]: <span
+                  - text: :class
+                  - generic [ref=e694]: "=\"['ml-2', { 'font-semibold': item.items }]\""
+                  - text: ">"
+                - text: "{{ item.label }}"
+                - generic [ref=e695]:
+                  - generic [ref=e696]: </span
+                  - text: ">"
+                - generic [ref=e697]:
+                  - generic [ref=e698]: <Badge
+                  - text: v-if
+                  - generic [ref=e699]: ="item.badge"
+                  - text: class
+                  - generic [ref=e700]: ="ml-auto"
+                  - text: :value
+                  - generic [ref=e701]: ="item.badge"
+                  - text: />
+                - generic [ref=e702]:
+                  - generic [ref=e703]: <span
+                  - text: v-if
+                  - generic [ref=e704]: ="item.shortcut"
+                  - text: class
+                  - generic [ref=e705]: ="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1"
+                  - text: ">"
+                - text: "{{ item.shortcut }}"
+                - generic [ref=e706]:
+                  - generic [ref=e707]: </span
+                  - text: ">"
+                - generic [ref=e708]:
+                  - generic [ref=e709]: </a
+                  - text: ">"
+                - generic [ref=e710]:
+                  - generic [ref=e711]: </template
+                  - text: ">"
+                - generic [ref=e712]:
+                  - generic [ref=e713]: </PanelMenu
+                  - text: ">"
+          - generic [ref=e714]:
+            - heading "Command" [level=2] [ref=e715]
+            - paragraph [ref=e717]: The command property defines the callback to run when an item is activated by click or a key event.
+            - generic [ref=e719]:
+              - generic [ref=e720]:
+                - button "Files" [ref=e721] [cursor=pointer]:
+                  - generic [ref=e723]:
+                    - img [ref=e724]
+                    - generic [ref=e726]: 
+                    - generic [ref=e727]: Files
+                - text:   
+              - generic [ref=e728]:
+                - button "Sync" [ref=e729] [cursor=pointer]:
+                  - generic [ref=e731]:
+                    - img [ref=e732]
+                    - generic [ref=e734]: 
+                    - generic [ref=e735]: Sync
+                - text:  
+              - button "Sign Out" [ref=e737] [cursor=pointer]:
+                - generic [ref=e739]:
+                  - generic [ref=e740]: 
+                  - generic [ref=e741]: Sign Out
+            - generic [ref=e742]:
+              - text:  
+              - code [ref=e746]:
+                - generic [ref=e747]:
+                  - generic [ref=e748]: <PanelMenu
+                  - text: :model
+                  - generic [ref=e749]: ="items"
+                  - text: />
+                - generic [ref=e750]:
+                  - generic [ref=e751]: <Toast
+                  - text: />
+          - generic [ref=e752]:
+            - heading "Router" [level=2] [ref=e753]
+            - paragraph [ref=e755]: Items with navigation are defined with templating to be able to use a router link component, an external link or programmatic navigation.
+            - generic [ref=e757]:
+              - generic [ref=e758]:
+                - button "Router" [ref=e759] [cursor=pointer]:
+                  - generic [ref=e761]:
+                    - generic [ref=e762]: 
+                    - generic [ref=e763]: Router
+                    - generic [ref=e764]: 
+                - text:  
+              - button "Programmatic" [ref=e766] [cursor=pointer]:
+                - generic [ref=e768]:
+                  - generic [ref=e769]: 
+                  - generic [ref=e770]: Programmatic
+              - generic [ref=e771]:
+                - button "External" [ref=e772] [cursor=pointer]:
+                  - generic [ref=e774]:
+                    - generic [ref=e775]: 
+                    - generic [ref=e776]: External
+                    - generic [ref=e777]: 
+                - text:  
+            - generic [ref=e778]:
+              - text:  
+              - code [ref=e782]:
+                - generic [ref=e783]:
+                  - generic [ref=e784]: <PanelMenu
+                  - text: :model
+                  - generic [ref=e785]: ="items"
+                  - text: ">"
+                - generic [ref=e786]:
+                  - generic [ref=e787]: <template
+                  - text: "#item"
+                  - generic [ref=e788]: "=\"{ item }\""
+                  - text: ">"
+                - generic [ref=e789]:
+                  - generic [ref=e790]: <router-link
+                  - text: v-if
+                  - generic [ref=e791]: ="item.route"
+                  - text: v-slot
+                  - generic [ref=e792]: "=\"{ href, navigate }\""
+                  - text: :to
+                  - generic [ref=e793]: ="item.route"
+                  - text: custom>
+                - generic [ref=e794]:
+                  - generic [ref=e795]: <a
+                  - text: v-ripple class
+                  - generic [ref=e796]: ="flex items-center cursor-pointer text-surface-700 dark:text-surface-0 px-4 py-2"
+                  - text: :href
+                  - generic [ref=e797]: ="href"
+                  - text: "@click"
+                  - generic [ref=e798]: ="navigate"
+                  - text: ">"
+                - generic [ref=e799]:
+                  - generic [ref=e800]: <span
+                  - text: :class
+                  - generic [ref=e801]: ="item.icon"
+                  - text: />
+                - generic [ref=e802]:
+                  - generic [ref=e803]: <span
+                  - text: class
+                  - generic [ref=e804]: ="ml-2"
+                  - text: ">"
+                - text: "{{ item.label }}"
+                - generic [ref=e805]:
+                  - generic [ref=e806]: </span
+                  - text: ">"
+                - generic [ref=e807]:
+                  - generic [ref=e808]: </a
+                  - text: ">"
+                - generic [ref=e809]:
+                  - generic [ref=e810]: </router-link
+                  - text: ">"
+                - generic [ref=e811]:
+                  - generic [ref=e812]: <a
+                  - text: v-else v-ripple class
+                  - generic [ref=e813]: ="flex items-center cursor-pointer text-surface-700 dark:text-surface-0 px-4 py-2"
+                  - text: :href
+                  - generic [ref=e814]: ="item.url"
+                  - text: :target
+                  - generic [ref=e815]: ="item.target"
+                  - text: ">"
+                - generic [ref=e816]:
+                  - generic [ref=e817]: <span
+                  - text: :class
+                  - generic [ref=e818]: ="item.icon"
+                  - text: />
+                - generic [ref=e819]:
+                  - generic [ref=e820]: <span
+                  - text: class
+                  - generic [ref=e821]: ="ml-2"
+                  - text: ">"
+                - text: "{{ item.label }}"
+                - generic [ref=e822]:
+                  - generic [ref=e823]: </span
+                  - text: ">"
+                - generic [ref=e824]:
+                  - generic [ref=e825]: <span
+                  - text: v-if
+                  - generic [ref=e826]: ="item.items"
+                  - text: class
+                  - generic [ref=e827]: ="pi pi-angle-down text-primary ml-auto"
+                  - text: />
+                - generic [ref=e828]:
+                  - generic [ref=e829]: </a
+                  - text: ">"
+                - generic [ref=e830]:
+                  - generic [ref=e831]: </template
+                  - text: ">"
+                - generic [ref=e832]:
+                  - generic [ref=e833]: </PanelMenu
+                  - text: ">"
+          - generic [ref=e834]:
+            - heading "Accessibility" [level=2] [ref=e835]
+            - generic [ref=e836]:
+              - heading "Screen Reader" [level=3] [ref=e837]
+              - paragraph [ref=e838]: Accordion header elements have a button role, an aria-label defined using the label property of the menuitem model and aria-controls to define the id of the content section along with aria-expanded for the visibility state.
+              - paragraph [ref=e839]: The content of an accordion panel uses region role, defines an id that matches the aria-controls of the header and aria-labelledby referring to the id of the header.
+              - paragraph [ref=e840]: The tree elements has a tree as the role and each menu item has a treeitem role along with aria-label and aria-expanded attributes. The container element of a treenode has the group role. The aria-setsize, aria-posinset and aria-level attributes are calculated implicitly and added to each treeitem.
+              - heading "Header Keyboard Support" [level=3] [ref=e841]
+              - table [ref=e843]:
+                - rowgroup [ref=e844]:
+                  - row "Key Function" [ref=e845]:
+                    - columnheader "Key" [ref=e846]
+                    - columnheader "Function" [ref=e847]
+                - rowgroup [ref=e848]:
+                  - row "tab Moves focus to the next the focusable element in the page tab sequence." [ref=e849]:
+                    - cell "tab" [ref=e850]
+                    - cell "Moves focus to the next the focusable element in the page tab sequence." [ref=e851]
+                  - row "shift + tab Moves focus to the previous the focusable element in the page tab sequence." [ref=e852]:
+                    - cell "shift + tab" [ref=e853]
+                    - cell "Moves focus to the previous the focusable element in the page tab sequence." [ref=e854]
+                  - row "enter Toggles the visibility of the content." [ref=e855]:
+                    - cell "enter" [ref=e856]
+                    - cell "Toggles the visibility of the content." [ref=e857]
+                  - row "space Toggles the visibility of the content." [ref=e858]:
+                    - cell "space" [ref=e859]
+                    - cell "Toggles the visibility of the content." [ref=e860]
+                  - row "down arrow Moves focus to the next header. If focus is on the last header, moves focus to the first header." [ref=e861]:
+                    - cell "down arrow" [ref=e862]
+                    - cell "Moves focus to the next header. If focus is on the last header, moves focus to the first header." [ref=e863]
+                  - row "up arrow Moves focus to the previous header. If focus is on the first header, moves focus to the last header." [ref=e864]:
+                    - cell "up arrow" [ref=e865]
+                    - cell "Moves focus to the previous header. If focus is on the first header, moves focus to the last header." [ref=e866]
+                  - row "home Moves focus to the first header." [ref=e867]:
+                    - cell "home" [ref=e868]
+                    - cell "Moves focus to the first header." [ref=e869]
+                  - row "end Moves focus to the last header." [ref=e870]:
+                    - cell "end" [ref=e871]
+                    - cell "Moves focus to the last header." [ref=e872]
+        - text:                                                                       
+  - generic [ref=e874]:
+    - text: PrimeVue 4.5.5 on Vue 3 by
+    - link "PrimeTek" [ref=e875] [cursor=pointer]:
+      - /url: https://www.primetek.com.tr

@@ -1,0 +1,29 @@
+- generic [active] [ref=f1e7]:
+  - generic [ref=f1e8]:
+    - button "Navigation" [ref=f1e10] [cursor=pointer]:
+      - img [ref=f1e11]
+    - generic [ref=f1e14]:
+      - generic [ref=f1e15]:
+        - generic [ref=f1e16]: Order Summary
+        - button "Order Summary" [expanded] [ref=f1e18] [cursor=pointer]:
+          - img [ref=f1e19]
+      - region "Order Summary" [ref=f1e21]:
+        - generic [ref=f1e24]:
+          - generic [ref=f1e25]:
+            - generic [ref=f1e26]: Wireless Headphones
+            - generic [ref=f1e27]: $79.00
+          - generic [ref=f1e28]:
+            - generic [ref=f1e29]: Phone Case
+            - generic [ref=f1e30]: $15.00
+          - generic [ref=f1e31]:
+            - generic [ref=f1e32]: Shipping
+            - generic [ref=f1e33]: $5.99
+          - separator
+          - generic [ref=f1e34]:
+            - generic [ref=f1e35]: Total
+            - generic [ref=f1e36]: $99.99
+  - generic [ref=f1e1]:
+    - generic "Toggle devtools panel" [ref=f1e2] [cursor=pointer]:
+      - img [ref=f1e3]
+    - generic "Toggle Component Inspector" [ref=f1e38] [cursor=pointer]:
+      - img [ref=f1e39]

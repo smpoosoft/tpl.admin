@@ -1,0 +1,1359 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - link "PrimeVue logo" [ref=e7] [cursor=pointer]:
+      - /url: /
+      - img [ref=e8]
+    - generic [ref=e9]:
+      - button "Search" [ref=e10]:
+        - generic [ref=e11]: 
+      - button "Toggle Dark Mode" [ref=e12]:
+        - generic [ref=e13]: 
+      - button "App Configurator" [ref=e15]:
+        - generic [ref=e16]: 
+      - button "Open Designer" [ref=e17]:
+        - generic [ref=e18]: 
+      - link "Get PrimeUI" [ref=e19] [cursor=pointer]:
+        - /url: https://primeui.store
+        - generic [ref=e20]: Get PrimeUI Get PrimeUI
+      - button "Menu" [ref=e21]:
+        - generic [ref=e22]: 
+  - generic [ref=e23]:
+    - complementary [ref=e24]:
+      - navigation [ref=e25]:
+        - list [ref=e26]:
+          - listitem [ref=e27]:
+            - link " Guides" [ref=e28] [cursor=pointer]:
+              - /url: /installation/
+              - generic [ref=e30]: 
+              - generic [ref=e31]: Guides
+          - listitem [ref=e32]:
+            - link " Components" [ref=e33] [cursor=pointer]:
+              - /url: /autocomplete/
+              - generic [ref=e35]: 
+              - generic [ref=e36]: Components
+          - listitem [ref=e37]:
+            - button " Add-Ons" [ref=e38] [cursor=pointer]:
+              - generic [ref=e40]: 
+              - generic [ref=e41]: Add-Ons
+          - listitem [ref=e42]:
+            - button " Resources" [ref=e43] [cursor=pointer]:
+              - generic [ref=e45]: 
+              - generic [ref=e46]: Resources
+        - list [ref=e48]:
+          - listitem [ref=e49]:
+            - generic [ref=e50]: PRO Suite
+            - list [ref=e52]:
+              - listitem [ref=e53]:
+                - link "Charts " [ref=e54] [cursor=pointer]:
+                  - /url: https://vue.primeuipro.dev/charts
+                  - generic [ref=e55]: Charts
+                  - generic [ref=e56]: 
+              - listitem [ref=e57]:
+                - link "Scheduler " [ref=e58] [cursor=pointer]:
+                  - /url: https://vue.primeuipro.dev/scheduler
+                  - generic [ref=e59]: Scheduler
+                  - generic [ref=e60]: 
+              - listitem [ref=e61]:
+                - link "Text Editor " [ref=e62] [cursor=pointer]:
+                  - /url: https://vue.primeuipro.dev/texteditor
+                  - generic [ref=e63]: Text Editor
+                  - generic [ref=e64]: 
+              - listitem [ref=e65]:
+                - link "Task Board " [ref=e66] [cursor=pointer]:
+                  - /url: https://vue.primeuipro.dev/taskboard
+                  - generic [ref=e67]: Task Board
+                  - generic [ref=e68]: 
+          - listitem [ref=e69]:
+            - generic [ref=e70]: Form
+            - list [ref=e72]:
+              - listitem [ref=e73]:
+                - link "AutoComplete" [ref=e74] [cursor=pointer]:
+                  - /url: /autocomplete/
+                  - generic [ref=e75]: AutoComplete
+              - listitem [ref=e76]:
+                - link "CascadeSelect" [ref=e77] [cursor=pointer]:
+                  - /url: /cascadeselect/
+                  - generic [ref=e78]: CascadeSelect
+              - listitem [ref=e79]:
+                - link "Checkbox" [ref=e80] [cursor=pointer]:
+                  - /url: /checkbox/
+                  - generic [ref=e81]: Checkbox
+              - listitem [ref=e82]:
+                - link "DatePicker" [ref=e83] [cursor=pointer]:
+                  - /url: /datepicker/
+                  - generic [ref=e84]: DatePicker
+              - listitem [ref=e85]:
+                - link "FloatLabel" [ref=e86] [cursor=pointer]:
+                  - /url: /floatlabel/
+                  - generic [ref=e87]: FloatLabel
+              - listitem [ref=e88]:
+                - link "IconField" [ref=e89] [cursor=pointer]:
+                  - /url: /iconfield/
+                  - generic [ref=e90]: IconField
+              - listitem [ref=e91]:
+                - link "IftaLabel" [ref=e92] [cursor=pointer]:
+                  - /url: /iftalabel/
+                  - generic [ref=e93]: IftaLabel
+              - listitem [ref=e94]:
+                - link "InputColor" [ref=e95] [cursor=pointer]:
+                  - /url: /inputcolor/
+                  - generic [ref=e96]: InputColor
+              - listitem [ref=e97]:
+                - link "InputGroup" [ref=e98] [cursor=pointer]:
+                  - /url: /inputgroup/
+                  - generic [ref=e99]: InputGroup
+              - listitem [ref=e100]:
+                - link "InputNumber" [ref=e101] [cursor=pointer]:
+                  - /url: /inputnumber/
+                  - generic [ref=e102]: InputNumber
+              - listitem [ref=e103]:
+                - link "InputOtp" [ref=e104] [cursor=pointer]:
+                  - /url: /inputotp/
+                  - generic [ref=e105]: InputOtp
+              - listitem [ref=e106]:
+                - link "InputPassword" [ref=e107] [cursor=pointer]:
+                  - /url: /inputpassword/
+                  - generic [ref=e108]: InputPassword
+              - listitem [ref=e109]:
+                - link "InputTags" [ref=e110] [cursor=pointer]:
+                  - /url: /inputtags/
+                  - generic [ref=e111]: InputTags
+              - listitem [ref=e112]:
+                - link "InputText" [ref=e113] [cursor=pointer]:
+                  - /url: /inputtext/
+                  - generic [ref=e114]: InputText
+              - listitem [ref=e115]:
+                - link "KeyFilter" [ref=e116] [cursor=pointer]:
+                  - /url: /keyfilter/
+                  - generic [ref=e117]: KeyFilter
+              - listitem [ref=e118]:
+                - link "Knob" [ref=e119] [cursor=pointer]:
+                  - /url: /knob/
+                  - generic [ref=e120]: Knob
+              - listitem [ref=e121]:
+                - link "Label" [ref=e122] [cursor=pointer]:
+                  - /url: /label/
+                  - generic [ref=e123]: Label
+              - listitem [ref=e124]:
+                - link "Listbox" [ref=e125] [cursor=pointer]:
+                  - /url: /listbox/
+                  - generic [ref=e126]: Listbox
+              - listitem [ref=e127]:
+                - link "Mask" [ref=e128] [cursor=pointer]:
+                  - /url: /mask/
+                  - generic [ref=e129]: Mask
+              - listitem [ref=e130]:
+                - link "RadioButton" [ref=e131] [cursor=pointer]:
+                  - /url: /radiobutton/
+                  - generic [ref=e132]: RadioButton
+              - listitem [ref=e133]:
+                - link "Rating" [ref=e134] [cursor=pointer]:
+                  - /url: /rating/
+                  - generic [ref=e135]: Rating
+              - listitem [ref=e136]:
+                - link "Select" [ref=e137] [cursor=pointer]:
+                  - /url: /select/
+                  - generic [ref=e138]: Select
+              - listitem [ref=e139]:
+                - link "SelectButton" [ref=e140] [cursor=pointer]:
+                  - /url: /selectbutton/
+                  - generic [ref=e141]: SelectButton
+              - listitem [ref=e142]:
+                - link "Slider" [ref=e143] [cursor=pointer]:
+                  - /url: /slider/
+                  - generic [ref=e144]: Slider
+              - listitem [ref=e145]:
+                - link "Textarea" [ref=e146] [cursor=pointer]:
+                  - /url: /textarea/
+                  - generic [ref=e147]: Textarea
+              - listitem [ref=e148]:
+                - link "ToggleButton" [ref=e149] [cursor=pointer]:
+                  - /url: /togglebutton/
+                  - generic [ref=e150]: ToggleButton
+              - listitem [ref=e151]:
+                - link "ToggleSwitch" [ref=e152] [cursor=pointer]:
+                  - /url: /toggleswitch/
+                  - generic [ref=e153]: ToggleSwitch
+              - listitem [ref=e154]:
+                - link "TreeSelect" [ref=e155] [cursor=pointer]:
+                  - /url: /treeselect/
+                  - generic [ref=e156]: TreeSelect
+          - listitem [ref=e157]:
+            - generic [ref=e158]: Button
+            - list [ref=e160]:
+              - listitem [ref=e161]:
+                - link "Button" [ref=e162] [cursor=pointer]:
+                  - /url: /button/
+                  - generic [ref=e163]: Button
+              - listitem [ref=e164]:
+                - link "SpeedDial" [ref=e165] [cursor=pointer]:
+                  - /url: /speeddial/
+                  - generic [ref=e166]: SpeedDial
+              - listitem [ref=e167]:
+                - link "SplitButton" [ref=e168] [cursor=pointer]:
+                  - /url: /splitbutton/
+                  - generic [ref=e169]: SplitButton
+          - listitem [ref=e170]:
+            - generic [ref=e171]: Data
+            - list [ref=e173]:
+              - listitem [ref=e174]:
+                - link "DataTable" [ref=e175] [cursor=pointer]:
+                  - /url: /datatable/
+                  - generic [ref=e176]: DataTable
+              - listitem [ref=e177]:
+                - link "DataView" [ref=e178] [cursor=pointer]:
+                  - /url: /dataview/
+                  - generic [ref=e179]: DataView
+              - listitem [ref=e180]:
+                - link "OrderList" [ref=e181] [cursor=pointer]:
+                  - /url: /orderlist/
+                  - generic [ref=e182]: OrderList
+              - listitem [ref=e183]:
+                - link "OrgChart" [ref=e184] [cursor=pointer]:
+                  - /url: /organizationchart/
+                  - generic [ref=e185]: OrgChart
+              - listitem [ref=e186]:
+                - link "Paginator" [ref=e187] [cursor=pointer]:
+                  - /url: /paginator/
+                  - generic [ref=e188]: Paginator
+              - listitem [ref=e189]:
+                - link "PickList" [ref=e190] [cursor=pointer]:
+                  - /url: /picklist/
+                  - generic [ref=e191]: PickList
+              - listitem [ref=e192]:
+                - link "Timeline" [ref=e193] [cursor=pointer]:
+                  - /url: /timeline/
+                  - generic [ref=e194]: Timeline
+              - listitem [ref=e195]:
+                - link "Tree" [ref=e196] [cursor=pointer]:
+                  - /url: /tree/
+                  - generic [ref=e197]: Tree
+              - listitem [ref=e198]:
+                - link "TreeTable" [ref=e199] [cursor=pointer]:
+                  - /url: /treetable/
+                  - generic [ref=e200]: TreeTable
+              - listitem [ref=e201]:
+                - link "VirtualScroller" [ref=e202] [cursor=pointer]:
+                  - /url: /virtualscroller/
+                  - generic [ref=e203]: VirtualScroller
+          - listitem [ref=e204]:
+            - generic [ref=e205]: Panel
+            - list [ref=e207]:
+              - listitem [ref=e208]:
+                - link "Accordion" [ref=e209] [cursor=pointer]:
+                  - /url: /accordion/
+                  - generic [ref=e210]: Accordion
+              - listitem [ref=e211]:
+                - link "Card" [ref=e212] [cursor=pointer]:
+                  - /url: /card/
+                  - generic [ref=e213]: Card
+              - listitem [ref=e214]:
+                - link "Deferred" [ref=e215] [cursor=pointer]:
+                  - /url: /deferredcontent/
+                  - generic [ref=e216]: Deferred
+              - listitem [ref=e217]:
+                - link "Divider" [ref=e218] [cursor=pointer]:
+                  - /url: /divider/
+                  - generic [ref=e219]: Divider
+              - listitem [ref=e220]:
+                - link "Fieldset" [ref=e221] [cursor=pointer]:
+                  - /url: /fieldset/
+                  - generic [ref=e222]: Fieldset
+              - listitem [ref=e223]:
+                - link "Panel" [ref=e224] [cursor=pointer]:
+                  - /url: /panel/
+                  - generic [ref=e225]: Panel
+              - listitem [ref=e226]:
+                - link "ScrollArea" [ref=e227] [cursor=pointer]:
+                  - /url: /scrollarea/
+                  - generic [ref=e228]: ScrollArea
+              - listitem [ref=e229]:
+                - link "Splitter" [ref=e230] [cursor=pointer]:
+                  - /url: /splitter/
+                  - generic [ref=e231]: Splitter
+              - listitem [ref=e232]:
+                - link "Stepper" [ref=e233] [cursor=pointer]:
+                  - /url: /stepper/
+                  - generic [ref=e234]: Stepper
+              - listitem [ref=e235]:
+                - link "Tabs" [ref=e236] [cursor=pointer]:
+                  - /url: /tabs/
+                  - generic [ref=e237]: Tabs
+              - listitem [ref=e238]:
+                - link "Toolbar" [ref=e239] [cursor=pointer]:
+                  - /url: /toolbar/
+                  - generic [ref=e240]: Toolbar
+          - listitem [ref=e241]:
+            - generic [ref=e242]: Overlay
+            - list [ref=e244]:
+              - listitem [ref=e245]:
+                - link "ConfirmDialog" [ref=e246] [cursor=pointer]:
+                  - /url: /confirmdialog/
+                  - generic [ref=e247]: ConfirmDialog
+              - listitem [ref=e248]:
+                - link "ConfirmPopup" [ref=e249] [cursor=pointer]:
+                  - /url: /confirmpopup/
+                  - generic [ref=e250]: ConfirmPopup
+              - listitem [ref=e251]:
+                - link "Dialog" [ref=e252] [cursor=pointer]:
+                  - /url: /dialog/
+                  - generic [ref=e253]: Dialog
+              - listitem [ref=e254]:
+                - link "Drawer" [ref=e255] [cursor=pointer]:
+                  - /url: /drawer/
+                  - generic [ref=e256]: Drawer
+              - listitem [ref=e257]:
+                - link "DynamicDialog" [ref=e258] [cursor=pointer]:
+                  - /url: /dynamicdialog/
+                  - generic [ref=e259]: DynamicDialog
+              - listitem [ref=e260]:
+                - link "Popover" [ref=e261] [cursor=pointer]:
+                  - /url: /popover/
+                  - generic [ref=e262]: Popover
+              - listitem [ref=e263]:
+                - link "Tooltip" [ref=e264] [cursor=pointer]:
+                  - /url: /tooltip/
+                  - generic [ref=e265]: Tooltip
+          - listitem [ref=e266]:
+            - generic [ref=e267]: File
+            - list [ref=e269]:
+              - listitem [ref=e270]:
+                - link "Upload" [ref=e271] [cursor=pointer]:
+                  - /url: /fileupload/
+                  - generic [ref=e272]: Upload
+          - listitem [ref=e273]:
+            - generic [ref=e274]: Menu
+            - list [ref=e276]:
+              - listitem [ref=e277]:
+                - link "Breadcrumb" [ref=e278] [cursor=pointer]:
+                  - /url: /breadcrumb/
+                  - generic [ref=e279]: Breadcrumb
+              - listitem [ref=e280]:
+                - link "CommandMenu" [ref=e281] [cursor=pointer]:
+                  - /url: /commandmenu/
+                  - generic [ref=e282]: CommandMenu
+              - listitem [ref=e283]:
+                - link "ContextMenu" [ref=e284] [cursor=pointer]:
+                  - /url: /contextmenu/
+                  - generic [ref=e285]: ContextMenu
+              - listitem [ref=e286]:
+                - link "Dock" [ref=e287] [cursor=pointer]:
+                  - /url: /dock/
+                  - generic [ref=e288]: Dock
+              - listitem [ref=e289]:
+                - link "MegaMenu" [ref=e290] [cursor=pointer]:
+                  - /url: /megamenu/
+                  - generic [ref=e291]: MegaMenu
+              - listitem [ref=e292]:
+                - link "Menu" [ref=e293] [cursor=pointer]:
+                  - /url: /menu/
+                  - generic [ref=e294]: Menu
+              - listitem [ref=e295]:
+                - link "Menubar" [ref=e296] [cursor=pointer]:
+                  - /url: /menubar/
+                  - generic [ref=e297]: Menubar
+              - listitem [ref=e298]:
+                - link "Sidebar" [ref=e299] [cursor=pointer]:
+                  - /url: /sidebar/
+                  - generic [ref=e300]: Sidebar
+              - listitem [ref=e301]:
+                - link "TieredMenu" [ref=e302] [cursor=pointer]:
+                  - /url: /tieredmenu/
+                  - generic [ref=e303]: TieredMenu
+          - listitem [ref=e304]:
+            - generic [ref=e305]: Messages
+            - list [ref=e307]:
+              - listitem [ref=e308]:
+                - link "Message" [ref=e309] [cursor=pointer]:
+                  - /url: /message/
+                  - generic [ref=e310]: Message
+              - listitem [ref=e311]:
+                - link "Toast" [ref=e312] [cursor=pointer]:
+                  - /url: /toast/
+                  - generic [ref=e313]: Toast
+          - listitem [ref=e314]:
+            - generic [ref=e315]: Media
+            - list [ref=e317]:
+              - listitem [ref=e318]:
+                - link "Carousel" [ref=e319] [cursor=pointer]:
+                  - /url: /carousel/
+                  - generic [ref=e320]: Carousel
+              - listitem [ref=e321]:
+                - link "Compare" [ref=e322] [cursor=pointer]:
+                  - /url: /compare/
+                  - generic [ref=e323]: Compare
+              - listitem [ref=e324]:
+                - link "Gallery" [ref=e325] [cursor=pointer]:
+                  - /url: /gallery/
+                  - generic [ref=e326]: Gallery
+          - listitem [ref=e327]:
+            - generic [ref=e328]: Misc
+            - list [ref=e330]:
+              - listitem [ref=e331]:
+                - link "AnimateOnScroll" [ref=e332] [cursor=pointer]:
+                  - /url: /animateonscroll/
+                  - generic [ref=e333]: AnimateOnScroll
+              - listitem [ref=e334]:
+                - link "Avatar" [ref=e335] [cursor=pointer]:
+                  - /url: /avatar/
+                  - generic [ref=e336]: Avatar
+              - listitem [ref=e337]:
+                - link "Badge" [ref=e338] [cursor=pointer]:
+                  - /url: /badge/
+                  - generic [ref=e339]: Badge
+              - listitem [ref=e340]:
+                - link "BlockUI" [ref=e341] [cursor=pointer]:
+                  - /url: /blockui/
+                  - generic [ref=e342]: BlockUI
+              - listitem [ref=e343]:
+                - link "Chip" [ref=e344] [cursor=pointer]:
+                  - /url: /chip/
+                  - generic [ref=e345]: Chip
+              - listitem [ref=e346]:
+                - link "Fluid" [ref=e347] [cursor=pointer]:
+                  - /url: /fluid/
+                  - generic [ref=e348]: Fluid
+              - listitem [ref=e349]:
+                - link "FocusTrap" [ref=e350] [cursor=pointer]:
+                  - /url: /focustrap/
+                  - generic [ref=e351]: FocusTrap
+              - listitem [ref=e352]:
+                - link "Inplace" [ref=e353] [cursor=pointer]:
+                  - /url: /inplace/
+                  - generic [ref=e354]: Inplace
+              - listitem [ref=e355]:
+                - link "MeterGroup" [ref=e356] [cursor=pointer]:
+                  - /url: /metergroup/
+                  - generic [ref=e357]: MeterGroup
+              - listitem [ref=e358]:
+                - link "ProgressBar" [ref=e359] [cursor=pointer]:
+                  - /url: /progressbar/
+                  - generic [ref=e360]: ProgressBar
+              - listitem [ref=e361]:
+                - link "ProgressSpinner" [ref=e362] [cursor=pointer]:
+                  - /url: /progressspinner/
+                  - generic [ref=e363]: ProgressSpinner
+              - listitem [ref=e364]:
+                - link "Ripple" [ref=e365] [cursor=pointer]:
+                  - /url: /ripple/
+                  - generic [ref=e366]: Ripple
+              - listitem [ref=e367]:
+                - link "ScrollTop" [ref=e368] [cursor=pointer]:
+                  - /url: /scrolltop/
+                  - generic [ref=e369]: ScrollTop
+              - listitem [ref=e370]:
+                - link "Skeleton" [ref=e371] [cursor=pointer]:
+                  - /url: /skeleton/
+                  - generic [ref=e372]: Skeleton
+              - listitem [ref=e373]:
+                - link "StyleClass" [ref=e374] [cursor=pointer]:
+                  - /url: /styleclass/
+                  - generic [ref=e375]: StyleClass
+              - listitem [ref=e376]:
+                - link "Tag" [ref=e377] [cursor=pointer]:
+                  - /url: /tag/
+                  - generic [ref=e378]: Tag
+              - listitem [ref=e379]:
+                - link "Terminal" [ref=e380] [cursor=pointer]:
+                  - /url: /terminal/
+                  - generic [ref=e381]: Terminal
+    - generic [ref=e386]:
+      - generic [ref=e388]:
+        - generic [ref=e389]:
+          - link "Components" [ref=e390] [cursor=pointer]:
+            - /url: /components
+          - img [ref=e391]
+          - generic [ref=e393]: Menu
+        - heading "Sidebar" [level=1] [ref=e394]
+        - paragraph [ref=e395]: Sidebar is a compound navigation panel with collapsible icon mode, offcanvas mode, variants and optional overlay.
+      - generic [ref=e398]:
+        - generic [ref=e401]:
+          - generic [ref=e404]:
+            - list [ref=e406]:
+              - listitem [ref=e407]:
+                - button "A Acme Inc" [ref=e408] [cursor=pointer]:
+                  - generic [ref=e409]: A
+                  - generic [ref=e410]: Acme Inc
+            - generic [ref=e411]:
+              - generic [ref=e412]:
+                - generic [ref=e413]: Navigation
+                - list [ref=e415]:
+                  - listitem [ref=e416]:
+                    - button "Home" [ref=e417] [cursor=pointer]:
+                      - img [ref=e418]
+                      - generic [ref=e420]: Home
+                    - button [ref=e421] [cursor=pointer]:
+                      - img [ref=e422]
+                  - listitem [ref=e424]:
+                    - button "Inbox" [ref=e425] [cursor=pointer]:
+                      - img [ref=e426]
+                      - generic [ref=e428]: Inbox
+                    - generic: "12"
+                  - listitem [ref=e429]:
+                    - button "Search" [ref=e430] [cursor=pointer]:
+                      - img [ref=e431]
+                      - generic [ref=e433]: Search
+                    - button [ref=e434] [cursor=pointer]:
+                      - img [ref=e435]
+                  - listitem [ref=e437]:
+                    - button "Notifications" [ref=e438] [cursor=pointer]:
+                      - img [ref=e439]
+                      - generic [ref=e441]: Notifications
+                    - generic: "3"
+              - generic [ref=e442]:
+                - generic [ref=e443]: Projects
+                - button [ref=e444] [cursor=pointer]:
+                  - img [ref=e445]
+                - list [ref=e448]:
+                  - listitem [ref=e449]:
+                    - button "Analytics" [expanded] [ref=e450] [cursor=pointer]:
+                      - img [ref=e451]
+                      - generic [ref=e453]: Analytics
+                      - img [ref=e454]
+                    - list [ref=e456]:
+                      - listitem [ref=e457]:
+                        - button "Overview" [ref=e458] [cursor=pointer]:
+                          - generic [ref=e459]: Overview
+                      - listitem [ref=e460]:
+                        - button "Reports" [ref=e461] [cursor=pointer]:
+                          - generic [ref=e462]: Reports
+                      - listitem [ref=e463]:
+                        - button "Real-time" [ref=e464] [cursor=pointer]:
+                          - generic [ref=e465]: Real-time
+                  - listitem [ref=e466]:
+                    - button "Team" [ref=e467] [cursor=pointer]:
+                      - img [ref=e468]
+                      - generic [ref=e470]: Team
+                    - button [ref=e471] [cursor=pointer]:
+                      - img [ref=e472]
+                  - listitem [ref=e474]:
+                    - button "Calendar" [ref=e475] [cursor=pointer]:
+                      - img [ref=e476]
+                      - generic [ref=e478]: Calendar
+                    - button [ref=e479] [cursor=pointer]:
+                      - img [ref=e480]
+                  - listitem [ref=e482]:
+                    - button "Documents" [ref=e483] [cursor=pointer]:
+                      - img [ref=e484]
+                      - generic [ref=e486]: Documents
+                      - img [ref=e487]
+                    - list [ref=e489]:
+                      - listitem [ref=e490]:
+                        - button "Shared" [ref=e491] [cursor=pointer]:
+                          - generic [ref=e492]: Shared
+                      - listitem [ref=e493]:
+                        - button "Private" [ref=e494] [cursor=pointer]:
+                          - generic [ref=e495]: Private
+                      - listitem [ref=e496]:
+                        - button "Archived" [ref=e497] [cursor=pointer]:
+                          - generic [ref=e498]: Archived
+              - generic [ref=e499]:
+                - generic [ref=e500]: Billing
+                - list [ref=e502]:
+                  - listitem [ref=e503]:
+                    - button "Payments" [ref=e504] [cursor=pointer]:
+                      - img [ref=e505]
+                      - generic [ref=e507]: Payments
+                    - button [ref=e508] [cursor=pointer]:
+                      - img [ref=e509]
+                  - listitem [ref=e511]:
+                    - button "Orders" [ref=e512] [cursor=pointer]:
+                      - img [ref=e513]
+                      - generic [ref=e515]: Orders
+                    - button [ref=e516] [cursor=pointer]:
+                      - img [ref=e517]
+                  - listitem [ref=e519]:
+                    - button "Subscriptions" [ref=e520] [cursor=pointer]:
+                      - img [ref=e521]
+                      - generic [ref=e523]: Subscriptions
+                    - button [ref=e524] [cursor=pointer]:
+                      - img [ref=e525]
+            - list [ref=e528]:
+              - listitem [ref=e529]:
+                - button "JD John Doe" [ref=e530] [cursor=pointer]:
+                  - generic [ref=e532]: JD
+                  - generic [ref=e533]: John Doe
+            - button "Toggle Sidebar" [ref=e534]
+          - main [ref=e535]:
+            - button [ref=e537] [cursor=pointer]:
+              - img [ref=e538]
+        - generic [ref=e543]:
+          - generic [ref=e544]: PREVIEW
+          - generic [ref=e545]:
+            - button [ref=e546] [cursor=pointer]:
+              - img [ref=e547]
+            - button [ref=e549] [cursor=pointer]:
+              - img [ref=e550]
+            - button [ref=e552] [cursor=pointer]:
+              - img [ref=e553]
+      - heading "Usage" [level=2] [ref=e556]
+      - generic [ref=e557]:
+        - heading "Examples" [level=2] [ref=e559]
+        - heading "Variants" [level=3] [ref=e560]
+        - paragraph [ref=e562]:
+          - text: Interactive playground for every sidebar
+          - code [ref=e563]: variant
+          - text: ","
+          - code [ref=e564]: collapsible
+          - text: mode,
+          - code [ref=e565]: side
+          - text: ","
+          - code [ref=e566]: overlay
+          - text: ", open-on-hover and backdrop."
+        - generic [ref=e568]:
+          - generic [ref=e570]:
+            - generic [ref=e571]:
+              - generic [ref=e572] [cursor=pointer]:
+                - combobox "Sidebar" [ref=e573]
+                - img [ref=e575]
+              - generic [ref=e577] [cursor=pointer]:
+                - combobox "Icon" [ref=e578]
+                - img [ref=e580]
+              - group [ref=e582]:
+                - button "Left" [pressed] [ref=e583] [cursor=pointer]:
+                  - generic [ref=e585]: Left
+                - button "Right" [ref=e586] [cursor=pointer]:
+                  - generic [ref=e588]: Right
+              - generic [ref=e589]:
+                - checkbox "Overlay" [ref=e591] [cursor=pointer]
+                - generic [ref=e593] [cursor=pointer]: Overlay
+              - generic [ref=e594]:
+                - checkbox "Open on Hover" [ref=e596] [cursor=pointer]
+                - generic [ref=e598] [cursor=pointer]: Open on Hover
+              - generic [ref=e599]:
+                - checkbox "Backdrop" [ref=e601] [cursor=pointer]
+                - generic [ref=e603] [cursor=pointer]: Backdrop
+            - generic [ref=e605]:
+              - generic [ref=e608]:
+                - list [ref=e610]:
+                  - listitem [ref=e611]:
+                    - button "A Acme Inc" [ref=e612] [cursor=pointer]:
+                      - generic [ref=e613]: A
+                      - generic [ref=e614]: Acme Inc
+                - generic [ref=e615]:
+                  - generic [ref=e616]:
+                    - generic [ref=e617]: Navigation
+                    - list [ref=e619]:
+                      - listitem [ref=e620]:
+                        - button "Home" [ref=e621] [cursor=pointer]:
+                          - img [ref=e622]
+                          - generic [ref=e624]: Home
+                        - button [ref=e625] [cursor=pointer]:
+                          - img [ref=e626]
+                      - listitem [ref=e628]:
+                        - button "Inbox" [ref=e629] [cursor=pointer]:
+                          - img [ref=e630]
+                          - generic [ref=e632]: Inbox
+                        - generic: "12"
+                      - listitem [ref=e633]:
+                        - button "Search" [ref=e634] [cursor=pointer]:
+                          - img [ref=e635]
+                          - generic [ref=e637]: Search
+                        - button [ref=e638] [cursor=pointer]:
+                          - img [ref=e639]
+                      - listitem [ref=e641]:
+                        - button "Notifications" [ref=e642] [cursor=pointer]:
+                          - img [ref=e643]
+                          - generic [ref=e645]: Notifications
+                        - generic: "3"
+                  - generic [ref=e646]:
+                    - generic [ref=e647]: Projects
+                    - list [ref=e649]:
+                      - listitem [ref=e650]:
+                        - button "Analytics" [expanded] [ref=e651] [cursor=pointer]:
+                          - img [ref=e652]
+                          - generic [ref=e654]: Analytics
+                          - img [ref=e655]
+                        - list [ref=e657]:
+                          - listitem [ref=e658]:
+                            - button "Overview" [ref=e659] [cursor=pointer]:
+                              - generic [ref=e660]: Overview
+                          - listitem [ref=e661]:
+                            - button "Reports" [ref=e662] [cursor=pointer]:
+                              - generic [ref=e663]: Reports
+                          - listitem [ref=e664]:
+                            - button "Real-time" [ref=e665] [cursor=pointer]:
+                              - generic [ref=e666]: Real-time
+                      - listitem [ref=e667]:
+                        - button "Team" [ref=e668] [cursor=pointer]:
+                          - img [ref=e669]
+                          - generic [ref=e671]: Team
+                        - button [ref=e672] [cursor=pointer]:
+                          - img [ref=e673]
+                      - listitem [ref=e675]:
+                        - button "Calendar" [ref=e676] [cursor=pointer]:
+                          - img [ref=e677]
+                          - generic [ref=e679]: Calendar
+                        - button [ref=e680] [cursor=pointer]:
+                          - img [ref=e681]
+                      - listitem [ref=e683]:
+                        - button "Documents" [ref=e684] [cursor=pointer]:
+                          - img [ref=e685]
+                          - generic [ref=e687]: Documents
+                          - img [ref=e688]
+                        - list [ref=e690]:
+                          - listitem [ref=e691]:
+                            - button "Shared" [ref=e692] [cursor=pointer]:
+                              - generic [ref=e693]: Shared
+                          - listitem [ref=e694]:
+                            - button "Private" [ref=e695] [cursor=pointer]:
+                              - generic [ref=e696]: Private
+                          - listitem [ref=e697]:
+                            - button "Archived" [ref=e698] [cursor=pointer]:
+                              - generic [ref=e699]: Archived
+                  - generic [ref=e700]:
+                    - generic [ref=e701]: Billing
+                    - list [ref=e703]:
+                      - listitem [ref=e704]:
+                        - button "Payments" [ref=e705] [cursor=pointer]:
+                          - img [ref=e706]
+                          - generic [ref=e708]: Payments
+                        - button [ref=e709] [cursor=pointer]:
+                          - img [ref=e710]
+                      - listitem [ref=e712]:
+                        - button "Orders" [ref=e713] [cursor=pointer]:
+                          - img [ref=e714]
+                          - generic [ref=e716]: Orders
+                        - button [ref=e717] [cursor=pointer]:
+                          - img [ref=e718]
+                      - listitem [ref=e720]:
+                        - button "Subscriptions" [ref=e721] [cursor=pointer]:
+                          - img [ref=e722]
+                          - generic [ref=e724]: Subscriptions
+                        - button [ref=e725] [cursor=pointer]:
+                          - img [ref=e726]
+                - list [ref=e729]:
+                  - listitem [ref=e730]:
+                    - button "JD John Doe" [ref=e731] [cursor=pointer]:
+                      - generic [ref=e733]: JD
+                      - generic [ref=e734]: John Doe
+                - button "Toggle Sidebar" [ref=e735]
+              - main [ref=e736]:
+                - button [ref=e738] [cursor=pointer]:
+                  - img [ref=e739]
+          - generic [ref=e744]:
+            - generic [ref=e745]: sidebar-variants-demo
+            - generic [ref=e746]:
+              - button [ref=e747] [cursor=pointer]:
+                - img [ref=e748]
+              - button [ref=e750] [cursor=pointer]:
+                - img [ref=e751]
+              - button [ref=e753] [cursor=pointer]:
+                - img [ref=e754]
+        - heading "With Menu" [level=3] [ref=e756]
+        - paragraph [ref=e758]: Full application chrome with a workspace switcher in the header, grouped navigation and a user menu in the footer using the Menu component. Collapses to icon mode.
+        - generic [ref=e760]:
+          - generic [ref=e763]:
+            - generic [ref=e766]:
+              - list [ref=e768]:
+                - listitem [ref=e769]:
+                  - button "A Acme Inc" [ref=e770] [cursor=pointer]:
+                    - generic [ref=e771]: A
+                    - generic [ref=e772]: Acme Inc
+                    - img [ref=e773]
+              - generic [ref=e776]:
+                - generic [ref=e777]: Navigation
+                - list [ref=e779]:
+                  - listitem [ref=e780]:
+                    - button "Home" [ref=e781] [cursor=pointer]:
+                      - img [ref=e782]
+                      - generic [ref=e784]: Home
+                  - listitem [ref=e785]:
+                    - button "Inbox" [ref=e786] [cursor=pointer]:
+                      - img [ref=e787]
+                      - generic [ref=e789]: Inbox
+                  - listitem [ref=e790]:
+                    - button "Search" [ref=e791] [cursor=pointer]:
+                      - img [ref=e792]
+                      - generic [ref=e794]: Search
+                  - listitem [ref=e795]:
+                    - button "Team" [ref=e796] [cursor=pointer]:
+                      - img [ref=e797]
+                      - generic [ref=e799]: Team
+                  - listitem [ref=e800]:
+                    - button "Notifications" [ref=e801] [cursor=pointer]:
+                      - img [ref=e802]
+                      - generic [ref=e804]: Notifications
+              - list [ref=e806]:
+                - listitem [ref=e807]:
+                  - button "JD John Doe" [ref=e808] [cursor=pointer]:
+                    - generic [ref=e810]: JD
+                    - generic [ref=e811]: John Doe
+                    - img [ref=e812]
+              - button "Toggle Sidebar" [ref=e814]
+            - main [ref=e815]:
+              - button [ref=e817] [cursor=pointer]:
+                - img [ref=e818]
+          - generic [ref=e823]:
+            - generic [ref=e824]: sidebar-menu-demo
+            - generic [ref=e825]:
+              - button [ref=e826] [cursor=pointer]:
+                - img [ref=e827]
+              - button [ref=e829] [cursor=pointer]:
+                - img [ref=e830]
+              - button [ref=e832] [cursor=pointer]:
+                - img [ref=e833]
+        - heading "Responsive" [level=3] [ref=e835]
+        - paragraph [ref=e837]:
+          - text: Below 1024px the sidebar turns into an offcanvas overlay with a backdrop. Above that it stays in icon mode pushing the inset. Use a
+          - code [ref=e838]: matchMedia
+          - text: reactive flag to switch between the two layouts.
+        - generic [ref=e840]:
+          - generic [ref=e843]:
+            - generic [ref=e846]:
+              - list [ref=e848]:
+                - listitem [ref=e849]:
+                  - button "A Acme Inc" [ref=e850] [cursor=pointer]:
+                    - generic [ref=e851]: A
+                    - generic [ref=e852]: Acme Inc
+              - generic [ref=e854]:
+                - generic [ref=e855]: Menu
+                - list [ref=e857]:
+                  - listitem [ref=e858]:
+                    - button "Home" [ref=e859] [cursor=pointer]:
+                      - img [ref=e860]
+                      - generic [ref=e862]: Home
+                  - listitem [ref=e863]:
+                    - button "Inbox" [ref=e864] [cursor=pointer]:
+                      - img [ref=e865]
+                      - generic [ref=e867]: Inbox
+                    - generic: "3"
+                  - listitem [ref=e868]:
+                    - button "Search" [ref=e869] [cursor=pointer]:
+                      - img [ref=e870]
+                      - generic [ref=e872]: Search
+                  - listitem [ref=e873]:
+                    - button "Team" [ref=e874] [cursor=pointer]:
+                      - img [ref=e875]
+                      - generic [ref=e877]: Team
+                  - listitem [ref=e878]:
+                    - button "Notifications" [ref=e879] [cursor=pointer]:
+                      - img [ref=e880]
+                      - generic [ref=e882]: Notifications
+                  - listitem [ref=e883]:
+                    - button "Settings" [ref=e884] [cursor=pointer]:
+                      - img [ref=e885]
+                      - generic [ref=e887]: Settings
+              - list [ref=e889]:
+                - listitem [ref=e890]:
+                  - button "JD John Doe" [ref=e891] [cursor=pointer]:
+                    - generic [ref=e893]: JD
+                    - generic [ref=e894]: John Doe
+            - main [ref=e895]:
+              - generic [ref=e896]:
+                - button [ref=e897] [cursor=pointer]:
+                  - img [ref=e898]
+                - generic [ref=e900]: Dashboard
+                - generic [ref=e901]: Desktop
+          - generic [ref=e905]:
+            - generic [ref=e906]: sidebar-responsive-demo
+            - generic [ref=e907]:
+              - button [ref=e908] [cursor=pointer]:
+                - img [ref=e909]
+              - button [ref=e911] [cursor=pointer]:
+                - img [ref=e912]
+              - button [ref=e914] [cursor=pointer]:
+                - img [ref=e915]
+        - heading "Dual Sidebar" [level=3] [ref=e917]
+        - paragraph [ref=e919]:
+          - text: "Two sidebars on opposite sides of the layout: a primary navigation on the left (icon-collapsible) and a secondary AI chat panel on the right (offcanvas). Each"
+          - code [ref=e920]: SidebarTrigger
+          - text: targets its sidebar by id.
+        - generic [ref=e922]:
+          - generic [ref=e925]:
+            - generic [ref=e928]:
+              - list [ref=e930]:
+                - listitem [ref=e931]:
+                  - button "A Acme Inc" [ref=e932] [cursor=pointer]:
+                    - generic [ref=e933]: A
+                    - generic [ref=e934]: Acme Inc
+              - generic [ref=e935]:
+                - generic [ref=e936]:
+                  - generic [ref=e937]: Navigation
+                  - list [ref=e939]:
+                    - listitem [ref=e940]:
+                      - button "Home" [ref=e941] [cursor=pointer]:
+                        - img [ref=e942]
+                        - generic [ref=e944]: Home
+                    - listitem [ref=e945]:
+                      - button "Inbox" [ref=e946] [cursor=pointer]:
+                        - img [ref=e947]
+                        - generic [ref=e949]: Inbox
+                      - generic: "5"
+                    - listitem [ref=e950]:
+                      - button "Search" [ref=e951] [cursor=pointer]:
+                        - img [ref=e952]
+                        - generic [ref=e954]: Search
+                    - listitem [ref=e955]:
+                      - button "Notifications" [ref=e956] [cursor=pointer]:
+                        - img [ref=e957]
+                        - generic [ref=e959]: Notifications
+                - generic [ref=e960]:
+                  - generic [ref=e961]: Projects
+                  - list [ref=e963]:
+                    - listitem [ref=e964]:
+                      - button "Analytics" [expanded] [ref=e965] [cursor=pointer]:
+                        - img [ref=e966]
+                        - generic [ref=e968]: Analytics
+                        - img [ref=e969]
+                      - list [ref=e971]:
+                        - listitem [ref=e972]:
+                          - button "Overview" [ref=e973] [cursor=pointer]
+                        - listitem [ref=e974]:
+                          - button "Reports" [ref=e975] [cursor=pointer]
+                    - listitem [ref=e976]:
+                      - button "Team" [ref=e977] [cursor=pointer]:
+                        - img [ref=e978]
+                        - generic [ref=e980]: Team
+                    - listitem [ref=e981]:
+                      - button "Calendar" [ref=e982] [cursor=pointer]:
+                        - img [ref=e983]
+                        - generic [ref=e985]: Calendar
+              - list [ref=e987]:
+                - listitem [ref=e988]:
+                  - button "Settings" [ref=e989] [cursor=pointer]:
+                    - img [ref=e990]
+                    - generic [ref=e992]: Settings
+            - main [ref=e993]:
+              - generic [ref=e994]:
+                - button [ref=e995] [cursor=pointer]:
+                  - img [ref=e996]
+                - generic [ref=e998]: Dashboard
+                - button [ref=e999] [cursor=pointer]:
+                  - img [ref=e1000]
+            - generic [ref=e1006]:
+              - generic [ref=e1009]: Weekly metrics overview
+              - generic [ref=e1011]:
+                - generic [ref=e1012]: Show me this week's metrics
+                - generic [ref=e1013]:
+                  - paragraph [ref=e1014]: "Here are your key metrics for this week:"
+                  - list [ref=e1015]:
+                    - listitem [ref=e1016]:
+                      - generic [ref=e1017]: Page views
+                      - generic [ref=e1018]: 12,482
+                    - listitem [ref=e1019]:
+                      - generic [ref=e1020]: New users
+                      - generic [ref=e1021]: "342"
+                    - listitem [ref=e1022]:
+                      - generic [ref=e1023]: Bounce rate
+                      - generic [ref=e1024]: 34%
+              - textbox "Reply to Claude..." [ref=e1027]
+          - generic [ref=e1028]:
+            - generic [ref=e1029]: sidebar-dual-demo
+            - generic [ref=e1030]:
+              - button [ref=e1031] [cursor=pointer]:
+                - img [ref=e1032]
+              - button [ref=e1034] [cursor=pointer]:
+                - img [ref=e1035]
+              - button [ref=e1037] [cursor=pointer]:
+                - img [ref=e1038]
+        - heading "Multi Sidebar" [level=3] [ref=e1040]
+        - paragraph [ref=e1042]:
+          - text: Two stacked sidebars within a single
+          - code [ref=e1043]: SidebarLayout
+          - text: ": a hover-to-open icon bar (icon mode + overlay) and a secondary panel that stays open on desktop and collapses to an offcanvas overlay on smaller screens. IDE-like layout."
+        - generic [ref=e1045]:
+          - generic [ref=e1048]:
+            - generic [ref=e1051]:
+              - list [ref=e1053]:
+                - listitem [ref=e1054]:
+                  - button "A Acme Inc" [ref=e1055] [cursor=pointer]:
+                    - generic [ref=e1056]: A
+                    - generic: Acme Inc
+              - list [ref=e1060]:
+                - listitem [ref=e1061]:
+                  - button "Home" [ref=e1062] [cursor=pointer]:
+                    - img [ref=e1063]
+                    - generic: Home
+                - listitem [ref=e1065]:
+                  - button "Database" [ref=e1066] [cursor=pointer]:
+                    - img [ref=e1067]
+                    - generic: Database
+                - listitem [ref=e1069]:
+                  - button "Authentication" [ref=e1070] [cursor=pointer]:
+                    - img [ref=e1071]
+                    - generic: Authentication
+                - listitem [ref=e1073]:
+                  - button "Edge Functions" [ref=e1074] [cursor=pointer]:
+                    - img [ref=e1075]
+                    - generic: Edge Functions
+                - listitem [ref=e1077]:
+                  - button "Storage" [ref=e1078] [cursor=pointer]:
+                    - img [ref=e1079]
+                    - generic: Storage
+                - listitem [ref=e1081]:
+                  - button "SQL Editor" [ref=e1082] [cursor=pointer]:
+                    - img [ref=e1083]
+                    - generic: SQL Editor
+              - list [ref=e1086]:
+                - listitem [ref=e1087]:
+                  - button "Settings" [ref=e1088] [cursor=pointer]:
+                    - img [ref=e1089]
+                    - generic: Settings
+            - generic [ref=e1093]:
+              - generic [ref=e1095]: Settings
+              - generic [ref=e1096]:
+                - generic [ref=e1097]:
+                  - generic [ref=e1098]: Configuration
+                  - list [ref=e1100]:
+                    - listitem [ref=e1101]:
+                      - button "General" [ref=e1102] [cursor=pointer]:
+                        - generic [ref=e1103]: General
+                    - listitem [ref=e1104]:
+                      - button "Compute and Disk" [ref=e1105] [cursor=pointer]:
+                        - generic [ref=e1106]: Compute and Disk
+                    - listitem [ref=e1107]:
+                      - button "Infrastructure" [ref=e1108] [cursor=pointer]:
+                        - generic [ref=e1109]: Infrastructure
+                    - listitem [ref=e1110]:
+                      - button "Integrations" [ref=e1111] [cursor=pointer]:
+                        - generic [ref=e1112]: Integrations
+                    - listitem [ref=e1113]:
+                      - button "API Keys" [ref=e1114] [cursor=pointer]:
+                        - generic [ref=e1115]: API Keys
+                    - listitem [ref=e1116]:
+                      - button "JWT Keys" [ref=e1117] [cursor=pointer]:
+                        - generic [ref=e1118]: JWT Keys
+                    - listitem [ref=e1119]:
+                      - button "Log Drains" [ref=e1120] [cursor=pointer]:
+                        - generic [ref=e1121]: Log Drains
+                    - listitem [ref=e1122]:
+                      - button "Add-ons" [ref=e1123] [cursor=pointer]:
+                        - generic [ref=e1124]: Add-ons
+                - generic [ref=e1125]:
+                  - generic [ref=e1126]: Integrations
+                  - list [ref=e1128]:
+                    - listitem [ref=e1129]:
+                      - button "Data API" [ref=e1130] [cursor=pointer]:
+                        - generic [ref=e1131]: Data API
+                        - img [ref=e1132]
+                    - listitem [ref=e1134]:
+                      - button "Vault BETA" [ref=e1135] [cursor=pointer]:
+                        - generic [ref=e1136]: Vault
+                        - generic: BETA
+                - generic [ref=e1137]:
+                  - generic [ref=e1138]: Billing
+                  - list [ref=e1140]:
+                    - listitem [ref=e1141]:
+                      - button "Subscription" [ref=e1142] [cursor=pointer]:
+                        - generic [ref=e1143]: Subscription
+                        - img [ref=e1144]
+                    - listitem [ref=e1146]:
+                      - button "Usage" [ref=e1147] [cursor=pointer]:
+                        - generic [ref=e1148]: Usage
+                        - img [ref=e1149]
+            - main [ref=e1151]:
+              - generic [ref=e1152]:
+                - generic [ref=e1153]: Table Editor
+                - generic [ref=e1154]: / users
+          - generic [ref=e1158]:
+            - generic [ref=e1159]: sidebar-multi-demo
+            - generic [ref=e1160]:
+              - button [ref=e1161] [cursor=pointer]:
+                - img [ref=e1162]
+              - button [ref=e1164] [cursor=pointer]:
+                - img [ref=e1165]
+              - button [ref=e1167] [cursor=pointer]:
+                - img [ref=e1168]
+        - heading "Nested Menu" [level=3] [ref=e1170]
+        - paragraph [ref=e1172]:
+          - text: Menu items become collapsible to reveal a nested
+          - code [ref=e1173]: SidebarMenuSub
+          - text: with deep trees and active-state tracking.
+        - generic [ref=e1175]:
+          - generic [ref=e1178]:
+            - generic [ref=e1181]:
+              - list [ref=e1183]:
+                - listitem [ref=e1184]:
+                  - button "F File Manager" [ref=e1185] [cursor=pointer]:
+                    - generic [ref=e1186]: F
+                    - generic [ref=e1187]: File Manager
+              - generic [ref=e1188]:
+                - generic [ref=e1189]:
+                  - generic [ref=e1190]: Files
+                  - list [ref=e1192]:
+                    - listitem [ref=e1193]:
+                      - button "Documents" [expanded] [ref=e1194] [cursor=pointer]:
+                        - img [ref=e1195]
+                        - generic [ref=e1197]: Documents
+                        - img [ref=e1198]
+                      - list [ref=e1200]:
+                        - listitem [ref=e1201]:
+                          - button "Work" [expanded] [ref=e1202] [cursor=pointer]:
+                            - generic [ref=e1203]: Work
+                            - img [ref=e1204]
+                          - list [ref=e1206]:
+                            - listitem [ref=e1207]:
+                              - button "Projects" [expanded] [ref=e1208] [cursor=pointer]:
+                                - generic [ref=e1209]: Projects
+                                - img [ref=e1210]
+                              - list [ref=e1212]:
+                                - listitem [ref=e1213]:
+                                  - button "Q1 Report" [ref=e1214] [cursor=pointer]:
+                                    - generic [ref=e1215]: Q1 Report
+                                - listitem [ref=e1216]:
+                                  - button "Q2 Report" [ref=e1217] [cursor=pointer]:
+                                    - generic [ref=e1218]: Q2 Report
+                                - listitem [ref=e1219]:
+                                  - button "Roadmap" [ref=e1220] [cursor=pointer]:
+                                    - generic [ref=e1221]: Roadmap
+                            - listitem [ref=e1222]:
+                              - button "Invoices" [ref=e1223] [cursor=pointer]:
+                                - generic [ref=e1224]: Invoices
+                            - listitem [ref=e1225]:
+                              - button "Contracts" [ref=e1226] [cursor=pointer]:
+                                - generic [ref=e1227]: Contracts
+                        - listitem [ref=e1228]:
+                          - button "Personal" [expanded] [ref=e1229] [cursor=pointer]:
+                            - generic [ref=e1230]: Personal
+                            - img [ref=e1231]
+                          - list [ref=e1233]:
+                            - listitem [ref=e1234]:
+                              - button "Recipes" [ref=e1235] [cursor=pointer]:
+                                - generic [ref=e1236]: Recipes
+                            - listitem [ref=e1237]:
+                              - button "Travel" [ref=e1238] [cursor=pointer]:
+                                - generic [ref=e1239]: Travel
+                - generic [ref=e1240]:
+                  - generic [ref=e1241]: Media
+                  - list [ref=e1243]:
+                    - listitem [ref=e1244]:
+                      - button "Photos" [expanded] [ref=e1245] [cursor=pointer]:
+                        - img [ref=e1246]
+                        - generic [ref=e1248]: Photos
+                        - img [ref=e1249]
+                      - list [ref=e1251]:
+                        - listitem [ref=e1252]:
+                          - button "2024" [ref=e1253] [cursor=pointer]:
+                            - generic [ref=e1254]: "2024"
+                        - listitem [ref=e1255]:
+                          - button "2025" [ref=e1256] [cursor=pointer]:
+                            - generic [ref=e1257]: "2025"
+                    - listitem [ref=e1258]:
+                      - button "Videos" [expanded] [ref=e1259] [cursor=pointer]:
+                        - img [ref=e1260]
+                        - generic [ref=e1262]: Videos
+                        - img [ref=e1263]
+                      - list [ref=e1265]:
+                        - listitem [ref=e1266]:
+                          - button "Tutorials" [ref=e1267] [cursor=pointer]:
+                            - generic [ref=e1268]: Tutorials
+                        - listitem [ref=e1269]:
+                          - button "Recordings" [ref=e1270] [cursor=pointer]:
+                            - generic [ref=e1271]: Recordings
+                - generic [ref=e1272]:
+                  - generic [ref=e1273]: Bookmarks
+                  - list [ref=e1275]:
+                    - listitem [ref=e1276]:
+                      - button "Websites" [expanded] [ref=e1277] [cursor=pointer]:
+                        - img [ref=e1278]
+                        - generic [ref=e1280]: Websites
+                        - img [ref=e1281]
+                      - list [ref=e1283]:
+                        - listitem [ref=e1284]:
+                          - button "Blog" [ref=e1285] [cursor=pointer]:
+                            - generic [ref=e1286]: Blog
+                        - listitem [ref=e1287]:
+                          - button "Portfolio" [ref=e1288] [cursor=pointer]:
+                            - generic [ref=e1289]: Portfolio
+                        - listitem [ref=e1290]:
+                          - button "Documentation" [ref=e1291] [cursor=pointer]:
+                            - generic [ref=e1292]: Documentation
+              - list [ref=e1294]:
+                - listitem [ref=e1295]:
+                  - button "JD John Doe" [ref=e1296] [cursor=pointer]:
+                    - generic [ref=e1298]: JD
+                    - generic [ref=e1299]: John Doe
+              - button "Toggle Sidebar" [ref=e1300]
+            - main [ref=e1301]:
+              - generic [ref=e1302]:
+                - button [ref=e1303] [cursor=pointer]:
+                  - img [ref=e1304]
+                - generic [ref=e1306]: File Manager
+              - generic [ref=e1307]:
+                - heading "Q1 Report" [level=1] [ref=e1308]
+                - paragraph [ref=e1309]: Documents > Work > Projects > Q1 Report
+          - generic [ref=e1310]:
+            - generic [ref=e1311]: sidebar-nested-demo
+            - generic [ref=e1312]:
+              - button [ref=e1313] [cursor=pointer]:
+                - img [ref=e1314]
+              - button [ref=e1316] [cursor=pointer]:
+                - img [ref=e1317]
+              - button [ref=e1319] [cursor=pointer]:
+                - img [ref=e1320]
+        - heading "Chat Application" [level=3] [ref=e1322]
+        - paragraph [ref=e1324]: "Chat history sidebar with grouped conversations (Today, Yesterday, Previous 7 days, Previous 30 days). Each item exposes a hover-only delete action. Pinned shortcuts at the top: Search, New chat, Browse web."
+        - generic [ref=e1326]:
+          - generic [ref=e1329]:
+            - generic [ref=e1332]:
+              - generic [ref=e1333]:
+                - list [ref=e1334]:
+                  - listitem [ref=e1335]:
+                    - button "ChatGPT" [ref=e1336] [cursor=pointer]:
+                      - img [ref=e1338]
+                      - generic [ref=e1340]: ChatGPT
+                - list [ref=e1341]:
+                  - listitem [ref=e1342]:
+                    - button "Search" [ref=e1343] [cursor=pointer]:
+                      - img [ref=e1344]
+                      - generic [ref=e1346]: Search
+                  - listitem [ref=e1347]:
+                    - button "New chat" [ref=e1348] [cursor=pointer]:
+                      - img [ref=e1349]
+                      - generic [ref=e1351]: New chat
+                  - listitem [ref=e1352]:
+                    - button "Browse web" [ref=e1353] [cursor=pointer]:
+                      - img [ref=e1354]
+                      - generic [ref=e1356]: Browse web
+              - generic [ref=e1357]:
+                - generic [ref=e1358]:
+                  - generic [ref=e1359]: Today
+                  - list [ref=e1361]:
+                    - listitem [ref=e1362]:
+                      - button "PrimeVue Sidebar component" [ref=e1363] [cursor=pointer]:
+                        - generic [ref=e1364]: PrimeVue Sidebar component
+                      - button [ref=e1365] [cursor=pointer]:
+                        - img [ref=e1366]
+                    - listitem [ref=e1368]:
+                      - button "How to use Vue composables" [ref=e1369] [cursor=pointer]:
+                        - generic [ref=e1370]: How to use Vue composables
+                      - button [ref=e1371] [cursor=pointer]:
+                        - img [ref=e1372]
+                    - listitem [ref=e1374]:
+                      - button "Fix TypeScript generics issue" [ref=e1375] [cursor=pointer]:
+                        - generic [ref=e1376]: Fix TypeScript generics issue
+                      - button [ref=e1377] [cursor=pointer]:
+                        - img [ref=e1378]
+                - generic [ref=e1380]:
+                  - generic [ref=e1381]: Yesterday
+                  - list [ref=e1383]:
+                    - listitem [ref=e1384]:
+                      - button "Design system architecture" [ref=e1385] [cursor=pointer]:
+                        - generic [ref=e1386]: Design system architecture
+                      - button [ref=e1387] [cursor=pointer]:
+                        - img [ref=e1388]
+                    - listitem [ref=e1390]:
+                      - button "Vue 3 new features overview" [ref=e1391] [cursor=pointer]:
+                        - generic [ref=e1392]: Vue 3 new features overview
+                      - button [ref=e1393] [cursor=pointer]:
+                        - img [ref=e1394]
+                    - listitem [ref=e1396]:
+                      - button "CSS light-dark() function usage" [ref=e1397] [cursor=pointer]:
+                        - generic [ref=e1398]: CSS light-dark() function usage
+                      - button [ref=e1399] [cursor=pointer]:
+                        - img [ref=e1400]
+                - generic [ref=e1402]:
+                  - generic [ref=e1403]: Previous 7 days
+                  - list [ref=e1405]:
+                    - listitem [ref=e1406]:
+                      - button "Build a dashboard layout" [ref=e1407] [cursor=pointer]:
+                        - generic [ref=e1408]: Build a dashboard layout
+                      - button [ref=e1409] [cursor=pointer]:
+                        - img [ref=e1410]
+                    - listitem [ref=e1412]:
+                      - button "Tailwind v4 migration guide" [ref=e1413] [cursor=pointer]:
+                        - generic [ref=e1414]: Tailwind v4 migration guide
+                      - button [ref=e1415] [cursor=pointer]:
+                        - img [ref=e1416]
+                    - listitem [ref=e1418]:
+                      - button "Node.js API authentication" [ref=e1419] [cursor=pointer]:
+                        - generic [ref=e1420]: Node.js API authentication
+                      - button [ref=e1421] [cursor=pointer]:
+                        - img [ref=e1422]
+                    - listitem [ref=e1424]:
+                      - button "Monorepo setup with pnpm" [ref=e1425] [cursor=pointer]:
+                        - generic [ref=e1426]: Monorepo setup with pnpm
+                      - button [ref=e1427] [cursor=pointer]:
+                        - img [ref=e1428]
+                    - listitem [ref=e1430]:
+                      - button "Deploy Nuxt to Vercel" [ref=e1431] [cursor=pointer]:
+                        - generic [ref=e1432]: Deploy Nuxt to Vercel
+                      - button [ref=e1433] [cursor=pointer]:
+                        - img [ref=e1434]
+                - generic [ref=e1436]:
+                  - generic [ref=e1437]: Previous 30 days
+                  - list [ref=e1439]:
+                    - listitem [ref=e1440]:
+                      - button "GraphQL schema design" [ref=e1441] [cursor=pointer]:
+                        - generic [ref=e1442]: GraphQL schema design
+                      - button [ref=e1443] [cursor=pointer]:
+                        - img [ref=e1444]
+                    - listitem [ref=e1446]:
+                      - button "WebSocket real-time updates" [ref=e1447] [cursor=pointer]:
+                        - generic [ref=e1448]: WebSocket real-time updates
+                      - button [ref=e1449] [cursor=pointer]:
+                        - img [ref=e1450]
+                    - listitem [ref=e1452]:
+                      - button "PostgreSQL query optimization" [ref=e1453] [cursor=pointer]:
+                        - generic [ref=e1454]: PostgreSQL query optimization
+                      - button [ref=e1455] [cursor=pointer]:
+                        - img [ref=e1456]
+                    - listitem [ref=e1458]:
+                      - button "Docker compose for dev env" [ref=e1459] [cursor=pointer]:
+                        - generic [ref=e1460]: Docker compose for dev env
+                      - button [ref=e1461] [cursor=pointer]:
+                        - img [ref=e1462]
+              - list [ref=e1465]:
+                - listitem [ref=e1466]:
+                  - button "JD John Doe" [ref=e1467] [cursor=pointer]:
+                    - generic [ref=e1469]: JD
+                    - generic [ref=e1470]: John Doe
+            - main [ref=e1471]:
+              - button [ref=e1473] [cursor=pointer]:
+                - img [ref=e1474]
+          - generic [ref=e1479]:
+            - generic [ref=e1480]: sidebar-chat-demo
+            - generic [ref=e1481]:
+              - button [ref=e1482] [cursor=pointer]:
+                - img [ref=e1483]
+              - button [ref=e1485] [cursor=pointer]:
+                - img [ref=e1486]
+              - button [ref=e1488] [cursor=pointer]:
+                - img [ref=e1489]
+      - generic [ref=e1491]:
+        - heading "Accessibility" [level=2] [ref=e1492]
+        - generic [ref=e1493]:
+          - heading "Screen Reader" [level=3] [ref=e1494]
+          - paragraph [ref=e1495]: Sidebar is a headless compound component and does not define a specific ARIA role by default. Use semantic elements such as nav or aside with aria-label or aria-labelledby to describe the purpose of the sidebar based on your layout.
+          - paragraph [ref=e1496]: When a sidebar can be collapsed or displayed offcanvas, the trigger should describe the relationship with the sidebar using aria-controls and expose the current state with aria-expanded. In layouts with multiple sidebars, provide the target prop to SidebarTrigger so it toggles the intended sidebar.
+          - paragraph [ref=e1497]: SidebarMenu renders a semantic list structure by default. Menu items are expected to contain interactive elements such as links or buttons. Collapsible SidebarMenuItem components add aria-expanded to their SidebarMenuButton automatically.
+          - heading "Trigger Keyboard Support" [level=3] [ref=e1498]
+          - table [ref=e1500]:
+            - rowgroup [ref=e1501]:
+              - row "Key Function" [ref=e1502]:
+                - columnheader "Key" [ref=e1503]
+                - columnheader "Function" [ref=e1504]
+            - rowgroup [ref=e1505]:
+              - row "enter Toggles the sidebar." [ref=e1506]:
+                - cell "enter" [ref=e1507]
+                - cell "Toggles the sidebar." [ref=e1508]
+              - row "space Toggles the sidebar." [ref=e1509]:
+                - cell "space" [ref=e1510]
+                - cell "Toggles the sidebar." [ref=e1511]
+          - heading "Menu Keyboard Support" [level=3] [ref=e1512]
+          - table [ref=e1514]:
+            - rowgroup [ref=e1515]:
+              - row "Key Function" [ref=e1516]:
+                - columnheader "Key" [ref=e1517]
+                - columnheader "Function" [ref=e1518]
+            - rowgroup [ref=e1519]:
+              - row "tab Moves focus to the next focusable element in the sidebar or page tab sequence." [ref=e1520]:
+                - cell "tab" [ref=e1521]
+                - cell "Moves focus to the next focusable element in the sidebar or page tab sequence." [ref=e1522]
+              - row "shift + tab Moves focus to the previous focusable element in the sidebar or page tab sequence." [ref=e1523]:
+                - cell "shift + tab" [ref=e1524]
+                - cell "Moves focus to the previous focusable element in the sidebar or page tab sequence." [ref=e1525]
+              - row "enter Activates the focused link or button. For a collapsible menu item, toggles the submenu." [ref=e1526]:
+                - cell "enter" [ref=e1527]
+                - cell "Activates the focused link or button. For a collapsible menu item, toggles the submenu." [ref=e1528]
+              - row "space Activates the focused button. For a collapsible menu item, toggles the submenu." [ref=e1529]:
+                - cell "space" [ref=e1530]
+                - cell "Activates the focused button. For a collapsible menu item, toggles the submenu." [ref=e1531]
+  - generic [ref=e1532]: Theme Designer
+  - generic [ref=e1533]:
+    - generic [ref=e1534]:
+      - text: PrimeVue 5.0.0-rc.1 by
+      - link "PrimeUI" [ref=e1535] [cursor=pointer]:
+        - /url: https://primeui.dev
+    - generic [ref=e1536]: ©2026 PrimeTek

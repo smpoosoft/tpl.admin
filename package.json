@@ -17,7 +17,9 @@
     "format": "oxfmt src/"
   },
   "dependencies": {
+    "@primeicons/vue": "8.0.0-rc.1",
     "@primeuix/themes": "2.0.3",
+    "primeicons": "^7.0.0",
     "primevue": "4.5.5",
     "vue": "^3.5.38",
     "vue-router": "^5.1.0"
