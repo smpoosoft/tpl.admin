@@ -37,10 +37,10 @@
           <div class="workSpaceHeader">
             <span>CRM.pro</span>
             <div class="flex items-center gap-4">
-              <TIcon name="chevron_up" :size="24" class="mR2" style="color: red"></TIcon>
-              <TIcon name="bell" :size="24" class="mR2"></TIcon>
-              <TIcon name="success" :size="24" class="mR2"></TIcon>
-              <TIcon name="warning" :size="24" class="mR2"></TIcon>
+              <TDarkSwitcher class="mR2"></TDarkSwitcher>
+              <TPopoveIcon :items="commentItems" icon="comment" :size="20" class="mR2"></TPopoveIcon>
+              <TPopoveIcon :items="bellItems" icon="bell" :size="20" class="mR2"></TPopoveIcon>
+              <TPopoveIcon :items="mailItems" icon="mail" :size="20" class="mR2"></TPopoveIcon>
               <span class="font-bold">Amy Elsner</span>
               <Avatar
                 image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
@@ -66,9 +66,9 @@ import Avatar from 'primevue/avatar';
 import type { AvatarPassThroughOptions } from 'primevue/avatar';
 import Badge from 'primevue/badge';
 import Button from 'primevue/button';
-import TIcon from '@/components/widget/TIcon.vue';
-
-import { Moon, Comment, Bell, Envelope } from '@primeicons/vue';
+import TPopoveIcon from '@/components/widget/TPopoveIcon.vue';
+import type { TPopoverItem } from '@/components/widget/TPopoveIcon.vue';
+import TDarkSwitcher from '@/components/widget/TDarkSwitcher.vue';
 
 import { useToast } from 'primevue/usetoast';
 
@@ -81,10 +81,30 @@ const panelPt: PanelPassThroughOptions = {
 };
 
 const avatarPt: AvatarPassThroughOptions = {
-  root: { class: 'avatar24' }
+  root: { class: 'avatar20' }
 };
 
 const toast = useToast();
+
+const AVATAR_BASE = 'https://i.pravatar.cc/40?u=';
+
+const commentItems = ref<TPopoverItem[]>([
+  { label: 'Amy Elsner', description: 'Re: Project timeline update', value: '1', image: `${AVATAR_BASE}amy` },
+  { label: 'Bernardo Dominic', description: 'Design review completed', value: '2', image: `${AVATAR_BASE}bernardo` },
+  { label: 'Ioni Bowcher', description: 'Meeting notes from sprint', value: '3', image: `${AVATAR_BASE}ioni` }
+]);
+
+const bellItems = ref<TPopoverItem[]>([
+  { label: 'System Update', description: 'v2.4.1 deployed to staging', value: 'update', icon: 'info' },
+  { label: 'New User', description: 'John joined your workspace', value: 'user', icon: 'success' },
+  { label: 'Server Alert', description: 'CPU usage exceeded 90%', value: 'alert', icon: 'warning' }
+]);
+
+const mailItems = ref<TPopoverItem[]>([
+  { label: 'Xavit Wiliams', description: 'Invoice #2024-08 attached', value: 'inbox', image: `${AVATAR_BASE}xavit` },
+  { label: 'Sonya Kaur', description: 'Q3 report for your review', value: 'sent', image: `${AVATAR_BASE}sonya` },
+  { label: 'Tara Williams', description: 'Meeting rescheduled to 3pm', value: 'drafts', image: `${AVATAR_BASE}tara` }
+]);
 
 const items = ref([
   {
@@ -499,13 +519,14 @@ const showToast = () => {
 .homeWrapper {
   display: grid;
   grid-template-columns: 260px 1fr;
-  background-color: #f2f4f8;
+  background-color: var(--p-bg-page);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   .sliderMenu {
     display: grid;
     grid-template-rows: 100px 1fr 48px;
     row-gap: 8px;
-    background-color: #fff;
+    background-color: var(--p-content-background);
   }
 
   .workSpaceWrpper {
@@ -518,9 +539,9 @@ const showToast = () => {
       grid-template-columns: 1fr auto;
       align-self: center;
 
-      .avatar24 {
-        width: 24px;
-        height: 24px;
+      .avatar20 {
+          width: 20px;
+          height: 20px;
       }
     }
 

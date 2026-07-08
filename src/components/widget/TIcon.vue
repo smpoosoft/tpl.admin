@@ -20,12 +20,13 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import { svgStockeWidth } from '@/constant/uiKit';
 
 const props = withDefaults(defineProps<ITIconProps>(), {
   size: 'md',
   color: 'currentColor',
   spin: false,
-  flip: 'both',
+  strokeWidth: svgStockeWidth,
   ariaLabel: ''
 });
 
@@ -41,6 +42,7 @@ export interface ITIconProps {
   color?: string;
   spin?: boolean;
   flip?: TIconFlip;
+  strokeWidth?: number;
   ariaLabel?: string;
 }
 
@@ -52,11 +54,22 @@ const pxSize = computed<number>(() =>
 
 const fillColor = computed<string>(() => props.color ?? 'currentColor');
 
-const ICON_MODULES = import.meta.glob<{ ICON_BODY: string }>('./icons/*.ts', { eager: true });
+const ICON_MODULES = import.meta.glob<{ ICON_BODY: string }>('../../assets/icons/**/*.ts', { eager: true });
 
 const svgBody = computed<string>((): string => {
-  const mod = ICON_MODULES[`./icons/${props.name}.ts`];
-  return mod?.ICON_BODY ?? '';
+  const key = Object.keys(ICON_MODULES).find(k => k.endsWith(`/${props.name}.ts`));
+  let body = key ? (ICON_MODULES[key]?.ICON_BODY ?? '') : '';
+  if (body && props.strokeWidth > 0) {
+    if (body.includes('stroke-width')) {
+      body = body.replace(/stroke-width="[^"]*"/g, `stroke-width="${props.strokeWidth}"`);
+    } else {
+      body = body.replace(/(<[a-z][^>]*)(\/?>)/gi, (_match, prefix, suffix) => {
+        const attr = prefix.includes('stroke=') ? '' : ' stroke="currentColor"';
+        return `${prefix}${attr} stroke-width="${props.strokeWidth}"${suffix}`;
+      });
+    }
+  }
+  return body;
 });
 
 const flipClass = computed<string>(() => {
@@ -85,19 +98,19 @@ const wrapStyle = computed<Record<string, string>>(() => ({
   justify-content: center;
   line-height: 0;
 
-  &.spin svg {
+  &.spin>svg {
     animation: tIconSpin 1.6s linear infinite;
   }
 
-  &.flipX svg {
+                                &.flipX>svg {
     transform: scaleX(-1);
   }
 
-  &.flipY svg {
+                                &.flipY>svg {
     transform: scaleY(-1);
   }
 
-  &.flipXY svg {
+                                &.flipXY>svg {
     transform: scale(-1, -1);
   }
 }

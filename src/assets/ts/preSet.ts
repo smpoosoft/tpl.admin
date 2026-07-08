@@ -43,7 +43,8 @@ const themePreSet: Preset = {
           gray: '{slate.500}'
         },
         bg: {
-          gray: '{slate.300}'
+          gray: '{slate.300}',
+          page: '{surface.100}'
         }
       },
       dark: {
@@ -63,7 +64,8 @@ const themePreSet: Preset = {
           gray: '{slate.400}'
         },
         bg: {
-          gray: '{slate.700}'
+          gray: '{slate.700}',
+          page: '#3b3b40'
         }
       }
     }
@@ -79,7 +81,7 @@ const themePreSet: Preset = {
     },
     panel: {
       header: {
-        background: '{surface.0}'
+        background: '{content.background}'
       }
     }
   }
