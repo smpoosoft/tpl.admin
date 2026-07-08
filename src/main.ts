@@ -17,7 +17,6 @@ const app = createApp(App);
 app.directive('ripple', Ripple);
 app.use(ToastService);
 
-app.use(
-  PrimeVue, primeVueOpt);
+app.use(PrimeVue, primeVueOpt);
 
 app.mount('#app');

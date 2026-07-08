@@ -1,12 +1,8 @@
 <template>
   <Panel header="Panel Header" :pt="panelPt">
-    <div v-for="i in 50" :key="i" class="content-row">
-      Content row {{ i }}
-    </div>
+    <div v-for="i in 50" :key="i" class="content-row">Content row {{ i }}</div>
     <template #footer>
-      <div class="panel-footer-inner">
-        Panel Footer
-      </div>
+      <div class="panel-footer-inner">Panel Footer</div>
     </template>
   </Panel>
 </template>

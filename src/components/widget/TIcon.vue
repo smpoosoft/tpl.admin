@@ -1,8 +1,20 @@
 <template>
-  <span class="tIcon" :class="[flipClass, { spin: spin }]" :style="wrapStyle" :aria-label="ariaLabel" role="img">
-    <svg :width="pxSize" :height="pxSize" :viewBox="ICON_DEFAULT_VIEWBOX" :fill="fillColor"
-      xmlns="http://www.w3.org/2000/svg" aria-hidden="true" v-html="svgBody">
-    </svg>
+  <span
+    class="tIcon"
+    :class="[flipClass, { spin: spin }]"
+    :style="wrapStyle"
+    :aria-label="ariaLabel"
+    role="img"
+  >
+    <svg
+      :width="pxSize"
+      :height="pxSize"
+      :viewBox="ICON_DEFAULT_VIEWBOX"
+      :fill="fillColor"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      v-html="svgBody"
+    ></svg>
   </span>
 </template>
 
@@ -72,22 +84,22 @@ const wrapStyle = computed<Record<string, string>>(() => ({
   align-items: center;
   justify-content: center;
   line-height: 0;
-}
 
-.tIcon.spin>svg {
-  animation: tIconSpin 1.6s linear infinite;
-}
+  &.spin svg {
+    animation: tIconSpin 1.6s linear infinite;
+  }
 
-.tIcon.flipX>svg {
-  transform: scaleX(-1);
-}
+  &.flipX svg {
+    transform: scaleX(-1);
+  }
 
-.tIcon.flipY>svg {
-  transform: scaleY(-1);
-}
+  &.flipY svg {
+    transform: scaleY(-1);
+  }
 
-.tIcon.flipXY>svg {
-  transform: scale(-1, -1);
+  &.flipXY svg {
+    transform: scale(-1, -1);
+  }
 }
 
 @keyframes tIconSpin {

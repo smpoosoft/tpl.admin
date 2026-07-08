@@ -13,7 +13,6 @@ const dataSmpoo = '上海深普软件有限公司';
 
 <style lang="scss" scoped>
 .layerBase {
-
   &::before {
     content: attr(data-smpoo);
     position: fixed;

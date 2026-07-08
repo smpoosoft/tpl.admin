@@ -3,7 +3,6 @@
     <div class="homeWrapper fullW-H overHidden">
       <!-- 左侧边栏 -->
       <div class="sliderMenu p2 fullH overHidden">
-
         <div class="flex items-center gap-2">
           <span class="font-bold">Amy Elsner</span>
         </div>
@@ -13,8 +12,10 @@
               <span :class="[item.icon, 'text-primary group-hover:text-inherit']" />
               <span :class="['ml-2', { 'font-semibold': item.items }]">{{ item.label }}</span>
               <Badge v-if="item.badge" class="ml-auto" :value="item.badge" />
-              <span v-if="item.shortcut"
-                class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">
+              <span
+                v-if="item.shortcut"
+                class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1"
+              >
                 {{ item.shortcut }}
               </span>
             </a>
@@ -36,28 +37,21 @@
           <div class="workSpaceHeader">
             <span>CRM.pro</span>
             <div class="flex items-center gap-4">
-              <span @click="toggleDark">
-                <Moon />
-              </span>
-              <span>
-                <Comment />
-              </span>
-              <span>
-                <Bell />
-              </span>
-              <span>
-                <Envelope />
-              </span>
+              <TIcon name="chevron_up" :size="24" class="mR2" style="color: red"></TIcon>
+              <TIcon name="bell" :size="24" class="mR2"></TIcon>
+              <TIcon name="success" :size="24" class="mR2"></TIcon>
+              <TIcon name="warning" :size="24" class="mR2"></TIcon>
               <span class="font-bold">Amy Elsner</span>
-              <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle"
-                :pt="avatarPt" />
+              <Avatar
+                image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
+                shape="circle"
+                :pt="avatarPt"
+              />
             </div>
           </div>
         </template>
 
-        <div v-for="i in 50" :key="i" class="content-row">
-          Content row {{ i }}
-        </div>
+        <div v-for="i in 50" :key="i" class="content-row">Content row {{ i }}</div>
       </Panel>
     </div>
   </TLayerBase>
@@ -72,6 +66,7 @@ import Avatar from 'primevue/avatar';
 import type { AvatarPassThroughOptions } from 'primevue/avatar';
 import Badge from 'primevue/badge';
 import Button from 'primevue/button';
+import TIcon from '@/components/widget/TIcon.vue';
 
 import { Moon, Comment, Bell, Envelope } from '@primeicons/vue';
 
@@ -512,7 +507,6 @@ const showToast = () => {
     row-gap: 8px;
     background-color: #fff;
   }
-
 
   .workSpaceWrpper {
     display: grid;

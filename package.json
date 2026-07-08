@@ -14,7 +14,7 @@
     "lint": "run-s \"lint:*\"",
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",
-    "format": "oxfmt src/"
+    "format": "prettier --write src"
   },
   "dependencies": {
     "@primeicons/vue": "8.0.0-rc.1",
@@ -48,6 +48,7 @@
     "npm-run-all2": "^9.0.2",
     "oxfmt": "^0.54.0",
     "oxlint": "~1.69.0",
+    "prettier": "3.5.3",
     "skip-formatting": "link:@vue/eslint-config-prettier/skip-formatting",
     "smpoo_lint": "workspace:*",
     "typescript": "~6.0.0",
