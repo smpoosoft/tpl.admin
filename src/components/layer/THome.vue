@@ -11,7 +11,7 @@
             <a v-ripple class="flex items-center px-4 py-2 cursor-pointer group">
               <span :class="[item.icon, 'text-primary group-hover:text-inherit']" />
               <span :class="['ml-2', { 'font-semibold': item.items }]">{{ item.label }}</span>
-              <Badge v-if="item.badge" class="ml-auto" :value="item.badge" />
+              <Badge v-if="item.badge" class="ml-auto badge-sm" :value="item.badge" />
               <span
                 v-if="item.shortcut"
                 class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1"
@@ -38,9 +38,9 @@
             <span>CRM.pro</span>
             <div class="flex items-center gap-4">
               <TDarkSwitcher class="mR2"></TDarkSwitcher>
-              <TPopoveIcon :items="commentItems" icon="comment" :size="20" class="mR2"></TPopoveIcon>
-              <TPopoveIcon :items="bellItems" icon="bell" :size="20" class="mR2"></TPopoveIcon>
-              <TPopoveIcon :items="mailItems" icon="mail" :size="20" class="mR2"></TPopoveIcon>
+              <TPopoveIcon :items="commentItems" icon="comment" :size="20" :overlay="{ val: 3, color: 'orange' }" class="mR2"></TPopoveIcon>
+              <TPopoveIcon :items="bellItems" icon="bell" :size="20" :overlay="{ val: 7, color: 'orange' }" class="mR2"></TPopoveIcon>
+              <TPopoveIcon :items="mailItems" icon="mail" :size="20" :overlay="{ val: 1, type: 'dot', color: 'orange' }" class="mR2"></TPopoveIcon>
               <span class="font-bold">Amy Elsner</span>
               <Avatar
                 image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
@@ -564,5 +564,14 @@ const showToast = () => {
       border-bottom: 1px solid var(--color-border);
     }
   }
+}
+
+:deep(.badge-sm) {
+  font-size: 0.6rem;
+  min-width: 1.2rem;
+  height: 1.2rem;
+  padding: 0 0.3rem;
+  border-radius: 3px;
+  line-height: 1;
 }
 </style>

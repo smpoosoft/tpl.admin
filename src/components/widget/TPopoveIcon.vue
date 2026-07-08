@@ -1,6 +1,6 @@
 <template>
   <div class="t-popove-trigger" @click="onClick" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave">
-    <TIcon :name="icon" :size :stroke-width="svgStockeWidth" />
+    <TIcon :name="icon" :size :overlay :stroke-width="svgStockeWidth" />
 
     <Popover ref="opRef">
       <ul class="t-popover-list" @mouseenter="clearHideTimer" @mouseleave="hide">
@@ -21,6 +21,7 @@
 import { ref } from 'vue';
 import Popover from 'primevue/popover';
 import TIcon from '@/components/widget/TIcon.vue';
+import type { IBadgeOverlay } from '@/components/widget/TIcon.vue';
 import { svgStockeWidth } from '@/constant/uiKit';
 
 export interface TPopoverItem {
@@ -40,6 +41,7 @@ const props = withDefaults(defineProps<{
   icon?: string;
   size?: 'sm' | 'md' | 'lg' | number;
   triggerType?: TriggerType;
+  overlay?: IBadgeOverlay;
 }>(), {
   icon: '',
   size: 24,

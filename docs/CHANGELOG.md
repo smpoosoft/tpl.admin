@@ -3,6 +3,8 @@
 ## [Unreleased]
 
 ### Added
+- TIcon 新增 `overlay` prop（IBadgeOverlay），支持右上角数值/圆点提示
+- TPopoveIcon 新增 `overlay` prop 透传至 TIcon
 - TDarkSwitcher 暗色模式切换组件（替代 DaisyUI swap，CSS 动画过渡）
 - TPopoveIcon 图标弹出菜单组件（hover/click 触发，支持 TPopoverItem 数据）
 - TIcon 新增 `strokeWidth` prop，动态调整 SVG stroke-width

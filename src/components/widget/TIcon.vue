@@ -15,6 +15,12 @@
       aria-hidden="true"
       v-html="svgBody"
     ></svg>
+    <span
+      v-if="overlay && (overlay.val ?? 0) > 0"
+      class="tIcon-overlay"
+      :class="{ dot: overlay.type === 'dot' }"
+      :style="{ background: overlay.color || 'red' }"
+    >{{ overlay.type === 'dot' ? '' : overlay.val }}</span>
   </span>
 </template>
 
@@ -36,6 +42,12 @@ export type TIconSize = number | 'sm' | 'md' | 'lg';
 
 export type TIconFlip = 'horizontal' | 'vertical' | 'both';
 
+export interface IBadgeOverlay {
+  val?: number;
+  type?: 'val' | 'dot';
+  color?: string;
+}
+
 export interface ITIconProps {
   name: string;
   size?: TIconSize;
@@ -43,6 +55,7 @@ export interface ITIconProps {
   spin?: boolean;
   flip?: TIconFlip;
   strokeWidth?: number;
+  overlay?: IBadgeOverlay;
   ariaLabel?: string;
 }
 
@@ -97,21 +110,48 @@ const wrapStyle = computed<Record<string, string>>(() => ({
   align-items: center;
   justify-content: center;
   line-height: 0;
+  position: relative;
 
   &.spin>svg {
     animation: tIconSpin 1.6s linear infinite;
   }
 
-                                &.flipX>svg {
+  &.flipX>svg {
     transform: scaleX(-1);
   }
 
-                                &.flipY>svg {
+  &.flipY>svg {
     transform: scaleY(-1);
   }
 
-                                &.flipXY>svg {
+  &.flipXY>svg {
     transform: scale(-1, -1);
+  }
+}
+
+.tIcon-overlay {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 4px;
+  border-radius: 7px;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  pointer-events: none;
+  box-sizing: border-box;
+
+  &.dot {
+    min-width: 8px;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 50%;
+    top: -2px;
+    right: -2px;
   }
 }
 
