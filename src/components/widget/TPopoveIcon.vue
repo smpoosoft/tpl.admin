@@ -1,6 +1,8 @@
 <template>
   <div class="t-popove-trigger" @click="onClick" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave">
-    <TIcon :name="icon" :size :overlay :stroke-width="svgStockeWidth" />
+    <slot>
+      <TIcon :name="icon" :size :overlay :stroke-width="svgStockeWidth" />
+    </slot>
 
     <Popover ref="opRef">
       <ul class="t-popover-list" @mouseenter="clearHideTimer" @mouseleave="hide">
@@ -21,16 +23,9 @@
 import { ref } from 'vue';
 import Popover from 'primevue/popover';
 import TIcon from '@/components/widget/TIcon.vue';
-import type { IBadgeOverlay } from '@/components/widget/TIcon.vue';
 import { svgStockeWidth } from '@/constant/uiKit';
+import type { IBadgeOverlay, TPopoverItem } from '@/types/uiKite';
 
-export interface TPopoverItem {
-  label: string;
-  description?: string;
-  value: string | number;
-  image?: string;
-  icon?: string;
-}
 
 export type TPopoverSelectPayload = Omit<TPopoverItem, 'image' | 'icon'>;
 
@@ -45,7 +40,8 @@ const props = withDefaults(defineProps<{
 }>(), {
   icon: '',
   size: 24,
-  triggerType: 'hover'
+  triggerType: 'hover',
+  overlay: () => ({})
 });
 
 const emit = defineEmits<{
@@ -137,7 +133,6 @@ const select = (item: TPopoverItem): void => {
 }
 
 .t-popover-desc {
-  font-size: 0.8rem;
   color: var(--p-text-muted-color);
 }
 

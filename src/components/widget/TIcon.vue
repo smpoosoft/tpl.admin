@@ -26,29 +26,10 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { svgStockeWidth } from '@/constant/uiKit';
+import { badgeOverlayColor, svgStockeWidth } from '@/constant/uiKit';
+import type { IBadgeOverlay } from '@/types/uiKite';
 
-const props = withDefaults(defineProps<ITIconProps>(), {
-  size: 'md',
-  color: 'currentColor',
-  spin: false,
-  strokeWidth: svgStockeWidth,
-  ariaLabel: ''
-});
-
-const ICON_DEFAULT_VIEWBOX = '0 0 24 24';
-
-export type TIconSize = number | 'sm' | 'md' | 'lg';
-
-export type TIconFlip = 'horizontal' | 'vertical' | 'both';
-
-export interface IBadgeOverlay {
-  val?: number;
-  type?: 'val' | 'dot';
-  color?: string;
-}
-
-export interface ITIconProps {
+const props = withDefaults(defineProps<{
   name: string;
   size?: TIconSize;
   color?: string;
@@ -57,7 +38,21 @@ export interface ITIconProps {
   strokeWidth?: number;
   overlay?: IBadgeOverlay;
   ariaLabel?: string;
-}
+}>(), {
+  size: 'md',
+  color: 'currentColor',
+  spin: false,
+  strokeWidth: svgStockeWidth,
+  overlay: () => ({ color: badgeOverlayColor }),
+  flip: 'none',
+  ariaLabel: ''
+});
+
+const ICON_DEFAULT_VIEWBOX = '0 0 24 24';
+
+export type TIconSize = number | 'sm' | 'md' | 'lg';
+
+export type TIconFlip = 'none' | 'horizontal' | 'vertical' | 'both';
 
 const SIZE_MAP: Record<string, number> = { sm: 14, md: 16, lg: 20 };
 
@@ -86,16 +81,10 @@ const svgBody = computed<string>((): string => {
 });
 
 const flipClass = computed<string>(() => {
-  switch (props.flip) {
-    case 'horizontal':
-      return 'flipX';
-    case 'vertical':
-      return 'flipY';
-    case 'both':
-      return 'flipXY';
-    default:
-      return '';
-  }
+  return ((props.flip === 'horizontal') && 'flipX')
+    || ((props.flip === 'vertical') && 'flipY')
+    || ((props.flip === 'both') && 'flipXY')
+    || '';
 });
 
 const wrapStyle = computed<Record<string, string>>(() => ({

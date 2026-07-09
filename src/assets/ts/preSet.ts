@@ -81,6 +81,7 @@ const themePreSet: Preset = {
     },
     panel: {
       header: {
+        padding: '8px',
         background: '{content.background}'
       }
     }

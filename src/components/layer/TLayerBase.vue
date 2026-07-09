@@ -22,7 +22,7 @@ const dataSmpoo = '上海深普软件有限公司';
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 24px;
+    height: 16px;
     font-size: 12px;
     color: #888;
     z-index: 999;

@@ -11,6 +11,8 @@
   /* 等宽 */
   --font-mono: 'SF Mono', Consolas, 'Cascadia Code', 'JetBrains Mono', 'Courier New', monospace;
 
+  --font-size: 12px;
+
   /** -------------------------  滚动条  ------------------------- */
   /* #region 滚动条样式变量 */
   /* 滚动条宽度 */

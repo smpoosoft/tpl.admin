@@ -1,39 +1,136 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG Icon Explorer</title>
     <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: rgba(30, 41, 59, 0.5);
+            --bg-tertiary: rgba(15, 23, 42, 0.6);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --border-accent: rgba(56, 189, 248, 0.3);
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --text-icon: #cbd5e1;
+            --accent-color: #38bdf8;
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            --card-bg: rgba(30, 41, 59, 0.5);
+            --card-hover-border: rgba(56, 189, 248, 0.5);
+            --card-hover-shadow: rgba(56, 189, 248, 0.3);
+            --btn-bg: rgba(51, 65, 85, 0.9);
+            --btn-hover-bg: #38bdf8;
+            --btn-hover-text: #0f172a;
+            --modal-overlay: rgba(0, 0, 0, 0.7);
+            --modal-bg: rgba(30, 41, 59, 0.95);
+            --code-bg: rgba(15, 23, 42, 0.8);
+            --toast-bg: rgba(30, 41, 59, 0.95);
+            --search-bg: rgba(15, 23, 42, 0.6);
+            --status-dot-default: #64748b;
+            --status-dot-loading: #fbbf24;
+            --status-dot-success: #10b981;
+            --status-dot-error: #ef4444;
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #f8fafc;
+            --bg-secondary: rgba(255, 255, 255, 0.7);
+            --bg-tertiary: rgba(241, 245, 249, 0.8);
+            --border-color: rgba(0, 0, 0, 0.1);
+            --border-accent: rgba(14, 165, 233, 0.4);
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --text-icon: #334155;
+            --accent-color: #0ea5e9;
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            --card-bg: rgba(255, 255, 255, 0.8);
+            --card-hover-border: rgba(14, 165, 233, 0.5);
+            --card-hover-shadow: rgba(14, 165, 233, 0.2);
+            --btn-bg: rgba(226, 232, 240, 0.9);
+            --btn-hover-bg: #0ea5e9;
+            --btn-hover-text: #ffffff;
+            --modal-overlay: rgba(0, 0, 0, 0.5);
+            --modal-bg: rgba(255, 255, 255, 0.95);
+            --code-bg: rgba(241, 245, 249, 0.9);
+            --toast-bg: rgba(255, 255, 255, 0.95);
+            --search-bg: rgba(241, 245, 249, 0.8);
+            --status-dot-default: #94a3b8;
+            --status-dot-loading: #f59e0b;
+            --status-dot-success: #10b981;
+            --status-dot-error: #ef4444;
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #0a0a0f;
-            color: #e2e8f0;
+            background: var(--bg-primary);
+            color: var(--text-primary);
             min-height: 100vh;
             padding: 2rem;
+            transition: background 0.3s ease, color 0.3s ease;
         }
 
         .container { max-width: 1400px; margin: 0 auto; }
 
-        header { margin-bottom: 2rem; }
+        header {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header-content { flex: 1; }
 
         h1 {
             font-size: 2rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            background: var(--accent-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 0.5rem;
         }
 
-        .subtitle { color: #64748b; font-size: 0.85rem; }
+        .subtitle { color: var(--text-muted); font-size: 0.85rem; }
+
+        .theme-toggle {
+            background: var(--bg-secondary);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 0.6rem 1rem;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--border-accent);
+            background: var(--bg-tertiary);
+        }
+
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .theme-toggle:hover svg { transform: rotate(15deg); }
 
         .status-bar {
-            background: rgba(30, 41, 59, 0.5);
+            background: var(--bg-secondary);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
             border-radius: 0.75rem;
             padding: 0.75rem 1rem;
             margin-bottom: 1rem;
@@ -41,23 +138,23 @@
             align-items: center;
             gap: 0.75rem;
             font-size: 0.85rem;
-            color: #94a3b8;
+            color: var(--text-secondary);
         }
 
         .status-dot {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #64748b;
+            background: var(--status-dot-default);
         }
 
         .status-dot.loading {
-            background: #fbbf24;
+            background: var(--status-dot-loading);
             animation: pulse 1.5s ease-in-out infinite;
         }
 
-        .status-dot.success { background: #10b981; }
-        .status-dot.error { background: #ef4444; }
+        .status-dot.success { background: var(--status-dot-success); }
+        .status-dot.error { background: var(--status-dot-error); }
 
         @keyframes pulse {
             0%, 100% { opacity: 1; }
@@ -65,38 +162,31 @@
         }
 
         .search-bar {
-            background: rgba(30, 41, 59, 0.5);
+            background: var(--bg-secondary);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
             border-radius: 0.75rem;
             padding: 0.75rem 1rem;
             margin-bottom: 2rem;
             display: none;
         }
 
-        .search-bar.visible {
-            display: block;
-        }
+        .search-bar.visible { display: block; }
 
         .search-input {
             width: 100%;
-            background: rgba(15, 23, 42, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--search-bg);
+            border: 1px solid var(--border-color);
             border-radius: 0.5rem;
             padding: 0.6rem 1rem;
-            color: #e2e8f0;
+            color: var(--text-primary);
             font-size: 0.9rem;
             outline: none;
             transition: border-color 0.2s;
         }
 
-        .search-input:focus {
-            border-color: rgba(56, 189, 248, 0.5);
-        }
-
-        .search-input::placeholder {
-            color: #64748b;
-        }
+        .search-input:focus { border-color: var(--border-accent); }
+        .search-input::placeholder { color: var(--text-muted); }
 
         .icon-grid {
             display: grid;
@@ -105,9 +195,9 @@
         }
 
         .icon-card {
-            background: rgba(30, 41, 59, 0.5);
+            background: var(--card-bg);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
             border-radius: 0.75rem;
             padding: 1.125rem;
             display: flex;
@@ -118,16 +208,26 @@
             transition: all 0.3s;
             min-height: 120px;
             position: relative;
+            user-select: none;
         }
 
         .icon-card:hover {
             transform: translateY(-4px);
-            border-color: rgba(56, 189, 248, 0.5);
-            box-shadow: 0 7.5px 22.5px -7.5px rgba(56, 189, 248, 0.3);
+            border-color: var(--card-hover-border);
+            box-shadow: 0 7.5px 22.5px -7.5px var(--card-hover-shadow);
+        }
+
+        .icon-card:active {
+            transform: translateY(-2px) scale(0.98);
+        }
+
+        .icon-card.copied {
+            border-color: var(--status-dot-success);
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
         }
 
         .icon-svg {
-            color: #38bdf8;
+            color: var(--accent-color);
             width: 36px;
             height: 36px;
             margin-bottom: 0.75rem;
@@ -136,13 +236,13 @@
 
         .icon-card:hover .icon-svg {
             transform: scale(1.1);
-            filter: drop-shadow(0 0 11px rgba(56, 189, 248, 0.5));
+            filter: drop-shadow(0 0 11px var(--card-hover-shadow));
         }
 
         .icon-name {
             font-family: 'Courier New', monospace;
-            font-size: 0.6rem;
-            color: #cbd5e1;
+            font-size: 12px;
+            color: var(--text-icon);
             text-align: center;
             word-break: break-all;
         }
@@ -164,8 +264,8 @@
             padding: 0.2rem;
             border-radius: 0.2rem;
             border: none;
-            background: rgba(51, 65, 85, 0.9);
-            color: #e2e8f0;
+            background: var(--btn-bg);
+            color: var(--text-primary);
             cursor: pointer;
             transition: all 0.2s;
             display: flex;
@@ -173,7 +273,10 @@
             justify-content: center;
         }
 
-        .action-btn:hover { background: #38bdf8; color: #0f172a; }
+        .action-btn:hover {
+            background: var(--btn-hover-bg);
+            color: var(--btn-hover-text);
+        }
 
         .action-btn svg {
             width: 10.5px;
@@ -183,13 +286,11 @@
         .empty-state {
             text-align: center;
             padding: 4rem 2rem;
-            color: #64748b;
+            color: var(--text-muted);
             grid-column: 1 / -1;
         }
 
-        .category-section {
-            margin-bottom: 2.25rem;
-        }
+        .category-section { margin-bottom: 2.25rem; }
 
         .category-header {
             display: flex;
@@ -197,13 +298,13 @@
             gap: 0.55rem;
             margin-bottom: 1.125rem;
             padding-bottom: 0.55rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .category-icon {
             width: 24px;
             height: 24px;
-            background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            background: var(--accent-gradient);
             border-radius: 0.375rem;
             display: flex;
             align-items: center;
@@ -216,19 +317,19 @@
         .category-title {
             font-size: 0.95rem;
             font-weight: 600;
-            color: #e2e8f0;
+            color: var(--text-primary);
         }
 
         .category-count {
             font-size: 0.65rem;
-            color: #64748b;
+            color: var(--text-muted);
             margin-left: auto;
         }
 
         .auth-overlay {
             position: fixed;
             inset: 0;
-            background: rgba(10, 10, 15, 0.95);
+            background: var(--bg-primary);
             backdrop-filter: blur(10px);
             display: flex;
             align-items: center;
@@ -238,8 +339,8 @@
         }
 
         .auth-card {
-            background: rgba(30, 41, 59, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--modal-bg);
+            border: 1px solid var(--border-color);
             border-radius: 1.5rem;
             padding: 3rem;
             max-width: 560px;
@@ -251,7 +352,7 @@
             width: 64px;
             height: 64px;
             margin: 0 auto 1.5rem;
-            background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            background: var(--accent-gradient);
             border-radius: 1rem;
             display: flex;
             align-items: center;
@@ -263,19 +364,19 @@
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: #e2e8f0;
+            color: var(--text-primary);
         }
 
         .auth-desc {
-            color: #94a3b8;
+            color: var(--text-secondary);
             font-size: 0.9rem;
             line-height: 1.6;
             margin-bottom: 1.5rem;
         }
 
         .path-box {
-            background: rgba(15, 23, 42, 0.6);
-            border: 1px solid rgba(56, 189, 248, 0.3);
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-accent);
             border-radius: 0.75rem;
             padding: 1rem;
             margin-bottom: 1.5rem;
@@ -284,7 +385,7 @@
 
         .path-label {
             font-size: 0.75rem;
-            color: #64748b;
+            color: var(--text-muted);
             margin-bottom: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -293,7 +394,7 @@
         .path-value {
             font-family: 'Courier New', monospace;
             font-size: 0.85rem;
-            color: #38bdf8;
+            color: var(--accent-color);
             word-break: break-all;
             line-height: 1.5;
         }
@@ -302,23 +403,21 @@
             margin-top: 0.75rem;
             padding: 0.4rem 0.8rem;
             border-radius: 0.5rem;
-            border: 1px solid rgba(56, 189, 248, 0.3);
+            border: 1px solid var(--border-accent);
             background: rgba(56, 189, 248, 0.1);
-            color: #38bdf8;
+            color: var(--accent-color);
             font-size: 0.75rem;
             cursor: pointer;
             transition: all 0.2s;
         }
 
-        .copy-path-btn:hover {
-            background: rgba(56, 189, 248, 0.2);
-        }
+        .copy-path-btn:hover { background: rgba(56, 189, 248, 0.2); }
 
         .auth-btn {
             padding: 0.75rem 2rem;
             border-radius: 0.75rem;
             border: none;
-            background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+            background: var(--accent-gradient);
             color: white;
             font-weight: 600;
             font-size: 1rem;
@@ -334,7 +433,7 @@
         .auth-hint {
             margin-top: 1rem;
             font-size: 0.8rem;
-            color: #64748b;
+            color: var(--text-muted);
         }
 
         .toast-container {
@@ -350,14 +449,15 @@
         .toast {
             padding: 0.75rem 1rem;
             border-radius: 0.5rem;
-            background: rgba(30, 41, 59, 0.95);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--toast-bg);
+            border: 1px solid var(--border-color);
             font-size: 0.85rem;
             animation: slideIn 0.3s ease-out;
+            color: var(--text-primary);
         }
 
-        .toast.success { border-left: 3px solid #10b981; }
-        .toast.error { border-left: 3px solid #ef4444; }
+        .toast.success { border-left: 3px solid var(--status-dot-success); }
+        .toast.error { border-left: 3px solid var(--status-dot-error); }
 
         @keyframes slideIn {
             from { transform: translateX(100%); opacity: 0; }
@@ -367,7 +467,7 @@
         .modal {
             position: fixed;
             inset: 0;
-            background: rgba(0, 0, 0, 0.7);
+            background: var(--modal-overlay);
             backdrop-filter: blur(5px);
             display: flex;
             align-items: center;
@@ -377,8 +477,8 @@
         }
 
         .modal-content {
-            background: rgba(30, 41, 59, 0.95);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--modal-bg);
+            border: 1px solid var(--border-color);
             border-radius: 1rem;
             padding: 2rem;
             max-width: 600px;
@@ -394,26 +494,26 @@
             margin-bottom: 1rem;
         }
 
-        .modal-title { font-size: 1.25rem; font-weight: 600; }
+        .modal-title { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); }
 
         .modal-close {
             padding: 0.5rem;
             border-radius: 0.5rem;
             border: none;
             background: transparent;
-            color: #94a3b8;
+            color: var(--text-secondary);
             cursor: pointer;
         }
 
-        .modal-close:hover { background: rgba(255, 255, 255, 0.1); }
+        .modal-close:hover { background: var(--border-color); }
 
         .code-block {
-            background: rgba(15, 23, 42, 0.8);
+            background: var(--code-bg);
             border-radius: 0.5rem;
             padding: 1rem;
             font-family: 'Courier New', monospace;
             font-size: 0.85rem;
-            color: #38bdf8;
+            color: var(--accent-color);
             overflow-x: auto;
             white-space: pre-wrap;
             word-break: break-all;
@@ -425,16 +525,17 @@
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
             border: none;
-            background: #38bdf8;
+            background: var(--accent-color);
             color: #0f172a;
             font-weight: 600;
             cursor: pointer;
         }
 
-        .modal-btn:hover { background: #7dd3fc; }
+        .modal-btn:hover { opacity: 0.9; }
 
         @media (max-width: 768px) {
             .icon-grid { grid-template-columns: repeat(2, 1fr); }
+            header { flex-direction: column; }
         }
     </style>
 </head>
@@ -445,9 +546,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
             </div>
             <h2 class="auth-title">需要授权访问项目目录</h2>
-            <p class="auth-desc">
-                已自动识别到项目路径，请在文件选择器中导航到该目录并授权
-            </p>
+            <p class="auth-desc">已自动识别到项目路径，请在文件选择器中导航到该目录并授权</p>
 
             <div class="path-box">
                 <div class="path-label">项目根目录路径</div>
@@ -462,8 +561,15 @@
 
     <div class="container">
         <header>
-            <h1>SVG Icon Explorer</h1>
-            <p class="subtitle">自动识别项目路径 + File System Access API</p>
+            <div class="header-content">
+                <h1>SVG Icon Explorer</h1>
+                <p class="subtitle">自动识别项目路径 + File System Access API</p>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <span id="theme-text">明亮模式</span>
+            </button>
         </header>
 
         <div class="status-bar">
@@ -476,9 +582,7 @@
         </div>
 
         <div id="icon-container">
-            <div class="empty-state">
-                <p>等待加载...</p>
-            </div>
+            <div class="empty-state"><p>等待加载...</p></div>
         </div>
     </div>
 
@@ -490,6 +594,7 @@
             DB_NAME: 'IconExplorerDB',
             DB_STORE: 'directoryHandles',
             DB_KEY: 'projectRoot',
+            THEME_KEY: 'iconExplorerTheme',
         };
 
         const iconContainer = document.getElementById('icon-container');
@@ -502,10 +607,42 @@
         const toastContainer = document.getElementById('toast-container');
         const searchBar = document.getElementById('search-bar');
         const searchInput = document.getElementById('search-input');
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIconSun = document.getElementById('theme-icon-sun');
+        const themeIconMoon = document.getElementById('theme-icon-moon');
+        const themeText = document.getElementById('theme-text');
 
         let allCategories = [];
         let detectedProjectPath = null;
         let currentSearchTerm = '';
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem(CONFIG.THEME_KEY) || 'dark';
+            applyTheme(savedTheme);
+        }
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            if (theme === 'dark') {
+                themeIconSun.style.display = 'none';
+                themeIconMoon.style.display = 'block';
+                themeText.textContent = '明亮模式';
+            } else {
+                themeIconSun.style.display = 'block';
+                themeIconMoon.style.display = 'none';
+                themeText.textContent = '暗黑模式';
+            }
+        }
+
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem(CONFIG.THEME_KEY, newTheme);
+            applyTheme(newTheme);
+        }
+
+        themeToggle.addEventListener('click', toggleTheme);
+        initTheme();
 
         function showToast(msg, type = 'success') {
             const toast = document.createElement('div');
@@ -522,13 +659,9 @@
 
         function parseFilePath() {
             const href = window.location.href;
-            if (!href.startsWith('file:///')) {
-                return null;
-            }
+            if (!href.startsWith('file:///')) return null;
             let path = decodeURIComponent(href.replace('file://', ''));
-            if (path.match(/^\/[A-Z]:\//i)) {
-                path = path.substring(1);
-            }
+            if (path.match(/^\/[A-Z]:\//i)) path = path.substring(1);
             return path;
         }
 
@@ -536,9 +669,7 @@
             if (!htmlFilePath) return null;
             const pathParts = htmlFilePath.split(/[\/\\]/).filter(Boolean);
             const tplAdminIndex = pathParts.findIndex(part => part === 'tpl.admin');
-            if (tplAdminIndex !== -1) {
-                return pathParts.slice(0, tplAdminIndex + 1).join('/');
-            }
+            if (tplAdminIndex !== -1) return pathParts.slice(0, tplAdminIndex + 1).join('/');
             return pathParts.slice(0, -1).join('/');
         }
 
@@ -578,9 +709,7 @@
 
         function parseTSFile(code) {
             const match = code.match(/export\s+const\s+ICON_BODY\s*:\s*string\s*=\s*(['"`])([\s\S]*?)\1/);
-            if (match) {
-                return match[2].trim();
-            }
+            if (match) return match[2].trim();
             return null;
         }
 
@@ -619,9 +748,7 @@
             const subDirs = [];
 
             for await (const entry of dirHandle.values()) {
-                if (entry.kind === 'directory') {
-                    subDirs.push(entry);
-                }
+                if (entry.kind === 'directory') subDirs.push(entry);
             }
 
             subDirs.sort((a, b) => a.name.localeCompare(b.name));
@@ -636,32 +763,23 @@
 
             for (const subDir of subDirs) {
                 const tsFiles = [];
-
                 for await (const entry of subDir.values()) {
                     if (entry.kind === 'file' && /\.(ts|tsx)$/i.test(entry.name)) {
-                        if (!entry.name.endsWith('.d.ts')) {
-                            tsFiles.push(entry);
-                        }
+                        if (!entry.name.endsWith('.d.ts')) tsFiles.push(entry);
                     }
                 }
 
                 tsFiles.sort((a, b) => a.name.localeCompare(b.name));
-
                 if (tsFiles.length === 0) continue;
 
                 const icons = [];
                 for (const fileHandle of tsFiles) {
                     const icon = await readIconFile(fileHandle);
-                    if (icon) {
-                        icons.push(icon);
-                    }
+                    if (icon) icons.push(icon);
                 }
 
                 if (icons.length > 0) {
-                    allCategories.push({
-                        name: subDir.name,
-                        icons: icons,
-                    });
+                    allCategories.push({ name: subDir.name, icons: icons });
                 }
             }
 
@@ -675,19 +793,11 @@
 
         async function requestPermission(handle) {
             const options = { mode: 'read' };
-            if ((await handle.requestPermission(options)) === 'granted') {
-                return true;
-            }
-            return false;
+            return (await handle.requestPermission(options)) === 'granted';
         }
 
-        function showAuthOverlay() {
-            authOverlay.style.display = 'flex';
-        }
-
-        function hideAuthOverlay() {
-            authOverlay.style.display = 'none';
-        }
+        function showAuthOverlay() { authOverlay.style.display = 'flex'; }
+        function hideAuthOverlay() { authOverlay.style.display = 'none'; }
 
         async function tryAutoLoad() {
             try {
@@ -699,9 +809,7 @@
                         hideAuthOverlay();
                         const iconsDir = await getSubDirectory(handle, CONFIG.ICON_SUBDIR);
                         const success = await loadIconsFromDirectory(iconsDir);
-                        if (!success) {
-                            showAuthOverlay();
-                        }
+                        if (!success) showAuthOverlay();
                         return;
                     }
                 }
@@ -755,9 +863,7 @@
         }
 
         function getFilteredCategories() {
-            if (!currentSearchTerm) {
-                return allCategories;
-            }
+            if (!currentSearchTerm) return allCategories;
 
             const term = currentSearchTerm.toLowerCase();
             return allCategories
@@ -767,9 +873,7 @@
                         ? category.icons
                         : category.icons.filter(icon => icon.name.toLowerCase().includes(term));
 
-                    if (matchedIcons.length > 0) {
-                        return { ...category, icons: matchedIcons };
-                    }
+                    if (matchedIcons.length > 0) return { ...category, icons: matchedIcons };
                     return null;
                 })
                 .filter(Boolean);
@@ -779,13 +883,22 @@
             let currentIdx = 0;
             for (const category of categories) {
                 for (const icon of category.icons) {
-                    if (currentIdx === idx) {
-                        return icon;
-                    }
+                    if (currentIdx === idx) return icon;
                     currentIdx++;
                 }
             }
             return null;
+        }
+
+        function copyIconName(icon) {
+            navigator.clipboard.writeText(icon.name).then(() => {
+                showToast(`已复制: ${icon.name}`);
+            });
+        }
+
+        function flashCard(cardEl) {
+            cardEl.classList.add('copied');
+            setTimeout(() => cardEl.classList.remove('copied'), 400);
         }
 
         function renderIcons() {
@@ -818,9 +931,6 @@
                     html += `
                         <div class="icon-card" data-idx="${globalIdx}">
                             <div class="icon-actions">
-                                <button class="action-btn copy-name-btn" data-idx="${globalIdx}" title="复制名称">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
-                                </button>
                                 <button class="action-btn copy-btn" data-idx="${globalIdx}" title="复制 SVG">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                                 </button>
@@ -843,23 +953,22 @@
                     globalIdx++;
                 });
 
-                html += `
-                        </div>
-                    </div>
-                `;
+                html += `</div></div>`;
             });
 
             iconContainer.innerHTML = html;
 
-            iconContainer.querySelectorAll('.copy-name-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    const idx = parseInt(btn.dataset.idx);
+            // 点击卡片直接复制名称
+            iconContainer.querySelectorAll('.icon-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    // 如果点击的是按钮，不触发卡片复制
+                    if (e.target.closest('.action-btn')) return;
+
+                    const idx = parseInt(card.dataset.idx);
                     const icon = getIconByGlobalIdx(idx, filteredCategories);
                     if (icon) {
-                        navigator.clipboard.writeText(icon.name).then(() => {
-                            showToast(`已复制名称: ${icon.name}`);
-                        });
+                        copyIconName(icon);
+                        flashCard(card);
                     }
                 });
             });
@@ -883,9 +992,7 @@
                     e.stopPropagation();
                     const idx = parseInt(btn.dataset.idx);
                     const icon = getIconByGlobalIdx(idx, filteredCategories);
-                    if (icon) {
-                        showCodeModal(icon);
-                    }
+                    if (icon) showCodeModal(icon);
                 });
             });
         }

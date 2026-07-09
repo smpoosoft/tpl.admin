@@ -16,6 +16,7 @@
     -webkit-text-size-adjust: 100%;
     -moz-tab-size: 4;
     tab-size: 4;
+    font-size: var(--font-size);
   }
 
   /** Remove the margin in all browsers. */
