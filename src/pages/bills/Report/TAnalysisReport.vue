@@ -4,66 +4,124 @@
       <span class="font-bold">透视报表</span>
     </template>
 
-    <div class="p2">
-      <Panel header="分析配置" class="mb-4">
-        <div class="grid grid-cols-3 gap-4">
-          <div>
-            <label class="block text-sm font-medium mb-1">行维度</label>
+    <div class="analysis-report">
+      <!-- 配置面板 -->
+      <Panel class="config-panel">
+        <template #header>
+          <div class="config-panel-header">
+            <span class="pi pi-sliders-h config-panel-icon"></span>
+            <span>分析配置</span>
+          </div>
+        </template>
+
+        <div class="config-grid">
+          <!-- 行维度 -->
+          <div class="dimension-group">
+            <label class="dimension-label">
+              <span class="dimension-indicator dimension-indicator--row"></span>
+              <span>行维度</span>
+              <span class="dimension-count">{{ selectedRows.length }}</span>
+            </label>
             <Select
               v-model="selectedRows"
               :options="ANALYSIS_CONFIG.rows"
               multiple
               class="w-full"
+              placeholder="选择行维度"
             />
           </div>
-          <div>
-            <label class="block text-sm font-medium mb-1">列维度</label>
+
+          <!-- 列维度 -->
+          <div class="dimension-group">
+            <label class="dimension-label">
+              <span class="dimension-indicator dimension-indicator--col"></span>
+              <span>列维度</span>
+              <span class="dimension-count">{{ selectedCols.length }}</span>
+            </label>
             <Select
               v-model="selectedCols"
               :options="ANALYSIS_CONFIG.cols"
               multiple
               class="w-full"
+              placeholder="选择列维度"
             />
           </div>
-          <div>
-            <label class="block text-sm font-medium mb-1">值字段</label>
+
+          <!-- 值字段 -->
+          <div class="dimension-group">
+            <label class="dimension-label">
+              <span class="dimension-indicator dimension-indicator--val"></span>
+              <span>值字段</span>
+              <span class="dimension-count">{{ selectedValues.length }}</span>
+            </label>
             <Select
               v-model="selectedValues"
               :options="ANALYSIS_CONFIG.values"
               multiple
               class="w-full"
+              placeholder="选择值字段"
             />
           </div>
         </div>
-        <div class="mt-3">
-          <Button label="生成报表" icon="pi pi-chart-bar" @click="generatePivot" />
+
+        <div class="config-actions">
+          <Button
+            label="生成报表"
+            icon="pi pi-chart-bar"
+            class="generate-btn"
+            @click="generatePivot"
+          />
         </div>
       </Panel>
 
-      <DataTable
-        :value="pivotData"
-        stripedRows
-        paginator
-        :rows="10"
-        :rowsPerPageOptions="[5, 10, 20]"
-        class="w-full"
-      >
-        <Column
-          v-for="col in pivotColumns"
-          :key="col.field"
-          :field="col.field"
-          :header="col.header"
+      <!-- 报表表格 -->
+      <Panel class="report-panel">
+        <template #header>
+          <div class="report-panel-header">
+            <span class="pi pi-table report-panel-icon"></span>
+            <span>报表结果</span>
+            <span v-if="pivotData.length > 0" class="report-count">
+              共 {{ pivotColumns.length }} 列 | {{ pivotData.length }} 行
+            </span>
+          </div>
+        </template>
+
+        <div v-if="pivotData.length === 0" class="empty-state">
+          <span class="pi pi-chart-bar empty-state-icon"></span>
+          <span class="empty-state-text">请配置维度并点击"生成报表"</span>
+        </div>
+
+        <DataTable
+          v-else
+          :value="pivotData"
+          stripedRows
+          paginator
+          :rows="10"
+          :rowsPerPageOptions="[5, 10, 20, 50]"
+          class="pivot-table"
+          :size="'small'"
         >
-          <template #body="slotProps">
-            <span v-if="col.type === 'number'" class="font-medium">
-              {{ formatNumber(slotProps.data[col.field]) }}
-            </span>
-            <span v-else>
-              {{ slotProps.data[col.field] }}
-            </span>
-          </template>
-        </Column>
-      </DataTable>
+          <Column
+            v-for="col in pivotColumns"
+            :key="col.field"
+            :field="col.field"
+            :header="col.header"
+          >
+            <template #body="slotProps">
+              <span
+                v-if="col.type === 'number'"
+                class="data-cell-numeric"
+                :class="{ 'data-cell-zero': slotProps.data[col.field] === 0 }"
+              >
+                {{ formatNumber(slotProps.data[col.field]) }}
+              </span>
+              <span v-else class="data-cell-dimension">
+                {{ slotProps.data[col.field] }}
+              </span>
+            </template>
+          </Column>
+        </DataTable>
+      </Panel>
     </div>
   </TRouterPanel>
 </template>
@@ -186,4 +244,169 @@ function generatePivot(): void {
 generatePivot();
 </script>
 
-<style scoped></style>
+<style scoped>
+.analysis-report {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* ── Config panel ── */
+.config-panel {
+  flex-shrink: 0;
+}
+
+.config-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.config-panel-icon {
+  font-size: 14px;
+  color: var(--p-primary-color);
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.dimension-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dimension-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--p-text-muted-color);
+}
+
+.dimension-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.dimension-indicator--row {
+  background: #6366f1;
+}
+
+.dimension-indicator--col {
+  background: #22c55e;
+}
+
+.dimension-indicator--val {
+  background: #f59e0b;
+}
+
+.dimension-count {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--p-primary-color);
+  color: var(--p-primary-contrast-color);
+  line-height: 1;
+}
+
+.config-actions {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--p-content-border-color);
+}
+
+.generate-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ── Report panel ── */
+.report-panel {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.report-panel-icon {
+  font-size: 14px;
+  color: var(--p-primary-color);
+}
+
+.report-count {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--p-text-muted-color);
+}
+
+/* ── Empty state ── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 64px 16px;
+  color: var(--p-text-muted-color);
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  opacity: 0.3;
+}
+
+.empty-state-text {
+  font-size: 14px;
+}
+
+/* ── Pivot table ── */
+.pivot-table {
+  width: 100%;
+}
+
+.data-cell-dimension {
+  font-weight: 500;
+  color: var(--p-text-color);
+}
+
+.data-cell-zero {
+  color: var(--p-text-muted-color);
+  opacity: 0.5;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
