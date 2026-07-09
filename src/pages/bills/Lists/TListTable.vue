@@ -6,14 +6,11 @@
 
     <div class="p2">
       <div class="flex items-center justify-between mb-3">
-        <div class="flex items-center gap-2">
-          <InputText
-            v-model="searchQuery"
-            placeholder="搜索客户..."
-            class="w-64"
-          />
-          <Button icon="pi pi-refresh" severity="secondary" text rounded @click="customers = [...TABLE_CUSTOMERS]; searchQuery = ''; activeFilter = 'all'" />
-        </div>
+        <InputText
+          v-model="searchQuery"
+          placeholder="搜索客户..."
+          class="w-64"
+        />
         <Button icon="pi pi-plus" label="新增" />
       </div>
 
@@ -24,8 +21,7 @@
         </Button>
       </div>
 
-      <DataTable :value="filteredList" stripedRows paginator :rows="10" :rowsPerPageOptions="[5, 10, 20]" selectionMode="multiple" v-model:selection="selected" dataKey="id" class="w-full">
-        <Column selectionMode="multiple" headerStyle="width: 3rem" />
+      <DataTable :value="filteredList" stripedRows paginator :rows="10" :rowsPerPageOptions="[5, 10, 20]" dataKey="id" class="w-full">
         <Column field="name" header="客户">
           <template #body="slotProps">
             <div class="flex items-center gap-2">
@@ -71,7 +67,6 @@ import { TABLE_CUSTOMERS, FILTER_TABS } from '@/mock/listData';
 const customers = ref([...TABLE_CUSTOMERS]);
 const activeFilter = ref('all');
 const searchQuery = ref('');
-const selected = ref([]);
 
 const TAG_SEVERITY_MAP: Record<string, string> = {
   'tag-vip': 'warn', 'tag-new': 'info', 'tag-regular': 'success', 'tag-lost': 'danger', 'tag-intent': 'contrast'
@@ -96,5 +91,3 @@ function tagSeverity(tagClass: string): string {
   return TAG_SEVERITY_MAP[tagClass] ?? 'secondary';
 }
 </script>
-
-<style scoped></style>

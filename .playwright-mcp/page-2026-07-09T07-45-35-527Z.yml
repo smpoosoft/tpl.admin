@@ -1,0 +1,304 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - img [ref=e8]
+          - generic [ref=e12]:
+            - generic [ref=e13]: SMPOO
+            - generic [ref=e14]: .pro
+        - list [ref=e15]:
+          - listitem [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+            - generic [ref=e22]: 仪表盘
+          - listitem [ref=e23] [cursor=pointer]:
+            - img [ref=e24]
+            - generic [ref=e29]: 简单列表
+          - listitem [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+            - generic [ref=e34]: 表格列表
+          - listitem [ref=e35] [cursor=pointer]:
+            - img [ref=e36]
+            - generic [ref=e38]: 表单页面
+          - listitem [ref=e39] [cursor=pointer]:
+            - img [ref=e40]
+            - generic [ref=e42]: 详情页面
+          - listitem [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+            - generic [ref=e46]: 合同管理
+          - listitem [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+            - generic [ref=e50]: 流程设计
+          - listitem [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+            - generic [ref=e54]: 业务报表
+          - listitem [ref=e55] [cursor=pointer]:
+            - img [ref=e56]
+            - generic [ref=e58]: 数据报表
+          - listitem [ref=e59] [cursor=pointer]:
+            - img [ref=e60]
+            - generic [ref=e62]: 透视报表
+          - listitem [ref=e63] [cursor=pointer]:
+            - img [ref=e64]
+            - generic [ref=e66]: 基础资料
+          - listitem [ref=e67] [cursor=pointer]:
+            - img [ref=e68]
+            - generic [ref=e70]: 提醒管理
+          - listitem [ref=e71] [cursor=pointer]:
+            - img [ref=e72]
+            - generic [ref=e74]: 系统设置
+          - listitem [ref=e75] [cursor=pointer]:
+            - img [ref=e76]
+            - generic [ref=e78]: 组织管理
+          - listitem [ref=e79] [cursor=pointer]:
+            - img [ref=e80]
+            - generic [ref=e82]: 职员管理
+          - listitem [ref=e83] [cursor=pointer]:
+            - img [ref=e84]
+            - generic [ref=e86]: 安全中心
+          - listitem [ref=e87] [cursor=pointer]:
+            - img [ref=e88]
+            - generic [ref=e90]: 个人中心
+    - main [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - 'heading "概览 : 核心调度态" [level=1] [ref=e94]'
+          - paragraph [ref=e95]: GROW YOUR BUSINESS WITH DATA
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - button "消息" [ref=e98] [cursor=pointer]:
+              - img [ref=e99]
+              - img [ref=e101]:
+                - generic [ref=e103]: "3"
+            - button "通知" [ref=e104] [cursor=pointer]:
+              - img [ref=e105]
+              - img [ref=e108]:
+                - generic [ref=e110]: "5"
+            - button "邮件" [ref=e111] [cursor=pointer]:
+              - img [ref=e112]
+              - img [ref=e115]:
+                - generic [ref=e117]: "12"
+            - button "暗黑模式" [ref=e119] [cursor=pointer]:
+              - img [ref=e120]
+          - generic [ref=e122]:
+            - generic [ref=e123]: HQ
+            - generic [ref=e124]:
+              - generic [ref=e125]: HQ_ADMIN
+              - generic [ref=e126]: ONLINE
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - heading "客户列表" [level=2] [ref=e130]
+            - paragraph [ref=e131]: 管理所有客户信息及跟进状态
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - img [ref=e134]
+              - textbox "搜索客户名称 / ID / 联系方式" [ref=e137]
+              - button "⋯" [ref=e138] [cursor=pointer]
+              - button "排除" [ref=e139] [cursor=pointer]
+            - button "新增客户" [ref=e140] [cursor=pointer]:
+              - img [ref=e141]
+              - text: 新增客户
+            - button "⚙" [ref=e143] [cursor=pointer]
+        - generic [ref=e144]:
+          - button "全部 12" [ref=e145] [cursor=pointer]:
+            - text: 全部
+            - generic [ref=e146]: "12"
+          - button "活跃 6" [ref=e147] [cursor=pointer]:
+            - text: 活跃
+            - generic [ref=e148]: "6"
+          - button "潜在 3" [ref=e149] [cursor=pointer]:
+            - text: 潜在
+            - generic [ref=e150]: "3"
+          - button "流失 3" [ref=e151] [cursor=pointer]:
+            - text: 流失
+            - generic [ref=e152]: "3"
+        - generic [ref=e153]:
+          - table [ref=e154]:
+            - rowgroup [ref=e155]:
+              - row "客户 联系方式 标签 来源 创建时间 操作" [ref=e156]:
+                - columnheader [ref=e157]
+                - columnheader "客户" [ref=e158]
+                - columnheader "联系方式" [ref=e159]
+                - columnheader "标签" [ref=e160]
+                - columnheader "来源" [ref=e161]
+                - columnheader "创建时间" [ref=e162]
+                - columnheader "操作" [ref=e163]
+            - rowgroup [ref=e164]:
+              - 'row "陈 陈志强 ID: C1001 138****2101 VIP客户 官网注册 2026-03-12" [ref=e165]':
+                - cell [ref=e166]:
+                  - checkbox [ref=e167] [cursor=pointer]
+                - 'cell "陈 陈志强 ID: C1001" [ref=e168]':
+                  - generic [ref=e169]: 陈
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: 陈志强
+                    - generic [ref=e172]: "ID: C1001"
+                - cell "138****2101" [ref=e173]
+                - cell "VIP客户" [ref=e174]:
+                  - generic [ref=e175]: VIP客户
+                - cell "官网注册" [ref=e176]
+                - cell "2026-03-12" [ref=e177]
+                - cell [ref=e178]:
+                  - button "查看详情" [ref=e179] [cursor=pointer]:
+                    - img [ref=e180]
+                  - button "编辑" [ref=e183] [cursor=pointer]:
+                    - img [ref=e184]
+                  - button "删除" [ref=e187] [cursor=pointer]:
+                    - img [ref=e188]
+              - 'row "刘 刘婷婷 ID: C1002 139****8823 潜在客户 展会获取 2026-04-05" [ref=e190]':
+                - cell [ref=e191]:
+                  - checkbox [ref=e192] [cursor=pointer]
+                - 'cell "刘 刘婷婷 ID: C1002" [ref=e193]':
+                  - generic [ref=e194]: 刘
+                  - generic [ref=e195]:
+                    - generic [ref=e196]: 刘婷婷
+                    - generic [ref=e197]: "ID: C1002"
+                - cell "139****8823" [ref=e198]
+                - cell "潜在客户" [ref=e199]:
+                  - generic [ref=e200]: 潜在客户
+                - cell "展会获取" [ref=e201]
+                - cell "2026-04-05" [ref=e202]
+                - cell [ref=e203]:
+                  - button "查看详情" [ref=e204] [cursor=pointer]:
+                    - img [ref=e205]
+                  - button "编辑" [ref=e208] [cursor=pointer]:
+                    - img [ref=e209]
+                  - button "删除" [ref=e212] [cursor=pointer]:
+                    - img [ref=e213]
+              - 'row "王 王建国 ID: C1003 156****3309 活跃客户 转介绍 2026-02-28" [ref=e215]':
+                - cell [ref=e216]:
+                  - checkbox [ref=e217] [cursor=pointer]
+                - 'cell "王 王建国 ID: C1003" [ref=e218]':
+                  - generic [ref=e219]: 王
+                  - generic [ref=e220]:
+                    - generic [ref=e221]: 王建国
+                    - generic [ref=e222]: "ID: C1003"
+                - cell "156****3309" [ref=e223]
+                - cell "活跃客户" [ref=e224]:
+                  - generic [ref=e225]: 活跃客户
+                - cell "转介绍" [ref=e226]
+                - cell "2026-02-28" [ref=e227]
+                - cell [ref=e228]:
+                  - button "查看详情" [ref=e229] [cursor=pointer]:
+                    - img [ref=e230]
+                  - button "编辑" [ref=e233] [cursor=pointer]:
+                    - img [ref=e234]
+                  - button "删除" [ref=e237] [cursor=pointer]:
+                    - img [ref=e238]
+              - 'row "赵 赵美玲 ID: C1004 186****7742 流失客户 广告投放 2025-11-15" [ref=e240]':
+                - cell [ref=e241]:
+                  - checkbox [ref=e242] [cursor=pointer]
+                - 'cell "赵 赵美玲 ID: C1004" [ref=e243]':
+                  - generic [ref=e244]: 赵
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: 赵美玲
+                    - generic [ref=e247]: "ID: C1004"
+                - cell "186****7742" [ref=e248]
+                - cell "流失客户" [ref=e249]:
+                  - generic [ref=e250]: 流失客户
+                - cell "广告投放" [ref=e251]
+                - cell "2025-11-15" [ref=e252]
+                - cell [ref=e253]:
+                  - button "查看详情" [ref=e254] [cursor=pointer]:
+                    - img [ref=e255]
+                  - button "编辑" [ref=e258] [cursor=pointer]:
+                    - img [ref=e259]
+                  - button "删除" [ref=e262] [cursor=pointer]:
+                    - img [ref=e263]
+              - 'row "孙 孙伟明 ID: C1005 158****6601 VIP客户 老客复购 2026-05-20" [ref=e265]':
+                - cell [ref=e266]:
+                  - checkbox [ref=e267] [cursor=pointer]
+                - 'cell "孙 孙伟明 ID: C1005" [ref=e268]':
+                  - generic [ref=e269]: 孙
+                  - generic [ref=e270]:
+                    - generic [ref=e271]: 孙伟明
+                    - generic [ref=e272]: "ID: C1005"
+                - cell "158****6601" [ref=e273]
+                - cell "VIP客户" [ref=e274]:
+                  - generic [ref=e275]: VIP客户
+                - cell "老客复购" [ref=e276]
+                - cell "2026-05-20" [ref=e277]
+                - cell [ref=e278]:
+                  - button "查看详情" [ref=e279] [cursor=pointer]:
+                    - img [ref=e280]
+                  - button "编辑" [ref=e283] [cursor=pointer]:
+                    - img [ref=e284]
+                  - button "删除" [ref=e287] [cursor=pointer]:
+                    - img [ref=e288]
+              - 'row "周 周丽萍 ID: C1006 137****4455 活跃客户 官网注册 2026-01-18" [ref=e290]':
+                - cell [ref=e291]:
+                  - checkbox [ref=e292] [cursor=pointer]
+                - 'cell "周 周丽萍 ID: C1006" [ref=e293]':
+                  - generic [ref=e294]: 周
+                  - generic [ref=e295]:
+                    - generic [ref=e296]: 周丽萍
+                    - generic [ref=e297]: "ID: C1006"
+                - cell "137****4455" [ref=e298]
+                - cell "活跃客户" [ref=e299]:
+                  - generic [ref=e300]: 活跃客户
+                - cell "官网注册" [ref=e301]
+                - cell "2026-01-18" [ref=e302]
+                - cell [ref=e303]:
+                  - button "查看详情" [ref=e304] [cursor=pointer]:
+                    - img [ref=e305]
+                  - button "编辑" [ref=e308] [cursor=pointer]:
+                    - img [ref=e309]
+                  - button "删除" [ref=e312] [cursor=pointer]:
+                    - img [ref=e313]
+              - 'row "吴 吴德海 ID: C1007 150****9910 潜在客户 电话营销 2026-06-01" [ref=e315]':
+                - cell [ref=e316]:
+                  - checkbox [ref=e317] [cursor=pointer]
+                - 'cell "吴 吴德海 ID: C1007" [ref=e318]':
+                  - generic [ref=e319]: 吴
+                  - generic [ref=e320]:
+                    - generic [ref=e321]: 吴德海
+                    - generic [ref=e322]: "ID: C1007"
+                - cell "150****9910" [ref=e323]
+                - cell "潜在客户" [ref=e324]:
+                  - generic [ref=e325]: 潜在客户
+                - cell "电话营销" [ref=e326]
+                - cell "2026-06-01" [ref=e327]
+                - cell [ref=e328]:
+                  - button "查看详情" [ref=e329] [cursor=pointer]:
+                    - img [ref=e330]
+                  - button "编辑" [ref=e333] [cursor=pointer]:
+                    - img [ref=e334]
+                  - button "删除" [ref=e337] [cursor=pointer]:
+                    - img [ref=e338]
+              - 'row "郑 郑晓红 ID: C1008 188****5587 流失客户 展会获取 2025-10-22" [ref=e340]':
+                - cell [ref=e341]:
+                  - checkbox [ref=e342] [cursor=pointer]
+                - 'cell "郑 郑晓红 ID: C1008" [ref=e343]':
+                  - generic [ref=e344]: 郑
+                  - generic [ref=e345]:
+                    - generic [ref=e346]: 郑晓红
+                    - generic [ref=e347]: "ID: C1008"
+                - cell "188****5587" [ref=e348]
+                - cell "流失客户" [ref=e349]:
+                  - generic [ref=e350]: 流失客户
+                - cell "展会获取" [ref=e351]
+                - cell "2025-10-22" [ref=e352]
+                - cell [ref=e353]:
+                  - button "查看详情" [ref=e354] [cursor=pointer]:
+                    - img [ref=e355]
+                  - button "编辑" [ref=e358] [cursor=pointer]:
+                    - img [ref=e359]
+                  - button "删除" [ref=e362] [cursor=pointer]:
+                    - img [ref=e363]
+          - generic [ref=e365]:
+            - generic [ref=e366]:
+              - checkbox [ref=e367] [cursor=pointer]
+              - button "反选" [ref=e368] [cursor=pointer]
+            - generic [ref=e369]:
+              - generic [ref=e370]:
+                - text: 共
+                - strong [ref=e371]: "12"
+                - text: 条，当前显示 1 - 8
+              - generic [ref=e372]:
+                - button "‹" [disabled] [ref=e373]
+                - button "1" [ref=e374] [cursor=pointer]
+                - button "2" [ref=e375] [cursor=pointer]
+                - button "›" [ref=e376] [cursor=pointer]
+  - contentinfo [ref=e377]:
+    - generic [ref=e378]: © 2026 SMPOO Technology Co., Ltd. All rights reserved.
+    - generic [ref=e379]: v1.0.2

@@ -26,7 +26,7 @@
                 <label class="block mb-1 text-sm font-medium">经办人</label>
                 <Select
                   v-model="form.handler"
-                  :options="handlerOpts"
+                  :options="HANDLER_OPTS"
                   optionLabel="label"
                   optionValue="value"
                   class="w-full"
@@ -37,7 +37,7 @@
                 <label class="block mb-1 text-sm font-medium">监督人</label>
                 <Select
                   v-model="form.supervisor"
-                  :options="handlerOpts"
+                  :options="HANDLER_OPTS"
                   optionLabel="label"
                   optionValue="value"
                   class="w-full"
@@ -84,25 +84,19 @@
             <Column field="deadline" header="截止日期" sortable />
             <Column field="priority" header="优先级">
               <template #body="{ data }">
-                <Tag
-                  :value="priorityLabel(data.priority)"
-                  :severity="prioritySeverity(data.priority)"
-                />
+                <Tag :value="priorityLabel(data.priority)" :severity="prioritySeverity(data.priority)" />
               </template>
             </Column>
             <Column field="status" header="状态">
               <template #body="{ data }">
-                <Tag
-                  :value="reminderStatusLabel(data.status)"
-                  :severity="reminderStatusSeverity(data.status)"
-                />
+                <Tag :value="statusLabel(data.status)" :severity="statusSeverity(data.status)" />
               </template>
             </Column>
-            <Column header="操作">
+            <Column header="操作" headerStyle="width: 8rem">
               <template #body="{ data }">
                 <div class="flex items-center gap-1">
-                  <Button icon="pi pi-pencil" severity="secondary" text rounded @click="onEdit(data)" />
-                  <Button icon="pi pi-trash" severity="danger" text rounded @click="onDelete(data)" />
+                  <Button icon="pi pi-pencil" severity="secondary" text rounded size="small" @click="onEdit(data)" />
+                  <Button icon="pi pi-trash" severity="danger" text rounded size="small" @click="onDelete(data)" />
                 </div>
               </template>
             </Column>
@@ -117,6 +111,7 @@
 import { ref } from 'vue';
 import type { Reminder } from '@/mock/sysData.ts';
 import TRouterPanel from '@/components/layer/TRouterPanel.vue';
+import Panel from 'primevue/panel';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Tag from 'primevue/tag';
@@ -124,12 +119,9 @@ import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
 import Select from 'primevue/select';
 import DatePicker from 'primevue/datepicker';
-import Panel from 'primevue/panel';
 import { REMINDERS, PRIORITY_OPTS } from '@/mock/sysData.ts';
 
-const reminders = ref<Reminder[]>([...REMINDERS]);
-
-const handlerOpts = [
+const HANDLER_OPTS = [
   { label: '孙丽', value: '孙丽' },
   { label: '赵强', value: '赵强' },
   { label: '陈志', value: '陈志' },
@@ -139,20 +131,6 @@ const handlerOpts = [
   { label: '李华', value: '李华' },
   { label: 'admin', value: 'admin' }
 ];
-
-const defaultForm = (): Omit<Reminder, 'id'> => ({
-  summary: '',
-  unit: '',
-  person: '',
-  handler: '',
-  supervisor: '',
-  deadline: '',
-  priority: '',
-  status: 'pending'
-});
-
-const form = ref<Omit<Reminder, 'id'>>(defaultForm());
-const editingId = ref<string | null>(null);
 
 const PRIORITY_LABELS: Record<string, string> = {
   urgent: '紧急',
@@ -168,17 +146,34 @@ const PRIORITY_SEVERITY: Record<string, string> = {
   low: 'contrast'
 };
 
-const REMINDER_STATUS_LABELS: Record<string, string> = {
+const STATUS_LABELS: Record<string, string> = {
   pending: '待处理',
   processing: '处理中',
   completed: '已完成'
 };
 
-const REMINDER_STATUS_SEVERITY: Record<string, string> = {
+const STATUS_SEVERITY: Record<string, string> = {
   pending: 'warn',
   processing: 'info',
   completed: 'success'
 };
+
+const reminders = ref<Reminder[]>([...REMINDERS]);
+const editingId = ref<string | null>(null);
+const form = ref<Omit<Reminder, 'id'>>(emptyForm());
+
+function emptyForm(): Omit<Reminder, 'id'> {
+  return {
+    summary: '',
+    unit: '',
+    person: '',
+    handler: '',
+    supervisor: '',
+    deadline: '',
+    priority: '',
+    status: 'pending'
+  };
+}
 
 function priorityLabel(val: string): string {
   return PRIORITY_LABELS[val] ?? val;
@@ -188,12 +183,12 @@ function prioritySeverity(val: string): string {
   return PRIORITY_SEVERITY[val] ?? 'info';
 }
 
-function reminderStatusLabel(val: string): string {
-  return REMINDER_STATUS_LABELS[val] ?? val;
+function statusLabel(val: string): string {
+  return STATUS_LABELS[val] ?? val;
 }
 
-function reminderStatusSeverity(val: string): string {
-  return REMINDER_STATUS_SEVERITY[val] ?? 'info';
+function statusSeverity(val: string): string {
+  return STATUS_SEVERITY[val] ?? 'info';
 }
 
 function onSave(): void {
@@ -204,8 +199,9 @@ function onSave(): void {
     }
     editingId.value = null;
   } else {
-    const newId = `R${String(reminders.value.length + 1).padStart(3, '0')}`;
-    reminders.value.push({ ...form.value, id: newId } as Reminder);
+    const ids = reminders.value.map((r) => Number.parseInt(r.id.replace('R', ''), 10));
+    const next = String(Math.max(0, ...ids) + 1).padStart(3, '0');
+    reminders.value.push({ ...form.value, id: `R${next}` } as Reminder);
   }
   onReset();
 }
@@ -229,7 +225,7 @@ function onDelete(data: Reminder): void {
 }
 
 function onReset(): void {
-  form.value = defaultForm();
+  form.value = emptyForm();
   editingId.value = null;
 }
 </script>

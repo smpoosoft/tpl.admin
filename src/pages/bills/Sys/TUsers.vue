@@ -1,7 +1,10 @@
 <template>
   <TRouterPanel>
     <template #header>
-      <span class="font-bold">安全中心</span>
+      <div class="flex flex-col">
+        <span class="font-bold">安全中心</span>
+        <small class="text-surface-400 dark:text-surface-500">管理用户账户与权限</small>
+      </div>
     </template>
 
     <div class="p2">
@@ -15,7 +18,10 @@
         <Column field="dept" header="部门" />
         <Column field="status" header="状态">
           <template #body="slotProps">
-            <Tag :value="slotProps.data.status === 'active' ? '正常' : slotProps.data.status === 'locked' ? '锁定' : '停用'" :severity="slotProps.data.status === 'active' ? 'success' : 'danger'" />
+            <Tag
+              :value="statusLabel(slotProps.data.status)"
+              :severity="statusSeverity(slotProps.data.status)"
+            />
           </template>
         </Column>
         <Column field="lastLogin" header="最后登录" />
@@ -40,6 +46,26 @@ import Button from 'primevue/button';
 import { SYS_USERS } from '@/mock/sysData.ts';
 
 const sysUsers = ref([...SYS_USERS]);
+
+const STATUS_LABEL: Record<string, string> = {
+  active: '正常',
+  locked: '锁定',
+  inactive: '停用'
+};
+
+const STATUS_SEVERITY: Record<string, string> = {
+  active: 'success',
+  locked: 'danger',
+  inactive: 'warn'
+};
+
+function statusLabel(status: string): string {
+  return STATUS_LABEL[status] ?? status;
+}
+
+function statusSeverity(status: string): string {
+  return STATUS_SEVERITY[status] ?? 'info';
+}
 </script>
 
 <style scoped></style>

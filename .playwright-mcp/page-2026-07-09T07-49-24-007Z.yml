@@ -1,0 +1,262 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - img [ref=e8]
+          - generic [ref=e12]:
+            - generic [ref=e13]: SMPOO
+            - generic [ref=e14]: .pro
+        - list [ref=e15]:
+          - listitem [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+            - generic [ref=e22]: 仪表盘
+          - listitem [ref=e23] [cursor=pointer]:
+            - img [ref=e24]
+            - generic [ref=e29]: 简单列表
+          - listitem [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+            - generic [ref=e34]: 表格列表
+          - listitem [ref=e35] [cursor=pointer]:
+            - img [ref=e36]
+            - generic [ref=e38]: 表单页面
+          - listitem [ref=e39] [cursor=pointer]:
+            - img [ref=e40]
+            - generic [ref=e42]: 详情页面
+          - listitem [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+            - generic [ref=e46]: 合同管理
+          - listitem [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+            - generic [ref=e50]: 流程设计
+          - listitem [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+            - generic [ref=e54]: 业务报表
+          - listitem [ref=e55] [cursor=pointer]:
+            - img [ref=e56]
+            - generic [ref=e58]: 数据报表
+          - listitem [ref=e59] [cursor=pointer]:
+            - img [ref=e60]
+            - generic [ref=e62]: 透视报表
+          - listitem [ref=e63] [cursor=pointer]:
+            - img [ref=e64]
+            - generic [ref=e66]: 基础资料
+          - listitem [ref=e67] [cursor=pointer]:
+            - img [ref=e68]
+            - generic [ref=e70]: 提醒管理
+          - listitem [ref=e71] [cursor=pointer]:
+            - img [ref=e72]
+            - generic [ref=e74]: 系统设置
+          - listitem [ref=e75] [cursor=pointer]:
+            - img [ref=e76]
+            - generic [ref=e78]: 组织管理
+          - listitem [ref=e79] [cursor=pointer]:
+            - img [ref=e80]
+            - generic [ref=e82]: 职员管理
+          - listitem [ref=e83] [cursor=pointer]:
+            - img [ref=e84]
+            - generic [ref=e86]: 安全中心
+          - listitem [ref=e87] [cursor=pointer]:
+            - img [ref=e88]
+            - generic [ref=e90]: 个人中心
+    - main [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - 'heading "概览 : 核心调度态" [level=1] [ref=e94]'
+          - paragraph [ref=e95]: GROW YOUR BUSINESS WITH DATA
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - button "消息" [ref=e98] [cursor=pointer]:
+              - img [ref=e99]
+              - img [ref=e101]:
+                - generic [ref=e103]: "3"
+            - button "通知" [ref=e104] [cursor=pointer]:
+              - img [ref=e105]
+              - img [ref=e108]:
+                - generic [ref=e110]: "5"
+            - button "邮件" [ref=e111] [cursor=pointer]:
+              - img [ref=e112]
+              - img [ref=e115]:
+                - generic [ref=e117]: "12"
+            - button "暗黑模式" [ref=e119] [cursor=pointer]:
+              - img [ref=e120]
+          - generic [ref=e122]:
+            - generic [ref=e123]: HQ
+            - generic [ref=e124]:
+              - generic [ref=e125]: HQ_ADMIN
+              - generic [ref=e126]: ONLINE
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - heading "业务报表" [level=2] [ref=e130]
+            - paragraph [ref=e131]: 数据驱动决策洞察
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - button "本周" [ref=e134] [cursor=pointer]
+              - button "本月" [ref=e135] [cursor=pointer]
+              - button "本季" [ref=e136] [cursor=pointer]
+              - button "本年" [ref=e137] [cursor=pointer]
+            - button "导出报表" [ref=e138] [cursor=pointer]:
+              - img [ref=e139]
+              - text: 导出报表
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - img [ref=e145]
+            - generic [ref=e147]:
+              - generic [ref=e148]: 营收总额
+              - generic [ref=e149]: ¥128.6万
+            - generic [ref=e150]:
+              - img [ref=e151]
+              - text: +18.3%
+          - generic [ref=e153]:
+            - img [ref=e155]
+            - generic [ref=e158]:
+              - generic [ref=e159]: 成交订单
+              - generic [ref=e160]: "342"
+            - generic [ref=e161]:
+              - img [ref=e162]
+              - text: +12.7%
+          - generic [ref=e164]:
+            - img [ref=e166]
+            - generic [ref=e168]:
+              - generic [ref=e169]: 转化率
+              - generic [ref=e170]: 34.2%
+            - generic [ref=e171]:
+              - img [ref=e172]
+              - text: "-2.1%"
+          - generic [ref=e174]:
+            - img [ref=e176]
+            - generic [ref=e181]:
+              - generic [ref=e182]: 活跃客户
+              - generic [ref=e183]: 1,284
+            - generic [ref=e184]:
+              - img [ref=e185]
+              - text: +5.8%
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - heading "营收趋势" [level=3] [ref=e190]
+              - generic [ref=e191]:
+                - generic [ref=e192]: 本期
+                - generic [ref=e194]: 上期
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - generic [ref=e202]: 1月
+                - generic [ref=e207]: 2月
+                - generic [ref=e212]: 3月
+                - generic [ref=e217]: 4月
+                - generic [ref=e222]: 5月
+                - generic [ref=e227]: 6月
+              - generic [ref=e228]:
+                - generic [ref=e229]: 100%
+                - generic [ref=e230]: 75%
+                - generic [ref=e231]: 50%
+                - generic [ref=e232]: 25%
+                - generic [ref=e233]: 0%
+          - generic [ref=e234]:
+            - heading "客户来源分布" [level=3] [ref=e236]
+            - generic [ref=e237]:
+              - img [ref=e239]:
+                - generic [ref=e245]: 1,284
+                - generic [ref=e246]: 总客户
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - generic [ref=e250]: 官网注册
+                  - generic [ref=e251]: "412"
+                  - generic [ref=e252]: 32%
+                - generic [ref=e253]:
+                  - generic [ref=e255]: 转介绍
+                  - generic [ref=e256]: "298"
+                  - generic [ref=e257]: 23%
+                - generic [ref=e258]:
+                  - generic [ref=e260]: 展会获取
+                  - generic [ref=e261]: "231"
+                  - generic [ref=e262]: 18%
+                - generic [ref=e263]:
+                  - generic [ref=e265]: 其他渠道
+                  - generic [ref=e266]: "343"
+                  - generic [ref=e267]: 27%
+        - generic [ref=e268]:
+          - generic [ref=e269]:
+            - heading "明细数据" [level=3] [ref=e270]
+            - generic [ref=e272]:
+              - img [ref=e273]
+              - textbox "搜索..." [ref=e276]
+          - table [ref=e278]:
+            - rowgroup [ref=e279]:
+              - row "日期 新增客户 成交订单 营收金额 转化率 客单价" [ref=e280]:
+                - columnheader "日期" [ref=e281]
+                - columnheader "新增客户" [ref=e282]
+                - columnheader "成交订单" [ref=e283]
+                - columnheader "营收金额" [ref=e284]
+                - columnheader "转化率" [ref=e285]
+                - columnheader "客单价" [ref=e286]
+            - rowgroup [ref=e287]:
+              - row "2026-06-18 28 12 ¥48,600 32.5% ¥4,050" [ref=e288]:
+                - cell "2026-06-18" [ref=e289]
+                - cell "28" [ref=e290]
+                - cell "12" [ref=e291]
+                - cell "¥48,600" [ref=e292]
+                - cell "32.5%" [ref=e293]:
+                  - generic [ref=e294]: 32.5%
+                - cell "¥4,050" [ref=e295]
+              - row "2026-06-17 35 15 ¥62,300 38.2% ¥4,153" [ref=e296]:
+                - cell "2026-06-17" [ref=e297]
+                - cell "35" [ref=e298]
+                - cell "15" [ref=e299]
+                - cell "¥62,300" [ref=e300]
+                - cell "38.2%" [ref=e301]:
+                  - generic [ref=e302]: 38.2%
+                - cell "¥4,153" [ref=e303]
+              - row "2026-06-16 22 8 ¥31,200 28.7% ¥3,900" [ref=e304]:
+                - cell "2026-06-16" [ref=e305]
+                - cell "22" [ref=e306]
+                - cell "8" [ref=e307]
+                - cell "¥31,200" [ref=e308]
+                - cell "28.7%" [ref=e309]:
+                  - generic [ref=e310]: 28.7%
+                - cell "¥3,900" [ref=e311]
+              - row "2026-06-15 41 18 ¥78,500 41.3% ¥4,361" [ref=e312]:
+                - cell "2026-06-15" [ref=e313]
+                - cell "41" [ref=e314]
+                - cell "18" [ref=e315]
+                - cell "¥78,500" [ref=e316]
+                - cell "41.3%" [ref=e317]:
+                  - generic [ref=e318]: 41.3%
+                - cell "¥4,361" [ref=e319]
+              - row "2026-06-14 19 7 ¥25,800 26.4% ¥3,686" [ref=e320]:
+                - cell "2026-06-14" [ref=e321]
+                - cell "19" [ref=e322]
+                - cell "7" [ref=e323]
+                - cell "¥25,800" [ref=e324]
+                - cell "26.4%" [ref=e325]:
+                  - generic [ref=e326]: 26.4%
+                - cell "¥3,686" [ref=e327]
+              - row "2026-06-13 33 14 ¥56,700 35.8% ¥4,050" [ref=e328]:
+                - cell "2026-06-13" [ref=e329]
+                - cell "33" [ref=e330]
+                - cell "14" [ref=e331]
+                - cell "¥56,700" [ref=e332]
+                - cell "35.8%" [ref=e333]:
+                  - generic [ref=e334]: 35.8%
+                - cell "¥4,050" [ref=e335]
+              - row "2026-06-12 27 11 ¥42,100 30.2% ¥3,827" [ref=e336]:
+                - cell "2026-06-12" [ref=e337]
+                - cell "27" [ref=e338]
+                - cell "11" [ref=e339]
+                - cell "¥42,100" [ref=e340]
+                - cell "30.2%" [ref=e341]:
+                  - generic [ref=e342]: 30.2%
+                - cell "¥3,827" [ref=e343]
+              - row "2026-06-11 38 16 ¥68,900 37.6% ¥4,306" [ref=e344]:
+                - cell "2026-06-11" [ref=e345]
+                - cell "38" [ref=e346]
+                - cell "16" [ref=e347]
+                - cell "¥68,900" [ref=e348]
+                - cell "37.6%" [ref=e349]:
+                  - generic [ref=e350]: 37.6%
+                - cell "¥4,306" [ref=e351]
+          - generic [ref=e353]: 共 8 条记录
+  - contentinfo [ref=e354]:
+    - generic [ref=e355]: © 2026 SMPOO Technology Co., Ltd. All rights reserved.
+    - generic [ref=e356]: v1.0.2

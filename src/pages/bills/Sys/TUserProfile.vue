@@ -10,9 +10,7 @@
         <div class="col-span-4">
           <Panel>
             <template #header>
-              <div class="flex items-center gap-2">
-                <span class="font-bold">个人信息</span>
-              </div>
+              <span class="font-bold">个人信息</span>
             </template>
             <div class="flex flex-column align-items-center py-4">
               <div
@@ -30,7 +28,10 @@
 
         <!-- Right: Info panels -->
         <div class="col-span-8">
-          <Panel header="基本信息">
+          <Panel>
+            <template #header>
+              <span class="font-bold">基本信息</span>
+            </template>
             <div class="grid grid-cols-12 gap-4 p-3">
               <div class="col-span-6 flex flex-column gap-1">
                 <label class="text-sm text-surface-500">姓名</label>
@@ -55,7 +56,12 @@
             </div>
           </Panel>
 
-          <Panel header="安全设置" class="mt-4">
+          <Divider />
+
+          <Panel>
+            <template #header>
+              <span class="font-bold">安全设置</span>
+            </template>
             <div class="flex gap-3 p-3">
               <Button label="修改密码" icon="pi pi-key" severity="secondary" />
               <Button label="修改邮箱" icon="pi pi-envelope" severity="secondary" />
@@ -74,6 +80,7 @@ import Panel from 'primevue/panel';
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
 import Tag from 'primevue/tag';
+import Divider from 'primevue/divider';
 import { USER_PROFILE } from '@/mock/sysData.ts';
 
 const profile = ref(USER_PROFILE);

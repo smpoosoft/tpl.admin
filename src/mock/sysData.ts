@@ -13,6 +13,8 @@ export interface Employee {
   phone: string;
   email: string;
   status: string;
+  hireDate: string;
+  avatar?: string;
 }
 
 export interface SysUser {
@@ -115,16 +117,18 @@ export const ORG_TREE: OrgNode[] = [
 ];
 
 export const EMPLOYEES: Employee[] = [
-  { id: 'E001', name: '张明', dept: '技术研发部', position: '技术总监', phone: '13800138001', email: 'zhangming@company.com', status: 'active' },
-  { id: 'E002', name: '李华', dept: '技术研发部', position: '高级前端工程师', phone: '13800138002', email: 'lihua@company.com', status: 'active' },
-  { id: 'E003', name: '王芳', dept: '市场营销部', position: '市场经理', phone: '13800138003', email: 'wangfang@company.com', status: 'active' },
-  { id: 'E004', name: '赵强', dept: '人力资源部', position: 'HR主管', phone: '13800138004', email: 'zhaoqiang@company.com', status: 'active' },
-  { id: 'E005', name: '孙丽', dept: '财务部', position: '财务主管', phone: '13800138005', email: 'sunli@company.com', status: 'active' },
-  { id: 'E006', name: '周杰', dept: '运营部', position: '运营专员', phone: '13800138006', email: 'zhoujie@company.com', status: 'inactive' },
-  { id: 'E007', name: '吴敏', dept: '产品研发部', position: '产品经理', phone: '13800138007', email: 'wumin@company.com', status: 'active' },
-  { id: 'E008', name: '郑涛', dept: '行政综合部', position: '行政主管', phone: '13800138008', email: 'zhengtao@company.com', status: 'active' },
-  { id: 'E009', name: '冯雅', dept: '法务合规部', position: '法务专员', phone: '13800138009', email: 'fengya@company.com', status: 'active' },
-  { id: 'E010', name: '陈志', dept: '技术研发部', position: '后端工程师', phone: '13800138010', email: 'chenzhi@company.com', status: 'suspended' }
+  { id: 'E001', name: '张明', dept: '技术研发部', position: '技术总监', phone: '13800138001', email: 'zhangming@company.com', status: 'active', hireDate: '2020-03-15' },
+  { id: 'E002', name: '李华', dept: '技术研发部', position: '高级前端工程师', phone: '13800138002', email: 'lihua@company.com', status: 'active', hireDate: '2021-06-01' },
+  { id: 'E003', name: '王芳', dept: '市场营销部', position: '市场经理', phone: '13800138003', email: 'wangfang@company.com', status: 'active', hireDate: '2019-11-20' },
+  { id: 'E004', name: '赵强', dept: '人力资源部', position: 'HR主管', phone: '13800138004', email: 'zhaoqiang@company.com', status: 'active', hireDate: '2020-08-10' },
+  { id: 'E005', name: '孙丽', dept: '财务部', position: '财务主管', phone: '13800138005', email: 'sunli@company.com', status: 'active', hireDate: '2021-02-14' },
+  { id: 'E006', name: '周杰', dept: '运营部', position: '运营专员', phone: '13800138006', email: 'zhoujie@company.com', status: 'resigned', hireDate: '2022-05-22' },
+  { id: 'E007', name: '吴敏', dept: '产品研发部', position: '产品经理', phone: '13800138007', email: 'wumin@company.com', status: 'active', hireDate: '2021-09-01' },
+  { id: 'E008', name: '郑涛', dept: '行政综合部', position: '行政主管', phone: '13800138008', email: 'zhengtao@company.com', status: 'active', hireDate: '2020-12-01' },
+  { id: 'E009', name: '冯雅', dept: '法务合规部', position: '法务专员', phone: '13800138009', email: 'fengya@company.com', status: 'active', hireDate: '2022-01-10' },
+  { id: 'E010', name: '陈志', dept: '技术研发部', position: '后端工程师', phone: '13800138010', email: 'chenzhi@company.com', status: 'resigned', hireDate: '2021-07-15' },
+  { id: 'E011', name: '林雪', dept: '市场营销部', position: '市场助理', phone: '13800138011', email: 'linxue@company.com', status: 'probation', hireDate: '2025-12-01' },
+  { id: 'E012', name: '刘阳', dept: '技术研发部', position: '初级测试工程师', phone: '13800138012', email: 'liuyang@company.com', status: 'probation', hireDate: '2025-11-15' }
 ];
 
 export const SYS_USERS: SysUser[] = [
