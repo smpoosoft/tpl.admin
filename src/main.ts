@@ -4,6 +4,7 @@ import { primeVueOpt } from './assets/ts/preSet.ts';
 
 import PrimeVue from 'primevue/config';
 import Ripple from 'primevue/ripple';
+import Tooltip from 'primevue/tooltip';
 import ToastService from 'primevue/toastservice';
 import router from './router/index.ts';
 import 'primeicons/primeicons.css';
@@ -17,6 +18,7 @@ import 'virtual:uno.css';
 const app = createApp(App);
 
 app.directive('ripple', Ripple);
+app.directive('tooltip', Tooltip);
 app.use(router);
 app.use(ToastService);
 
