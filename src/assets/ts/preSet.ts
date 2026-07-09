@@ -97,5 +97,6 @@ export const primeVueOpt: PrimeVueConfiguration = {
       darkModeSelector: '.dark'
     }
   },
+  license: import.meta.env.VITE_PRIMEUI_LICENSE_KEY,
   ripple: true
 };
