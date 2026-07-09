@@ -1,0 +1,45 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - img [ref=e8]
+          - generic [ref=e12]
+        - list [ref=e15]:
+          - listitem [ref=e16] [cursor=pointer]
+          - listitem [ref=e23] [cursor=pointer]
+          - listitem [ref=e30] [cursor=pointer]
+          - listitem [ref=e35] [cursor=pointer]
+          - listitem [ref=e39] [cursor=pointer]
+          - listitem [ref=e43] [cursor=pointer]
+          - listitem [ref=e47] [cursor=pointer]
+          - listitem [ref=e51] [cursor=pointer]
+          - listitem [ref=e55] [cursor=pointer]
+          - listitem [ref=e59] [cursor=pointer]
+          - listitem [ref=e63] [cursor=pointer]
+          - listitem [ref=e67] [cursor=pointer]
+          - listitem [ref=e71] [cursor=pointer]
+          - listitem [ref=e75] [cursor=pointer]
+          - listitem [ref=e79] [cursor=pointer]
+          - listitem [ref=e83] [cursor=pointer]
+          - listitem [ref=e87] [cursor=pointer]
+    - main [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - 'heading "概览 : 核心调度态" [level=1] [ref=e94]'
+          - paragraph [ref=e95]: GROW YOUR BUSINESS WITH DATA
+        - generic [ref=e96]:
+          - generic [ref=e97]
+          - generic [ref=e122]
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e130]
+          - generic [ref=e138]
+          - generic [ref=e146]
+          - generic [ref=e154]
+        - generic [ref=e161]:
+          - generic [ref=e162]
+          - generic [ref=e201]
+  - contentinfo [ref=e242]:
+    - generic [ref=e243]: © 2026 SMPOO Technology Co., Ltd. All rights reserved.
+    - generic [ref=e244]: v1.0.2

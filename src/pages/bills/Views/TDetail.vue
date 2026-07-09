@@ -108,7 +108,7 @@
 </template>
 
 <script setup lang="ts">
-import TRouterPanel from 'primevue/panel';
+import TRouterPanel from '@/components/layer/TRouterPanel.vue';
 import Panel from 'primevue/panel';
 import Tag from 'primevue/tag';
 import Button from 'primevue/button';
