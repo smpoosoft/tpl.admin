@@ -4,6 +4,7 @@
 
 ### Fixed
 - 升级 primevue 至 v5 后 `pnpm dev` 报 `Rolldown failed to resolve import "primeicons/primeicons.css"`：primevue v5 不再依赖 `primeicons` 字体包（改以 `@primeicons/vue` + `@primevue/icons` 提供 SVG 图标），但项目仍通过 `pi pi-*` 类使用图标字体，需在 `package.json` 显式声明 `primeicons` 为直接依赖以恢复本地链接
+- `Failed to resolve directive: tooltip`: primevue v5 要求显式注册 Tooltip 指令（`app.directive('tooltip', Tooltip)`），TDetail 和 TOrganization 两页面使用的 `v-tooltip` 在未注册时触发 Vue warn，在 `main.ts` 添加导入和注册修复
 
 ### Changed
 - 14 个页面按 B 项目重构内容结构：合同管理增加筛选面板(日期/项目/人员)和导出按钮；业务报表增加时间范围按钮、营收趋势柱状图、客户来源分布、明细表格；职员管理增加全/在职/试用期/离职筛选、反选按钮；透视报表增加分析配置面板和动态透视表
