@@ -1,0 +1,14 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".*, cypress.*, env.*, eslint.*, oxlint.*, prettier.*, editorconfig, package-lock.*, pnpm-lock.*, playwright.*, tsconfig*, uno.*, vite.*, vitest.*, README.md,*.json, *.ts"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.env*": "dotenv"
+  }
+}
