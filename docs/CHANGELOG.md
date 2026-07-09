@@ -3,6 +3,13 @@
 ## [Unreleased]
 
 ### Added
+- 14 个业务页面：表格列表、表单页面、详情页面、合同管理、流程设计、业务报表、数据报表、透视报表、组织管理、职员管理、安全中心、提醒管理、系统日志、个人中心
+- 路由配置：16 条路由（含首页、简单列表），全部懒加载
+- Mock 数据模块：`mock/listData.ts`、`mock/viewData.ts`、`mock/bizData.ts`、`mock/reportData.ts`、`mock/sysData.ts`
+- 路由过渡动画：`02.animate.css`（animate.css zoomIn/zoomOutDown），`<Transition mode="out-in">` 包裹 `<router-view>`
+- 恢复 primeicons CSS 导入，修复 pi-* 图标不显示问题
+
+### Added
 - TIcon 新增 `overlay` prop（IBadgeOverlay），支持右上角数值/圆点提示
 - TPopoveIcon 新增 `overlay` prop 透传至 TIcon
 - TDarkSwitcher 暗色模式切换组件（替代 DaisyUI swap，CSS 动画过渡）
