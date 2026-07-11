@@ -7,17 +7,17 @@ import Aura from '@primeuix/themes/aura';
 const themePreSet: Preset = {
   semantic: {
     primary: {
-      50: '{indigo.50}',
-      100: '{indigo.100}',
-      200: '{indigo.200}',
-      300: '{indigo.300}',
-      400: '{indigo.400}',
-      500: '{indigo.500}',
-      600: '{indigo.600}',
-      700: '{indigo.700}',
-      800: '{indigo.800}',
-      900: '{indigo.900}',
-      950: '{indigo.950}'
+      50: '#f7f8fd',
+      100: '#eef0fa',
+      200: '#d6d9f0',
+      300: '#b8bfe3',
+      400: '#9ba3d4',
+      500: '#8088c4',
+      600: '#6a72b2',
+      700: '#565c9e',
+      800: '#454a8e',
+      900: '#35397e',
+      950: '#2c2867'
     },
     colorScheme: {
       light: {
@@ -34,10 +34,10 @@ const themePreSet: Preset = {
           focusColor: '{primary.900}'
         },
         text: {
-          color: '{surface.800}',
-          hoverColor: '{surface.900}',
-          mutedColor: '{surface.500}',
-          hoverMutedColor: '{surface.600}'
+          color: '#0f172a',
+          hoverColor: '#1e293b',
+          mutedColor: '#94a3b8',
+          hoverMutedColor: '#64748b'
         },
         color: {
           gray: '{slate.500}'
@@ -59,6 +59,12 @@ const themePreSet: Preset = {
           focusBackground: 'color-mix(in srgb, {primary.400}, transparent 76%)',
           color: 'rgba(255,255,255,.87)',
           focusColor: 'rgba(255,255,255,.87)'
+        },
+        text: {
+          color: '#e8eafa',
+          hoverColor: '#cbd5e1',
+          mutedColor: '#94a3d4',
+          hoverMutedColor: '#7c84c0'
         },
         color: {
           gray: '{slate.400}'

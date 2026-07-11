@@ -3,6 +3,9 @@
 ## [Unreleased]
 
 ### Changed
+- `preSet.ts` 中 `themePreSet.semantic.primary` 11 档（50-950）替换为参考项目 `uex_v1/src/assets/variables.css` 第 1 节 `--primary-*` 值：50=`#f7f8fd`、100=`#eef0fa`、200=`#d6d9f0`、300=`#b8bfe3`、400=`#9ba3d4`、500=`#8088c4`、600=`#6a72b2`、700=`#565c9e`、800=`#454a8e`、900=`#35397e`、950=`#2c2867`
+
+### Changed
 - `chartCardPt` 重命名为 `cardLayoutPt`，内置 `min-h-0` 和 `container-type: size`，消除模板层手动类名
 - TabPanel 全局 PT 注入 `fullWH`，`03.layers.css` 中依据父级 `overY`/`overHidden` 条件设置 TabPanel 的 `container-type: size` 和 overflow 行为
 - 升级 primevue 至 v5 后 `pnpm dev` 报 `Rolldown failed to resolve import "primeicons/primeicons.css"`：primevue v5 不再依赖 `primeicons` 字体包（改以 `@primeicons/vue` + `@primevue/icons` 提供 SVG 图标），但项目仍通过 `pi pi-*` 类使用图标字体，需在 `package.json` 显式声明 `primeicons` 为直接依赖以恢复本地链接
