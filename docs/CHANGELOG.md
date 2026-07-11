@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
-### Fixed
+### Changed
+- `chartCardPt` 重命名为 `cardLayoutPt`，内置 `min-h-0` 和 `container-type: size`，消除模板层手动类名
+- TabPanel 全局 PT 注入 `fullWH`，`03.layers.css` 中依据父级 `overY`/`overHidden` 条件设置 TabPanel 的 `container-type: size` 和 overflow 行为
 - 升级 primevue 至 v5 后 `pnpm dev` 报 `Rolldown failed to resolve import "primeicons/primeicons.css"`：primevue v5 不再依赖 `primeicons` 字体包（改以 `@primeicons/vue` + `@primevue/icons` 提供 SVG 图标），但项目仍通过 `pi pi-*` 类使用图标字体，需在 `package.json` 显式声明 `primeicons` 为直接依赖以恢复本地链接
 - `Failed to resolve directive: tooltip`: primevue v5 要求显式注册 Tooltip 指令（`app.directive('tooltip', Tooltip)`），TDetail 和 TOrganization 两页面使用的 `v-tooltip` 在未注册时触发 Vue warn，在 `main.ts` 添加导入和注册修复
 
