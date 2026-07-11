@@ -30,7 +30,7 @@
         <div v-for="(stat, index) in SALES_STATS" :key="index" class="card p-3">
           <div class="text-sm text-surface-500">{{ stat.label }}</div>
           <div class="text-2xl font-bold my-1">{{ stat.value }}</div>
-          <div class="text-xs" :class="stat.trendUp ? 'text-green-600' : 'text-red-500'">
+          <div class="text-xs" :class="stat.trendUp ? 'text-primary-700' : 'text-red-500'">
             {{ stat.trendUp ? '↑' : '↓' }} {{ stat.trend }}
           </div>
         </div>
@@ -115,7 +115,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import TRouterPanel from '@/components/layer/TRouterPanel.vue';
+import TRouterPanel from '@/components/layer/TLayerRouter.vue';
 import Panel from 'primevue/panel';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';

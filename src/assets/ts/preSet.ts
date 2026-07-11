@@ -34,13 +34,13 @@ const themePreSet: Preset = {
           focusColor: '{primary.900}'
         },
         text: {
-          color: '#0f172a',
+          color: '{primary.900}',
           hoverColor: '#1e293b',
           mutedColor: '#94a3b8',
           hoverMutedColor: '#64748b'
         },
         color: {
-          gray: '{slate.500}'
+          gray: '{primary.500}'
         },
         bg: {
           gray: '{slate.300}',
@@ -103,6 +103,11 @@ const themePreSet: Preset = {
       title: {
         fontSize: '1.125rem',
         fontWeight: '600'
+      }
+    },
+    tabs: {
+      tab: {
+        fontWeight: '500'
       }
     }
   }

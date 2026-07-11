@@ -3,7 +3,7 @@
     <template #header>
       <div class="flex items-center gap-2">
         <span class="font-bold">流程设计</span>
-        <span class="text-sm text-muted-color">业务流程配置</span>
+        <span class="text-sm text-primary-700">业务流程配置</span>
       </div>
     </template>
 
@@ -28,7 +28,7 @@
                 :key="group.name"
                 class="flex flex-col gap-1"
               >
-                <div class="text-xs font-semibold text-muted-color px-1 py-0.5 mt-1 first:mt-0">
+                <div class="text-xs font-semibold text-primary-700 px-1 py-0.5 mt-1 first:mt-0">
                   {{ group.displayName }}
                 </div>
                 <div
@@ -87,7 +87,7 @@
                   <span class="text-xs font-medium text-surface-700 dark:text-surface-200">完成</span>
                 </div>
               </div>
-              <span class="mt-6 text-sm text-muted-color">选中左侧流程项目以编辑节点配置</span>
+              <span class="mt-6 text-sm text-primary-700">选中左侧流程项目以编辑节点配置</span>
             </div>
           </Panel>
         </div>
@@ -97,19 +97,19 @@
           <Panel header="节点配置">
             <div class="flex flex-col gap-3">
               <div class="flex flex-col gap-1">
-                <label class="text-xs text-muted-color">节点名称</label>
+                <label class="text-xs text-primary-700">节点名称</label>
                 <InputText v-model="nodeConfig.name" placeholder="请输入节点名称" class="w-full" />
               </div>
               <div class="flex flex-col gap-1">
-                <label class="text-xs text-muted-color">审批人</label>
+                <label class="text-xs text-primary-700">审批人</label>
                 <Select v-model="nodeConfig.approver" :options="approverOpts" optionLabel="label" optionValue="value" placeholder="请选择审批人" class="w-full" />
               </div>
               <div class="flex flex-col gap-1">
-                <label class="text-xs text-muted-color">审批方式</label>
+                <label class="text-xs text-primary-700">审批方式</label>
                 <Select v-model="nodeConfig.mode" :options="approvalModes" optionLabel="label" optionValue="value" placeholder="请选择" class="w-full" />
               </div>
               <div class="flex flex-col gap-1">
-                <label class="text-xs text-muted-color">超时处理</label>
+                <label class="text-xs text-primary-700">超时处理</label>
                 <Select v-model="nodeConfig.timeout" :options="timeoutOpts" optionLabel="label" optionValue="value" placeholder="请选择" class="w-full" />
               </div>
               <div class="flex items-center gap-2 pt-2">
@@ -134,7 +134,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useToast } from 'primevue/usetoast';
-import TRouterPanel from '@/components/layer/TRouterPanel.vue';
+import TRouterPanel from '@/components/layer/TLayerRouter.vue';
 import Panel from 'primevue/panel';
 import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';

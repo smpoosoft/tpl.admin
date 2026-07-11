@@ -98,7 +98,7 @@
 </template>
 
 <script setup lang="ts">
-import TRouterPanel from '@/components/layer/TRouterPanel.vue';
+import TRouterPanel from '@/components/layer/TLayerRouter.vue';
 import Panel from 'primevue/panel';
 import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';

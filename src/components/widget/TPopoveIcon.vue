@@ -133,7 +133,7 @@ const select = (item: TPopoverItem): void => {
 }
 
 .t-popover-desc {
-  color: var(--p-text-muted-color);
+        color: var(--p-primary-700);
 }
 
 .t-popover-avatar {

@@ -81,15 +81,15 @@ const rules_03Size = (): Rule[] => [
 // #region preBuild/css/04.border.css
 const rules_04Border = (): Rule[] => [
   /** 顶部边框 */
-  ['borderTop', { 'border-top': '1px var(--color-border) solid' }],
+  ['borderTop', { 'border-top': '1px var(--p-content-border-color) solid' }],
   /** 右侧边框 */
-  ['borderRight', { 'border-right': '1px var(--color-border) solid' }],
+  ['borderRight', { 'border-right': '1px var(--p-content-border-color) solid' }],
   /** 底部边框 */
-  ['borderBottom', { 'border-bottom': '1px var(--color-border) solid' }],
+  ['borderBottom', { 'border-bottom': '1px var(--p-content-border-color) solid' }],
   /** 左侧边框 */
-  ['borderLeft', { 'border-left': '1px var(--color-border) solid' }],
+  ['borderLeft', { 'border-left': '1px var(--p-content-border-color) solid' }],
   /** 全边框，预设仅对全边框应用了圆角，圆角值取决于根变量 */
-  ['borderAll', { 'border': '1px var(--color-border) solid', 'border-radius': 'var(--border-round)' }],
+  ['borderAll', { 'border': '1px var(--p-content-border-color) solid', 'border-radius': 'var(--border-round)' }],
   /** 以项目主色为边线色的全边框 */
   ['borderPrimary', { 'border': '1px var(--color-primary) solid', 'border-radius': 'var(--border-round)' }],
   /** 应用全局圆角变量 */
@@ -98,7 +98,7 @@ const rules_04Border = (): Rule[] => [
   ['dividX', {
     'width': '100%',
     'margin': '0 auto',
-    'background-image': 'linear-gradient(-90deg, rgba(238,238,238,0) 1%, var(--color-border) 51%, rgba(216,216,216,0) 100%)',
+    'background-image': 'linear-gradient(-90deg, rgba(238,238,238,0) 1%, var(--p-content-border-color) 51%, rgba(216,216,216,0) 100%)',
     'height': '1px'
   }]
 ];
@@ -286,7 +286,6 @@ const rules_99PreSet = (): Rule[] => [
 // #endregion
 
 export default defineConfig({
-  // 不引入任何默认预设，避免和自定义命名冲突
   presets: [
     presetUno({ preflight: false })
   ],

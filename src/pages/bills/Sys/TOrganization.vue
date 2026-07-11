@@ -119,7 +119,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import TRouterPanel from '@/components/layer/TRouterPanel.vue';
+import TRouterPanel from '@/components/layer/TLayerRouter.vue';
 import Tree from 'primevue/tree';
 import Panel from 'primevue/panel';
 import Button from 'primevue/button';

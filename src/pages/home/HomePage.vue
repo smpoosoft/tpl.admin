@@ -6,33 +6,33 @@
       <div class="summaryRow">
         <Card :pt="tagCardTitlePt">
           <template #title>
-            <span class="text-muted-color text-base mt-0.5 fontW7">活跃客户</span>
+            <span class="text-primary-900 text-base mt-0.5 fontW7">活跃客户</span>
           </template>
           <template #content>
             <span class="font-semibold text-2xl">1,284</span>
           </template>
           <template #footer>
-            <p class="text-sm text-surface-500 dark:text-surface-400">
+            <p class="text-sm text-primary-700">
               <span>较上月</span>
-              <span class="ml-2 textGreen">+12.5%</span>
+              <span class="ml-2 text-primary-700">+12.5%</span>
             </p>
           </template>
         </Card>
         <Card :pt="tagCardTitlePt">
           <template #title>
-            <span class="text-muted-color text-base mt-0.5 fontW7">漏斗转化率</span>
+            <span class="text-primary-900 text-base mt-0.5 fontW7">漏斗转化率</span>
           </template>
         </Card>
         <Card :pt="tagCardTitlePt">
           <template #title>
-            <span class="text-muted-color text-base mt-0.5 fontW7">回款率</span>
+            <span class="text-primary-900 text-base mt-0.5 fontW7">回款率</span>
           </template>
         </Card>
       </div>
       <!-- 业务统计 -->
       <Card :pt="cardLayoutPt()">
         <template #title>
-          <span class="text-muted-color text-base mt-0.5 fontW7">业务趋势</span>
+          <span class="text-primary-900 text-base mt-0.5 fontW7">业务趋势</span>
         </template>
         <template #content>
           <div class="h-full">
@@ -43,7 +43,7 @@
       <!-- 业务信息 -->
       <Card :pt="cardLayoutPt({})">
         <template #title>
-          <span class="text-muted-color text-base mt-0.5 fontW7">业务信息</span>
+          <span class="text-primary-900 text-base mt-0.5 fontW7">业务信息</span>
         </template>
         <template #content>
           <Tabs lazy value="0">

@@ -18,7 +18,7 @@
           <div class="text-2xl font-bold my-1">{{ stat.value }}</div>
           <div
             class="text-xs"
-            :class="stat.trendUp ? 'text-green-600' : 'text-red-500'"
+            :class="stat.trendUp ? 'text-primary-700' : 'text-red-500'"
           >
             {{ stat.trendUp ? '↑' : '↓' }} {{ stat.trend }}
           </div>
@@ -43,7 +43,7 @@
         <Column field="stock" header="库存" />
         <Column field="profit" header="利润">
           <template #body="slotProps">
-            <span class="text-green-600 font-medium">{{
+            <span class="text-primary-700 font-medium">{{
               formatCurrency(slotProps.data.profit)
             }}</span>
           </template>
@@ -56,7 +56,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import TRouterPanel from '@/components/layer/TRouterPanel.vue';
+import TRouterPanel from '@/components/layer/TLayerRouter.vue';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import { PRODUCT_STATS, PRODUCT_DATA } from '@/mock/reportData.ts';

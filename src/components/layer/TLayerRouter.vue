@@ -1,21 +1,21 @@
 <template>
   <div class="card h-full">
     <Panel :pt="panelPt">
-      <template #header>
+      <template v-if="!hideHeader" #header>
         <div class="flex items-center gap-2">
           <!-- 标题， 增删查改等按钮的插槽 -->
           <slot name="header">
-            <span class="font-bold">Amy Elsner</span>
+            <span class="font-bold">路由页面</span>
           </slot>
         </div>
       </template>
-      <template #icons>
+      <template v-if="!hideIcons" #icons>
         <!-- 操作按钮的插槽 -->
         <slot name="icons"></slot>
-        <Button icon="pi pi-cog" severity="secondary" rounded text @click="toggle" />
+        <Button icon="pi pi-cog" severity="secondary" rounded text />
         <Menu ref="refOptMenu" id="config_menu" :model="ROUTER_PANEL_ITEMS" popup />
       </template>
-      <template #footer>
+      <template v-if="!hideFooter" #footer>
         <!-- 页脚的插槽 -->
         <slot name="footer">
           <div class="flex flex-wrap items-center justify-between gap-4">
@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 // import { useToast } from 'primevue/usetoast';
 // import { useRouter } from 'vue-router';
 import Panel from 'primevue/panel';
@@ -45,21 +45,23 @@ import Button from 'primevue/button';
 import Menu from 'primevue/menu';
 import { ROUTER_PANEL_ITEMS } from '@/constant/uiKit';
 
+const props = defineProps<{
+  hideHeader?: boolean,
+  hideIcons?: boolean,
+  hideFooter?: boolean,
+  rootClass?: string,
+}>();
+
 const refOptMenu = ref(null);
 
-const panelPt = {
-  root: { class: 'h-full overHidden' },
+const panelPt = computed(() => ({
+  root: { class: ['h-full overHidden', props.rootClass] },
   contentContainer: { class: 'min-h-0 overHidden' },
   contentWrapper: { class: 'roterPanelDataWrapper fullWH overHidden' },
   content: { class: 'h-full' }
-};
+}));
 // const toast = useToast();
 // const router = useRouter();
-
-
-const toggle = (event: Event) => {
-  refOptMenu.value?.toggle?.(event);
-};
 
 // const save = () => {
 //   toast.add({ severity: 'success', summary: 'Success', detail: 'Data Saved', life: 3000 });

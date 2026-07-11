@@ -110,7 +110,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import type { Reminder } from '@/mock/sysData.ts';
-import TRouterPanel from '@/components/layer/TRouterPanel.vue';
+import TRouterPanel from '@/components/layer/TLayerRouter.vue';
 import Panel from 'primevue/panel';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';

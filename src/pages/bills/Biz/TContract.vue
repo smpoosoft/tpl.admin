@@ -8,25 +8,25 @@
       <Panel header="查询条件" toggleable>
         <div class="grid grid-cols-12 gap-x-4 gap-y-3">
           <div class="col-span-12 md:col-span-6 flex items-center gap-2">
-            <label class="whitespace-nowrap text-sm text-muted-color">区间:</label>
+            <label class="whitespace-nowrap text-sm text-primary-700">区间:</label>
             <DatePicker v-model="filter.dateFrom" showIcon class="w-full" />
-            <span class="text-muted-color">至</span>
+            <span class="text-primary-700">至</span>
             <DatePicker v-model="filter.dateTo" showIcon class="w-full" />
           </div>
           <div class="col-span-12 md:col-span-3 flex items-center gap-2">
-            <label class="whitespace-nowrap text-sm text-muted-color">所属项目:</label>
+            <label class="whitespace-nowrap text-sm text-primary-700">所属项目:</label>
             <Select v-model="filter.project" :options="projectOpts" optionLabel="label" optionValue="value" placeholder="请选择" class="w-full" />
           </div>
           <div class="col-span-12 md:col-span-3 flex items-center gap-2">
-            <label class="whitespace-nowrap text-sm text-muted-color">业务员:</label>
+            <label class="whitespace-nowrap text-sm text-primary-700">业务员:</label>
             <Select v-model="filter.salesperson" :options="salespersonOpts" optionLabel="label" optionValue="value" placeholder="请选择" class="w-full" />
           </div>
           <div class="col-span-12 md:col-span-3 flex items-center gap-2">
-            <label class="whitespace-nowrap text-sm text-muted-color">对接人:</label>
+            <label class="whitespace-nowrap text-sm text-primary-700">对接人:</label>
             <Select v-model="filter.contact" :options="contactOpts" optionLabel="label" optionValue="value" placeholder="请选择" class="w-full" />
           </div>
           <div class="col-span-12 md:col-span-3 flex items-center gap-2">
-            <label class="whitespace-nowrap text-sm text-muted-color">介绍人:</label>
+            <label class="whitespace-nowrap text-sm text-primary-700">介绍人:</label>
             <Select v-model="filter.referrer" :options="referrerOpts" optionLabel="label" optionValue="value" placeholder="请选择" class="w-full" />
           </div>
           <div class="col-span-12 flex gap-2 pt-1">
@@ -72,7 +72,7 @@
 
 <script setup lang="ts">
 import { ref, computed, reactive } from 'vue';
-import TRouterPanel from '@/components/layer/TRouterPanel.vue';
+import TRouterPanel from '@/components/layer/TLayerRouter.vue';
 import Panel from 'primevue/panel';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';

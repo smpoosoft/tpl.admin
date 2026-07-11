@@ -11,6 +11,7 @@
           <template #title>Simple Card</template>
           <template #content>
             <p class="m-0">
+              <Button label="Open Drawer" @click="visibleRight = true" />
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
               numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
               esse, cupiditate neque
@@ -47,16 +48,22 @@
 
         <!-- 工作区路由区域 -->
         <router-view v-slot="{ Component }">
-          <Transition
-            mode="out-in"
-            enter-active-class="animate__animated animate__zoomIn"
-            leave-active-class="animate__animated animate__zoomOutDown"
-          >
+          <Transition mode="out-in" enter-active-class="animate__animated animate__zoomIn"
+            leave-active-class="animate__animated animate__zoomOutDown">
             <component :is="Component" />
           </Transition>
         </router-view>
       </Panel>
     </div>
+    <!-- 右侧边栏抽屉 -->
+    <Drawer v-model:visible="visibleRight" header="Right Drawer" position="right">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </Drawer>
+
   </TLayerBase>
 </template>
 
@@ -67,6 +74,8 @@ import Panel, { type PanelPassThroughOptions } from 'primevue/panel';
 import TMenu from '@/components/widget/TMenu.vue';
 import TPageToolBar from '@/components/widget/TPageToolBar.vue';
 import Breadcrumb from 'primevue/breadcrumb';
+import Button from 'primevue/button';
+import Drawer from 'primevue/drawer';
 import Card from 'primevue/card';
 
 import { useToast } from 'primevue/usetoast';
@@ -84,6 +93,8 @@ const panelPt: PanelPassThroughOptions = {
 const toast = useToast();
 
 const AVATAR_BASE = 'https://i.pravatar.cc/40?u=';
+
+const visibleRight = ref(false);
 
 const breadcrumbHome = ref({
   label: '首页',
@@ -155,11 +166,11 @@ const showToast = () => {
     :deep(.workSpaceHeader) {
       display: grid;
       grid-template-columns: auto 1fr auto;
-        align-items: center;
+      align-items: center;
 
       .avatar20 {
         width: 20px;
-          height: 20px;
+        height: 20px;
       }
     }
 
