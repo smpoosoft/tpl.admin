@@ -80,13 +80,38 @@ const themePreSet: Preset = {
       }
     },
     panel: {
-      header: {
-        padding: '8px',
+      root: {
+        borderRadius: '16px',
         background: '{content.background}'
+      },
+      header: {
+        padding: '8px 16px',
+        background: '{content.background}'
+      }
+    },
+    card: {
+      root: {
+        borderRadius: '16px',
+        background: '{content.background}'
+      },
+      title: {
+        fontSize: '1.125rem',
+        fontWeight: '600'
       }
     }
   }
 };
+
+export const tagCardTitlePt = {
+  title: { class: 'tagCardTitle' }
+};
+
+export const cardLayoutPt = (opt: { overY?: boolean } = {}) => ({
+  ...tagCardTitlePt,
+  root: { class: 'h-full min-h-0' },
+  body: { class: 'h-full flex flex-col min-h-0' },
+  content: { class: `h-full flex-1 min-h-0 ${opt.overY ? 'overY' : 'overHidden'}`, style: { 'container-type': 'size' } }
+});
 
 const preset = definePreset(Aura, themePreSet);
 
@@ -98,5 +123,10 @@ export const primeVueOpt: PrimeVueConfiguration = {
     }
   },
   license: import.meta.env.VITE_PRIMEUI_LICENSE_KEY,
-  ripple: true
+  ripple: true,
+  pt: {
+    tabpanel: {
+      root: { class: 'fullWH' }
+    }
+  }
 };

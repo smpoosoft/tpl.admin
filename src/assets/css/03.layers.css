@@ -1,0 +1,42 @@
+@layer components {
+  .tagCardTitle {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 21px;
+      margin-top: 0;
+      margin-left: -17px;
+      background-color: var(--p-primary-color);
+      border-top-left-radius: 40px;
+    }
+  }
+
+  .homeContent {
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .homeContent .zoneLeft {
+    overflow: hidden;
+  }
+
+  .homeContent .p-card-content .p-tabs {
+    height: 100%;
+  }
+
+  .homeContent .p-card-content .p-tabpanel {
+    container-type: size;
+  }
+
+  .homeContent .p-card-content.overY .p-tabpanel {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .homeContent .p-card-content.overHidden .p-tabpanel {
+    overflow: hidden;
+  }
+}
