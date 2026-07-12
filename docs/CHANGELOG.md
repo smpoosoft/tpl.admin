@@ -8,6 +8,7 @@
 
 ### Changed
 - 路由从 16 条硬编码规则变更为 `import.meta.glob` 自动发现 `pages/bills/**/bizDef.ts` + `TMainView.vue`，通过 key 匹配自动生成路由记录
+- `mock/homePage.ts` dataMenus 全部路径更新为新路由规则，移除不存在的 `/biz/file-previewer` 条目
 - 14 个业务页面从单文件 `foo.vue` 移至 `foo/TMainView.vue` 子目录结构（还原点提交）
 
 ### Changed
