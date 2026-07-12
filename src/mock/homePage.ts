@@ -1,33 +1,32 @@
 
 const dataMenusLists = [
-  { label: '简单列表', icon: 'pi pi-list', shortcut: '⌘+L', path: '/list/simple' },
-  { label: '表格列表', icon: 'pi pi-list', shortcut: '⌘+L', path: '/list/table' }
+  { label: '简单列表', icon: 'pi pi-list', shortcut: '⌘+L', path: '/Lists/TListBase' },
+  { label: '表格列表', icon: 'pi pi-list', shortcut: '⌘+L', path: '/Lists/TListTable' }
 ];
 
 const dataMenusViews = [
-  { label: '表单页面', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/view/form' },
-  { label: '详情页面', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/view/detail' }
+  { label: '表单页面', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/Views/TForm' },
+  { label: '详情页面', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/Views/TDetail' }
 ];
 
 const dataMenusBiz = [
-  { label: '合同管理', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/biz/contract' },
-  { label: '流程设计', icon: 'pi pi-chart-bar', shortcut: '⌘+R', path: '/biz/process-design' },
-  { label: '文件预览', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/biz/file-previewer' }
+  { label: '合同管理', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/Biz/TContract' },
+  { label: '流程设计', icon: 'pi pi-chart-bar', shortcut: '⌘+R', path: '/Biz/TProcessDesign' }
 ];
 
 const dataMenusReports = [
-  { label: '业务报表', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/report/sales' },
-  { label: '数据报表', icon: 'pi pi-list', shortcut: '⌘+R', path: '/report/products' },
-  { label: '透视报表', icon: 'pi pi-chart-bar', shortcut: '⌘+R', path: '/report/analysis' }
+  { label: '业务报表', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/Report/TSalesReport' },
+  { label: '数据报表', icon: 'pi pi-list', shortcut: '⌘+R', path: '/Report/TProductsReport' },
+  { label: '透视报表', icon: 'pi pi-chart-bar', shortcut: '⌘+R', path: '/Report/TAnalysisReport' }
 ];
 
 const dataMenusSysInfo = [
-  { label: '组织管理', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/sys/org/organization' },
-  { label: '职员管理', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/sys/org/employee' },
-  { label: '安全中心', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/sys/org/users' },
-  { label: '提醒管理', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/sys/org/reminder' },
-  { label: '系统日志', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/sys/log/audit' },
-  { label: '个人中心', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/sys/profile/user' }
+  { label: '组织管理', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/Sys/TOrganization' },
+  { label: '职员管理', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/Sys/TEmployee' },
+  { label: '安全中心', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/Sys/TUsers' },
+  { label: '提醒管理', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/Sys/TReminder' },
+  { label: '系统日志', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/Sys/TLogAudit' },
+  { label: '个人中心', icon: 'pi pi-cog', shortcut: '⌘+O', path: '/Sys/TUserProfile' }
 ];
 
 export const dataMenus = [
