@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold">简单列表</span>
     </template>
@@ -19,33 +19,21 @@
       </div>
 
       <div class="flex items-center gap-2 mb-3">
-        <Button
-          v-for="tab in FILTER_TABS"
-          :key="tab.key"
-          :severity="activeFilter === tab.key ? 'primary' : 'secondary'"
-          rounded
-          text
-          size="small"
-          @click="activeFilter = tab.key"
-        >
+        <Button v-for="tab in FILTER_TABS" :key="tab.key" :severity="activeFilter === tab.key ? 'primary' : 'secondary'"
+          rounded text size="small" @click="activeFilter = tab.key">
           {{ tab.label }}
           <span class="ml-1 text-sm opacity-60">({{ tab.count }})</span>
         </Button>
       </div>
 
-      <DataTable
-        :value="filteredList"
-        stripedRows
-        paginator
-        :rows="10"
-        :rowsPerPageOptions="[5, 10, 20]"
-        dataKey="id"
-        class="w-full"
-      >
+      <DataTable :value="filteredList" stripedRows paginator :rows="10" :rowsPerPageOptions="[5, 10, 20]" dataKey="id"
+        class="w-full">
         <Column field="name" header="客户">
           <template #body="slotProps">
             <div class="flex items-center gap-2">
-              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold bg-primary-100 text-primary-600">{{ slotProps.data.avatar }}</span>
+              <span
+                class="inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold bg-primary-100 text-primary-600">{{
+                  slotProps.data.avatar }}</span>
               <div>
                 <div class="font-medium">{{ slotProps.data.name }}</div>
                 <div class="text-sm text-surface-500">{{ slotProps.data.id }}</div>
@@ -91,6 +79,7 @@ import Tag from 'primevue/tag';
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
 import { TABLE_CUSTOMERS, FILTER_TABS } from '@/mock/listData';
+import * as imt from './imt';
 
 const customers = ref([...TABLE_CUSTOMERS]);
 const activeFilter = ref('all');

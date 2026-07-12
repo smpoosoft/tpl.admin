@@ -1,20 +1,20 @@
 <template>
   <div class="card h-full">
-    <Panel :pt="panelPt">
-      <template v-if="!hideHeader" #header>
+    <Card :pt="cardLayoutPt()">
+      <template v-if="!hideHeader" #title>
         <div class="flex items-center gap-2">
           <!-- 标题， 增删查改等按钮的插槽 -->
           <slot name="header">
-            <span class="font-bold">路由页面</span>
+            <span class="font-bold">{{ imt.bizIdentNamezh || '未定义' }}</span>
+            <span v-if="imt.description" class="text-surface-500 dark:text-surface-400">{{ imt.description }}</span>
           </slot>
         </div>
       </template>
-      <template v-if="!hideIcons" #icons>
-        <!-- 操作按钮的插槽 -->
+      <!-- <template v-if="!hideIcons" #icons>
         <slot name="icons"></slot>
         <Button icon="pi pi-cog" severity="secondary" rounded text />
         <Menu ref="refOptMenu" id="config_menu" :model="ROUTER_PANEL_ITEMS" popup />
-      </template>
+      </template> -->
       <template v-if="!hideFooter" #footer>
         <!-- 页脚的插槽 -->
         <slot name="footer">
@@ -32,34 +32,37 @@
         <!-- 内容区域的插槽 -->
         <slot></slot>
       </div>
-    </Panel>
+    </Card>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import type { NOrm } from 'tvoid_types';
+// import { ref, computed } from 'vue';
 // import { useToast } from 'primevue/usetoast';
 // import { useRouter } from 'vue-router';
-import Panel from 'primevue/panel';
+import Card from 'primevue/card';
 import Button from 'primevue/button';
-import Menu from 'primevue/menu';
-import { ROUTER_PANEL_ITEMS } from '@/constant/uiKit';
+import { cardLayoutPt } from '@/assets/ts/preSet';
+// import Menu from 'primevue/menu';
+// import { ROUTER_PANEL_ITEMS } from '@/constant/uiKit';
 
-const props = defineProps<{
+defineProps<{
+  imt: NOrm.IImt,
   hideHeader?: boolean,
   hideIcons?: boolean,
   hideFooter?: boolean,
   rootClass?: string,
 }>();
 
-const refOptMenu = ref(null);
+// const refOptMenu = ref(null);
 
-const panelPt = computed(() => ({
-  root: { class: ['h-full overHidden', props.rootClass] },
-  contentContainer: { class: 'min-h-0 overHidden' },
-  contentWrapper: { class: 'roterPanelDataWrapper fullWH overHidden' },
-  content: { class: 'h-full' }
-}));
+// const panelPt = computed(() => ({
+//   root: { class: ['h-full overHidden', props.rootClass] },
+//   contentContainer: { class: 'min-h-0 overHidden' },
+//   contentWrapper: { class: 'roterPanelDataWrapper fullWH overHidden' },
+//   content: { class: 'h-full' }
+// }));
 // const toast = useToast();
 // const router = useRouter();
 

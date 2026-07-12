@@ -48,8 +48,8 @@
 
         <!-- 工作区路由区域 -->
         <router-view v-slot="{ Component }">
-          <Transition mode="out-in" enter-active-class="animate__animated animate__zoomIn"
-            leave-active-class="animate__animated animate__zoomOutDown">
+          <Transition mode="out-in" enter-active-class="animate__animated animate__zoomIn route-enter-active"
+            leave-active-class="animate__animated animate__zoomOutDown route-leave-active">
             <component :is="Component" />
           </Transition>
         </router-view>
@@ -195,6 +195,13 @@ const showToast = () => {
   }
 }
 
+.route-enter-active {
+  animation-delay: -0.15s;
+}
+
+.route-leave-active {
+  animation-duration: 0.4s;
+}
 :deep(.badge-sm) {
   font-size: 0.6rem;
   min-width: 1.2rem;

@@ -15,6 +15,11 @@
     }
   }
 
+  .p-tab-active {
+    font-weight: var(--p-custom-tabs-active-font-weight);
+    color: red;
+  }
+
   .homeContent {
     grid-template-rows: minmax(0, 1fr);
   }
