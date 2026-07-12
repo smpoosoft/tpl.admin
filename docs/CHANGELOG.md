@@ -3,6 +3,9 @@
 ## [Unreleased]
 
 ### Changed
+- 14 个业务页面从单文件 `foo.vue` 移至 `foo/TMainView.vue` 子目录结构（还原点提交）
+
+### Changed
 - `preSet.ts` 中 `themePreSet.semantic.primary` 11 档（50-950）替换为参考项目 `uex_v1/src/assets/variables.css` 第 1 节 `--primary-*` 值：50=`#f7f8fd`、100=`#eef0fa`、200=`#d6d9f0`、300=`#b8bfe3`、400=`#9ba3d4`、500=`#8088c4`、600=`#6a72b2`、700=`#565c9e`、800=`#454a8e`、900=`#35397e`、950=`#2c2867`
 
 ### Changed

@@ -1,89 +1,55 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router';
+import HomeView from '@/pages/home/HomePage.vue';
 
-const router = createRouter({
+const HOME_META = { herf: '/', namezh: '首页' };
+
+const extractKey = (path: string): string => {
+  return path.replace(/^\.\.\/pages\/bills\//, '').replace(/(\/bizDef\.ts$|\/TMainView\.vue$)/, '');
+};
+
+const modulesViewEntries: [string, () => Promise<any>][] = Object.entries(
+  import.meta.glob('../pages/bills/**/TMainView.vue')
+).map(([path, loader]) => [extractKey(path), loader]);
+
+const modulesView = Object.fromEntries(modulesViewEntries) as Record<string, () => Promise<any>>;
+
+const moduleBizEntries: [string, () => Promise<any>][] = Object.entries(
+  import.meta.glob('../pages/bills/**/bizDef.ts')
+).map(([path, loader]) => [extractKey(path), loader]);
+
+const routes: RouteRecordRaw[] = [
+  { path: '/', name: 'home', meta: { breadcrumb: [HOME_META] }, component: HomeView }
+];
+
+for (const [key, bizLoader] of moduleBizEntries) {
+  const viewLoader = modulesView[key];
+  if (viewLoader == null) {
+    continue;
+  }
+
+  try {
+    const { bizIdent = key, bizIdentNamezh = key } = await bizLoader() as {
+      bizIdent: string;
+      bizIdentNamezh: string;
+    };
+    routes.push({
+      path: `/${key}`,
+      name: bizIdent,
+      meta: {
+        breadcrumb: [
+          HOME_META,
+          { herf: `/${key}`, namezh: bizIdentNamezh }
+        ]
+      },
+      component: viewLoader
+    });
+  } catch (err) {
+    console.error(`[Router] Failed to load bizDef for "${key}":`, err);
+  }
+}
+
+export default createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: () => import('@/pages/home/HomePage.vue')
-    },
-    {
-      path: '/list/simple',
-      name: 'listSimple',
-      component: () => import('@/pages/bills/Lists/TListBase.vue')
-    },
-    {
-      path: '/list/table',
-      name: 'listTable',
-      component: () => import('@/pages/bills/Lists/TListTable.vue')
-    },
-    {
-      path: '/view/form',
-      name: 'viewForm',
-      component: () => import('@/pages/bills/Views/TForm.vue')
-    },
-    {
-      path: '/view/detail',
-      name: 'viewDetail',
-      component: () => import('@/pages/bills/Views/TDetail.vue')
-    },
-    {
-      path: '/biz/contract',
-      name: 'bizContract',
-      component: () => import('@/pages/bills/Biz/TContract.vue')
-    },
-    {
-      path: '/biz/process-design',
-      name: 'bizProcessDesign',
-      component: () => import('@/pages/bills/Biz/TProcessDesign.vue')
-    },
-    {
-      path: '/report/sales',
-      name: 'reportSales',
-      component: () => import('@/pages/bills/Report/TSalesReport.vue')
-    },
-    {
-      path: '/report/products',
-      name: 'reportProducts',
-      component: () => import('@/pages/bills/Report/TProductsReport.vue')
-    },
-    {
-      path: '/report/analysis',
-      name: 'reportAnalysis',
-      component: () => import('@/pages/bills/Report/TAnalysisReport.vue')
-    },
-    {
-      path: '/sys/org/organization',
-      name: 'sysOrgOrganization',
-      component: () => import('@/pages/bills/Sys/TOrganization.vue')
-    },
-    {
-      path: '/sys/org/employee',
-      name: 'sysOrgEmployee',
-      component: () => import('@/pages/bills/Sys/TEmployee.vue')
-    },
-    {
-      path: '/sys/org/users',
-      name: 'sysOrgUsers',
-      component: () => import('@/pages/bills/Sys/TUsers.vue')
-    },
-    {
-      path: '/sys/org/reminder',
-      name: 'sysOrgReminder',
-      component: () => import('@/pages/bills/Sys/TReminder.vue')
-    },
-    {
-      path: '/sys/log/audit',
-      name: 'sysLogAudit',
-      component: () => import('@/pages/bills/Sys/TLogAudit.vue')
-    },
-    {
-      path: '/sys/profile/user',
-      name: 'sysProfileUser',
-      component: () => import('@/pages/bills/Sys/TUserProfile.vue')
-    }
-  ]
+  routes,
+  scrollBehavior: () => ({ top: 0 })
 });
-
-export default router;
