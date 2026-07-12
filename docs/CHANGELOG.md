@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 
+### Added
+- 14 个业务页面目录各自新增 `bizDef.ts`（导出 bizIdent/bizIdentNamezh/description）和 `imt.ts`（重导出 bizDef）
+
 ### Changed
+- 路由从 16 条硬编码规则变更为 `import.meta.glob` 自动发现 `pages/bills/**/bizDef.ts` + `TMainView.vue`，通过 key 匹配自动生成路由记录
 - 14 个业务页面从单文件 `foo.vue` 移至 `foo/TMainView.vue` 子目录结构（还原点提交）
 
 ### Changed
