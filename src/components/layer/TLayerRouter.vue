@@ -5,8 +5,11 @@
         <div class="flex items-center gap-2">
           <!-- 标题， 增删查改等按钮的插槽 -->
           <slot name="header">
-            <span class="font-bold">{{ imt.bizIdentNamezh || '未定义' }}</span>
-            <span v-if="imt.description" class="text-surface-500 dark:text-surface-400">{{ imt.description }}</span>
+            <span class="flexVY">
+              <span class="font-bold">{{ imt.bizIdentNamezh || '未定义' }}</span>
+              <span v-if="imt.description" class="text-surface-500 text-sm font-medium dark:text-surface-400">{{
+                imt.description }}</span>
+            </span>
           </slot>
         </div>
       </template>
@@ -30,7 +33,7 @@
 
       <div class="h-full">
         <!-- 内容区域的插槽 -->
-        <slot></slot>
+        <slot />
       </div>
     </Card>
   </div>

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"=== find primevue dirs in pnpm store ===\"; podman exec tvoid.dev find /smpoo_file/dev/codes/node_modules/.pnpm -path \"*/primevue@5.0.0-rc.1*\" -maxdepth 2 -type d 2>/dev/null | head -5; echo \"---\"; echo \"=== primevue local node_modules ===\"; ls -la /smpoo_file/smpoo/dev/codes/tVoid.dev/uiProj/tpl.admin/node_modules/primevue/ 2>/dev/null | head -10)",
+      "Read(//smpoo_file/smpoo/dev/codes/node_modules/.pnpm/primevue@5.0.0-rc.1_vue@3.5.39_typescript@6.0.3_/node_modules/primevue/**)",
+      "Read(//smpoo_file/smpoo/dev/codes/tVoid.dev/uiProj/tpl.admin/node_modules/primevue/config/**)",
+      "Read(//smpoo_file/smpoo/dev/codes/node_modules/.pnpm/primevue@5.0.0-rc.1_vue@3.5.39_typescript@6.0.3_/node_modules/primevue/config/**)",
+      "Bash(find /smpoo_file/smpoo/dev/codes/tVoid.dev/uiProj/tpl.admin/node_modules/@primeuix/themes -name \"*.d.ts\" | head -20)",
+      "Read(//smpoo_file/smpoo/dev/codes/node_modules/.pnpm/@primeuix\\\\+themes@3.0.0-rc.1/node_modules/@primeuix/themes/**)",
+      "Read(//smpoo_file/smpoo/dev/codes/tVoid.dev/uiProj/tpl.admin/node_modules/@primeuix/themes/types/tabs/**)",
+      "Read(//smpoo_file/smpoo/dev/codes/node_modules/.pnpm/@primeuix\\\\+themes@3.0.0-rc.1/node_modules/@primeuix/themes/types/tabs/**)",
+      "Read(//smpoo_dev/code/space/tcoffe.dev/code/platform/tCoffe.designer/fend/web/src/router/**)",
+      "Read(//smpoo_file/.dev/code/space/tcoffe.dev/code/platform/tCoffe.designer/fend/web/src/router/**)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

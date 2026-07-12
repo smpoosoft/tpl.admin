@@ -1,50 +1,22 @@
 <template>
   <TRouterPanel :imt>
-    <template #header>
-      <div class="flex flex-column">
-        <span class="font-bold">透视报表</span>
-        <small class="text-surface-400 font-normal">多维交叉分析报表</small>
-      </div>
-    </template>
-
     <div class="p2">
       <Panel header="分析配置" class="mb-3">
         <div class="grid grid-cols-3 gap-4">
           <div>
             <label class="block mb-1 text-sm font-medium">行维度</label>
-            <Select
-              v-model="config.rows"
-              :options="dimensionOptions"
-              multiple
-              optionLabel="label"
-              optionValue="value"
-              class="w-full"
-              placeholder="选择行维度"
-            />
+            <Select v-model="config.rows" :options="dimensionOptions" multiple optionLabel="label" optionValue="value"
+              class="w-full" placeholder="选择行维度" />
           </div>
           <div>
             <label class="block mb-1 text-sm font-medium">列维度</label>
-            <Select
-              v-model="config.cols"
-              :options="dimensionOptions"
-              multiple
-              optionLabel="label"
-              optionValue="value"
-              class="w-full"
-              placeholder="选择列维度"
-            />
+            <Select v-model="config.cols" :options="dimensionOptions" multiple optionLabel="label" optionValue="value"
+              class="w-full" placeholder="选择列维度" />
           </div>
           <div>
             <label class="block mb-1 text-sm font-medium">值字段</label>
-            <Select
-              v-model="config.values"
-              :options="valueOptions"
-              multiple
-              optionLabel="label"
-              optionValue="value"
-              class="w-full"
-              placeholder="选择值字段"
-            />
+            <Select v-model="config.values" :options="valueOptions" multiple optionLabel="label" optionValue="value"
+              class="w-full" placeholder="选择值字段" />
           </div>
         </div>
         <div class="flex items-center gap-3 mt-3">
@@ -55,24 +27,11 @@
         </div>
       </Panel>
 
-      <DataTable
-        v-if="pivotData.length"
-        :value="pivotData"
-        stripedRows
-        paginator
-        :rows="10"
-        :rowsPerPageOptions="[5, 10, 20]"
-        dataKey="__key"
-        class="w-full"
+      <DataTable v-if="pivotData.length" :value="pivotData" stripedRows paginator :rows="10"
+        :rowsPerPageOptions="[5, 10, 20]" dataKey="__key" class="w-full"
         :paginatorTemplate="'FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown CurrentPageReport'"
-        :currentPageReportTemplate="'共 {totalRecords} 条记录'"
-      >
-        <Column
-          v-for="col in pivotColumns"
-          :key="col.key"
-          :field="col.key"
-          :header="col.label"
-        >
+        :currentPageReportTemplate="'共 {totalRecords} 条记录'">
+        <Column v-for="col in pivotColumns" :key="col.key" :field="col.key" :header="col.label">
           <template v-if="col.isValue" #body="slotProps">
             {{ col.valueType === 'amount' ? formatCurrency(slotProps.data[col.key]) : slotProps.data[col.key] }}
           </template>
