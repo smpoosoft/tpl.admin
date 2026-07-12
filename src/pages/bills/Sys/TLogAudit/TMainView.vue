@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold">系统日志</span>
     </template>
@@ -91,4 +91,5 @@ const filteredLogs = computed(() => {
 
   return result;
 });
+import * as imt from './imt';
 </script>

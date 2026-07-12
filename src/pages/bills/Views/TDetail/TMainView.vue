@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <div class="flex items-center gap-2">
         <i class="pi pi-receipt text-primary" />
@@ -233,6 +233,7 @@ function getFileIcon(name: string): string {
       return 'pi pi-file';
   }
 }
+import * as imt from './imt';
 </script>
 
 <style scoped lang="scss">

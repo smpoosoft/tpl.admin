@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <div class="flex flex-col">
         <span class="font-bold">组织管理</span>
@@ -218,6 +218,7 @@ function refreshTree(): void {
   orgTree.value = structuredClone(ORG_TREE);
   selectedNodeKey.value = null;
 }
+import * as imt from './imt';
 </script>
 
 <style scoped lang="scss">

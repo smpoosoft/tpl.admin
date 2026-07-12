@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold">提醒管理</span>
     </template>
@@ -228,6 +228,7 @@ function onReset(): void {
   form.value = emptyForm();
   editingId.value = null;
 }
+import * as imt from './imt';
 </script>
 
 <style scoped></style>

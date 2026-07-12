@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold">合同管理</span>
     </template>
@@ -202,4 +202,5 @@ function statusLabel(status: string): string {
 function statusSeverity(status: string): string {
   return CONTRACT_STATUS_OPTS.find((o) => o.value === status)?.severity ?? 'info';
 }
+import * as imt from './imt';
 </script>

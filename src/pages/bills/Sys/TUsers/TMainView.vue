@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <div class="flex flex-col">
         <span class="font-bold">安全中心</span>
@@ -66,6 +66,7 @@ function statusLabel(status: string): string {
 function statusSeverity(status: string): string {
   return STATUS_SEVERITY[status] ?? 'info';
 }
+import * as imt from './imt';
 </script>
 
 <style scoped></style>

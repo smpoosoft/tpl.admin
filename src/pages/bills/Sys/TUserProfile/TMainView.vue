@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold">个人中心</span>
     </template>
@@ -84,6 +84,7 @@ import Divider from 'primevue/divider';
 import { USER_PROFILE } from '@/mock/sysData.ts';
 
 const profile = ref(USER_PROFILE);
+import * as imt from './imt';
 </script>
 
 <style scoped></style>

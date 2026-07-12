@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold">职员管理</span>
     </template>
@@ -136,6 +136,7 @@ function invertSelection(): void {
     selectedEmployees.value = [...shown];
   }
 }
+import * as imt from './imt';
 </script>
 
 <style scoped></style>

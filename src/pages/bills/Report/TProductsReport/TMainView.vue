@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <div class="flex flex-column">
         <span class="font-bold">数据报表</span>
@@ -70,6 +70,7 @@ function formatCurrency(amount: number): string {
     minimumFractionDigits: 0
   }).format(amount);
 }
+import * as imt from './imt';
 </script>
 
 <style scoped></style>

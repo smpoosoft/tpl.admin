@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <div class="flex items-center gap-2">
         <span class="font-bold">流程设计</span>
@@ -237,6 +237,7 @@ const cancelFlow = () => {
   nodeConfig.value = { name: '', approver: '', mode: '', timeout: '' };
   toast.add({ severity: 'info', summary: '已取消', detail: '未保存的更改已放弃', life: 3000 });
 };
+import * as imt from './imt';
 </script>
 
 <style scoped lang="scss"></style>

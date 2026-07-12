@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold text-lg">表单页面</span>
     </template>
@@ -147,6 +147,7 @@ const handleSave = (): void => {
 const handleCancel = (): void => {
   router.back();
 };
+import * as imt from './imt';
 </script>
 
 <style scoped lang="scss">

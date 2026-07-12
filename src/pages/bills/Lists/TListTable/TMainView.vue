@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold">表格列表</span>
     </template>
@@ -90,4 +90,5 @@ const filteredList = computed(() => {
 function tagSeverity(tagClass: string): string {
   return TAG_SEVERITY_MAP[tagClass] ?? 'secondary';
 }
+import * as imt from './imt';
 </script>

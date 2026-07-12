@@ -1,5 +1,5 @@
 <template>
-  <TRouterPanel>
+  <TRouterPanel :imt>
     <template #header>
       <span class="font-bold">业务报表</span>
     </template>
@@ -159,6 +159,7 @@ const customerSources = [
 function formatCurrency(amount: number): string {
   return new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY', minimumFractionDigits: 0 }).format(amount);
 }
+import * as imt from './imt';
 </script>
 
 <style scoped></style>
