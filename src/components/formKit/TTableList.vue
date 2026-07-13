@@ -77,6 +77,7 @@ import TabList from 'primevue/tablist';
 import Tab from 'primevue/tab';
 import TSearchBar from '@/components/dataKit/TSearchBar.vue';
 import Button from 'primevue/button';
+import ButtonGroup from 'primevue/buttongroup';
 import TIcon from '@/components/widget/TIcon.vue';
 import Popover from 'primevue/popover';
 import Checkbox from 'primevue/checkbox';
@@ -187,6 +188,13 @@ const autoColsWidth = () => {
     if (!col.headerStyle) return col;
     const { width: __, ...rest } = col.headerStyle;
     return { ...col, headerStyle: Object.keys(rest).length ? rest : {} };
+  });
+  // 清除拖拽列宽时 PrimeVue 写入的内联 width
+  document.querySelectorAll('.p-datatable-header-cell, .p-datatable-frozen-column').forEach((el) => {
+    (el as HTMLElement).style.width = '';
+  });
+  document.querySelectorAll('.p-datatable-table td, .p-datatable-frozen td').forEach((el) => {
+    (el as HTMLElement).style.width = '';
   });
 };
 
