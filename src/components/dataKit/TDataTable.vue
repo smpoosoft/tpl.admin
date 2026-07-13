@@ -3,11 +3,12 @@
     scrollHeight="flex" stripedRows sort-mode="multiple" removable-sort selection-mode="multiple" highlight-on-select
     resizable-columns column-resize-mode="expand" :row-class="rowClass" :virtual-scroller-options="{ itemSize: 49 }"
     :class="['w-full', { 'shadow-active': hasScrollOffset }]" style="container-type: size; height: 100%"
-    @row-dblclick="onRowDblClick">
+    @row-dblclick="onRowDblClick" @column-resize-end="(e) => $emit('columnResizeEnd', e)">
     <Column selection-mode="multiple" header-style="width: 3rem" />
     <Column v-for="col in visibleColumns" :key="colKey(col)" :field="col.field" :header="col.header" sortable
       :frozen="col.field === 'actions'" :align-frozen="col.field === 'actions' ? 'right' : undefined"
-      :header-style="col.headerStyle">
+      :header-style="col.headerStyle"
+      :class="widthFitCols?.includes(colKey(col)) ? 'widthFit' : ''">
       <template #body="slotProps">
         <template v-if="col.field === 'name'">
           <div class="flex items-center gap-2">
@@ -59,11 +60,14 @@ interface TDataTableProps {
   value: any[];
   /** 隐藏操作列 */
   hideOptCol?: boolean;
+  /** 应用 widthFit 自动宽度的列 */
+  widthFitCols?: string[];
 }
 
 const props = defineProps<TDataTableProps>();
 const emit = defineEmits<{
   rowDblClick: [row: any];
+  columnResizeEnd: [evt: any];
 }>();
 const selectedItems = defineModel<any[]>('selection', { default: () => [] });
 
@@ -155,6 +159,11 @@ onUnmounted(() => {
 /* 列宽规则：有 headerStyle.width 的列溢出省略，无宽度的列自适应内容 */
 .p-datatable :deep(.p-datatable-scrollable-table) {
   table-layout: auto;
+}
+
+.widthFit {
+  width: auto !important;
+  min-width: 0 !important;
 }
 
 .p-datatable :deep(.p-datatable-scrollable-table td),

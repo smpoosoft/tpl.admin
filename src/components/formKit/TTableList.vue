@@ -52,7 +52,9 @@
 
     <div class="tableListContent">
       <TDataTable v-model:selection="selectedItems" :columns :visible-fields="visibleFields" :value="dataList"
-        :size="tableSize" :hide-opt-col="hideOptCol" @row-dbl-click="(row) => $emit('rowDblClick', row)">
+        :size="tableSize" :hide-opt-col="hideOptCol" :width-fitCols="widthFitCols"
+        @row-dbl-click="(row) => $emit('rowDblClick', row)"
+        @column-resize-end="onColumnResizeEnd">
         <template #opt-col="{ data }">
           <slot name="opt-col" :data="data" />
         </template>
@@ -118,6 +120,8 @@ const popoverRef = ref<InstanceType<typeof Popover> | null>(null);
 const dragIndex = ref<number | null>(null);
 const dragOverIndex = ref<number | null>(null);
 const isFullScreen = ref(false);
+// widthFit 列集合：默认全部可见列，拖拽后移除该列，autoColsWidth 恢复
+const widthFitCols = ref<string[]>([...visibleFields.value]);
 
 // ===== 列拖拽重排 =====
 // 基于 HTML5 Drag and Drop API，重排逻辑在 drop 事件中执行
@@ -184,18 +188,16 @@ const setFullScreen = () => {
 };
 
 const autoColsWidth = () => {
-  columns.value = columns.value.map((col) => {
-    if (!col.headerStyle) return col;
-    const { width: __, ...rest } = col.headerStyle;
-    return { ...col, headerStyle: Object.keys(rest).length ? rest : {} };
-  });
-  // 清除拖拽列宽时 PrimeVue 写入的内联 width
-  document.querySelectorAll('.p-datatable-header-cell, .p-datatable-frozen-column').forEach((el) => {
-    (el as HTMLElement).style.width = '';
-  });
-  document.querySelectorAll('.p-datatable-table td, .p-datatable-frozen td').forEach((el) => {
-    (el as HTMLElement).style.width = '';
-  });
+  widthFitCols.value = [...visibleFields.value];
+};
+
+const onColumnResizeEnd = (e: any) => {
+  const headerText = e.element?.textContent?.trim();
+  if (!headerText) return;
+  const col = columns.value.find(c => c.header === headerText);
+  if (col) {
+    widthFitCols.value = widthFitCols.value.filter(c => c !== colKey(col));
+  }
 };
 
 const onFullScreenChange = () => {
