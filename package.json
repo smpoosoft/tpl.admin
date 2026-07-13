@@ -19,6 +19,7 @@
   "dependencies": {
     "@chartts/core": "0.1.6",
     "@primeuix/themes": "3.0.0-rc.1",
+    "@vueuse/core": "13.2.0",
     "chart.js": "4.5.1",
     "chartgpu": "0.3.3",
     "primeicons": "^7.0.0",

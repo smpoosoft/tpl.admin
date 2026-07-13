@@ -45,6 +45,9 @@ const themePreSet: Preset = {
         bg: {
           gray: '{slate.300}',
           page: '{surface.100}'
+        },
+        fullscreen: {
+          background: '{surface.0}'
         }
       },
       dark: {
@@ -72,6 +75,9 @@ const themePreSet: Preset = {
         bg: {
           gray: '{slate.700}',
           page: '#3b3b40'
+        },
+        fullscreen: {
+          background: 'transparent'
         }
       }
     }
@@ -141,3 +147,9 @@ export const primeVueOpt: PrimeVueConfiguration = {
     }
   }
 };
+
+// 注入全屏背景色样式（light: surface-0 白色，dark: 透明）
+// 任意容器根元素添加 data-fs-bg 属性，全屏时自动获得背景色
+const styleEl = document.createElement('style');
+styleEl.textContent = '[data-fs-bg]:fullscreen { background: var(--p-fullscreen-background); }';
+document.head.appendChild(styleEl);

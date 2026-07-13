@@ -11,19 +11,20 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size (opinionated).
 */
-  html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    tab-size: 4;
-    font-size: var(--font-size);
-  }
 
   /** Remove the margin in all browsers. */
   * {
     padding: 0;
     margin: 0;
     background-color: transparent;
+  }
+
+  html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    font-size: var(--font-size);
   }
 
   body {

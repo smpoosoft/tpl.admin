@@ -1,5 +1,13 @@
 <template>
   <TRouterPanel :imt>
+    <template #header>
+      <div class="flexSplit flexY gapX1">
+        <span class="flexSplit"></span>
+        <TSearchBar v-model="searchKeyword" />
+        <Button label="新增" icon="pi pi-plus" size="small" />
+      </div>
+    </template>
+
     <div class="p2">
       <Panel header="分析配置" class="mb-3">
         <div class="grid grid-cols-3 gap-4">
@@ -38,6 +46,14 @@
         </Column>
       </DataTable>
     </div>
+
+    <template #footer>
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <span class="text-sm text-surface-400">
+          共 {{ pivotData.length }} 组汇总
+        </span>
+      </div>
+    </template>
   </TRouterPanel>
 </template>
 
@@ -49,6 +65,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Select from 'primevue/select';
 import Button from 'primevue/button';
+import TSearchBar from '@/components/dataKit/TSearchBar.vue';
 import { ANALYSIS_CONFIG, SALES_DATA } from '@/mock/reportData.ts';
 
 interface PivotColumn {
@@ -89,6 +106,8 @@ const DIMENSION_LABELS: Record<string, string> = {
   region: '区域',
   date: '日期'
 };
+
+const searchKeyword = ref('');
 
 function generatePivot(): void {
   const rows = config.rows;

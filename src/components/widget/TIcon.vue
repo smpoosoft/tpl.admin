@@ -1,26 +1,9 @@
 <template>
-  <span
-    class="tIcon"
-    :class="[flipClass, { spin: spin }]"
-    :style="wrapStyle"
-    :aria-label="ariaLabel"
-    role="img"
-  >
-    <svg
-      :width="pxSize"
-      :height="pxSize"
-      :viewBox="ICON_DEFAULT_VIEWBOX"
-      :fill="fillColor"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      v-html="svgBody"
-    ></svg>
-    <span
-      v-if="overlay && (overlay.val ?? 0) > 0"
-      class="tIcon-overlay"
-      :class="{ dot: overlay.type === 'dot' }"
-      :style="{ background: overlay.color || 'red' }"
-    >{{ overlay.type === 'dot' ? '' : overlay.val }}</span>
+  <span class="tIcon" :class="[flipClass, { spin: spin, handLike: clickAble }]" :aria-label="ariaLabel" role="img">
+    <svg :width="pxSize" :height="pxSize" :viewBox="ICON_DEFAULT_VIEWBOX" fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg" aria-hidden="true" v-html="svgBody"></svg>
+    <span v-if="overlay && (overlay.val ?? 0) > 0" class="tIcon-overlay" :class="{ dot: overlay.type === 'dot' }"
+      :style="{ background: overlay.color || 'red' }">{{ overlay.type === 'dot' ? '' : overlay.val }}</span>
   </span>
 </template>
 
@@ -31,16 +14,22 @@ import type { IBadgeOverlay } from '@/types/uiKite';
 
 const props = withDefaults(defineProps<{
   name: string;
+  /** 图标尺寸 */
   size?: TIconSize;
-  color?: string;
+  /** 是否旋转 */
   spin?: boolean;
+  /** 图标是否翻转 */
   flip?: TIconFlip;
+  /** 指定图标粗细 */
   strokeWidth?: number;
+  /** 角标信息 */
   overlay?: IBadgeOverlay;
+  /** 无障碍标签 */
   ariaLabel?: string;
+  /** 是否允许点击 */
+  clickAble?: boolean;
 }>(), {
   size: 'md',
-  color: 'currentColor',
   spin: false,
   strokeWidth: svgStockeWidth,
   overlay: () => ({ color: badgeOverlayColor }),
@@ -59,8 +48,6 @@ const SIZE_MAP: Record<string, number> = { sm: 14, md: 16, lg: 20 };
 const pxSize = computed<number>(() =>
   typeof props.size === 'number' ? props.size : (SIZE_MAP[props.size] ?? 16)
 );
-
-const fillColor = computed<string>(() => props.color ?? 'currentColor');
 
 const ICON_MODULES = import.meta.glob<{ ICON_BODY: string }>('../../assets/icons/**/*.ts', { eager: true });
 
@@ -86,10 +73,6 @@ const flipClass = computed<string>(() => {
     || ((props.flip === 'both') && 'flipXY')
     || '';
 });
-
-const wrapStyle = computed<Record<string, string>>(() => ({
-  color: fillColor.value
-}));
 </script>
 
 <style lang="scss" scoped>

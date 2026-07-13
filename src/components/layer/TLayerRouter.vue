@@ -1,15 +1,16 @@
 <template>
   <div class="card h-full">
     <Card :pt="cardLayoutPt()">
+      <!-- 卡片头插槽 -->
       <template v-if="!hideHeader" #title>
         <div class="flex items-center gap-2">
+          <span class="flexVY">
+            <span class="font-bold">{{ imt.bizIdentNamezh || '未定义' }}</span>
+            <span v-if="imt.description" class="text-surface-500 text-sm font-medium dark:text-surface-400">{{
+              imt.description }}</span>
+          </span>
           <!-- 标题， 增删查改等按钮的插槽 -->
           <slot name="header">
-            <span class="flexVY">
-              <span class="font-bold">{{ imt.bizIdentNamezh || '未定义' }}</span>
-              <span v-if="imt.description" class="text-surface-500 text-sm font-medium dark:text-surface-400">{{
-                imt.description }}</span>
-            </span>
           </slot>
         </div>
       </template>
@@ -18,23 +19,26 @@
         <Button icon="pi pi-cog" severity="secondary" rounded text />
         <Menu ref="refOptMenu" id="config_menu" :model="ROUTER_PANEL_ITEMS" popup />
       </template> -->
+
+      <template #content>
+        <div class="h-full">
+          <!-- 内容区域的插槽 -->
+          <slot></slot>
+        </div>
+      </template>
+
+      <!-- 卡片脚注插槽 -->
       <template v-if="!hideFooter" #footer>
-        <!-- 页脚的插槽 -->
         <slot name="footer">
-          <div class="flex flex-wrap items-center justify-between gap-4">
+          <!-- <div class="flex flex-wrap items-center justify-between gap-4">
             <div class="flex items-center gap-2">
               <Button icon="pi pi-user" rounded text></Button>
               <Button icon="pi pi-bookmark" severity="secondary" rounded text></Button>
             </div>
             <span class="text-surface-500 dark:text-surface-400">Updated 2 hours ago</span>
-          </div>
+          </div> -->
         </slot>
       </template>
-
-      <div class="h-full">
-        <!-- 内容区域的插槽 -->
-        <slot />
-      </div>
     </Card>
   </div>
 </template>
