@@ -1,8 +1,7 @@
 <template>
   <DataTable ref="dtRef" :value="value" dataKey="id" v-model:selection="selectedItems" :size scrollable
     scrollHeight="flex" stripedRows sort-mode="multiple" removable-sort selection-mode="multiple" highlight-on-select
-    resizable-columns column-resize-mode="expand" :row-class="rowClass"
-    :virtual-scroller-options="{ itemSize: 49 }"
+    resizable-columns column-resize-mode="expand" :row-class="rowClass" :virtual-scroller-options="{ itemSize: 49 }"
     :class="['w-full', { 'shadow-active': hasScrollOffset }]" style="container-type: size; height: 100%"
     @row-dblclick="onRowDblClick">
     <Column selection-mode="multiple" header-style="width: 3rem" />
@@ -13,7 +12,8 @@
         <template v-if="col.field === 'name'">
           <div class="flex items-center gap-2">
             <span
-              class="inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold bg-primary-100 text-primary-600">{{ slotProps.data.avatar }}</span>
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold bg-primary-100 text-primary-600">{{
+                slotProps.data.avatar }}</span>
             <span class="font-medium">{{ slotProps.data.name }}</span>
             <span class="text-sm text-surface-500">{{ slotProps.data.id }}</span>
           </div>
@@ -42,6 +42,7 @@
 </template>
 
 <script setup lang="ts">
+// ===== 外部依赖 =====
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
@@ -50,6 +51,7 @@ import Button from 'primevue/button';
 import TEmptyData from '@/components/dataKit/TEmptyData.vue';
 import type { ColumnProps } from 'primevue/column';
 
+// ===== Props & 事件 =====
 interface TDataTableProps {
   columns: ColumnProps[];
   visibleFields: string[];
@@ -65,13 +67,18 @@ const emit = defineEmits<{
 }>();
 const selectedItems = defineModel<any[]>('selection', { default: () => [] });
 
+// ===== 内部状态 =====
+// DataTable 实例引用（用于滚动检测）、水平滚动偏移标记
 const dtRef = ref<InstanceType<typeof DataTable> | null>(null);
 const hasScrollOffset = ref(false);
 
+// 通过 row-class 回调为选中行添加高亮 class（虚拟滚动下 PrimeVue 不自动追加）
 const rowClass = (data: any) => {
   return selectedItems.value.some((item: any) => item.id === data.id) ? 'p-datatable-row-selected' : '';
 };
 
+// ===== 计算属性 =====
+// 根据 visibleFields 过滤出可见列，hideOptCol 时排除 actions 列
 const visibleColumns = computed(() =>
   props.columns.filter((col) => {
     if (props.hideOptCol && colKey(col) === 'actions') return false;
@@ -79,6 +86,8 @@ const visibleColumns = computed(() =>
   })
 );
 
+// ===== 标签 severity 映射 =====
+// tagClass → PrimeVue Tag severity 的转换表
 const TAG_SEVERITY_MAP: Record<string, string> = {
   'tag-vip': 'warn',
   'tag-new': 'info',
@@ -91,14 +100,19 @@ const tagSeverity = (tagClass: string): string => {
   return TAG_SEVERITY_MAP[tagClass] ?? 'secondary';
 };
 
+// ===== 工具函数 =====
+// 从 ColumnProps 中提取 field 字符串（排除 function 和 undefined 类型）
 const colKey = (col: { field?: string | ((item: any) => string) | undefined }): string => {
   return typeof col.field === 'string' ? col.field : '';
 };
 
+// 行双击事件：向上抛出当前行数据
 const onRowDblClick = (event: any) => {
   emit('rowDblClick', event.data as any);
 };
 
+// ===== 水平滚动检测 =====
+// 监听 VirtualScroller 的 scroll 事件，偏移量 > 0 时冻结列显示阴影
 let scrollEl: HTMLElement | null = null;
 
 const onScroll = () => {

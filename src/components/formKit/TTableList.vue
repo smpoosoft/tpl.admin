@@ -9,10 +9,11 @@
         </TabList>
       </Tabs>
       <span class="flexSplit"></span>
-      <ButtonGroup size="small">
-        <Button click="tableSize = 'large'">大</Button>
-        <Button click="tableSize = 'medium'">中</Button>
-        <Button click="tableSize = 'small'">小</Button>
+      <ButtonGroup>
+        <Button size="small" @click="tableSize = 'large'">大</Button>
+        <Button size="small" @click="tableSize = 'normal'">中</Button>
+        <Button size="small" @click="tableSize = 'small'">小</Button>
+        <Button size="small" @click="autoColsWidth">列宽匹配</Button>
       </ButtonGroup>
 
       <TSearchBar :model-value="searchKeyword" @update:model-value="(val) => $emit('update:searchKeyword', val)" />
@@ -69,6 +70,7 @@
 </template>
 
 <script setup lang="ts">
+// ===== 外部依赖 =====
 import { ref, onMounted, onUnmounted } from 'vue';
 import Tabs from 'primevue/tabs';
 import TabList from 'primevue/tablist';
@@ -81,6 +83,7 @@ import Checkbox from 'primevue/checkbox';
 import TDataTable from '@/components/dataKit/TDataTable.vue';
 import type { ColumnProps } from 'primevue/column';
 
+// ===== Props 定义 =====
 interface TTableListProps {
   filterTabs: { key: string; label: string; count: number }[];
   dataList: any[];
@@ -92,6 +95,7 @@ interface TTableListProps {
   hideOptCol?: boolean;
 }
 
+// ===== Props 实例化 & 事件 =====
 const props = defineProps<TTableListProps>();
 
 defineEmits<{
@@ -100,16 +104,22 @@ defineEmits<{
   (e: 'rowDblClick', row: any): void;
 }>();
 
-const tableSize = ref<'large' | 'medium' | 'small'>('medium');
+// ===== 内部状态 =====
+// 表格行高尺寸（small / normal / large），由顶部按钮组控制
+const tableSize = ref<'large' | 'normal' | 'small'>('normal');
+// 列定义（支持拖拽重排）、可见列 field 集合、行选择结果
 const columns = ref<ColumnProps[]>([...props.defaultColumns]);
 const visibleFields = ref<string[]>(props.defaultColumns.map(col => col.field as string));
 const selectedItems = ref<any[]>([]);
 
+// UI 引用：列设置弹窗、拖拽状态、全屏状态
 const popoverRef = ref<InstanceType<typeof Popover> | null>(null);
 const dragIndex = ref<number | null>(null);
 const dragOverIndex = ref<number | null>(null);
 const isFullScreen = ref(false);
 
+// ===== 列拖拽重排 =====
+// 基于 HTML5 Drag and Drop API，重排逻辑在 drop 事件中执行
 const onColDragStart = (event: DragEvent, index: number) => {
   dragIndex.value = index;
   event.dataTransfer!.effectAllowed = 'move';
@@ -170,6 +180,14 @@ const setFullScreen = () => {
   } else {
     el.requestFullscreen();
   }
+};
+
+const autoColsWidth = () => {
+  columns.value = columns.value.map((col) => {
+    if (!col.headerStyle) return col;
+    const { width: __, ...rest } = col.headerStyle;
+    return { ...col, headerStyle: Object.keys(rest).length ? rest : {} };
+  });
 };
 
 const onFullScreenChange = () => {
