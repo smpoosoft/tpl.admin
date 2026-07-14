@@ -1,5 +1,5 @@
 <template>
-  <div class="tableListWrapper fullWH" data-fs-bg>
+  <div ref="wrapperRef" class="tableListWrapper fullWH" data-fs-bg>
     <div class="tableListHeader flexY gapX1">
       <Tabs :value="activeFilter" @update:value="(val) => $emit('update:activeFilter', val as string)">
         <TabList>
@@ -50,7 +50,7 @@
       </Button>
     </div>
 
-    <div class="tableListContent">
+    <div ref="tableContentRef" class="tableListContent">
       <TDataTable v-model:selection="selectedItems" :columns :visible-fields="visibleFields" :value="dataList"
         :size="tableSize" :hide-opt-col="hideOptCol" :footers="footers"
         @row-dbl-click="(row) => $emit('rowDblClick', row)">
@@ -139,11 +139,13 @@ const invertSelection = () => {
   selectedItems.value = props.dataList.filter((i: any) => !selectedIds.has(i.id));
 };
 
-// UI 引用：列设置弹窗、拖拽状态、全屏状态
+// UI 引用：弹窗、拖拽状态、全屏状态、容器 ref
 const popoverRef = ref<InstanceType<typeof Popover> | null>(null);
 const dragIndex = ref<number | null>(null);
 const dragOverIndex = ref<number | null>(null);
 const isFullScreen = ref(false);
+const wrapperRef = ref<HTMLElement | null>(null);
+const tableContentRef = ref<HTMLElement | null>(null);
 
 // ===== 列拖拽重排 =====
 // 基于 HTML5 Drag and Drop API，重排逻辑在 drop 事件中执行
@@ -209,25 +211,22 @@ const colKey = (col: { field?: string | ((item: any) => string) | undefined }): 
 
 /** 切换全屏：进入则 requestFullscreen，已在全屏则 exitFullscreen */
 const setFullScreen = () => {
-  const el = document.querySelector('.tableListWrapper') as HTMLElement | null;
-  if (!el) return;
   if (document.fullscreenElement) {
     document.exitFullscreen();
   } else {
-    el.requestFullscreen();
+    wrapperRef.value?.requestFullscreen();
   }
 };
 
 /** 将表格水平滚动条平滑移到最左端 */
 const scrollXLeft = () => {
-  const el = document.querySelector('.tableListContent .p-datatable-table-container') as HTMLElement | null;
-  if (el) el.scrollTo({ left: 0, behavior: 'smooth' });
+  tableContentRef.value?.querySelector('.p-datatable-table-container')?.scrollTo({ left: 0, behavior: 'smooth' });
 };
 
 /** 将表格水平滚动条平滑移到最右端 */
 const scrollXRight = () => {
-  const el = document.querySelector('.tableListContent .p-datatable-table-container') as HTMLElement | null;
-  if (el) el.scrollTo({ left: el.scrollWidth, behavior: 'smooth' });
+  const el = tableContentRef.value?.querySelector('.p-datatable-table-container');
+  el?.scrollTo({ left: el!.scrollWidth, behavior: 'smooth' });
 };
 
 /** 全屏状态变化回调：根据 document.fullscreenElement 同步 isFullScreen */
