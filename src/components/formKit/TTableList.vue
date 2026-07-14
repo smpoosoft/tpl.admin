@@ -11,7 +11,7 @@
       <span class="flexSplit"></span>
 
       <TSearchBar :model-value="searchKeyword" @update:model-value="(val) => $emit('update:searchKeyword', val)" />
-      <Button iconOnly variant="outlined" size="small" @click="setCols">
+      <Button iconOnly variant="outlined" size="small" v-tooltip.top="'列设置'" @click="setCols">
         <TIcon name="columnsSet" :size="16" clickAble />
       </Button>
       <Popover ref="popoverRef" class="w-72" pt:content="p-0!">
@@ -39,13 +39,13 @@
           </div>
         </div>
       </Popover>
-      <Button iconOnly variant="outlined" size="small" @click="setFullScreen">
+      <Button iconOnly variant="outlined" size="small" v-tooltip.top="'切换全屏'" @click="setFullScreen">
         <TIcon :name="isFullScreen ? 'fullScreenExit' : 'fullScreen'" :size="16" clickAble />
       </Button>
-      <Button iconOnly variant="outlined" size="small" @click="scrollXLeft">
+      <Button iconOnly variant="outlined" size="small" v-tooltip.top="'滚动到最左边'" @click="scrollXLeft">
         <TIcon name="prev" :size="16" clickAble />
       </Button>
-      <Button iconOnly variant="outlined" size="small" @click="scrollXRight">
+      <Button iconOnly variant="outlined" size="small" v-tooltip.top="'滚动到最右边'" @click="scrollXRight">
         <TIcon name="next" :size="16" clickAble />
       </Button>
     </div>

@@ -8,10 +8,10 @@
       @click="clearSearchKeyword">
       <TIcon :name="!searchKeyword ? 'dot' : 'close'" :size="16" aria-label="清除搜索内容"></TIcon>
     </span>
-    <span v-if="!hideInnerFilter" class="optIcon opt flexXY fullWH handLike" @click="onFilter">
+    <span v-if="!hideInnerFilter" class="optIcon opt flexXY fullWH handLike" v-tooltip.top="'更多筛选条件'" @click="onFilter">
       <TIcon name="filter" :size="16" aria-label="更多筛选条件"></TIcon>
     </span>
-    <span class="optIcon opt flexXY fullWH handLike" @click="onNotEquals">
+    <span class="optIcon opt flexXY fullWH handLike" v-tooltip.top="'反向搜索'" @click="onNotEquals">
       <TIcon name="notEquals" :size="16" aria-label="反向搜索"></TIcon>
     </span>
   </div>

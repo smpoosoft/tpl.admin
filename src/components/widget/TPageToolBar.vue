@@ -1,23 +1,26 @@
 <template>
   <div class="flex items-center gap-4">
     <ul class="tPageToolBar">
-      <li>
+      <li class="flexXY">
         <TDarkSwitcher class="mR1"></TDarkSwitcher>
       </li>
-      <li v-if="modelValue.comments?.vals">
+      <li v-if="modelValue.comments?.vals" class="flexXY">
         <TPopoveIcon :items="modelValue.comments?.vals" icon="comment" :size="20"
           :overlay="{ val: modelValue.comments?.overlay, color: badgeOverlayColor }" class="mR1">
         </TPopoveIcon>
       </li>
-      <li v-if="modelValue.notifications?.vals">
+      <li v-if="modelValue.notifications?.vals" class="flexXY">
         <TPopoveIcon :items="modelValue.notifications?.vals" icon="bell" :size="20"
           :overlay="{ val: modelValue.notifications?.overlay, color: badgeOverlayColor }" class="mR1">
         </TPopoveIcon>
       </li>
-      <li v-if="modelValue.mails?.vals">
+      <li v-if="modelValue.mails?.vals" class="flexXY">
         <TPopoveIcon :items="modelValue.mails?.vals" icon="mail" :size="20"
           :overlay="{ val: modelValue.mails?.overlay, type: 'dot', color: badgeOverlayColor }" class="mR1">
         </TPopoveIcon>
+      </li>
+      <li class="flexXY">
+        <TScreenServer></TScreenServer>
       </li>
 
       <Divider layout="vertical" />
@@ -38,6 +41,7 @@
 import type { IHomeToolBar } from '@/types/uiKite';
 import type { AvatarPassThroughOptions } from 'primevue';
 import TDarkSwitcher from '@/components/widget/TDarkSwitcher.vue';
+import TScreenServer from '@/components/widget/TScreenServer.vue';
 import TPopoveIcon from '@/components/widget/TPopoveIcon.vue';
 import { badgeOverlayColor } from '@/constant/uiKit';
 import Divider from 'primevue/divider';

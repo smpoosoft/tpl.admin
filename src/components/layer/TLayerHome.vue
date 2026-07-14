@@ -78,7 +78,6 @@ import Button from 'primevue/button';
 import Drawer from 'primevue/drawer';
 import Card from 'primevue/card';
 
-import { useToast } from 'primevue/usetoast';
 import type { IHomeToolBar, TPopoverItem } from '@/types/uiKite/index.js';
 import { dataMenus } from '@/mock/homePage.ts';
 
@@ -89,8 +88,6 @@ const panelPt: PanelPassThroughOptions = {
   contentWrapper: { class: 'workspaceCZone fullWH overHidden' },
   content: { class: 'panelContent fullWH overHidden' }
 };
-
-const toast = useToast();
 
 const AVATAR_BASE = 'https://i.pravatar.cc/40?u=';
 
@@ -138,10 +135,6 @@ const dataHomeToolBar = ref<IHomeToolBar>({
   mails: { overlay: 1, vals: mailItems.value },
   user: { vals: userItems.value }
 });
-
-const showToast = () => {
-  toast.add({ severity: 'info', summary: 'Info Message', detail: 'Message Content', life: 3000 });
-};
 </script>
 
 <style lang="scss" scoped>
@@ -202,6 +195,7 @@ const showToast = () => {
 .route-leave-active {
   animation-duration: 0.4s;
 }
+
 :deep(.badge-sm) {
   font-size: 0.6rem;
   min-width: 1.2rem;
