@@ -89,6 +89,7 @@ import ButtonGroup from 'primevue/buttongroup';
 import TIcon from '@/components/widget/TIcon.vue';
 import Divider from 'primevue/divider';
 import Popover from 'primevue/popover';
+import Checkbox from 'primevue/checkbox';
 import TDataTable from '@/components/dataKit/TDataTable.vue';
 
 // ===== Props 定义 =====
