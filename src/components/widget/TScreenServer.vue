@@ -5,8 +5,8 @@
       <div class="lockOverlay">
         <div class="lockCard">
           <div class="lockIcon"><TIcon name="screenServer" :size="40" /></div>
-          <p class="lockHint">已锁屏，请输入密码解锁</p>
-          <InputText v-model="pwd" type="password" placeholder="请输入密码" class="lockInput"
+          <p class="lockHint">已锁屏</p>
+          <InputText type="password" placeholder="请输入密码" class="lockInput"
             @keyup.enter="unlock" ref="pwdInput" />
           <Button label="解锁" @click="unlock" class="lockBtn" />
         </div>
@@ -22,25 +22,18 @@ import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
 import TIcon from '@/components/widget/TIcon.vue';
 
-const LOCK_PWD = '123456';
-
 const isLocked = ref(false);
-const pwd = ref('');
 const pwdInput = ref<InstanceType<typeof InputText> | null>(null);
 
 const lock = () => {
   document.querySelectorAll('.p-blockui-mask').forEach(m => m.remove());
   isLocked.value = true;
-  pwd.value = '';
   nextTick(() => pwdInput.value?.$el?.querySelector('input')?.focus());
 };
 
 const unlock = () => {
-  if (pwd.value === LOCK_PWD) {
-    isLocked.value = false;
-    pwd.value = '';
-    nextTick(() => document.querySelectorAll('.p-blockui-mask').forEach(m => m.remove()));
-  }
+  isLocked.value = false;
+  nextTick(() => document.querySelectorAll('.p-blockui-mask').forEach(m => m.remove()));
 };
 </script>
 
@@ -86,5 +79,11 @@ const unlock = () => {
 
 .lockBtn {
   width: 100%;
+}
+</style>
+
+<style>
+.p-blockui-mask {
+  background: transparent !important;
 }
 </style>
