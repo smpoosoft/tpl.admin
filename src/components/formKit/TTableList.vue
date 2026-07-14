@@ -220,13 +220,16 @@ const setFullScreen = () => {
 
 /** 将表格水平滚动条平滑移到最左端 */
 const scrollXLeft = () => {
-  tableContentRef.value?.querySelector('.p-datatable-table-container')?.scrollTo({ left: 0, behavior: 'smooth' });
+  const el = tableContentRef.value?.querySelector('.p-virtualscroller');
+  if (!el) return;
+  el.scrollTo({ left: 0, behavior: 'smooth' });
 };
 
 /** 将表格水平滚动条平滑移到最右端 */
 const scrollXRight = () => {
-  const el = tableContentRef.value?.querySelector('.p-datatable-table-container');
-  el?.scrollTo({ left: el!.scrollWidth, behavior: 'smooth' });
+  const el = tableContentRef.value?.querySelector('.p-virtualscroller');
+  if (!el) return;
+  el.scrollTo({ left: el.scrollWidth, behavior: 'smooth' });
 };
 
 /** 全屏状态变化回调：根据 document.fullscreenElement 同步 isFullScreen */
