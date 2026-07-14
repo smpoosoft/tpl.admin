@@ -26,6 +26,9 @@ export interface IBadgeOverlay {
   color?: string;
 }
 
+/** 数据表格行高尺寸类型 */
+export type TTableSize = 'small' | 'large' | undefined;
+
 // #region 临时
 /** 菜单的类型分组 */
 export type TMenuGoup = 'dict' | 'home' | 'master' | 'bill' | 'report' | 'setting';

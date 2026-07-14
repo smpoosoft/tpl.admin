@@ -1,14 +1,13 @@
 <template>
-  <DataTable ref="dtRef" :value="value" dataKey="id" v-model:selection="selectedItems" :size scrollable
+  <DataTable ref="dtRef" :value="value" dataKey="id" v-model:selection="selectedItems" :size="sizeVal" scrollable
     scrollHeight="flex" stripedRows sort-mode="multiple" removable-sort selection-mode="multiple" highlight-on-select
-    resizable-columns column-resize-mode="expand" :row-class="rowClass" :virtual-scroller-options="{ itemSize: 49 }"
+    :row-class="rowClass" :virtual-scroller-options="vsOptions" class="dataTableWrapper fullH"
     :class="['w-full', { 'shadow-active': hasScrollOffset }]" style="container-type: size; height: 100%"
-    @row-dblclick="onRowDblClick" @column-resize-end="(e) => $emit('columnResizeEnd', e)">
-    <Column selection-mode="multiple" header-style="width: 3rem" />
+    @row-dblclick="onRowDblClick">
+    <Column v-if="!hideRowCheckBox" selection-mode="multiple" header-style="width: 3rem" />
     <Column v-for="col in visibleColumns" :key="colKey(col)" :field="col.field" :header="col.header" sortable
       :frozen="col.field === 'actions'" :align-frozen="col.field === 'actions' ? 'right' : undefined"
-      :header-style="col.headerStyle"
-      :class="widthFitCols?.includes(colKey(col)) ? 'widthFit' : ''">
+      :header-style="col.headerStyle" :footer="footerFor(col)">
       <template #body="slotProps">
         <template v-if="col.field === 'name'">
           <div class="flex items-center gap-2">
@@ -44,7 +43,7 @@
 
 <script setup lang="ts">
 // ===== 外部依赖 =====
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Tag from 'primevue/tag';
@@ -56,20 +55,37 @@ import type { ColumnProps } from 'primevue/column';
 interface TDataTableProps {
   columns: ColumnProps[];
   visibleFields: string[];
-  size?: string;
+  size?: 'small' | 'large';
   value: any[];
   /** 隐藏操作列 */
   hideOptCol?: boolean;
-  /** 应用 widthFit 自动宽度的列 */
-  widthFitCols?: string[];
+  /** 合计行：field -> 合计值；仅渲染其中的可见列，其余列空占位 */
+  footers?: Record<string, string | number>;
+  /** 隐藏行选择复选框 */
+  hideRowCheckBox?: boolean;
 }
 
 const props = defineProps<TDataTableProps>();
 const emit = defineEmits<{
   rowDblClick: [row: any];
-  columnResizeEnd: [evt: any];
 }>();
 const selectedItems = defineModel<any[]>('selection', { default: () => [] });
+
+// ===== size 归一化 =====
+// 对外支持 'small' | 'large'（默认档不传），统一成 PrimeVue 的 size 取值
+const sizeVal = computed(() => props.size);
+
+// size → itemSize 初始映射（基于 aura theme 的 padding + 1px border + line-height 估算）
+// small: padding 0.125rem*2≈4px + border 1px + line-height 20px ≈ 25px
+// 默认:  padding 0.5rem*2≈16px + border 1px + line-height 20px ≈ 37px
+// large: padding 0.75rem*2≈24px + border 1px + line-height 20px ≈ 45px
+const SIZE_ITEM_SIZE: Record<string, number> = { small: 25, large: 45 };
+const initialItemSize = computed(() => SIZE_ITEM_SIZE[props.size ?? ''] ?? 37);
+
+// 挂载后实测到的真实行高（覆盖初始估算值，消除抖动）
+const measuredItemSize = ref<number | null>(null);
+const itemSize = computed(() => measuredItemSize.value ?? initialItemSize.value);
+const vsOptions = computed(() => ({ itemSize: itemSize.value }));
 
 // ===== 内部状态 =====
 // DataTable 实例引用（用于滚动检测）、水平滚动偏移标记
@@ -89,6 +105,45 @@ const visibleColumns = computed(() =>
     return props.visibleFields.includes(colKey(col));
   })
 );
+
+// 是否显示合计行：footers 已传且至少有一个可见列在 footers 中
+const hasFooter = computed(
+  () => !!props.footers && visibleColumns.value.some((c) => typeof props.footers![colKey(c)] !== 'undefined')
+);
+
+// 返回某列的合计文案：可见且在 footers 中返回字符串值，其余空占位；未启用合计行时返回 undefined
+const footerFor = (col: ColumnProps): string | undefined => {
+  if (hasFooter.value) {
+    const v = props.footers?.[colKey(col)];
+    return !v ? '' : String(v);
+  }
+};
+
+// 合计行合并：合计行前 N 个单元格（选择列存在时为 3，否则为 2）合并成“合计”单元格
+const mergeFooterCells = () => {
+  if (!hasFooter.value) return;
+  nextTick(() => {
+    const root = (dtRef.value as any)?.$el as HTMLElement | null;
+    if (!root) return;
+    // scrollable 表 + frozen 表的 footer 都需合并
+    const rows = Array.from(root.querySelectorAll('.p-datatable-tfoot tr')) as HTMLTableRowElement[];
+    for (const tr of rows) {
+      const cells = Array.from(tr.children) as HTMLTableCellElement[];
+      if (cells.length === 0) continue;
+      // 选择列存在 → footer 格数 = 数据列数 + 1
+      const hasSelection = cells.length === visibleColumns.value.length + 1;
+      const mergeN = hasSelection ? 3 : 2;
+      if (cells.length < mergeN) continue;
+      // 已合并过的不再处理（cells[0] 带有 colspan）
+      if (cells[0]!.hasAttribute('colspan')) continue;
+      const first = cells[0]!;
+      first.textContent = '合计';
+      first.setAttribute('colspan', String(mergeN));
+      tr.classList.add('mergeTextCell');
+      for (let k = 1; k < mergeN; k++) cells[k]?.remove();
+    }
+  });
+};
 
 // ===== 标签 severity 映射 =====
 // tagClass → PrimeVue Tag severity 的转换表
@@ -118,9 +173,20 @@ const onRowDblClick = (event: any) => {
 // ===== 水平滚动检测 =====
 // 监听 VirtualScroller 的 scroll 事件，偏移量 > 0 时冻结列显示阴影
 let scrollEl: HTMLElement | null = null;
+let resizeObserver: ResizeObserver | null = null;
 
 const onScroll = () => {
   hasScrollOffset.value = (scrollEl?.scrollLeft ?? 0) > 0;
+};
+
+// 实测首行真实高度，校正 itemSize（消除初始估算误差 + 内容撑高如 w-8 头像）
+const measureRowHeight = () => {
+  nextTick(() => {
+    const row = document.querySelector('.p-datatable .p-virtualscroller tbody tr') as HTMLElement | null;
+    if (row && row.offsetHeight > 0) {
+      measuredItemSize.value = row.offsetHeight;
+    }
+  });
 };
 
 onMounted(() => {
@@ -128,18 +194,48 @@ onMounted(() => {
   if (scrollEl) {
     scrollEl.addEventListener('scroll', onScroll);
   }
+  measureRowHeight();
+  mergeFooterCells();
+  // size 切换 / 数据变化后重测行高 + 重新合并合计行
+  watch(sizeVal, () => { measuredItemSize.value = null; measureRowHeight(); mergeFooterCells(); });
+  watch(() => props.value, () => { measuredItemSize.value = null; measureRowHeight(); mergeFooterCells(); });
+  watch([hasFooter, visibleColumns], () => mergeFooterCells());
+  // 监听容器尺寸变化，触发重绘
+  const root = document.querySelector('.p-datatable') as HTMLElement | null;
+  if (root) {
+    resizeObserver = new ResizeObserver(() => {
+      // 触发重绘
+    });
+    resizeObserver.observe(root);
+  }
 });
 
 onUnmounted(() => {
   scrollEl?.removeEventListener('scroll', onScroll);
+  resizeObserver?.disconnect();
 });
 </script>
 
 <style lang="scss" scoped>
+.dataTableWrapper {
+  container-type: size;
+}
+
 /* 冻结列阴影：仅在水平滚动后才显示 */
 .shadow-active :deep(.p-datatable-frozen-column) {
   transition: box-shadow 200ms ease;
   box-shadow: -4px 0 9px -4px rgba(0, 0, 0, 0.15);
+}
+
+/* 合计行整行样式锚点（类挂在 footer 的 <tr> 上）—— 在此改造其样式 */
+:deep(.mergeTextCell) {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* 合并单元格居中 */
+:deep(.mergeTextCell td[colspan]) {
+  text-align: center;
 }
 
 :root.dark .shadow-active :deep(.p-datatable-frozen-column) {

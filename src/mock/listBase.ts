@@ -9,6 +9,7 @@ export interface Customer {
   source: string;
   createdAt: string;
   avatar: string;
+  contractAmount: number;
   [key: string]: unknown;
 }
 
@@ -21,6 +22,7 @@ export const TABLE_COLUMNS: ColumnProps[] = [
   { field: 'address', header: '地址', headerStyle: { width: '320px' } },
   { field: 'company', header: '所属公司', headerStyle: { width: '120px' } },
   { field: 'title', header: '职位', headerStyle: { width: '120px' } },
+  { field: 'contractAmount', header: '合同金额', headerStyle: { width: '130px' } },
   { field: 'lastContact', header: '最后联系日', headerStyle: { width: '130px' } },
   { field: 'email', header: '电子邮箱', headerStyle: { width: '180px' } },
   { field: 'wechat', header: '微信', headerStyle: { width: '160px' } },
@@ -107,6 +109,7 @@ export const TABLE_CUSTOMERS: Customer[] = Array.from({ length: 20 }, (_, i) => 
   address: ADDRESSES[i] as string,
   company: COMPANIES[i] as string,
   title: TITLES[i] as string,
+  contractAmount: 50000 + ((i * 87631) % 450000),
   lastContact: LAST_CONTACTS[i] as string,
   email: `${NAMES[i]}@company.com`,
   wechat: `wx_${NAMES[i]}_${String(i + 1).padStart(3, '0')}`,

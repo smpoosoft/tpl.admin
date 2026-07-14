@@ -9,12 +9,6 @@
         </TabList>
       </Tabs>
       <span class="flexSplit"></span>
-      <ButtonGroup>
-        <Button size="small" @click="tableSize = 'large'">大</Button>
-        <Button size="small" @click="tableSize = 'normal'">中</Button>
-        <Button size="small" @click="tableSize = 'small'">小</Button>
-        <Button size="small" @click="autoColsWidth">列宽匹配</Button>
-      </ButtonGroup>
 
       <TSearchBar :model-value="searchKeyword" @update:model-value="(val) => $emit('update:searchKeyword', val)" />
       <Button iconOnly variant="outlined" size="small" @click="setCols">
@@ -48,13 +42,18 @@
       <Button iconOnly variant="outlined" size="small" @click="setFullScreen">
         <TIcon :name="isFullScreen ? 'fullScreenExit' : 'fullScreen'" :size="16" clickAble />
       </Button>
+      <Button iconOnly variant="outlined" size="small" @click="scrollXLeft">
+        <TIcon name="prev" :size="16" clickAble />
+      </Button>
+      <Button iconOnly variant="outlined" size="small" @click="scrollXRight">
+        <TIcon name="next" :size="16" clickAble />
+      </Button>
     </div>
 
     <div class="tableListContent">
       <TDataTable v-model:selection="selectedItems" :columns :visible-fields="visibleFields" :value="dataList"
-        :size="tableSize" :hide-opt-col="hideOptCol" :width-fitCols="widthFitCols"
-        @row-dbl-click="(row) => $emit('rowDblClick', row)"
-        @column-resize-end="onColumnResizeEnd">
+        :size="tableSize" :hide-opt-col="hideOptCol" :footers="footers"
+        @row-dbl-click="(row) => $emit('rowDblClick', row)">
         <template #opt-col="{ data }">
           <slot name="opt-col" :data="data" />
         </template>
@@ -62,7 +61,13 @@
     </div>
 
     <div class="tableListFooter flexY">
-      <div class="footerLeft">
+      <span class="selectTools flexXY handLike gapX1">
+        <span @click="selectAll">全选</span>
+        <span @click="clearSelection">取消</span>
+        <span @click="invertSelection">反选</span>
+      </span>
+      <Divider layout="vertical" class="mX2" />
+      <div class="footerLeft fontW4">
         共 {{ totalCount }} 条记录，已选 {{ selectedItems.length }} 项
       </div>
       <span class="flexSplit"></span>
@@ -72,7 +77,8 @@
 </template>
 
 <script setup lang="ts">
-// ===== 外部依赖 =====
+import type { ColumnProps } from 'primevue/column';
+import type { TTableSize } from '@/types/uiKite';
 import { ref, onMounted, onUnmounted } from 'vue';
 import Tabs from 'primevue/tabs';
 import TabList from 'primevue/tablist';
@@ -81,10 +87,9 @@ import TSearchBar from '@/components/dataKit/TSearchBar.vue';
 import Button from 'primevue/button';
 import ButtonGroup from 'primevue/buttongroup';
 import TIcon from '@/components/widget/TIcon.vue';
+import Divider from 'primevue/divider';
 import Popover from 'primevue/popover';
-import Checkbox from 'primevue/checkbox';
 import TDataTable from '@/components/dataKit/TDataTable.vue';
-import type { ColumnProps } from 'primevue/column';
 
 // ===== Props 定义 =====
 interface TTableListProps {
@@ -94,8 +99,12 @@ interface TTableListProps {
   defaultColumns: ColumnProps[];
   activeFilter: string;
   searchKeyword: string;
+  /** 表格行高尺寸 */
+  tableSize?: TTableSize
   /** 隐藏操作列 */
   hideOptCol?: boolean;
+  /** 合计行：field -> 合计值 */
+  footers?: Record<string, string | number>;
 }
 
 // ===== Props 实例化 & 事件 =====
@@ -108,23 +117,36 @@ defineEmits<{
 }>();
 
 // ===== 内部状态 =====
-// 表格行高尺寸（small / normal / large），由顶部按钮组控制
-const tableSize = ref<'large' | 'normal' | 'small'>('normal');
+// 表格行高尺寸（small / undefined / large），由顶部按钮组控制
 // 列定义（支持拖拽重排）、可见列 field 集合、行选择结果
 const columns = ref<ColumnProps[]>([...props.defaultColumns]);
 const visibleFields = ref<string[]>(props.defaultColumns.map(col => col.field as string));
 const selectedItems = ref<any[]>([]);
+
+// ===== 选择操作（全选 / 取消 / 反选） =====
+/** 全选：将当前 dataList 中所有行加入选中集合 */
+const selectAll = () => {
+  selectedItems.value = [...props.dataList];
+};
+/** 取消选择：清空选中集合 */
+const clearSelection = () => {
+  selectedItems.value = [];
+};
+/** 反选：对 dataList 中的所有行执行选中状态取反 */
+const invertSelection = () => {
+  const selectedIds = new Set(selectedItems.value.map((i: any) => i.id));
+  selectedItems.value = props.dataList.filter((i: any) => !selectedIds.has(i.id));
+};
 
 // UI 引用：列设置弹窗、拖拽状态、全屏状态
 const popoverRef = ref<InstanceType<typeof Popover> | null>(null);
 const dragIndex = ref<number | null>(null);
 const dragOverIndex = ref<number | null>(null);
 const isFullScreen = ref(false);
-// widthFit 列集合：默认全部可见列，拖拽后移除该列，autoColsWidth 恢复
-const widthFitCols = ref<string[]>([...visibleFields.value]);
 
 // ===== 列拖拽重排 =====
 // 基于 HTML5 Drag and Drop API，重排逻辑在 drop 事件中执行
+/** 拖拽开始：记录起始列索引，设置拖拽鬼影与允许 move 效果 */
 const onColDragStart = (event: DragEvent, index: number) => {
   dragIndex.value = index;
   event.dataTransfer!.effectAllowed = 'move';
@@ -134,6 +156,7 @@ const onColDragStart = (event: DragEvent, index: number) => {
   }
 };
 
+/** 拖拽进入：阻止默认行为，记录悬停的目标列索引 */
 const onColDragEnter = (event: DragEvent, index: number) => {
   event.preventDefault();
   if (dragIndex.value !== null && dragIndex.value !== index) {
@@ -141,6 +164,7 @@ const onColDragEnter = (event: DragEvent, index: number) => {
   }
 };
 
+/** 拖拽经过：阻止默认行为以允许 drop，标记 dropEffect 与目标列索引 */
 const onColDragOver = (event: DragEvent, index: number) => {
   event.preventDefault();
   event.dataTransfer!.dropEffect = 'move';
@@ -149,6 +173,7 @@ const onColDragOver = (event: DragEvent, index: number) => {
   }
 };
 
+/** 拖拽释放：将起始列插入到目标索引位置，完成重排 */
 const onColDrop = (event: DragEvent) => {
   event.preventDefault();
   if (dragIndex.value !== null && dragOverIndex.value !== null && dragIndex.value !== dragOverIndex.value) {
@@ -159,24 +184,29 @@ const onColDrop = (event: DragEvent) => {
   dragOverIndex.value = null;
 };
 
+/** 拖拽结束：清空拖拽状态（覆盖正常结束与异常中止两种情况） */
 const onColDragEnd = () => {
   dragIndex.value = null;
   dragOverIndex.value = null;
 };
 
+/** 切换列设置 Popover 的显示/隐藏 */
 const setCols = (e: MouseEvent | TouchEvent) => {
   popoverRef.value?.toggle?.(e);
 };
 
+/** 重置列显隐与顺序到 defaultColumns 初始状态 */
 const reset = () => {
   visibleFields.value = props.defaultColumns.map(col => col.field as string);
   columns.value = [...props.defaultColumns];
 };
 
+/** 取列的 field 字符串；field 为函数或未定义时返回空串 */
 const colKey = (col: { field?: string | ((item: any) => string) | undefined }): string => {
   return typeof col.field === 'string' ? col.field : '';
 };
 
+/** 切换全屏：进入则 requestFullscreen，已在全屏则 exitFullscreen */
 const setFullScreen = () => {
   const el = document.querySelector('.tableListWrapper') as HTMLElement | null;
   if (!el) return;
@@ -187,19 +217,19 @@ const setFullScreen = () => {
   }
 };
 
-const autoColsWidth = () => {
-  widthFitCols.value = [...visibleFields.value];
+/** 将表格水平滚动条平滑移到最左端 */
+const scrollXLeft = () => {
+  const el = document.querySelector('.tableListContent .p-datatable-table-container') as HTMLElement | null;
+  if (el) el.scrollTo({ left: 0, behavior: 'smooth' });
 };
 
-const onColumnResizeEnd = (e: any) => {
-  const headerText = e.element?.textContent?.trim();
-  if (!headerText) return;
-  const col = columns.value.find(c => c.header === headerText);
-  if (col) {
-    widthFitCols.value = widthFitCols.value.filter(c => c !== colKey(col));
-  }
+/** 将表格水平滚动条平滑移到最右端 */
+const scrollXRight = () => {
+  const el = document.querySelector('.tableListContent .p-datatable-table-container') as HTMLElement | null;
+  if (el) el.scrollTo({ left: el.scrollWidth, behavior: 'smooth' });
 };
 
+/** 全屏状态变化回调：根据 document.fullscreenElement 同步 isFullScreen */
 const onFullScreenChange = () => {
   isFullScreen.value = !!document.fullscreenElement;
 };
@@ -238,6 +268,22 @@ onUnmounted(() => {
   padding: 4px 0;
   font-size: 12px;
   color: var(--p-text-muted-color);
+}
+
+.selectTools {
+  >span {
+    color: var(--p-primary-500);
+    transition: color 150ms ease;
+
+    &:hover {
+      font-weight: 500;
+      color: var(--p-primary-900);
+    }
+  }
+}
+
+:root.dark .selectTools>span:hover {
+  color: var(--p-primary-300);
 }
 
 .transition-drop {

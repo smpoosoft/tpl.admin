@@ -14,10 +14,12 @@
 | 行双击 | 双击行触发事件 | 否，仅通知父组件 | 鼠标双击某行 | 无内置视觉反馈，父组件收到事件后可自行处理 | 父组件监听 `rowDblClick` 事件 |
 | 斑马色 | 表格行交替背景色 | 否，仅视觉区分 | 无，自动启用 | 相邻行背景色交替不同 | 由 `stripedRows` prop 控制 |
 | 行悬停 | 鼠标悬停时行高亮 | 否，仅视觉反馈 | 鼠标移动到某行 | 悬停行背景色变浅，移出后恢复 | 150ms 过渡动画 |
-| 虚拟滚动 | 大数据量下控制 DOM 数量 | 否，仅影响渲染性能 | 无，自动启用 | 表头固定，表格主体可滚动；滚动时动态加载和回收行 | 行高固定 49px；不适合需要跳到第 N 页的场景 |
+| 虚拟滚动 | 大数据量下控制 DOM 数量 | 否，仅影响渲染性能 | 无，自动启用 | 表头固定，表格主体可滚动；滚动时动态加载和回收行 | 行高随 tableSize 取值映射（small≈25 / 默认≈37 / large≈45），并以首行实测校正 |
 | 水平滚动 | 列总宽度超出容器时出现水平滚动条 | 否，仅改变可视区域 | 无，自动启用 | 列宽超出容器时底部出现水平滚动条，可左右拖动查看隐藏列 | 由内容宽度自动触发，无需配置；水平滚动时表头与表体同步滚动 |
 | 列排序 | 点击列头按该列排序 | 是，影响数据显示顺序 | 点击列头切换排序状态；多列排序时按住 Ctrl/Cmd 点击 | 点击一次升序，再次点击降序，第三次取消排序；排序列头显示箭头指示方向 | 支持多列排序（Ctrl/Cmd+点击）；排序可取消（removable）；排序在客户端执行 |
 | 列冻结 | 操作列固定在表格右侧 | 否，仅改变列的可视位置 | 无，自动启用 | 水平滚动时操作列始终可见，不随其他列滚动 | 仅 actions 列冻结在右侧，其他列不冻结 |
+| 水平滚动定位 | 将表格水平滚动条一键移到最左/最右 | 否，仅改变可视区域 | 点击工具栏的左/右箭头按钮 | 表格平滑滚动到对应端点，不改变数据 | 列总宽超过容器时才有可见效果，否则无可滚动距离 |
+| 合计行 | 对指定列求和并展示在表格底部 | 否，仅展示统计结果 | 无，由父组件传入合计值 | 底部固定一行，参与合计的列显示数值，其余列空占位 | 仅渲染传入 footers 中可见的列；前 3 列（含勾选列）合并为"合计"标识 |
 | 列宽拖拽 | 拖动列头边框调整列宽 | 否，仅改变列显示宽度 | 鼠标悬停在列头边框处，光标变为双向箭头时拖拽 | 拖拽时列宽实时变化，松开后固定 | 拖拽不影响后续列宽度（expand 模式） |
 
 ## 技术要点
@@ -76,9 +78,10 @@
 - 暗色模式悬停色为 `--p-primary-900` 混合透明
 
 #### 虚拟滚动
-- 通过 DataTable 的 `virtual-scroller-options="{ itemSize: 49 }"` 启用
+- 通过 DataTable 的 `virtual-scroller-options="{ itemSize }"` 启用，`itemSize` 由 tableSize 经 `SIZE_ITEM_SIZE` 映射给出初始值（small 25 / 默认 37 / large 45）
+- 挂载后实测首行 `offsetHeight` 覆盖初始估算值，避免 itemSize 与实际行高不一致导致虚拟滚动错位
 - 配合 `scrollable` 和 `scrollHeight="flex"` 实现固定表头
-- 若实际行高不是 49px，需调整 `itemSize` 值
+- 切换 size 或数据变化时重测行高并重新合并合计行
 
 #### 水平滚动
 - 通过 `scrollable` prop 启用水平滚动能力
@@ -97,6 +100,18 @@
 #### 列冻结
 - actions 列设置 `frozen` 和 `align-frozen="right"`，冻结在表格右侧
 - 水平滚动时 actions 列始终可见，不随其他列滚动
+
+#### 水平滚动定位
+- `scrollXLeft` / `scrollXRight` 通过 `el.scrollTo({ left, behavior: 'smooth' })` 平滑滚动
+- 滚动容器为当前组件作用域内的 `.tableListContent .p-datatable-table-container`（即 DataTable 的 scrollable 表格容器，承担水平滚动）
+- 选用 `scrollTo + smooth` 而非直接置 `scrollLeft`，以提供视觉过渡；列宽不足触发水平滚动时函数无可见效果，但不会报错
+- 按钮图标使用本地图标 `arrow/prev`、`arrow/next`（prev.ts 通过对 next 路径整体 X 镜像 transform 得到，保证圆角与原风格一致）
+
+#### 合计行
+- 由父组件传入 `footers: Record<string, string | number>`，键为列 field，值为合计文案
+- TTableList 透传 footers 至 TDataTable；TDataTable 对每个可见列渲染 footer，未在 footers 中的列输出空串占位，保持列宽与表体对齐
+- 合计行前 N 列合并为"合计"标识：选择列存在时 N=3，否则 N=2；合并通过 DOM 操作给首个 td 设置 colspan 并删除其后 N-1 个 td 实现
+- 合计行整行挂 `mergeTextCell` class，合并单元格靠 `td[colspan]` 选择器居中；样式可在 TDataTable.vue 的 `:deep(.mergeTextCell)` 处改造
 
 #### 列宽拖拽
 - DataTable 设置 `resizable-columns` 和 `column-resize-mode="expand"`
@@ -124,8 +139,24 @@ TDataTable 根据 field 值匹配渲染方式：
 
 | prop | 类型 | 默认值 | 说明 |
 |------|------|--------|------|
+| filterTabs | `{ key; label; count }[]` | — | 筛选标签列表，key 为唯一标识、label 为显示名、count 仅展示不参与统计 |
+| dataList | `any[]` | — | 表格渲染的数据源（已过滤/搜索之后的最终数据） |
+| totalCount | `number` | — | 总记录数，仅用于页脚展示 |
+| defaultColumns | `ColumnProps[]` | — | 列定义初始快照（顺序、显隐），作为列重置基准 |
+| activeFilter | `string` | — | 当前激活的筛选标签 key，v-model:active-filter 支持 |
+| searchKeyword | `string` | — | 当前搜索关键字，v-model:search-keyword 支持 |
+| tableSize | `'small' \| 'large' \| undefined` | `undefined` | 行高尺寸：传给 TDataTable 的 size prop |
 | hideOptCol | `boolean` | `false` | 隐藏操作列 |
+| footers | `Record<string, string \| number>` | — | 合计行：键为列 field，值为合计文案；仅渲染 footers 中可见列 |
 | opt-col slot | — | — | 自定义操作列内容，接收 `{ data: any }` |
+
+### Events 参考
+
+| event | 载荷 | 说明 |
+|-------|------|------|
+| update:activeFilter | `string` | 切换筛选标签时触发，父组件据此重新计算 dataList |
+| update:searchKeyword | `string` | 搜索框输入变化时触发，父组件据此重新计算 dataList |
+| rowDblClick | `any` | 双击行触发，载荷为该行数据对象 |
 
 ### TEmptyPanel
 
