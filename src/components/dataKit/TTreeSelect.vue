@@ -69,19 +69,22 @@ const onBeforeShow = () => {
 };
 
 const onUpdateModelValue = (value: any) => {
+  console.log('[TreeSelect] update:modelValue', value, 'old', normalizedValue.value);
   if (!props.allowGroupSelected) {
     const oldKeys = Object.keys(normalizedValue.value || {});
     const newKeys = Object.keys(value || {});
-    if (newKeys.length > oldKeys.length) {
-      const addedKey = newKeys.find(k => !oldKeys.includes(k));
-      if (addedKey) {
-        const node = findNodeByKey(addedKey, getOptions());
-        if (node?.children?.length) {
-          return;
-        }
+    const addedKey = newKeys.find(k => !oldKeys.includes(k));
+    console.log('[TreeSelect] addedKey', addedKey);
+    if (addedKey) {
+      const node = findNodeByKey(addedKey, getOptions());
+      console.log('[TreeSelect] node found', node?.label, 'children', node?.children?.length);
+      if (node?.children?.length) {
+        console.log('[TreeSelect] GROUP detected, BLOCKING emit');
+        return;
       }
     }
   }
+  console.log('[TreeSelect] emitting value');
   emit('update:modelValue', denormalize(value));
 };
 
