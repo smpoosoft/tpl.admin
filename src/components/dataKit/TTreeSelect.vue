@@ -19,7 +19,11 @@
 import { ref, computed, useAttrs } from 'vue';
 import TreeSelect from 'primevue/treeselect';
 
-const props = defineProps<{ modelValue?: any }>();
+const props = defineProps<{
+  modelValue?: any;
+  /** 允许汇总节点被选择 */
+  allowGroupSelected?: boolean;
+}>();
 const emit = defineEmits<{ 'update:modelValue': [value: any] }>();
 defineOptions({ inheritAttrs: false });
 
@@ -36,7 +40,7 @@ const normalizedValue = computed(() => {
 let snapshotValue: any = null;
 
 const initSnapshot = () => {
-  snapshotValue = props.modelValue ? { ...props.modelValue } : null;
+  snapshotValue = normalizedValue.value ? { ...normalizedValue.value } : null;
 };
 initSnapshot();
 
@@ -47,17 +51,45 @@ const denormalize = (value: any): any => {
   return value;
 };
 
+const findNodeByKey = (key: string, nodes: any[]): any | null => {
+  for (const node of nodes) {
+    if (node.key === key) return node;
+    if (node.children) {
+      const found = findNodeByKey(key, node.children);
+      if (found) return found;
+    }
+  }
+  return null;
+};
+
+const getOptions = (): any[] => (attrs.options as any[]) || [];
+
 const onBeforeShow = () => {
   snapshotValue = normalizedValue.value ? { ...normalizedValue.value } : null;
 };
 
 const onUpdateModelValue = (value: any) => {
+  if (!props.allowGroupSelected) {
+    const oldKeys = Object.keys(normalizedValue.value || {});
+    const newKeys = Object.keys(value || {});
+    if (newKeys.length > oldKeys.length) {
+      const addedKey = newKeys.find(k => !oldKeys.includes(k));
+      if (addedKey) {
+        const node = findNodeByKey(addedKey, getOptions());
+        if (node?.children?.length) {
+          return;
+        }
+      }
+    }
+  }
   emit('update:modelValue', denormalize(value));
 };
 
 const onNodeSelect = (node: any) => {
   if (node.children?.length) {
-    emit('update:modelValue', denormalize(snapshotValue));
+    if (!props.allowGroupSelected) {
+      emit('update:modelValue', denormalize(snapshotValue));
+    }
     const key = node.key;
     const newKeys = { ...expandedKeys.value };
     if (newKeys[key]) {
