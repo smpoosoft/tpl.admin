@@ -1,7 +1,7 @@
 <template>
   <DataTable ref="dtRef" :value="value" dataKey="id" v-model:selection="selectedItems" :size="sizeVal" scrollable
     scrollHeight="flex" stripedRows sort-mode="multiple" removable-sort selection-mode="multiple" highlight-on-select
-    :row-class="rowClass" :virtual-scroller-options="vsOptions" class="dataTableWrapper fullH"
+    :row-class="rowClass" class="dataTableWrapper fullH"
     :class="['w-full', { 'shadow-active': hasScrollOffset, 'is-empty': value.length === 0 }]"
     style="container-type: size; height: 100%" meta-key-selection>
     <Column selection-mode="multiple" header-style="width: 3rem" />
