@@ -33,9 +33,9 @@
         <TForm v-model="form" :columns="columns" :label-layout="labelLayout" label-align="right">
           <TFormItem label="订单编号" field="orderNo" type="text" disabled />
           <TFormItem label="客户名称" field="customer" type="text" required placeholder="请输入客户名称" />
-          <TFormItem label="订单分类" field="category" type="select" :options="categoryOptions" placeholder="请选择分类" />
+          <TFormItem label="订单分类" field="category" type="select" :options="categoryOptions()" placeholder="请选择分类" />
           <TFormItem label="订单金额" field="amount" type="number" :fraction-digits="2" placeholder="请输入订单金额" />
-          <TFormItem label="订单状态" field="status" type="select" :options="statusOptions" placeholder="请选择状态" />
+          <TFormItem label="订单状态" field="status" type="select" :options="statusOptions()" placeholder="请选择状态" />
           <TFormItem label="下单日期" field="orderDate" type="date" placeholder="选择日期" />
         </TForm>
       </Panel>
@@ -48,8 +48,8 @@
           <TFormItem label="联系电话" field="phone" type="mask" mask="999-9999-9999" placeholder="请输入手机号" />
           <TFormItem label="身份证号" field="idCard" type="mask" mask="999999999999999999" placeholder="请输入身份证号" />
           <TFormItem label="收货地址" field="address" type="text" placeholder="请输入收货地址" />
-          <TFormItem label="标签" field="tags" type="multiSelect" :options="tagOptions" placeholder="请选择标签" />
-          <TFormItem label="经办人" field="handler" type="autoComplete" :options="handlerOptions" placeholder="搜索经办人" />
+          <TFormItem label="标签" field="tags" type="multiSelect" :options="tagOptions()" placeholder="请选择标签" />
+          <TFormItem label="经办人" field="handler" type="autoComplete" :options="handlerOptions()" placeholder="搜索经办人" />
           <TFormItem label="交货日期" field="deliveryDate" type="date" placeholder="选择日期" />
         </TForm>
       </Panel>
@@ -59,7 +59,7 @@
           <span class="flexSplit handLike fontW4" @click="collapsedPanel3 = !collapsedPanel3">其他信息</span>
         </template>
         <TForm v-model="form" :columns="columns" :label-layout="labelLayout" label-align="right">
-          <TFormItem label="优先级" field="priority" type="radio" :options="priorityOptions" />
+          <TFormItem label="优先级" field="priority" type="radio" :options="priorityOptions()" />
           <TFormItem label="是否加急" field="urgent" type="switch" />
           <TFormItem label="是否默认" field="isDefault" type="checkbox" />
           <TFormItem label="访问密码" field="accessCode" type="password" placeholder="请输入访问密码" />
