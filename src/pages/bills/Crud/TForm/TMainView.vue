@@ -151,6 +151,10 @@ const collapseAll = () => {
   margin-bottom: 12px;
 }
 
+:deep(.p-panel-content) {
+  overflow: hidden;
+}
+
 .formFooter {
   padding: 0 16px;
   border-radius: 50px;
