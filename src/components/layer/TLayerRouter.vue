@@ -6,8 +6,11 @@
         <div class="flex items-center gap-2">
           <span class="flexVY">
             <span class="font-bold">{{ imt.bizIdentNamezh || '未定义' }}</span>
-            <span v-if="imt.description" class="text-surface-500 text-sm font-medium dark:text-surface-400">{{
-              imt.description }}</span>
+            <span v-if="imt.description" class="text-surface-500 text-sm font-medium dark:text-surface-400">
+              <slot name="subTitle">
+                {{ imt.description }}
+              </slot>
+            </span>
           </span>
           <!-- 标题， 增删查改等按钮的插槽 -->
           <slot name="header">
