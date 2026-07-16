@@ -1,11 +1,11 @@
 <template>
-  <Checkbox v-bind="$attrs" :model-value="modelValue" @update:model-value="$emit('update:modelValue', $event)">
+  <AutoComplete v-bind="$attrs" :model-value="modelValue" @update:model-value="$emit('update:modelValue', $event)">
     <slot v-for="(_, name) in $slots" :name="name" />
-  </Checkbox>
+  </AutoComplete>
 </template>
 
 <script setup lang="ts">
-import Checkbox from 'primevue/checkbox';
+import AutoComplete from 'primevue/autocomplete';
 
 defineProps<{ modelValue?: any }>();
 defineEmits<{ 'update:modelValue': [value: any] }>();

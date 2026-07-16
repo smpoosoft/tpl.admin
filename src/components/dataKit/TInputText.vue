@@ -1,11 +1,11 @@
 <template>
-  <Checkbox v-bind="$attrs" :model-value="modelValue" @update:model-value="$emit('update:modelValue', $event)">
+  <InputText v-bind="$attrs" @update:model-value="$emit('update:modelValue', $event)">
     <slot v-for="(_, name) in $slots" :name="name" />
-  </Checkbox>
+  </InputText>
 </template>
 
 <script setup lang="ts">
-import Checkbox from 'primevue/checkbox';
+import InputText from 'primevue/inputtext';
 
 defineProps<{ modelValue?: any }>();
 defineEmits<{ 'update:modelValue': [value: any] }>();
