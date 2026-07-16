@@ -48,6 +48,13 @@ const themePreSet: Preset = {
         },
         fullscreen: {
           background: '{surface.0}'
+        },
+        form: {
+          field: {
+            disabled: {
+              background: '{surface.100}'
+            }
+          }
         }
       },
       dark: {
@@ -78,6 +85,13 @@ const themePreSet: Preset = {
         },
         fullscreen: {
           background: 'transparent'
+        },
+        form: {
+          field: {
+            disabled: {
+              background: '{surface.700}'
+            }
+          }
         }
       }
     }
