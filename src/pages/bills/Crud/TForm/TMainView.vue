@@ -156,7 +156,7 @@ const collapseAll = () => {
   min-width: 0;
 }
 
-:deep(.p-card-body) {
+:deep(.p-panel-content-wrapper) {
   min-width: 0;
 }
 
