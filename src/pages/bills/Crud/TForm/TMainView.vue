@@ -104,7 +104,6 @@ import TDataTableEdit from '@/components/dataKit/TDataTableEdit.vue';
 import Toolbar from 'primevue/toolbar';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import type { ColumnProps } from 'primevue/column';
 import * as imt from './imt';
 import { createFormData, categoryOptions, statusOptions, tagOptions, handlerOptions, priorityOptions, formSummary, productColumns, productVisibleFields, createProducts } from '@/mock/forms';
 import { FORM_COLS } from '@/constant/uiKit';

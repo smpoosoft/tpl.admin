@@ -19,8 +19,7 @@
         <template v-else-if="col.editType">
           <component :is="getCellComponent(col.editType).component"
             v-model="slotProps.data[colKey(col)]"
-            v-bind="getCellComponent(col.editType).defaultProps"
-            :class="getCellProps(col)"
+            v-bind="{ ...getCellComponent(col.editType).defaultProps, ...getCellProps(col) }"
             fluid
           />
         </template>
