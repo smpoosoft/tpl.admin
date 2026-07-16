@@ -15,6 +15,7 @@ import TTreeSelect from '@/components/dataKit/TTreeSelect.vue';
 import TAutoComplete from '@/components/dataKit/TAutoComplete.vue';
 import TInputPassword from '@/components/dataKit/TInputPassword.vue';
 import TFileUpload from '@/components/dataKit/TFileUpload.vue';
+import TInputTags from '@/components/dataKit/TInputTags.vue';
 
 export interface FormCellMapping {
   component: Component;
@@ -81,6 +82,10 @@ const mappings: Record<TFormItemType, FormCellMapping> = {
   file: {
     component: TFileUpload,
     defaultProps: { mode: 'basic', auto: true }
+  },
+  inputTags: {
+    component: TInputTags,
+    defaultProps: { placeholder: '输入后回车', allowDuplicate: false }
   }
 };
 

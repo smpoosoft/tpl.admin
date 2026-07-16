@@ -6,7 +6,7 @@ export type TFormItemType =
   | 'switch' | 'select' | 'textarea'
   | 'checkbox' | 'radio' | 'mask'
   | 'multiSelect' | 'treeSelect' | 'autoComplete'
-  | 'password' | 'file';
+  | 'password' | 'file' | 'inputTags';
 
 export interface TFormProps {
   modelValue: Record<string, any>;
