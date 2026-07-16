@@ -4,7 +4,7 @@
 
 ### Added
 - TTableList 组件（列表容器）：筛选标签、搜索、列显隐/重排、全屏、行选择、虚拟滚动、水平滚动、列排序、列冻结、列宽拖拽、斑马色/悬停、行双击事件
-- TDataTable 组件（PrimeVue DataTable 封装）：虚拟滚动、列冻结、列宽拖拽、列排序、行选择/双击、斑马色/悬停、空状态组件
+- TDataTableList 组件（PrimeVue DataTable 封装）：虚拟滚动、列冻结、列宽拖拽、列排序、行选择/双击、斑马色/悬停、空状态组件
 - TEmptyData 空状态组件
 - TEmptyPanel 空状态提示组件
 - listBase.ts（mock 数据规范文件）：Customer 类型、TABLE_COLUMNS（含 headerStyle.width）、TABLE_CUSTOMERS（20 条）、FILTER_TABS
@@ -21,7 +21,7 @@
 - `chartCardPt` 重命名为 `cardLayoutPt`，内置 `min-h-0` 和 `container-type: size`，消除模板层手动类名
 - TabPanel 全局 PT 注入 `fullWH`，`03.layers.css` 中依据父级 `overY`/`overHidden` 条件设置 TabPanel 的 `container-type: size` 和 overflow 行为
 - 升级 primevue 至 v5 后 `pnpm dev` 报 `Rolldown failed to resolve import "primeicons/primeicons.css"`：primevue v5 不再依赖 `primeicons` 字体包（改以 `@primeicons/vue` + `@primevue/icons` 提供 SVG 图标），但项目仍通过 `pi pi-*` 类使用图标字体，需在 `package.json` 显式声明 `primeicons` 为直接依赖以恢复本地链接
-- TListBase/TMainView.vue 重构：筛选标签、搜索、列设置、全屏等功能拆分为 TTableList + TDataTable 层级
+- TListBase/TMainView.vue 重构：筛选标签、搜索、列设置、全屏等功能拆分为 TTableList + TDataTableList 层级
 - preSet.ts 添加 `fullscreen.background` 语义 token（light: surface-0, dark: transparent），注入 `[data-fs-bg]:fullscreen` 全局样式
 
 ### Removed

@@ -1,18 +1,12 @@
 <template>
   <TRouterPanel :imt>
-    <template #subTitle>
-      <span class="text-surface-500 text-sm font-medium dark:text-surface-400">
-        {{ imt.description }}
-      </span>
-    </template>
-
     <template #header>
       <span class="flexSplit"></span>
       <Divider layout="vertical" />
-      <ButtonGroup>
+      <!-- <ButtonGroup>
         <Button v-for="n in 4" :key="n" :label="`${n}列`" size="small" :variant="columns === n ? '' : 'outlined'"
           @click="columns = n as 1 | 2 | 3 | 4"></Button>
-      </ButtonGroup>
+      </ButtonGroup> -->
       <Divider layout="vertical" />
 
       <ButtonGroup>
@@ -25,12 +19,12 @@
       <Button label="保存" size="small" @click="handleSave" />
     </template>
 
-    <div v-if="!formStep">
+    <div>
       <Panel v-model:collapsed="collapsedPanel1" toggleable>
         <template #header>
           <span class="flexSplit handLike fontW4" @click="collapsedPanel1 = !collapsedPanel1">基本信息</span>
         </template>
-        <TForm v-model="form" :columns="columns" :label-layout="labelLayout" label-align="right">
+        <TForm v-model="form" :columns="FORM_COLS" :label-layout="labelLayout" label-align="right">
           <TFormItem label="订单编号" field="orderNo" type="text" disabled />
           <TFormItem label="客户名称" field="customer" type="text" required placeholder="请输入客户名称" />
           <TFormItem label="订单分类" field="category" type="select" :options="categoryOptions()" placeholder="请选择分类" />
@@ -44,7 +38,7 @@
         <template #header>
           <span class="flexSplit handLike fontW4" @click="collapsedPanel2 = !collapsedPanel2">联系信息</span>
         </template>
-        <TForm v-model="form" :columns="columns" :label-layout="labelLayout" label-align="right">
+        <TForm v-model="form" :columns="FORM_COLS" :label-layout="labelLayout" label-align="right">
           <TFormItem label="联系电话" field="phone" type="mask" mask="999-9999-9999" placeholder="请输入手机号" />
           <TFormItem label="身份证号" field="idCard" type="mask" mask="999999999999999999" placeholder="请输入身份证号" />
           <TFormItem label="收货地址" field="address" type="text" placeholder="请输入收货地址" />
@@ -58,14 +52,21 @@
         <template #header>
           <span class="flexSplit handLike fontW4" @click="collapsedPanel3 = !collapsedPanel3">其他信息</span>
         </template>
-        <TForm v-model="form" :columns="columns" :label-layout="labelLayout" label-align="right">
+        <TForm v-model="form" :columns="FORM_COLS" :label-layout="labelLayout" label-align="right">
           <TFormItem label="优先级" field="priority" type="radio" :options="priorityOptions()" />
           <TFormItem label="是否加急" field="urgent" type="switch" />
           <TFormItem label="是否默认" field="isDefault" type="checkbox" />
           <TFormItem label="访问密码" field="accessCode" type="password" placeholder="请输入访问密码" />
           <TFormItem label="有效期" field="validRange" type="dateRange" />
-          <TFormItem label="备注" field="remark" type="textarea" :col-span="columns" :rows="3" placeholder="请输入备注信息" />
+          <TFormItem label="备注" field="remark" type="textarea" :col-span="FORM_COLS" :rows="3" placeholder="请输入备注信息" />
         </TForm>
+      </Panel>
+
+      <Panel v-model:collapsed="collapsedPanel4" toggleable>
+        <template #header>
+          <span class="flexSplit handLike fontW4" @click="collapsedPanel3 = !collapsedPanel3">商品明细</span>
+        </template>
+
       </Panel>
     </div>
 
@@ -97,19 +98,18 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import * as imt from './imt';
 import { createFormData, categoryOptions, statusOptions, tagOptions, handlerOptions, priorityOptions, formSummary } from '@/mock/forms';
+import { FORM_COLS } from '@/constant/uiKit';
 
-const columns = ref<1 | 2 | 3 | 4>(2);
 const labelLayout = ref<'horizontal' | 'vertical'>('horizontal');
 const collapsedPanel1 = ref(false);
 const collapsedPanel2 = ref(false);
 const collapsedPanel3 = ref(false);
+const collapsedPanel4 = ref(false);
 const allCollapsed = ref(false);
 
 const form = ref(createFormData());
 
 const router = useRouter();
-
-const formStep = ref(0);
 
 const summary = ref(formSummary());
 

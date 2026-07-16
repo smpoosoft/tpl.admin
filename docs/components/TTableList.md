@@ -109,9 +109,9 @@
 
 #### 合计行
 - 由父组件传入 `footers: Record<string, string | number>`，键为列 field，值为合计文案
-- TTableList 透传 footers 至 TDataTable；TDataTable 对每个可见列渲染 footer，未在 footers 中的列输出空串占位，保持列宽与表体对齐
+- TTableList 透传 footers 至 TDataTableList；TDataTableList 对每个可见列渲染 footer，未在 footers 中的列输出空串占位，保持列宽与表体对齐
 - 合计行前 N 列合并为"合计"标识：选择列存在时 N=3，否则 N=2；合并通过 DOM 操作给首个 td 设置 colspan 并删除其后 N-1 个 td 实现
-- 合计行整行挂 `mergeTextCell` class，合并单元格靠 `td[colspan]` 选择器居中；样式可在 TDataTable.vue 的 `:deep(.mergeTextCell)` 处改造
+- 合计行整行挂 `mergeTextCell` class，合并单元格靠 `td[colspan]` 选择器居中；样式可在 TDataTableList.vue 的 `:deep(.mergeTextCell)` 处改造
 
 #### 列宽拖拽
 - DataTable 设置 `resizable-columns` 和 `column-resize-mode="expand"`
@@ -124,9 +124,9 @@
 - 无显式宽度的列，由 `table-layout: auto` 规则自适应内容宽度
 - 客户列（avatar + 姓名 + ID）使用 flex 单行布局，垂直方向不折行
 
-### TDataTable body 映射规则
+### TDataTableList body 映射规则
 
-TDataTable 根据 field 值匹配渲染方式：
+TDataTableList 根据 field 值匹配渲染方式：
 
 | field | 渲染内容 |
 |-------|----------|
@@ -145,7 +145,7 @@ TDataTable 根据 field 值匹配渲染方式：
 | defaultColumns | `ColumnProps[]` | — | 列定义初始快照（顺序、显隐），作为列重置基准 |
 | activeFilter | `string` | — | 当前激活的筛选标签 key，v-model:active-filter 支持 |
 | searchKeyword | `string` | — | 当前搜索关键字，v-model:search-keyword 支持 |
-| tableSize | `'small' \| 'large' \| undefined` | `undefined` | 行高尺寸：传给 TDataTable 的 size prop |
+| tableSize | `'small' \| 'large' \| undefined` | `undefined` | 行高尺寸：传给 TDataTableList 的 size prop |
 | hideOptCol | `boolean` | `false` | 隐藏操作列 |
 | footers | `Record<string, string \| number>` | — | 合计行：键为列 field，值为合计文案；仅渲染 footers 中可见列 |
 | opt-col slot | — | — | 自定义操作列内容，接收 `{ data: any }` |
@@ -162,4 +162,4 @@ TDataTable 根据 field 值匹配渲染方式：
 
 空数据状态提示组件（`@/components/dataKit/TEmptyPanel.vue`），居中显示图标 + "暂无数据" + "请尝试调整筛选条件"。TDataTable 的 `#empty` 插槽中使用此组件替代硬编码 HTML。
 
-新增映射需在 TDataTable 的 body 模板中增加 `v-if` 分支。
+新增映射需在 TDataTableList 的 body 模板中增加 `v-if` 分支。

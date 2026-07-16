@@ -53,13 +53,13 @@
     </div>
 
     <div ref="tableContentRef" class="tableListContent">
-      <TDataTable v-model:selection="selectedItems" :columns :visible-fields="visibleFields" :value="dataList"
+      <TDataTableList v-model:selection="selectedItems" :columns :visible-fields="visibleFields" :value="dataList"
         :size="tableSize" :hide-opt-col="hideOptCol" :footers="footers"
         @row-dbl-click="(row) => $emit('rowDblClick', row)">
         <template #opt-col="{ data }">
           <slot name="opt-col" :data="data" />
         </template>
-      </TDataTable>
+      </TDataTableList>
     </div>
 
     <div class="tableListFooter flexY">
@@ -105,7 +105,7 @@ import Divider from 'primevue/divider';
 import Popover from 'primevue/popover';
 import Checkbox from 'primevue/checkbox';
 import Dialog from 'primevue/dialog';
-import TDataTable from '@/components/dataKit/TDataTable.vue';
+import TDataTableList from '@/components/dataKit/TDataTableList.vue';
 
 // ===== Props 定义 =====
 interface TTableListProps {
