@@ -4,7 +4,7 @@
       stripedRows scrollable :scroll-height="scrollHeight" selection-mode="multiple"
       :row-class="rowClass" class="w-full" :class="{ 'shadow-active': hasScrollOffset }"
       meta-key-selection @row-click="onRowClick">
-      <Column selection-mode="multiple" header-style="width: 3rem; min-width: 3rem" />
+      <Column selection-mode="multiple" header-style="width: 64px; min-width: 64px" />
       <Column v-for="col in visibleColumns" :key="colKey(col)" :field="col.field" :header="col.header"
         :frozen="col.field === 'actions'" :align-frozen="col.field === 'actions' ? 'right' : undefined"
         :style="getColumnStyle(col)">
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { ref, computed, nextTick, onMounted, onUnmounted } from 'vue';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Button from 'primevue/button';
@@ -105,7 +105,7 @@ const colKey = (col: { field?: string | ((item: any) => string) | undefined }): 
 };
 
 const getColumnStyle = (col: TDataTableEditColumn) => {
-  if (col.field === 'actions') return undefined;
+  if (col.field === 'actions' || col.field === 'attachment') return { width: '64px', minWidth: '64px' };
   if (col.width) return { width: col.width + 'px', minWidth: col.width + 'px' };
   return { minWidth: '64px' };
 };
@@ -125,7 +125,9 @@ const onDeleteRow = (row: any) => {
 const onRowClick = (event: any) => {
   const isCheckbox = event.originalEvent.target.closest('.p-checkbox');
   if (!isCheckbox) {
-    selectedItems.value = selectedItems.value.filter((item: any) => item.id !== event.data.id);
+    nextTick(() => {
+      selectedItems.value = selectedItems.value.filter((item: any) => item.id !== event.data.id);
+    });
   }
 };
 

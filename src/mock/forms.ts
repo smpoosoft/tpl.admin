@@ -155,8 +155,8 @@ export const productColumns = [
   { field: 'treeNode', header: '树分类', width: 150, editType: 'treeSelect' as const, editProps: { options: productTreeData(), placeholder: '选择分类' } },
   { field: 'handler', header: '经办人', width: 140, editType: 'autoComplete' as const, editProps: { options: handlerOptions() } },
   { field: 'accessCode', header: '访问密码', width: 130, editType: 'password' as const },
-  { field: 'attachment', header: '附件', width: 80 },
-  { field: 'actions', header: '操作', width: 80 }
+  { field: 'attachment', header: '附件' },
+  { field: 'actions', header: '操作' }
 ];
 
 export const productVisibleFields = [
