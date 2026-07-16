@@ -93,12 +93,12 @@ export interface ProductItem {
 }
 
 export const productColumns = [
-  { field: 'productName', header: '商品名称', headerStyle: { width: '200px' } },
-  { field: 'spec', header: '规格', headerStyle: { width: '120px' } },
-  { field: 'unit', header: '单位', headerStyle: { width: '80px' } },
-  { field: 'quantity', header: '数量', headerStyle: { width: '100px' } },
-  { field: 'unitPrice', header: '单价', headerStyle: { width: '120px' } },
-  { field: 'amount', header: '金额', headerStyle: { width: '120px' } },
+  { field: 'productName', header: '商品名称', headerStyle: { width: '200px' }, editType: 'text' as const },
+  { field: 'spec', header: '规格', headerStyle: { width: '120px' }, editType: 'text' as const },
+  { field: 'unit', header: '单位', headerStyle: { width: '80px' }, editType: 'text' as const },
+  { field: 'quantity', header: '数量', headerStyle: { width: '100px' }, editType: 'number' as const },
+  { field: 'unitPrice', header: '单价', headerStyle: { width: '120px' }, editType: 'number' as const, editProps: { mode: 'currency', currency: 'CNY', locale: 'zh-CN' } },
+  { field: 'amount', header: '金额', headerStyle: { width: '120px' }, editType: 'number' as const, editProps: { mode: 'currency', currency: 'CNY', locale: 'zh-CN' } },
   { field: 'actions', header: '操作', headerStyle: { width: '80px' } }
 ];
 

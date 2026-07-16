@@ -16,6 +16,14 @@
             </div>
           </slot>
         </template>
+        <template v-else-if="col.editType">
+          <component :is="getCellComponent(col.editType).component"
+            v-model="slotProps.data[colKey(col)]"
+            v-bind="getCellComponent(col.editType).defaultProps"
+            :class="getCellProps(col)"
+            fluid
+          />
+        </template>
         <template v-else>
           {{ slotProps.data[colKey(col)] }}
         </template>
@@ -35,9 +43,16 @@ import Column from 'primevue/column';
 import Button from 'primevue/button';
 import TEmptyData from '@/components/dataKit/TEmptyData.vue';
 import type { ColumnProps } from 'primevue/column';
+import type { TFormItemType } from '@/components/formKit/TForm/types';
+import { useFormTableCell } from '@/components/formKit/TForm/useFormTableCell';
+
+export interface TDataTableEditColumn extends ColumnProps {
+  editType?: TFormItemType;
+  editProps?: Record<string, any>;
+}
 
 interface TDataTableEditProps {
-  columns: ColumnProps[];
+  columns: TDataTableEditColumn[];
   visibleFields: string[];
   size?: 'small' | 'large';
   value: any[];
@@ -46,6 +61,7 @@ interface TDataTableEditProps {
 const props = defineProps<TDataTableEditProps>();
 const emit = defineEmits<{
   deleteRow: [row: any];
+  update: [data: any[]];
 }>();
 const selectedItems = defineModel<any[]>('selection', { default: () => [] });
 
@@ -66,6 +82,14 @@ const visibleColumns = computed(() =>
 
 const colKey = (col: { field?: string | ((item: any) => string) | undefined }): string => {
   return typeof col.field === 'string' ? col.field : '';
+};
+
+const getCellComponent = (type: TFormItemType) => {
+  return useFormTableCell(type);
+};
+
+const getCellProps = (col: TDataTableEditColumn) => {
+  return col.editProps;
 };
 
 const onDeleteRow = (row: any) => {
@@ -181,5 +205,18 @@ onUnmounted(() => {
 
 :root.dark :deep(.p-datatable-row-selected) {
   background-color: color-mix(in srgb, var(--p-primary-400) 40%, transparent) !important;
+}
+
+:deep(.p-datatable tbody td) {
+  padding: 4px 8px;
+}
+
+:deep(.p-datatable tbody td .p-inputtext),
+:deep(.p-datatable tbody td .p-select),
+:deep(.p-datatable tbody td .p-autocomplete),
+:deep(.p-datatable tbody td .p-datepicker),
+:deep(.p-datatable tbody td .p-inputnumber) {
+  min-width: 0;
+  width: 100%;
 }
 </style>
