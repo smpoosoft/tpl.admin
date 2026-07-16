@@ -64,9 +64,16 @@
 
       <Panel v-model:collapsed="collapsedPanel4" toggleable>
         <template #header>
-          <span class="flexSplit handLike fontW4" @click="collapsedPanel3 = !collapsedPanel3">商品明细</span>
+          <span class="flexSplit handLike fontW4" @click="collapsedPanel4 = !collapsedPanel4">商品明细</span>
         </template>
-
+        <TDataTableEdit
+          v-model:selection="selectedProducts"
+          :columns="productColumns"
+          :visible-fields="productVisibleFields"
+          :value="products"
+          size="small"
+          @delete-row="handleDeleteProduct"
+        />
       </Panel>
     </div>
 
@@ -93,9 +100,11 @@ import TForm from '@/components/formKit/TForm/TForm.vue';
 import TFormItem from '@/components/formKit/TForm/TFormItem.vue';
 import TFromSummary from '@/components/formKit/TForm/TFromSummary.vue';
 import TIcon from '@/components/widget/TIcon.vue';
+import TDataTableEdit from '@/components/dataKit/TDataTableEdit.vue';
 import Toolbar from 'primevue/toolbar';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import type { ColumnProps } from 'primevue/column';
 import * as imt from './imt';
 import { createFormData, categoryOptions, statusOptions, tagOptions, handlerOptions, priorityOptions, formSummary } from '@/mock/forms';
 import { FORM_COLS } from '@/constant/uiKit';
@@ -112,6 +121,30 @@ const form = ref(createFormData());
 const router = useRouter();
 
 const summary = ref(formSummary());
+
+const productColumns: ColumnProps[] = [
+  { field: 'productName', header: '商品名称', headerStyle: { width: '200px' } },
+  { field: 'spec', header: '规格', headerStyle: { width: '120px' } },
+  { field: 'unit', header: '单位', headerStyle: { width: '80px' } },
+  { field: 'quantity', header: '数量', headerStyle: { width: '100px' } },
+  { field: 'unitPrice', header: '单价', headerStyle: { width: '120px' } },
+  { field: 'amount', header: '金额', headerStyle: { width: '120px' } },
+  { field: 'actions', header: '操作', headerStyle: { width: '80px' } }
+];
+
+const productVisibleFields = ref(['productName', 'spec', 'unit', 'quantity', 'unitPrice', 'amount', 'actions']);
+
+const products = ref([
+  { id: 1, productName: '商品A', spec: '规格1', unit: '个', quantity: 10, unitPrice: 100, amount: 1000 },
+  { id: 2, productName: '商品B', spec: '规格2', unit: '箱', quantity: 5, unitPrice: 200, amount: 1000 },
+  { id: 3, productName: '商品C', spec: '规格3', unit: '件', quantity: 20, unitPrice: 50, amount: 1000 }
+]);
+
+const selectedProducts = ref<any[]>([]);
+
+const handleDeleteProduct = (row: any) => {
+  products.value = products.value.filter(p => p.id !== row.id);
+};
 
 const handleSave = (): void => {
   // placeholder: persist logic
