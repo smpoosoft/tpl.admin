@@ -7,7 +7,7 @@
         {{ label }}
       </label>
       <label v-if="labelLayout === 'vertical'" :for="field" class="tFormItemLabel vertical"
-        :class="[`align-${labelAlign}`]">
+        :class="[`align-${labelLayout === 'vertical' ? 'left' : labelAlign}`]">
         <span v-if="required && showRequired" class="requiredMark">*</span>
         {{ label }}
       </label>
