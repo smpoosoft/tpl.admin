@@ -141,22 +141,22 @@ export const productTreeData = () => [
 ];
 
 export const productColumns = [
-  { field: 'productName', header: '商品名称', headerStyle: { width: '160px' }, editType: 'text' as const },
-  { field: 'category', header: '分类', headerStyle: { width: '120px' }, editType: 'select' as const, editProps: { options: categoryOptions() } },
-  { field: 'spec', header: '规格型号', headerStyle: { width: '140px' }, editType: 'mask' as const, editProps: { mask: '***-****-****' } },
-  { field: 'unit', header: '单位', headerStyle: { width: '100px' }, editType: 'radio' as const, editProps: { options: productUnitOptions() } },
-  { field: 'quantity', header: '数量', headerStyle: { width: '110px' }, editType: 'number' as const, editProps: { showButtons: true, min: 0, fractionDigits: 2 } },
-  { field: 'unitPrice', header: '单价', headerStyle: { width: '130px' }, editType: 'number' as const, editProps: { mode: 'currency', currency: 'CNY', locale: 'zh-CN', fractionDigits: 4 } },
-  { field: 'amount', header: '金额', headerStyle: { width: '130px' }, editType: 'number' as const, editProps: { mode: 'currency', currency: 'CNY', locale: 'zh-CN', fractionDigits: 2 } },
-  { field: 'deliveryDate', header: '交货日期', headerStyle: { width: '140px' }, editType: 'date' as const },
-  { field: 'validPeriod', header: '有效期', headerStyle: { width: '200px' }, editType: 'dateRange' as const },
-  { field: 'isUrgent', header: '加急', headerStyle: { width: '80px' }, editType: 'switch' as const },
-  { field: 'tags', header: '标签', headerStyle: { width: '180px' }, editType: 'multiSelect' as const, editProps: { options: tagOptions() } },
-  { field: 'treeNode', header: '树分类', headerStyle: { width: '150px' }, editType: 'treeSelect' as const, editProps: { options: productTreeData(), placeholder: '选择分类' } },
-  { field: 'handler', header: '经办人', headerStyle: { width: '130px' }, editType: 'autoComplete' as const, editProps: { options: handlerOptions() } },
-  { field: 'accessCode', header: '访问密码', headerStyle: { width: '130px' }, editType: 'password' as const },
-  { field: 'attachment', header: '附件', headerStyle: { width: '100px' }, editType: 'file' as const },
-  { field: 'actions', header: '操作', headerStyle: { width: '80px' } }
+  { field: 'productName', header: '商品名称', width: 160, editType: 'text' as const },
+  { field: 'category', header: '分类', width: 120, editType: 'select' as const, editProps: { options: categoryOptions() } },
+  { field: 'spec', header: '规格型号', width: 150, editType: 'mask' as const, editProps: { mask: '***-****-****' } },
+  { field: 'unit', header: '单位', width: 100, editType: 'select' as const, editProps: { options: productUnitOptions() } },
+  { field: 'quantity', header: '数量', width: 110, editType: 'number' as const, editProps: { showButtons: true, min: 0, fractionDigits: 2 } },
+  { field: 'unitPrice', header: '单价', width: 130, editType: 'number' as const, editProps: { mode: 'currency', currency: 'CNY', locale: 'zh-CN', fractionDigits: 4 } },
+  { field: 'amount', header: '金额', width: 130, editType: 'number' as const, editProps: { mode: 'currency', currency: 'CNY', locale: 'zh-CN', fractionDigits: 2 } },
+  { field: 'deliveryDate', header: '交货日期', width: 150, editType: 'date' as const },
+  { field: 'validPeriod', header: '有效期', width: 220, editType: 'dateRange' as const },
+  { field: 'isUrgent', header: '加急', width: 80, editType: 'switch' as const },
+  { field: 'tags', header: '标签', width: 180, editType: 'multiSelect' as const, editProps: { options: tagOptions() } },
+  { field: 'treeNode', header: '树分类', width: 150, editType: 'treeSelect' as const, editProps: { options: productTreeData(), placeholder: '选择分类' } },
+  { field: 'handler', header: '经办人', width: 140, editType: 'autoComplete' as const, editProps: { options: handlerOptions() } },
+  { field: 'accessCode', header: '访问密码', width: 130, editType: 'password' as const },
+  { field: 'attachment', header: '附件', width: 80 },
+  { field: 'actions', header: '操作', width: 80 }
 ];
 
 export const productVisibleFields = [
