@@ -1,9 +1,9 @@
 <template>
   <div class="dataTableWrapper">
     <DataTable ref="dtRef" :value="value" dataKey="id" v-model:selection="selectedItems" :size="sizeVal"
-      stripedRows scrollable :scroll-height="scrollHeight"
-      :row-class="rowClass" class="w-full"
-      :class="{ 'shadow-active': hasScrollOffset }" meta-key-selection>
+      stripedRows scrollable :scroll-height="scrollHeight" selection-mode="multiple"
+      :row-class="rowClass" class="w-full" :class="{ 'shadow-active': hasScrollOffset }"
+      meta-key-selection @row-click="onRowClick">
       <Column selection-mode="multiple" header-style="width: 3rem; min-width: 3rem" />
       <Column v-for="col in visibleColumns" :key="colKey(col)" :field="col.field" :header="col.header"
         :frozen="col.field === 'actions'" :align-frozen="col.field === 'actions' ? 'right' : undefined"
@@ -122,6 +122,13 @@ const onDeleteRow = (row: any) => {
   emit('deleteRow', row);
 };
 
+const onRowClick = (event: any) => {
+  const isCheckbox = event.originalEvent.target.closest('.p-checkbox');
+  if (!isCheckbox) {
+    selectedItems.value = selectedItems.value.filter((item: any) => item.id !== event.data.id);
+  }
+};
+
 let scrollContainer: HTMLElement | null = null;
 
 const onScroll = () => {
@@ -129,7 +136,7 @@ const onScroll = () => {
 };
 
 onMounted(() => {
-  scrollContainer = dtRef.value?.$el?.querySelector('.p-datatable-scrollable-body') as HTMLElement | null;
+  scrollContainer = dtRef.value?.$el?.querySelector('.p-datatable-table-container') as HTMLElement | null;
   if (scrollContainer) {
     scrollContainer.addEventListener('scroll', onScroll);
   }
@@ -142,7 +149,7 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 .dataTableWrapper {
-  container-type: size;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -224,19 +231,8 @@ onUnmounted(() => {
   width: 100%;
 }
 
-.dataTableWrapper:deep(.p-datatable-table-container tbody tr),
-.dataTableWrapper:deep(.p-datatable-frozen tbody tr) {
-  transition: background-color 150ms ease;
-}
-
-.dataTableWrapper:deep(.p-datatable-table-container tbody tr:hover),
-.dataTableWrapper:deep(.p-datatable-frozen tbody tr:hover) {
-  background-color: var(--p-primary-100);
-}
-
-:root.dark .dataTableWrapper:deep(.p-datatable-table-container tbody tr:hover),
-:root.dark .dataTableWrapper:deep(.p-datatable-frozen tbody tr:hover) {
-  background-color: color-mix(in srgb, var(--p-primary-800) 30%, transparent);
+.dataTableWrapper:deep(.p-datatable-table-container tbody tr) {
+  cursor: default;
 }
 
 .dataTableWrapper:deep(.p-datatable-row-selected) {
