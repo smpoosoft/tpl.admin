@@ -2,6 +2,8 @@
   <TreeSelect
     ref="tsRef"
     v-bind="$attrs"
+    selection-mode="multiple"
+    meta-key-selection
     :model-value="modelValue"
     :expanded-keys="expandedKeys"
     @update:model-value="onUpdateModelValue"
