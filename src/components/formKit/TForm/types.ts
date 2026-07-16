@@ -13,7 +13,6 @@ export interface TFormProps {
   columns?: 1 | 2 | 3 | 4;
   labelAlign?: 'left' | 'right';
   labelLayout?: 'horizontal' | 'vertical';
-  labelMode?: 'default' | 'float' | 'ifta';
   labelWidth?: string;
   gap?: number;
   rowGap?: number;
@@ -40,7 +39,6 @@ export interface TFormContext {
   modelValue: Ref<Record<string, any>>;
   labelAlign: Ref<'left' | 'right'>;
   labelLayout: Ref<'horizontal' | 'vertical'>;
-  labelMode: Ref<'default' | 'float' | 'ifta'>;
   labelWidth: Ref<string>;
   showRequired: Ref<boolean>;
 }

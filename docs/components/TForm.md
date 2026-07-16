@@ -7,7 +7,7 @@
 ```
 TForm（表单容器）
 ├── 网格布局层：UnoCSS gridN（1~4 列）
-├── 标签布局层：horizontal / vertical / FloatLabel
+├── 标签布局层：horizontal（左右结构） / vertical（上下结构）
 └── TFormItem（字段项）× N
     └── PrimeVue 数据组件（15 种类型）
 ```
@@ -16,7 +16,6 @@ TForm（表单容器）
 
 - 通过 `columns` prop 控制表单列数（1~4）
 - 通过 `labelAlign` / `labelLayout` 控制标签对齐与排列方向
-- 通过 `labelMode` 切换普通标签 / FloatLabel 模式
 - 每个 TFormItem 声明 `type` 即可自动渲染对应的 PrimeVue 数据组件
 - 支持 `colSpan` 跨列，适配备注、文件上传等宽字段
 
@@ -66,20 +65,13 @@ interface IKv {
 
 ## 3. 布局与辅助组件
 
-### 布局组件
-
-| PrimeVue 组件 | 用途 | 使用方式 |
-|--------------|------|---------|
-| `FloatLabel` | 浮动标签（label 浮于输入框上方，聚焦时上移） | `labelMode="float"` 时包裹输入组件 |
-| `IftaLabel` | IFTA 风格标签（label 始终在输入框上方） | 可选的标签变体 |
-| `Fluid` | 让子组件 100% 宽度 | 每个 TFormItem 内部包裹数据组件 |
-| `IconField` + `InputIcon` | 输入框内嵌图标 | 搜索框、手机号等带图标的输入 |
-| `InputGroup` + `InputGroupAddon` | 输入框前后附加内容 | 单位后缀（元、%）、前缀（¥、$） |
-
 ### 辅助组件
 
 | PrimeVue 组件 | 用途 | 使用方式 |
 |--------------|------|---------|
+| `Fluid` | 让子组件 100% 宽度 | 每个 TFormItem 内部包裹数据组件 |
+| `IconField` + `InputIcon` | 输入框内嵌图标 | 搜索框、手机号等带图标的输入 |
+| `InputGroup` + `InputGroupAddon` | 输入框前后附加内容 | 单位后缀（元、%）、前缀（¥、$） |
 | `Message` | 表单验证错误提示 | TFormItem 底部显示校验错误 |
 | `Divider` | 表单分区分隔线 | 表单内分组分隔 |
 | `Fieldset` | 带标题的表单分组 | 替代 Panel 做表单分区 |
@@ -114,7 +106,7 @@ gapX1 → 8px    gapX2 → 16px    gapX3 → 24px    gapX4 → 32px
 
 ### 标签布局
 
-#### 水平模式（horizontal，默认）
+#### 左右结构（horizontal，默认）
 
 ```
 ┌──────────┬────────────────────┐
@@ -122,10 +114,12 @@ gapX1 → 8px    gapX2 → 16px    gapX3 → 24px    gapX4 → 32px
 └──────────┴────────────────────┘
 ```
 
+- `labelLayout="horizontal"`
+- 标签在左，数据组件在右
 - `labelAlign="right"`（默认）：标签右对齐，紧凑贴合输入框
 - `labelAlign="left"`：标签左对齐，适合长标签
 
-#### 垂直模式（vertical）
+#### 上下结构（vertical）
 
 ```
 ┌────────────────────────────────┐
@@ -134,20 +128,9 @@ gapX1 → 8px    gapX2 → 16px    gapX3 → 24px    gapX4 → 32px
 └────────────────────────────────┘
 ```
 
+- `labelLayout="vertical"`
 - 标签在上方，数据组件在下方
 - 适合移动端或长标签场景
-
-#### FloatLabel 模式（labelMode="float"）
-
-```
-┌────────────────────────────────┐
-│  [label 浮于输入框内]           │
-│  聚焦时 label 上移缩小          │
-└────────────────────────────────┘
-```
-
-- 使用 PrimeVue `FloatLabel` 组件包裹
-- 节省垂直空间，视觉现代
 
 ---
 
@@ -166,13 +149,10 @@ interface TFormProps {
   /** 标签水平对齐方式 */
   labelAlign?: 'left' | 'right'
 
-  /** 标签排列方向 */
+  /** 标签排列方向：左右结构 / 上下结构 */
   labelLayout?: 'horizontal' | 'vertical'
 
-  /** 标签模式 */
-  labelMode?: 'default' | 'float' | 'ifta'
-
-  /** 标签宽度（水平模式下生效） */
+  /** 标签宽度（左右结构模式下生效） */
   labelWidth?: string
 
   /** 列间距档位（1 刻度 = 8px） */
@@ -297,17 +277,7 @@ src/components/formKit/
 </TForm>
 ```
 
-### FloatLabel 模式
-
-```vue
-<TForm v-model="formData" :columns="3" label-mode="float" :gap="2">
-  <TFormItem label="姓名" field="name" type="text" />
-  <TFormItem label="手机号" field="phone" type="mask" mask="999-9999-9999" />
-  <TFormItem label="部门" field="deptId" type="treeSelect" :options="deptTree" />
-</TForm>
-```
-
-### 垂直标签模式
+### 上下结构模式
 
 ```vue
 <TForm v-model="formData" :columns="1" label-layout="vertical">

@@ -7,13 +7,12 @@
           @click="columns = n as 1 | 2 | 3 | 4"></Button>
       </ButtonGroup>
       <Divider layout="vertical" />
+
       <ButtonGroup>
-        <Button label="水平" size="small" :variant="labelLayout === 'horizontal' ? '' : 'outlined'"
+        <Button label="左右结构" size="small" :variant="labelLayout === 'horizontal' ? '' : 'outlined'"
           @click="labelLayout = 'horizontal'" />
-        <Button label="垂直" size="small" :variant="labelLayout === 'vertical' ? '' : 'outlined'"
+        <Button label="上下结构" size="small" :variant="labelLayout === 'vertical' ? '' : 'outlined'"
           @click="labelLayout = 'vertical'" />
-        <Button label="浮动" size="small" :variant="labelMode === 'float' ? '' : 'outlined'"
-          @click="labelMode = labelMode === 'float' ? 'default' : 'float'" />
       </ButtonGroup>
       <Button label="取消" size="small" outlined @click="handleCancel" />
       <Button label="保存" size="small" @click="handleSave" />
@@ -23,7 +22,7 @@
       <template #header>
         <span class="flexSplit handLike fontW4" @click="collapsedPanel1 = !collapsedPanel1">基本信息</span>
       </template>
-      <TForm v-model="form" :columns="columns" :label-layout="labelLayout" :label-mode="labelMode" label-align="right">
+      <TForm v-model="form" :columns="columns" :label-layout="labelLayout" label-align="right">
         <TFormItem label="订单编号" field="orderNo" type="text" disabled />
         <TFormItem label="客户名称" field="customer" type="text" required placeholder="请输入客户名称" />
         <TFormItem label="订单分类" field="category" type="select" :options="categoryOptions" placeholder="请选择分类" />
@@ -37,7 +36,7 @@
       <template #header>
         <span class="flexSplit handLike fontW4" @click="collapsedPanel2 = !collapsedPanel2">联系信息</span>
       </template>
-      <TForm v-model="form" :columns="columns" :label-layout="labelLayout" :label-mode="labelMode" label-align="right">
+      <TForm v-model="form" :columns="columns" :label-layout="labelLayout" label-align="right">
         <TFormItem label="联系电话" field="phone" type="mask" mask="999-9999-9999" placeholder="请输入手机号" />
         <TFormItem label="身份证号" field="idCard" type="mask" mask="999999999999999999" placeholder="请输入身份证号" />
         <TFormItem label="收货地址" field="address" type="text" placeholder="请输入收货地址" />
@@ -51,7 +50,7 @@
       <template #header>
         <span class="flexSplit handLike fontW4" @click="collapsedPanel3 = !collapsedPanel3">其他信息</span>
       </template>
-      <TForm v-model="form" :columns="columns" :label-layout="labelLayout" :label-mode="labelMode" label-align="right">
+      <TForm v-model="form" :columns="columns" :label-layout="labelLayout" label-align="right">
         <TFormItem label="优先级" field="priority" type="radio" :options="priorityOptions" />
         <TFormItem label="是否加急" field="urgent" type="switch" />
         <TFormItem label="是否默认" field="isDefault" type="checkbox" />
@@ -80,7 +79,6 @@ import TRouterPanel from '@/components/layer/TLayerRouter.vue';
 import Panel from 'primevue/panel';
 import Button from 'primevue/button';
 import ButtonGroup from 'primevue/buttongroup';
-import Divider from 'primevue/divider';
 import TForm from '@/components/formKit/TForm/TForm.vue';
 import TFormItem from '@/components/formKit/TForm/TFormItem.vue';
 import TFromSummary from '@/components/formKit/TForm/TFromSummary.vue';
@@ -114,7 +112,6 @@ interface FormData {
 
 const columns = ref<1 | 2 | 3 | 4>(2);
 const labelLayout = ref<'horizontal' | 'vertical'>('horizontal');
-const labelMode = ref<'default' | 'float'>('default');
 const collapsedPanel1 = ref(false);
 const collapsedPanel2 = ref(false);
 const collapsedPanel3 = ref(false);

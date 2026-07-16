@@ -12,7 +12,6 @@ const props = withDefaults(defineProps<TFormProps>(), {
   columns: 2,
   labelAlign: 'right',
   labelLayout: 'horizontal',
-  labelMode: 'default',
   labelWidth: '100px',
   gap: 2,
   rowGap: 2,
@@ -23,7 +22,6 @@ provide<TFormContext>('tFormContext', {
   modelValue: toRef(props, 'modelValue'),
   labelAlign: toRef(props, 'labelAlign'),
   labelLayout: toRef(props, 'labelLayout'),
-  labelMode: toRef(props, 'labelMode'),
   labelWidth: toRef(props, 'labelWidth'),
   showRequired: toRef(props, 'showRequired')
 });
