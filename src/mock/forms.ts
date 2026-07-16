@@ -81,3 +81,31 @@ export const formSummary = () => [
   { key: '制单人', value: '系统管理员' },
   { key: '单据日期', value: '2026-07-16' }
 ];
+
+export interface ProductItem {
+  id: number;
+  productName: string;
+  spec: string;
+  unit: string;
+  quantity: number;
+  unitPrice: number;
+  amount: number;
+}
+
+export const productColumns = [
+  { field: 'productName', header: '商品名称', headerStyle: { width: '200px' } },
+  { field: 'spec', header: '规格', headerStyle: { width: '120px' } },
+  { field: 'unit', header: '单位', headerStyle: { width: '80px' } },
+  { field: 'quantity', header: '数量', headerStyle: { width: '100px' } },
+  { field: 'unitPrice', header: '单价', headerStyle: { width: '120px' } },
+  { field: 'amount', header: '金额', headerStyle: { width: '120px' } },
+  { field: 'actions', header: '操作', headerStyle: { width: '80px' } }
+];
+
+export const productVisibleFields = ['productName', 'spec', 'unit', 'quantity', 'unitPrice', 'amount', 'actions'];
+
+export const createProducts = (): ProductItem[] => [
+  { id: 1, productName: '商品 A', spec: '规格 1', unit: '个', quantity: 10, unitPrice: 100, amount: 1000 },
+  { id: 2, productName: '商品 B', spec: '规格 2', unit: '箱', quantity: 5, unitPrice: 200, amount: 1000 },
+  { id: 3, productName: '商品 C', spec: '规格 3', unit: '件', quantity: 20, unitPrice: 50, amount: 1000 }
+];

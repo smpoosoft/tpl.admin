@@ -17,7 +17,7 @@
       </template>
 
       <template #content>
-        <div class="h-full">
+        <div class="h-full overY">
           <!-- 内容区域的插槽 -->
           <slot></slot>
         </div>

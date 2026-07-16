@@ -106,7 +106,7 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import type { ColumnProps } from 'primevue/column';
 import * as imt from './imt';
-import { createFormData, categoryOptions, statusOptions, tagOptions, handlerOptions, priorityOptions, formSummary } from '@/mock/forms';
+import { createFormData, categoryOptions, statusOptions, tagOptions, handlerOptions, priorityOptions, formSummary, productColumns, productVisibleFields, createProducts } from '@/mock/forms';
 import { FORM_COLS } from '@/constant/uiKit';
 
 const labelLayout = ref<'horizontal' | 'vertical'>('horizontal');
@@ -122,23 +122,7 @@ const router = useRouter();
 
 const summary = ref(formSummary());
 
-const productColumns: ColumnProps[] = [
-  { field: 'productName', header: '商品名称', headerStyle: { width: '200px' } },
-  { field: 'spec', header: '规格', headerStyle: { width: '120px' } },
-  { field: 'unit', header: '单位', headerStyle: { width: '80px' } },
-  { field: 'quantity', header: '数量', headerStyle: { width: '100px' } },
-  { field: 'unitPrice', header: '单价', headerStyle: { width: '120px' } },
-  { field: 'amount', header: '金额', headerStyle: { width: '120px' } },
-  { field: 'actions', header: '操作', headerStyle: { width: '80px' } }
-];
-
-const productVisibleFields = ref(['productName', 'spec', 'unit', 'quantity', 'unitPrice', 'amount', 'actions']);
-
-const products = ref([
-  { id: 1, productName: '商品A', spec: '规格1', unit: '个', quantity: 10, unitPrice: 100, amount: 1000 },
-  { id: 2, productName: '商品B', spec: '规格2', unit: '箱', quantity: 5, unitPrice: 200, amount: 1000 },
-  { id: 3, productName: '商品C', spec: '规格3', unit: '件', quantity: 20, unitPrice: 50, amount: 1000 }
-]);
+const products = ref(createProducts());
 
 const selectedProducts = ref<any[]>([]);
 

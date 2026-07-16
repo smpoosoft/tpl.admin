@@ -1,18 +1,18 @@
 <template>
-  <DataTable ref="dtRef" :value="value" dataKey="id" v-model:selection="selectedItems" :size="sizeVal" scrollable
-    scrollHeight="flex" stripedRows sort-mode="multiple" removable-sort selection-mode="multiple" highlight-on-select
-    :row-class="rowClass" class="dataTableWrapper fullH"
-    :class="['w-full', { 'shadow-active': hasScrollOffset, 'is-empty': value.length === 0 }]"
-    style="container-type: size; height: 100%" meta-key-selection>
+  <DataTable ref="dtRef" :value="value" dataKey="id" v-model:selection="selectedItems" :size="sizeVal"
+    stripedRows selection-mode="multiple" highlight-on-select
+    :row-class="rowClass" class="dataTableWrapper w-full"
+    :class="{ 'shadow-active': hasScrollOffset }" meta-key-selection>
     <Column selection-mode="multiple" header-style="width: 3rem" />
-    <Column v-for="col in visibleColumns" :key="colKey(col)" :field="col.field" :header="col.header" sortable
+    <Column v-for="col in visibleColumns" :key="colKey(col)" :field="col.field" :header="col.header"
       :frozen="col.field === 'actions'" :align-frozen="col.field === 'actions' ? 'right' : undefined"
       :header-style="col.headerStyle">
       <template #body="slotProps">
         <template v-if="col.field === 'actions'">
           <slot name="opt-col" :data="slotProps.data">
             <div class="flex items-center justify-center gap-1">
-              <Button icon="pi pi-trash" severity="danger" text rounded size="small" @click="onDeleteRow(slotProps.data)" />
+              <Button icon="pi pi-trash" severity="danger" text rounded size="small"
+                @click="onDeleteRow(slotProps.data)" />
             </div>
           </slot>
         </template>
@@ -51,12 +51,7 @@ const selectedItems = defineModel<any[]>('selection', { default: () => [] });
 
 const sizeVal = computed(() => props.size);
 
-const SIZE_ITEM_SIZE: Record<string, number> = { small: 25, large: 45 };
-const initialItemSize = computed(() => SIZE_ITEM_SIZE[props.size ?? ''] ?? 37);
-
 const measuredItemSize = ref<number | null>(null);
-const itemSize = computed(() => measuredItemSize.value ?? initialItemSize.value);
-const vsOptions = computed(() => ({ itemSize: itemSize.value }));
 
 const dtRef = ref<InstanceType<typeof DataTable> | null>(null);
 const hasScrollOffset = ref(false);
@@ -103,7 +98,7 @@ onMounted(() => {
   watch(() => props.value, () => { measuredItemSize.value = null; measureRowHeight(); });
   const root = document.querySelector('.p-datatable') as HTMLElement | null;
   if (root) {
-    resizeObserver = new ResizeObserver(() => {});
+    resizeObserver = new ResizeObserver(() => { });
     resizeObserver.observe(root);
   }
 });
