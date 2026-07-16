@@ -151,38 +151,29 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 .dataTableWrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
-.dataTableWrapper:deep(.p-datatable-scrollable-table) {
-  table-layout: fixed;
-}
-
-.dataTableWrapper:deep(.p-datatable-scrollable-body) {
   overflow-x: auto;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
-.dataTableWrapper:deep(.p-datatable-scrollable-body::-webkit-scrollbar) {
+.dataTableWrapper:deep(.p-datatable-table-container::-webkit-scrollbar) {
   width: 6px;
   height: 6px;
 }
 
-.dataTableWrapper:deep(.p-datatable-scrollable-body::-webkit-scrollbar-track) {
+.dataTableWrapper:deep(.p-datatable-table-container::-webkit-scrollbar-track) {
   background: transparent;
 }
 
-.dataTableWrapper:deep(.p-datatable-scrollable-body::-webkit-scrollbar-thumb) {
+.dataTableWrapper:deep(.p-datatable-table-container::-webkit-scrollbar-thumb) {
   background: var(--p-surface-300);
   border-radius: 3px;
 }
 
-:root.dark .dataTableWrapper:deep(.p-datatable-scrollable-body::-webkit-scrollbar-thumb) {
+:root.dark .dataTableWrapper:deep(.p-datatable-table-container::-webkit-scrollbar-thumb) {
   background: var(--p-surface-600);
 }
 
-.dataTableWrapper:deep(.p-datatable-scrollable-body::-webkit-scrollbar-thumb:hover) {
+.dataTableWrapper:deep(.p-datatable-table-container::-webkit-scrollbar-thumb:hover) {
   background: var(--p-surface-400);
 }
 
