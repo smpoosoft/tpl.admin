@@ -4,7 +4,7 @@
     v-bind="$attrs"
     selection-mode="multiple"
     meta-key-selection
-    :model-value="modelValue"
+    :model-value="normalizedValue"
     :expanded-keys="expandedKeys"
     @update:model-value="onUpdateModelValue"
     @update:expanded-keys="expandedKeys = $event"
@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, useAttrs } from 'vue';
+import { ref, computed, useAttrs } from 'vue';
 import TreeSelect from 'primevue/treeselect';
 
 const props = defineProps<{ modelValue?: any }>();
@@ -26,6 +26,13 @@ defineOptions({ inheritAttrs: false });
 const attrs = useAttrs();
 const expandedKeys = ref<Record<string, boolean>>({});
 
+const normalizedValue = computed(() => {
+  const v = props.modelValue;
+  if (!v) return null;
+  if (typeof v === 'string') return { [v]: true };
+  return v;
+});
+
 let snapshotValue: any = null;
 
 const initSnapshot = () => {
@@ -33,30 +40,24 @@ const initSnapshot = () => {
 };
 initSnapshot();
 
-const findNodeByKey = (key: string, nodes: any[]): any | null => {
-  for (const node of nodes) {
-    if (node.key === key) return node;
-    if (node.children) {
-      const found = findNodeByKey(key, node.children);
-      if (found) return found;
-    }
-  }
-  return null;
+const denormalize = (value: any): any => {
+  if (!value) return null;
+  const keys = Object.keys(value);
+  if (keys.length === 1) return keys[0];
+  return value;
 };
 
-const getOptions = (): any[] => (attrs.options as any[]) || [];
-
 const onBeforeShow = () => {
-  snapshotValue = props.modelValue ? { ...props.modelValue } : null;
+  snapshotValue = normalizedValue.value ? { ...normalizedValue.value } : null;
 };
 
 const onUpdateModelValue = (value: any) => {
-  emit('update:modelValue', value);
+  emit('update:modelValue', denormalize(value));
 };
 
 const onNodeSelect = (node: any) => {
   if (node.children?.length) {
-    emit('update:modelValue', snapshotValue);
+    emit('update:modelValue', denormalize(snapshotValue));
     const key = node.key;
     const newKeys = { ...expandedKeys.value };
     if (newKeys[key]) {
@@ -66,7 +67,7 @@ const onNodeSelect = (node: any) => {
     }
     expandedKeys.value = newKeys;
   } else {
-    snapshotValue = { ...(props.modelValue || {}) };
+    snapshotValue = normalizedValue.value ? { ...normalizedValue.value } : null;
   }
 };
 </script>
