@@ -138,7 +138,7 @@ const onScroll = () => {
 };
 
 onMounted(() => {
-  scrollContainer = dtRef.value?.$el?.querySelector('.p-datatable-table-container') as HTMLElement | null;
+  scrollContainer = (dtRef.value as any)?.$el?.querySelector('.p-datatable-table-container') as HTMLElement | null;
   if (scrollContainer) {
     scrollContainer.addEventListener('scroll', onScroll);
   }

@@ -1,13 +1,12 @@
 <template>
-  <InputPassword v-bind="$attrs" :model-value="modelValue" @update:model-value="$emit('update:modelValue', $event)">
+  <Password v-bind="$attrs" v-model:model-value="modelValue">
     <slot v-for="(_, name) in $slots" :name="name" />
-  </InputPassword>
+  </Password>
 </template>
 
 <script setup lang="ts">
-import InputPassword from 'primevue/password';
+import Password from 'primevue/password';
 
-defineProps<{ modelValue?: string }>();
-defineEmits<{ 'update:modelValue': [value: string] }>();
+const modelValue = defineModel<string>();
 defineOptions({ inheritAttrs: false });
 </script>

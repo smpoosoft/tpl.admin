@@ -17,13 +17,10 @@
 import { computed, watch } from 'vue';
 import InputTags from 'primevue/inputtags';
 
+const modelValue = defineModel<any[]>();
 const props = defineProps<{
-  modelValue?: any[];
   allowGrow?: boolean;
   maxTags?: number;
-}>();
-const emit = defineEmits<{
-  'update:modelValue': [value: any[]];
 }>();
 defineOptions({ inheritAttrs: false });
 
@@ -33,13 +30,13 @@ const maxTagCount = computed(() => {
 });
 
 const overflowCount = computed(() => {
-  if (!props.modelValue) return 0;
-  return Math.max(0, props.modelValue.length - maxTagCount.value);
+  if (!modelValue.value) return 0;
+  return Math.max(0, modelValue.value.length - maxTagCount.value);
 });
 
 const visibleTags = computed(() => {
-  if (!props.modelValue || props.allowGrow) return props.modelValue;
-  return props.modelValue.slice(0, maxTagCount.value);
+  if (!modelValue.value || props.allowGrow) return modelValue.value;
+  return modelValue.value.slice(0, maxTagCount.value);
 });
 
 const wrapClass = computed(() => ({
@@ -50,27 +47,26 @@ const wrapClass = computed(() => ({
 let prevVisible: any[] = [];
 
 watch(visibleTags, (v) => {
-  prevVisible = [...v];
+  prevVisible = [...(v ?? [])];
 }, { immediate: true });
 
 const onTagsChange = (value: any[]) => {
-  if (props.allowGrow || !props.modelValue) {
-    emit('update:modelValue', value);
+  if (props.allowGrow || !modelValue.value) {
+    modelValue.value = value;
     return;
   }
-  const hiddenLen = props.modelValue.length - maxTagCount.value;
   const removedIdx = prevVisible.findIndex((tag, i) => tag !== value[i] || value.length <= i);
   if (removedIdx !== -1) {
-    const full = [...props.modelValue];
+    const full = [...modelValue.value];
     full.splice(removedIdx, 1);
-    emit('update:modelValue', full);
+    modelValue.value = full;
     return;
   }
   if (value.length > maxTagCount.value) {
-    emit('update:modelValue', value);
+    modelValue.value = value;
     return;
   }
-  emit('update:modelValue', [...value, ...props.modelValue.slice(maxTagCount.value)]);
+  modelValue.value = [...value, ...modelValue.value.slice(maxTagCount.value)];
 };
 </script>
 
