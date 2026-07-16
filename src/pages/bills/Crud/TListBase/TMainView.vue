@@ -9,7 +9,7 @@
     </template>
 
     <!-- <div class="p2"> -->
-    <TTableList :filter-tabs="FILTER_TABS" :data-list="filteredList" :total-count="customers.length"
+    <TTableList :filter-tabs="FILTER_TABS" :data-list="filteredList" :total-count="filteredList.length"
       :table-size="TABLE_SIZE" :default-columns="TABLE_COLUMNS" :footers="tableFooters"
       v-model:active-filter="activeFilter" v-model:search-keyword="searchKeyword" />
     <!-- </div> -->
@@ -56,9 +56,10 @@ const filteredList = computed(() => {
   return result;
 });
 
-// 合计行：合同金额合计（随筛选结果变化）
+
+// 合计行：合同金额合计
 const tableFooters = computed(() => {
-  const total = filteredList.value.reduce((sum, r) => sum + r.contractAmount, 0);
+  const total = filteredList.value.reduce((sum, r) => sum + (r.contractAmount ?? 0), 0);
   return { contractAmount: total.toLocaleString('zh-CN') };
 });
 </script>

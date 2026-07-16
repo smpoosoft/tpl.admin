@@ -2,7 +2,7 @@
   <DataTable ref="dtRef" :value="value" dataKey="id" v-model:selection="selectedItems" :size="sizeVal" scrollable
     scrollHeight="flex" stripedRows sort-mode="multiple" removable-sort selection-mode="multiple" highlight-on-select
     :row-class="rowClass" :virtual-scroller-options="vsOptions" class="dataTableWrapper fullH"
-    :class="['w-full', { 'shadow-active': hasScrollOffset }]" style="container-type: size; height: 100%"
+    :class="['w-full', { 'shadow-active': hasScrollOffset, 'is-empty': value.length === 0 }]" style="container-type: size; height: 100%"
     @row-dblclick="onRowDblClick">
     <Column v-if="!hideRowCheckBox" selection-mode="multiple" header-style="width: 3rem" />
     <Column v-for="col in visibleColumns" :key="colKey(col)" :field="col.field" :header="col.header" sortable
@@ -276,6 +276,11 @@ onUnmounted(() => {
 .p-datatable :deep(.p-datatable-frozen td:has(.flex)) {
   overflow: visible;
   text-overflow: clip;
+}
+
+/* 空数据时隐藏虚拟滚动条的滑块（保留占位防止布局偏移） */
+.dataTableWrapper.is-empty :deep(.p-virtualscroller) {
+  overflow-y: hidden !important;
 }
 
 /* 行悬停 + 选择色 */

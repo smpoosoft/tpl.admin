@@ -107,13 +107,18 @@ const themePreSet: Preset = {
         background: '{content.background}'
       },
       title: {
-        fontSize: '1.125rem',
+        fontSize: '14px',
         fontWeight: '600'
       }
     },
     tabs: {
       tab: {
         fontWeight: '500'
+      }
+    },
+    blockui: {
+      root: {
+        borderRadius: '0'
       }
     }
   }

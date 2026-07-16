@@ -143,7 +143,21 @@ const rules_06Color = (): Rule[] => [
   [
     /^(text)(Primary|Blue|Green|Yellow|Red|Gray|White|Black)$/,
     ([, , key]) => ({ color: `var(--color-${key.toLowerCase()})` })
-  ]
+  ],
+
+  /** 语义文本颜色：正常 / 成功 / 错误 / 警告 / 信息 / 日志 */
+  ['textNormal', { color: 'var(--p-text-color)' }],
+  ['textSucc', { color: 'var(--p-green-600)' }],
+  ['textErr', { color: 'var(--p-red-600)' }],
+  ['textWarn', { color: 'var(--p-yellow-600)' }],
+  ['textInfo', { color: 'var(--p-blue-600)' }],
+  ['textLog', { color: 'var(--p-text-muted-color)' }],
+
+  /** 语义背景颜色：成功 / 危险 / 警告 / 信息 */
+  ['bgSuccess', { 'background-color': 'var(--p-green-500)' }],
+  ['bgDanger', { 'background-color': 'var(--p-red-500)' }],
+  ['bgWarn', { 'background-color': 'var(--p-yellow-500)' }],
+  ['bgInfo', { 'background-color': 'var(--p-blue-500)' }]
 ];
 // #endregion
 

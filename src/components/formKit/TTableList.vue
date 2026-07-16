@@ -1,7 +1,8 @@
 <template>
   <div ref="wrapperRef" class="tableListWrapper fullWH" data-fs-bg>
     <div class="tableListHeader flexY gapX1">
-      <Tabs :value="activeFilter" @update:value="(val) => $emit('update:activeFilter', val as string)">
+      <Tabs v-if="!disableFastDataTypeFilter" :value="activeFilter"
+        @update:value="(val) => $emit('update:activeFilter', val as string)">
         <TabList>
           <Tab v-for="tab in filterTabs" :key="tab.key" :value="tab.key">
             {{ tab.label }} ({{ tab.count }})
@@ -10,7 +11,8 @@
       </Tabs>
       <span class="flexSplit"></span>
 
-      <TSearchBar :model-value="searchKeyword" @update:model-value="(val) => $emit('update:searchKeyword', val)" />
+      <TSearchBar :model-value="searchKeyword" @update:model-value="(val) => $emit('update:searchKeyword', val)"
+        @onFilterMore="showFilterForm = true" />
       <Button iconOnly variant="outlined" size="small" v-tooltip.top="'列设置'" @click="setCols">
         <TIcon name="columnsSet" :size="16" clickAble />
       </Button>
@@ -71,8 +73,20 @@
         共 {{ totalCount }} 条记录，已选 {{ selectedItems.length }} 项
       </div>
       <span class="flexSplit"></span>
-      <span class="footerRight">占位</span>
+      <TFastDateFilter v-if="!disableFastDateFilter" v-model="dateFilterRange" />
     </div>
+
+    <template>
+      <div class="flex justify-center">
+        <Dialog v-model:visible="showFilterForm" dismissableMask draggable modal header="Edit Profile"
+          :style="{ width: '28rem' }">
+          <div class="flex flex-col gap-6">
+            <slot name="filterForm"></slot>
+          </div>
+        </Dialog>
+      </div>
+
+    </template>
   </div>
 </template>
 
@@ -85,11 +99,12 @@ import TabList from 'primevue/tablist';
 import Tab from 'primevue/tab';
 import TSearchBar from '@/components/dataKit/TSearchBar.vue';
 import Button from 'primevue/button';
-import ButtonGroup from 'primevue/buttongroup';
+import TFastDateFilter from '@/components/homeKit/TFastDateFilter.vue';
 import TIcon from '@/components/widget/TIcon.vue';
 import Divider from 'primevue/divider';
 import Popover from 'primevue/popover';
 import Checkbox from 'primevue/checkbox';
+import Dialog from 'primevue/dialog';
 import TDataTable from '@/components/dataKit/TDataTable.vue';
 
 // ===== Props 定义 =====
@@ -106,6 +121,10 @@ interface TTableListProps {
   hideOptCol?: boolean;
   /** 合计行：field -> 合计值 */
   footers?: Record<string, string | number>;
+  /** 是否禁用快速数据类型筛选条 */
+  disableFastDataTypeFilter?: boolean;
+  /** 是否禁用快速日期筛选条 */
+  disableFastDateFilter?: boolean;
 }
 
 // ===== Props 实例化 & 事件 =====
@@ -123,6 +142,8 @@ defineEmits<{
 const columns = ref<ColumnProps[]>([...props.defaultColumns]);
 const visibleFields = ref<string[]>(props.defaultColumns.map(col => col.field as string));
 const selectedItems = ref<any[]>([]);
+const dateFilterRange = ref<[string, string] | undefined>();
+const showFilterForm = ref(false);
 
 // ===== 选择操作（全选 / 取消 / 反选） =====
 /** 全选：将当前 dataList 中所有行加入选中集合 */

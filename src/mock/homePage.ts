@@ -1,12 +1,7 @@
 
 const dataMenusLists = [
-  { label: '简单列表', icon: 'pi pi-list', shortcut: '⌘+L', path: '/Lists/TListBase' },
-  { label: '表格列表', icon: 'pi pi-list', shortcut: '⌘+L', path: '/Lists/TListTable' }
-];
-
-const dataMenusViews = [
-  { label: '表单页面', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/Views/TForm' },
-  { label: '详情页面', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/Views/TDetail' }
+  { label: '简单列表', icon: 'pi pi-list', shortcut: '⌘+L', path: '/Crud/TListBase' },
+  { label: '表单页面', icon: 'pi pi-chart-line', shortcut: '⌘+R', path: '/Crud/TForm' }
 ];
 
 const dataMenusBiz = [
@@ -31,8 +26,7 @@ const dataMenusSysInfo = [
 
 export const dataMenus = [
   { label: '首页', icon: 'pi pi-home', shortcut: '⌘+H', path: '/' },
-  { label: '列表集合', icon: 'pi pi-list', shortcut: '⌘+L', items: dataMenusLists },
-  { label: '数据视图', icon: 'pi pi-chart-line', shortcut: '⌘+R', items: dataMenusViews },
+  { label: 'CRUD', icon: 'pi pi-list', shortcut: '⌘+L', items: dataMenusLists },
   { label: '业务管理', icon: 'pi pi-chart-line', shortcut: '⌘+R', items: dataMenusBiz },
   { label: '综合报表', icon: 'pi pi-chart-bar', shortcut: '⌘+R', items: dataMenusReports },
   // { label: '基础资料', icon: 'pi pi-user', shortcut: '⌘+W' },
