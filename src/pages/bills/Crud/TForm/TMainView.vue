@@ -148,11 +148,16 @@ const collapseAll = () => {
 
 <style scoped lang="scss">
 :deep(.p-panel) {
+  min-width: 0;
   margin-bottom: 12px;
 }
 
 :deep(.p-panel-content) {
-  overflow: hidden;
+  min-width: 0;
+}
+
+:deep(.p-card-body) {
+  min-width: 0;
 }
 
 .formFooter {

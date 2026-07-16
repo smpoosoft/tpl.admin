@@ -138,6 +138,13 @@ const onScroll = () => {
 };
 
 onMounted(() => {
+  const wrapper = document.querySelector('.dataTableWrapper');
+  if (wrapper) {
+    const cardBody = wrapper.closest('.p-card-body');
+    if (cardBody && getComputedStyle(cardBody).minWidth !== '0px') {
+      (cardBody as HTMLElement).style.minWidth = '0';
+    }
+  }
   scrollContainer = dtRef.value?.$el?.querySelector('.p-datatable-table-container') as HTMLElement | null;
   if (scrollContainer) {
     scrollContainer.addEventListener('scroll', onScroll);
